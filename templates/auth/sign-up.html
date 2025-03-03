@@ -451,33 +451,33 @@
         </svg>
     </div>
     <div
-        class="w-1/2 bg-secondary h-screen flex flex-col justify-center items-center gap-8 py-48 text-center px-48"
+        class="w-1/2 bg-secondary h-screen flex flex-col justify-center items-center gap-8 py-48 text-center px-36"
     >
-        <h1 class="text-3xl text-white w-full">Sign Up</h1>
+        <h1 class="text-4xl text-white w-full">Sign Up</h1>
         <form
             method="POST"
             action="{{ url_for('sign_up') }}"
             class="w-full flex flex-col gap-8"
         >
-            <div class="flex flex-col gap-4">
+            <div class="grid grid-cols-2 gap-4">
                 <div
-                    class="bg-tertiary flex flex-row w-fullgap-2 p-2 rounded-md"
-                >
-                    <input
-                        placeholder="Name"
-                        type="text"
-                        name="name"
-                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                        required="true"
-                    />
-                </div>
-                <div
-                    class="bg-tertiary flex flex-row w-fullgap-2 p-2 rounded-md"
+                    class="bg-tertiary flex col-span-2 flex-row w-fullgap-2 p-2 rounded-md"
                 >
                     <input
                         placeholder="Email"
                         type="text"
                         name="email"
+                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        required="true"
+                    />
+                </div>
+                <div
+                    class="bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md"
+                >
+                    <input
+                        placeholder="Name"
+                        type="text"
+                        name="name"
                         class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
@@ -505,9 +505,47 @@
                     />
                 </div>
                 <div
+                    class="bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md"
+                >
+                    <input
+                        placeholder="Date of Birth"
+                        type="date"
+                        name="dob"
+                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        required="true"
+                    />
+                </div>
+                <div
                     class="bg-tertiary flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <select
+                        required
+                        name="branch"
+                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        <option
+                            class="cursor-pointer"
+                            value=""
+                            disabled
+                            selected
+                        >
+                            Select Branch
+                        </option>
+                        <option class="cursor-pointer" value="CO">CO</option>
+                        <option class="cursor-pointer" value="IT">IT</option>
+                        <option class="cursor-pointer" value="CSC">
+                            Cyber Security
+                        </option>
+                        <option class="cursor-pointer" value="AIML">
+                            AI/ML
+                        </option>
+                    </select>
+                </div>
+                <div
+                    class="bg-tertiary flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
+                >
+                    <select
+                        required
                         name="year"
                         class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
@@ -538,7 +576,7 @@
                 <button
                     type="submit"
                     value="Sign Up"
-                    class="w-full text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                 >
                     Sign Up
                 </button>

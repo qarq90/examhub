@@ -54,8 +54,9 @@ body {
 }
 
 .title {
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: bolder;
+    text-transform: uppercase;
 }
