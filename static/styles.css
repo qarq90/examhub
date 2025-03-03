@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -44,9 +46,16 @@ body {
 }
 
 .flash.success {
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50;
 }
 
 .flash.error {
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
+}
+
+.title {
+    letter-spacing: 1px;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: bolder;
 }
