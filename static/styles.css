@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Delius&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +15,8 @@
 }
 
 *::selection {
-    background-color: #404040;
+    background-color: #fff;
+    color: #202020;
 }
 
 body {
@@ -45,18 +46,17 @@ body {
     font-weight: bold;
 }
 
-.flash.success {
+.flash-success {
     background-color: #4caf50;
 }
 
-.flash.error {
+.flash-error {
     background-color: #f44336;
 }
 
 .title {
     letter-spacing: 5px;
-    font-family: "Delius", cursive;
-    font-weight: 400;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 800;
     font-style: bolder;
-    text-transform: uppercase;
 }

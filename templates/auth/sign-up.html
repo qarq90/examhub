@@ -1,8 +1,8 @@
 <!-- templates/auth/sign-up.html -->
-{% extends 'layout.html' %} {% block title %}Home - My Flask App{% endblock %}
-{% block content %}
-<div class="flex flex-row-reverse">
-    <div class="w-1/2 bg-secondary h-screen flex items-center justify-center">
+{% extends 'layouts/minimal_layout.html' %} {% block title %}EXAMHUB | Sign Up{%
+endblock %} {% block content %}
+<div class="flex flex-row-reverse h-auto py-28">
+    <div class="w-1/2 bg-secondary flex items-center justify-center">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="500"
@@ -451,9 +451,13 @@
         </svg>
     </div>
     <div
-        class="w-1/2 bg-secondary h-screen flex flex-col justify-center items-center gap-8 py-48 text-center px-36"
+        class="w-1/2 bg-secondary flex flex-col justify-center items-center gap-8 text-center px-36"
     >
-        <h1 class="text-4xl text-white w-full">Sign Up</h1>
+        <h1
+            class="text-4xl text-white w-full flex gap-4 items-center justify-center"
+        >
+            <i class="fas fa-user-plus"></i>Sign Up
+        </h1>
         <form
             method="POST"
             action="{{ url_for('sign_up') }}"
@@ -531,12 +535,22 @@
                         >
                             Select Branch
                         </option>
-                        <option class="cursor-pointer" value="CO">CO</option>
-                        <option class="cursor-pointer" value="IT">IT</option>
-                        <option class="cursor-pointer" value="CSC">
+                        <option
+                            class="cursor-pointer"
+                            value="Computer Engineering"
+                        >
+                            CO
+                        </option>
+                        <option
+                            class="cursor-pointer"
+                            value="Information Technology"
+                        >
+                            IT
+                        </option>
+                        <option class="cursor-pointer" value="Cyber Security">
                             Cyber Security
                         </option>
-                        <option class="cursor-pointer" value="AIML">
+                        <option class="cursor-pointer" value="AI/ML">
                             AI/ML
                         </option>
                     </select>
@@ -555,31 +569,53 @@
                             disabled
                             selected
                         >
-                            Select Year
+                            Select Semester
                         </option>
-                        <option class="cursor-pointer" value="First Year">
-                            First Year
+                        <option class="cursor-pointer" value="Semester I">
+                            Semester I
                         </option>
-                        <option class="cursor-pointer" value="Second Year">
-                            Second Year
+                        <option class="cursor-pointer" value="Semester II">
+                            Semester II
                         </option>
-                        <option class="cursor-pointer" value="Third Year">
-                            Third Year
+                        <option class="cursor-pointer" value="Semester III">
+                            Semester III
                         </option>
-                        <option class="cursor-pointer" value="Fourth Year">
-                            Fourth Year
+                        <option class="cursor-pointer" value="Semester IV">
+                            Semester IV
+                        </option>
+                        <option class="cursor-pointer" value="Semester V">
+                            Semester V
+                        </option>
+                        <option class="cursor-pointer" value="Semester VI">
+                            Semester VI
+                        </option>
+                        <option class="cursor-pointer" value="Semester VII">
+                            Semester VII
+                        </option>
+                        <option class="cursor-pointer" value="Semester VIII">
+                            Semester VIII
                         </option>
                     </select>
                 </div>
             </div>
             <div class="flex flex-col w-full gap-6">
-                <button
-                    type="submit"
-                    value="Sign Up"
-                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                >
-                    Sign Up
-                </button>
+                <div class="flex gap-4">
+                    <a
+                        href="/admin/auth/confirm"
+                        type="submit"
+                        value="Admin Login"
+                        class="w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        Admin Login
+                    </a>
+                    <button
+                        type="submit"
+                        value="Sign Up"
+                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        Sign Up
+                    </button>
+                </div>
                 <div class="w-full bg-tertiary h-1 rounded-md" />
                 <div class="mt-4">
                     <a href="/auth/log-in" class="text-sm text-zinc-300"
