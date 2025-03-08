@@ -1,12 +1,12 @@
-<!-- templates/layout.html -->
-<!DOCTYPE html>
+<!-- templates/layouts/minimal_layout.html -->
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% block title %}My Flask App{% endblock %}</title>
         <link href="/static/styles.css" rel="stylesheet" />
-        <!-- templates/layout.html -->
+        <!-- templates/layouts/minimal_layout.html -->
         <link
             href="{{ url_for('static', filename='output.css') }}"
             rel="stylesheet"
@@ -21,15 +21,8 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <!-- Conditionally include navbar -->
-        {% if not hide_nav_footer %} {% include 'components/navbar.html' %} {%
-        endif %}
-
-        <!-- Main content block -->
-        <div class="content m-1">{% block content %}{% endblock %}</div>
-
-        <!-- Conditionally include footer -->
-        {% if not hide_nav_footer %} {% include 'components/footer.html' %} {%
-        endif %}
+        <div class="content m-1 overflow-hidden">
+            {% block content %}{% endblock %}
+        </div>
     </body>
 </html>

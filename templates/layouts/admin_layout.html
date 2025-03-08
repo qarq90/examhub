@@ -1,0 +1,35 @@
+<!-- templates/layouts/main_layout.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}My Flask App{% endblock %}</title>
+        <link href="/static/styles.css" rel="stylesheet" />
+        <!-- templates/layouts/main_layout.html -->
+        <link
+            href="{{ url_for('static', filename='output.css') }}"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!-- Conditionally include navbar -->
+        {% if not hide_nav_footer %} {% include 'components/admin/navbar.html'
+        %} {% endif %}
+
+        <!-- Main content block -->
+        <div class="content m-1">{% block content %}{% endblock %}</div>
+
+        <!-- Conditionally include footer -->
+        {% if not hide_nav_footer %} {% include 'components/footer.html' %} {%
+        endif %}
+    </body>
+</html>
