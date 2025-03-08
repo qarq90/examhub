@@ -1,8 +1,8 @@
 <!-- templates/auth/log-in.html -->
-{% extends 'layout.html' %} {% block title %}Home - My Flask App{% endblock %}
-{% block content %}
-<div class="flex flex-row">
-    <div class="w-1/2 bg-secondary h-screen flex items-center justify-center">
+{% extends 'layouts/minimal_layout.html' %} {% block title %}EXAMHUB | Login{%
+endblock %} {% block content %}
+<div class="flex flex-row h-auto py-32">
+    <div class="w-1/2 bg-secondary flex items-center justify-center">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="450"
@@ -194,9 +194,13 @@
         </svg>
     </div>
     <div
-        class="w-1/2 bg-secondary h-screen flex flex-col justify-center items-center gap-8 py-48 text-center px-48"
+        class="w-1/2 bg-secondary flex flex-col justify-center items-center gap-8 text-center px-36"
     >
-        <h1 class="text-4xl text-white w-full">Log In</h1>
+        <h1
+            class="text-4xl text-white w-full flex gap-4 items-center justify-center"
+        >
+            <i class="fas fa-sign-in-alt mt-2"></i>Login
+        </h1>
         <form
             method="POST"
             action="{{ url_for('log_in') }}"
@@ -204,7 +208,7 @@
         >
             <div class="flex flex-col gap-4">
                 <div
-                    class="bg-tertiary flex flex-row w-fullgap-2 p-2 rounded-md"
+                    class="bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <input
                         placeholder="Roll No"
@@ -227,13 +231,23 @@
                 </div>
             </div>
             <div class="flex flex-col w-full gap-6">
-                <button
-                    type="submit"
-                    value="Login"
-                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                >
-                    Login
-                </button>
+                <div class="flex gap-4">
+                    <a
+                        href="/admin/auth/confirm"
+                        type="submit"
+                        value="Login"
+                        class="w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        Admin Login
+                    </a>
+                    <button
+                        type="submit"
+                        value="Login"
+                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        Login
+                    </button>
+                </div>
                 <div class="w-full bg-tertiary h-1 rounded-md" />
                 <div class="mt-4">
                     <a href="/auth/sign-up" class="text-sm text-zinc-300"
