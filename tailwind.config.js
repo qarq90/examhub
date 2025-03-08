@@ -14,5 +14,5 @@ module.exports = {
             },
         },
     },
-    plugins: ["prettier-plufgin-tailwindcss"],
+    plugins: ["prettier-plugin-tailwindcss"],
 };
