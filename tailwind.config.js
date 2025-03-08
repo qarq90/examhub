@@ -14,5 +14,8 @@ module.exports = {
             },
         },
     },
-    plugins: ["prettier-plugin-tailwindcss"],
+    plugins: [
+        require("@tailwindcss/typography"), // Add the Typography Plugin
+        "prettier-plugin-tailwindcss", // Keep the Prettier plugin
+    ],
 };
