@@ -1,9 +1,176 @@
-<!-- templates/home.html -->
+<!-- templates/admin/create/create-test.html -->
 {% extends 'layouts/admin_layout.html' %} {% block title %}EXAMHUB | Create
 Test{% endblock %} {% block content %}
 <div class="container text-white">
     <div class="w-full flex justify-center items-center py-20 flex-col gap-8">
         <h1 class="text-6xl font-bold">Create Test</h1>
+
+        <form
+            method="POST"
+            action="{{ url_for('create_test') }}"
+            class="w-8/12 p-8 rounded-lg"
+            enctype="multipart/form-data"
+        >
+            <div class="flex flex-row gap-4 mb-6">
+                <div class="flex-1">
+                    <label
+                        for="course_name"
+                        class="block text-xl font-medium mb-2"
+                        >Course Name</label
+                    >
+                    <input
+                        type="text"
+                        id="course_name"
+                        name="course_name"
+                        value="{{ session.get('course_name') }}"
+                        class="w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
+                        required
+                        disabled
+                    />
+                </div>
+
+                <div class="flex-2">
+                    <label
+                        for="course_semester"
+                        class="block font-medium text-xl mb-2"
+                        >Course Code</label
+                    >
+                    <input
+                        type="text"
+                        id="course_code"
+                        name="course_code"
+                        value="{{ session.get('course_code') }}"
+                        class="w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
+                        required
+                        disabled
+                    />
+                </div>
+
+                <div class="flex-2">
+                    <label
+                        for="course_semester"
+                        class="block font-medium text-xl mb-2"
+                        >Course Semester</label
+                    >
+                    <input
+                        type="text"
+                        id="course_semester"
+                        name="course_semester"
+                        value="{{ session.get('course_semester') }}"
+                        class="w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
+                        required
+                        disabled
+                    />
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <label for="test_name" class="block font-medium text-xl mb-2"
+                    >Test Name</label
+                >
+                <input
+                    type="text"
+                    id="test_name"
+                    name="test_name"
+                    class="w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
+                    required
+                />
+            </div>
+
+            <div class="mb-6">
+                <label
+                    for="test_description"
+                    class="block font-medium text-xl mb-2"
+                    >Test Description</label
+                >
+                <textarea
+                    id="test_description"
+                    name="test_description"
+                    rows="4"
+                    class="w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="mb-6 border border-zinc-500 p-4 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4">JSON Format Guide</h2>
+                <p class="mb-4">
+                    The JSON file should follow the structure below:
+                </p>
+                <pre class="bg-tertiary p-4 rounded-lg">
+{
+    "test_questions": [
+        {
+            "question": "What is the output of `print(2 + 2)`?",
+            "options_a": "3",
+            "options_b": "4",
+            "options_c": "5",
+            "options_d": "6",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is used to define a function in Python?",
+            "options_a": "func",
+            "options_b": "def",
+            "options_c": "function",
+            "options_d": "define",
+            "correct_answer": "option_b"
+        },
+        .......
+    ]
+}
+                </pre>
+            </div>
+
+            <div class="mb-6">
+                <label
+                    for="questions_json"
+                    class="block font-medium text-xl mb-2"
+                >
+                    Upload JSON File
+                </label>
+                <div class="relative">
+                    <div
+                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        <span class="text-white">Choose a file</span>
+                        <input
+                            type="file"
+                            id="questions_json"
+                            name="questions_json"
+                            class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                            accept=".json"
+                        />
+                    </div>
+                    <p id="file-name" class="mt-2 text-sm text-zinc-400 hidden">
+                        No file chosen
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex justify-end">
+                <button
+                    type="submit"
+                    class="w-1/3 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                >
+                    Create Test
+                </button>
+            </div>
+        </form>
     </div>
 </div>
+<script>
+    document
+        .getElementById("questions_json")
+        .addEventListener("change", function (e) {
+            const fileNameDisplay = document.getElementById("file-name");
+            if (e.target.files.length > 0) {
+                fileNameDisplay.textContent = e.target.files[0].name;
+                fileNameDisplay.classList.remove("hidden");
+            } else {
+                fileNameDisplay.textContent = "No file chosen";
+                fileNameDisplay.classList.add("hidden");
+            }
+        });
+</script>
 {% endblock %}

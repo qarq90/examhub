@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash, get_flashed_messages
 from pymongo import MongoClient
+from bson import ObjectId
 from datetime import datetime
+import json
 import re
 
 EMAIL_REGEX = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
@@ -14,6 +16,8 @@ db = client["examhub"]
 
 students = db["students"]
 courses = db["courses"]
+tests = db["tests"]
+results = db["results"]
 
 def ceaser_cipher(input, key, type):
     characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "/", "+", " "]
@@ -138,27 +142,43 @@ def admin_confirm():
 
 @app.route('/admin/auth/log-in', methods=["GET", "POST"])
 def admin_log_in():
-
-    session.clear()  
+    session.clear()
 
     if request.method == "POST":
         course_code = request.form.get("course_code")
-        course_token = request.form.get("course_token")
+        course_branch = request.form.get("course_branch")
+        course_semester = request.form.get("course_semester")
 
-        if not course_code or not course_token:
+        if not course_code or not course_semester or not course_branch:
             flash("All fields are required!", "error")
             return redirect(url_for("admin_log_in"))
         
-        course = courses.find_one({"course_code": course_code, "course_token": course_token})
+        course = courses.find_one({"course_code": course_code, "course_semester": course_semester, "course_branch": course_branch})
         
         if course:
+            session["course_code"] = course_code
+            session["course_name"] = course.get("course_name")
+            session["course_branch"] = course.get("course_branch")
+            session["course_semester"] = course.get("course_semester")
+            session["course_id"] = str(course["_id"])
             return redirect(url_for("create_test"))
         
         else:
-            flash("Incorrect course code or token!", "error")
+            flash("Incorrect combination!", "error")
             return redirect(url_for("admin_log_in"))
-        
-    return render_template('/admin/auth/log-in.html')
+    
+    all_courses = list(courses.find({}))
+
+    unique_codes = set(course["course_code"] for course in all_courses)
+    unique_branches = set(course["course_branch"] for course in all_courses)
+    unique_semesters = set(course["course_semester"] for course in all_courses)
+
+    return render_template(
+        '/admin/auth/log-in.html',
+        unique_codes=unique_codes,
+        unique_branches=unique_branches,
+        unique_semesters=unique_semesters
+    )
 
 @app.route('/admin/auth/sign-up', methods=["GET", "POST"])
 def admin_sign_up():
@@ -168,24 +188,22 @@ def admin_sign_up():
     if request.method == "POST":
         course_name = request.form.get("course_name")
         course_code = request.form.get("course_code")
-        course_token = request.form.get("course_token")
         course_branch = request.form.get("course_branch")
         course_semester = request.form.get("course_semester")
 
-        if not course_name or not course_code or not course_token or not course_branch or not course_semester:
+        if not course_name or not course_code or not course_branch or not course_semester:
             flash("All fields are required!", "error")
             return redirect(url_for("admin_sign_up"))
     
         course_data = {
             "course_name": course_name,
             "course_code": course_code,
-            "course_token": course_token,
             "course_branch": course_branch,
             "course_semester": course_semester,
         }
 
         courses.insert_one(course_data)
-        return redirect(url_for("home"))
+        return redirect(url_for("admin_log_in"))
 
     return render_template('/admin/auth/sign-up.html')
 
@@ -193,14 +211,79 @@ def admin_sign_up():
 def profile():
     return render_template('profile.html')
 
-@app.route('/admin/create/create-test')
-def create_test():
-    return render_template('/admin/create/create-test.html')
+@app.route('/tests/lectures', methods=["GET", "POST"])
+def lectures():
+    all_tests = list(tests.find({}))
 
-# Define a route for an API endpoint
-@app.route('/api/data')
-def get_data():
-   return render_template('/templates/index.html')
+    unique_course_names = set()
+    unique_tests = []
+
+    for test in all_tests:
+        course_name = test.get("course_name")
+        if course_name not in unique_course_names:
+            unique_course_names.add(course_name)
+            unique_tests.append(test)
+
+    sorted_tests = sorted(
+        unique_tests,
+        key=lambda x: (x["course_branch"], x["course_semester"], x["course_name"])
+    )
+
+    return render_template('/tests/lectures.html', lectures=sorted_tests)
+
+@app.route('/tests/start-test/<test_id>')
+def start_test(test_id):
+    test = tests.find_one({"_id": ObjectId(test_id)})
+    
+    if not test:
+        flash("Test not found!", "error")
+        return redirect(url_for("lectures"))
+
+    return render_template('/tests/start-test.html', test=test)
+
+@app.route('/admin/create/create-test', methods=["GET", "POST"])
+def create_test():
+    if request.method == "POST":
+        test_name = request.form.get("test_name")
+        test_description = request.form.get("test_description")
+
+        if 'questions_json' not in request.files:
+            flash("No JSON file uploaded!", "error")
+            return redirect(url_for("create_test"))
+
+        json_file = request.files['questions_json']
+
+        if json_file.filename == '':
+            flash("No file selected!", "error")
+            return redirect(url_for("create_test"))
+
+        try:
+            questions_data = json.load(json_file)
+        except json.JSONDecodeError:
+            flash("Invalid JSON file!", "error")
+            return redirect(url_for("create_test"))
+
+        if "questions" not in questions_data:
+            flash("Invalid JSON structure: Missing 'questions' field!", "error")
+            return redirect(url_for("create_test"))
+
+        test_data = {
+            "course_name": session.get("course_name"),
+            "course_code": session.get("course_code"),
+            "course_semester": session.get("course_semester"),
+            "course_branch": session.get("course_branch"),
+            "test_name": test_name,
+            "test_description": test_description,
+            "questions": questions_data["questions"], 
+            "created_at": datetime.now(),
+        }
+
+        tests.insert_one(test_data)
+
+        flash("Test created successfully!", "success")
+        return redirect(url_for("create_test"))
+
+    return render_template('/admin/create/create-test.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
