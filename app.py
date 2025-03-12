@@ -211,27 +211,17 @@ def admin_sign_up():
 def profile():
     return render_template('profile.html')
 
-@app.route('/tests/lectures', methods=["GET", "POST"])
+@app.route('/tests/lectures')
 def lectures():
-    all_tests = list(tests.find({}))
+    lectures = list(tests.find())  
 
-    unique_course_names = set()
-    unique_tests = []
+    for lecture in lectures:
+        lecture['_id'] = str(lecture['_id'])  
 
-    for test in all_tests:
-        course_name = test.get("course_name")
-        if course_name not in unique_course_names:
-            unique_course_names.add(course_name)
-            unique_tests.append(test)
+    print("Lectures Data:", lectures)  
+    return render_template('/tests/lectures.html', lectures=lectures)
 
-    sorted_tests = sorted(
-        unique_tests,
-        key=lambda x: (x["course_branch"], x["course_semester"], x["course_name"])
-    )
-
-    return render_template('/tests/lectures.html', lectures=sorted_tests)
-
-@app.route('/tests/start-test/<test_id>')
+@app.route('/tests/start-test/<test_id>', methods=["GET", "POST"])
 def start_test(test_id):
     test = tests.find_one({"_id": ObjectId(test_id)})
     

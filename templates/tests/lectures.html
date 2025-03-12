@@ -1,34 +1,63 @@
-<!-- templates/lectures.html -->
+<!-- templates/tests/lectures.html -->
 {% extends 'layouts/main_layout.html' %} {% block title %}EXAMHUB | Lectures{%
 endblock %} {% block content %}
 <div class="container text-white">
     <div class="w-full flex justify-center items-center py-10 flex-col gap-8">
-        <h1 class="text-6xl font-bold">Lectures</h1>
-
-        <div class="w-10/12 grid grid-cols-3 gap-4">
-            {% for test in lectures %}
-            <div class="mb-6 p-6 bg-tertiary rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-4">{{ test.course_name }}</h2>
-                <p class="text-lg mb-2">
-                    <strong>Course Code:</strong> {{ test.course_code }}
-                </p>
-                <p class="text-lg mb-2">
-                    <strong>Semester:</strong> {{ test.course_semester }}
-                </p>
-                <p class="text-lg mb-2">
-                    <strong>Branch:</strong> {{ test.course_branch }}
-                </p>
-                <p class="text-lg mb-4">
-                    <strong>Description:</strong> {{ test.test_description }}
-                </p>
-                <a
-                    href="{{ url_for('start_test', test_id=test._id) }}"
-                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                    >Start Test</a
+        {% set branches = {} %} {% for test in lectures %} {% if
+        test.course_branch == session["branch"] %} {% if test.course_branch and
+        test.course_semester and test.course_name %} {% if test.course_branch
+        not in branches %} {% set _ = branches.update({test.course_branch: {}})
+        %} {% endif %} {% if test.course_semester not in
+        branches[test.course_branch] %} {% set _ =
+        branches[test.course_branch].update({test.course_semester: {}}) %} {%
+        endif %} {% if test.course_name not in
+        branches[test.course_branch][test.course_semester] %} {% set _ =
+        branches[test.course_branch][test.course_semester].update({test.course_name:
+        []}) %} {% endif %} {% set _ =
+        branches[test.course_branch][test.course_semester][test.course_name].append(test)
+        %} {% endif %} {% endif %} {% endfor %} {% if branches %} {% for branch,
+        semesters in branches.items() %}
+        <div class="w-10/12">
+            <h2 class="text-7xl font-bold text-center mb-4">{{ branch }}</h2>
+            {% for semester, courses in semesters.items() %}
+            <div class="mb-8">
+                <h3
+                    class="text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
                 >
+                    Semester {{ semester }}
+                </h3>
+                {% for course_name, tests in courses.items() %}
+                <div class="my-6">
+                    <h4 class="text-2xl font-bold mb-4">
+                        ⚪ {{ course_name }}
+                    </h4>
+                    <div class="grid grid-cols-4 gap-4">
+                        {% for test in tests %}
+                        <div
+                            class="w-full p-6 h-fit flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                        >
+                            <p class="text-lg font-bold text-center">
+                                {{ test.test_name }}
+                            </p>
+                            <a
+                                href="{{ url_for('start_test', test_id=test._id) }}"
+                                class="w-full mt-4 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                            >
+                                Start Test
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
             </div>
             {% endfor %}
         </div>
+        {% endfor %} {% else %}
+        <div class="w-10/12 text-center">
+            <p class="text-2xl">No tests yet for {{ session["branch"] }}.</p>
+        </div>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

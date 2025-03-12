@@ -1,4 +1,4 @@
-<!-- templates/view_test.html -->
+<!-- templates/tests/view_test.html -->
 {% extends 'layouts/main_layout.html' %} {% block title %}EXAMHUB | View Test{%
 endblock %} {% block content %}
 <div class="container text-white">
@@ -25,11 +25,11 @@ endblock %} {% block content %}
                 <div class="mb-6 p-6 bg-tertiary rounded-lg shadow-lg">
                     <p class="text-lg mb-4">
                         <strong>Question {{ loop.index }}:</strong> {{
-                        question.question }}
+                        question.question_text }}
                     </p>
                     <div class="flex flex-col gap-2">
                         <label
-                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--primary)] hover:bg-opacity-25 transition-colors cursor-pointer"
+                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--secondary)] hover:bg-opacity-25 transition-colors cursor-pointer"
                         >
                             <input
                                 type="radio"
@@ -44,10 +44,10 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.options_a }}</span>
+                            <span>{{ question.option_a }}</span>
                         </label>
                         <label
-                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--primary)] hover:bg-opacity-25 transition-colors cursor-pointer"
+                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--secondary)] hover:bg-opacity-25 transition-colors cursor-pointer"
                         >
                             <input
                                 type="radio"
@@ -62,10 +62,10 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.options_b }}</span>
+                            <span>{{ question.option_b }}</span>
                         </label>
                         <label
-                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--primary)] hover:bg-opacity-25 transition-colors cursor-pointer"
+                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--secondary)] hover:bg-opacity-25 transition-colors cursor-pointer"
                         >
                             <input
                                 type="radio"
@@ -80,10 +80,10 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.options_c }}</span>
+                            <span>{{ question.option_c }}</span>
                         </label>
                         <label
-                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--primary)] hover:bg-opacity-25 transition-colors cursor-pointer"
+                            class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--secondary)] hover:bg-opacity-25 transition-colors cursor-pointer"
                         >
                             <input
                                 type="radio"
@@ -98,7 +98,7 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.options_d }}</span>
+                            <span>{{ question.option_d }}</span>
                         </label>
                     </div>
                     <input

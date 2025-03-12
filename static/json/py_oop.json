@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "question_text": "Which keyword is used to define a class in Python?",
+      "option_a": "class",
+      "option_b": "def",
+      "option_c": "struct",
+      "option_d": "object",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(type(MyClass()))`?",
+      "option_a": "<class '__main__.MyClass'>",
+      "option_b": "<class 'object'>",
+      "option_c": "<class 'type'>",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is called when an object is created?",
+      "option_a": "__init__",
+      "option_b": "__new__",
+      "option_c": "__create__",
+      "option_d": "__start__",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(issubclass(int, object))`?",
+      "option_a": "True",
+      "option_b": "False",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which keyword is used to inherit a class?",
+      "option_a": "class Child(Parent)",
+      "option_b": "class Child: Parent",
+      "option_c": "class Child inherits Parent",
+      "option_d": "class Child extends Parent",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(hasattr(str, 'upper'))`?",
+      "option_a": "True",
+      "option_b": "False",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to define a string representation of an object?",
+      "option_a": "__str__",
+      "option_b": "__repr__",
+      "option_c": "__print__",
+      "option_d": "__string__",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(isinstance(5, int))`?",
+      "option_a": "True",
+      "option_b": "False",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to delete an object?",
+      "option_a": "__del__",
+      "option_b": "__delete__",
+      "option_c": "__remove__",
+      "option_d": "__destroy__",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(MyClass.__name__)`?",
+      "option_a": "MyClass",
+      "option_b": "__main__",
+      "option_c": "object",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+    "questions": [
+        {
+            "question_text": "Which of the following is a mutable data structure in Python?",
+            "option_a": "List",
+            "option_b": "Tuple",
+            "option_c": "String",
+            "option_d": "None of the above",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print([1, 2, 3] + [4, 5, 6])`?",
+            "option_a": "[1, 2, 3, 4, 5, 6]",
+            "option_b": "[1, 2, 3][4, 5, 6]",
+            "option_c": "[5, 7, 9]",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which method is used to add an element to the end of a list?",
+            "option_a": "append()",
+            "option_b": "insert()",
+            "option_c": "add()",
+            "option_d": "push()",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print(len({'a': 1, 'b': 2}))`?",
+            "option_a": "2",
+            "option_b": "1",
+            "option_c": "0",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which of the following is used to remove an element from a set?",
+            "option_a": "remove()",
+            "option_b": "delete()",
+            "option_c": "pop()",
+            "option_d": "discard()",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print((1, 2, 3)[1])`?",
+            "option_a": "2",
+            "option_b": "1",
+            "option_c": "3",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which data structure uses FIFO (First In First Out) principle?",
+            "option_a": "Queue",
+            "option_b": "Stack",
+            "option_c": "List",
+            "option_d": "Set",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print([x**2 for x in range(3)])`?",
+            "option_a": "[0, 1, 4]",
+            "option_b": "[1, 4, 9]",
+            "option_c": "[0, 1, 2]",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which method is used to sort a list in place?",
+            "option_a": "sort()",
+            "option_b": "sorted()",
+            "option_c": "order()",
+            "option_d": "arrange()",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print({'a': 1, 'b': 2}.get('c', 3))`?",
+            "option_a": "3",
+            "option_b": "None",
+            "option_c": "Error",
+            "option_d": "2",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which data structure uses LIFO (Last In First Out) principle?",
+            "option_a": "Stack",
+            "option_b": "Queue",
+            "option_c": "List",
+            "option_d": "Set",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print(set([1, 2, 2, 3]))`?",
+            "option_a": "{1, 2, 3}",
+            "option_b": "[1, 2, 3]",
+            "option_c": "{1, 2, 2, 3}",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which method is used to remove the last element of a list?",
+            "option_a": "pop()",
+            "option_b": "remove()",
+            "option_c": "delete()",
+            "option_d": "discard()",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print([1, 2, 3][-1])`?",
+            "option_a": "3",
+            "option_b": "1",
+            "option_c": "2",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which of the following is an immutable data structure?",
+            "option_a": "Tuple",
+            "option_b": "List",
+            "option_c": "Dictionary",
+            "option_d": "Set",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print({'a': 1, 'b': 2}['a'])`?",
+            "option_a": "1",
+            "option_b": "2",
+            "option_c": "None",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which method is used to reverse a list in place?",
+            "option_a": "reverse()",
+            "option_b": "reversed()",
+            "option_c": "flip()",
+            "option_d": "sort(reverse=True)",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print([1, 2, 3] * 2)`?",
+            "option_a": "[1, 2, 3, 1, 2, 3]",
+            "option_b": "[2, 4, 6]",
+            "option_c": "[1, 2, 3][1, 2, 3]",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "Which method is used to find the index of an element in a list?",
+            "option_a": "index()",
+            "option_b": "find()",
+            "option_c": "search()",
+            "option_d": "locate()",
+            "correct_option": "option_a"
+        },
+        {
+            "question_text": "What is the output of `print([x for x in range(5) if x % 2 == 0])`?",
+            "option_a": "[0, 2, 4]",
+            "option_b": "[1, 3]",
+            "option_c": "[0, 1, 2, 3, 4]",
+            "option_d": "Error",
+            "correct_option": "option_a"
+        }
+    ]
+}
