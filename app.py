@@ -218,7 +218,6 @@ def lectures():
     for lecture in lectures:
         lecture['_id'] = str(lecture['_id'])  
 
-    print("Lectures Data:", lectures)  
     return render_template('/tests/lectures.html', lectures=lectures)
 
 @app.route('/tests/start-test/<test_id>', methods=["GET", "POST"])

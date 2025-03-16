@@ -104,7 +104,7 @@ endblock %} {% block content %}
                     <input
                         type="hidden"
                         id="correct_answer_{{ loop.index }}"
-                        value="{{ question.correct_answer }}"
+                        value="{{ question.correct_option }}"
                     />
                 </div>
                 {% endfor %}
@@ -140,10 +140,13 @@ endblock %} {% block content %}
 
         for (let i = 1; i <= totalQuestions; i++) {
             const selectedAnswer = document.querySelector(`input[name="question_${i}"]:checked`);
-            const correctAnswer = document.getElementById(`correct_answer_${i}`).value;
+            const correctAnswer = document.getElementById(`correct_answer_${i}`).value.toLowerCase();
 
-            if (selectedAnswer && selectedAnswer.value === correctAnswer) {
-                score++;
+            if (selectedAnswer) {
+                const selectedValue = selectedAnswer.value.toLowerCase();
+                if (selectedValue === correctAnswer) {
+                    score++;
+                }
             }
         }
 
