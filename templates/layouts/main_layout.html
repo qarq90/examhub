@@ -1,5 +1,5 @@
 <!-- templates/layouts/main_layout.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -22,8 +22,9 @@
     </head>
     <body>
         <!-- Conditionally include navbar -->
-        {% if not hide_nav_footer %} {% include 'components/navbar.html' %} {%
-        endif %}
+        {% if session["course_branch"] %} {% include
+        'components/admin/navbar.html' %} {% else %} {% include
+        'components/navbar.html' %} {% endif %}
 
         <!-- Main content block -->
         <div class="content m-1">{% block content %}{% endblock %}</div>

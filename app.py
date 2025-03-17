@@ -228,7 +228,54 @@ def start_test(test_id):
         flash("Test not found!", "error")
         return redirect(url_for("lectures"))
 
+    if request.method == "POST":
+        score = 0
+        total_questions = len(test['questions'])
+        user_answers = []  # To store the user's answers and question details
+        
+        for i, question in enumerate(test['questions'], start=1):
+            selected_answer = request.form.get(f"question_{i}")
+            correct_answer = question['correct_option'].lower()
+            is_correct = False
+            
+            if selected_answer and selected_answer.lower() == correct_answer:
+                score += 1
+                is_correct = True
+            
+            user_answers.append({
+                "question_text": question['question_text'],
+                "option_a": question['option_a'],
+                "option_b": question['option_b'],
+                "option_c": question['option_c'],
+                "option_d": question['option_d'],
+                "correct_option": correct_answer,
+                "selected_answer": selected_answer,
+                "is_correct": is_correct
+            })
+
+        result_data = {
+            "course_name": test['course_name'],
+            "course_code": test['course_code'],
+            "course_semester": test['course_semester'],
+            "course_branch": test['course_branch'],
+            "test_name": test['test_name'],
+            "roll_no": session["roll_no"],
+            "score": score,  
+            "total_questions": total_questions,  
+            "result": f"{score}/{total_questions}",
+            "user_answers": user_answers 
+        }
+        results.insert_one(result_data)
+
+        flash("Test submitted successfully!", "success")
+        return redirect(url_for("view_results")) 
+
     return render_template('/tests/start-test.html', test=test)
+
+@app.route('/view-results')
+def view_results():
+    user_results = results.find({"roll_no": session["roll_no"]})  
+    return render_template('/tests/view-results.html', results=user_results)
 
 @app.route('/admin/create/create-test', methods=["GET", "POST"])
 def create_test():
