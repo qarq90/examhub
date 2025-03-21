@@ -336,7 +336,6 @@ def start_test(test_id):
 
 @app.route('/tests/view-results/<test_id>', methods=["GET", "POST"])
 def view_results(test_id):
-    print(test_id)
     cursor.execute("SELECT * FROM results WHERE roll_no = ? AND id = ?", (session["roll_no"], test_id))
     user_results = cursor.fetchall()
 
