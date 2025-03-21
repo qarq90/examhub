@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash, get_flashed_messages
-from pymongo import MongoClient
-from bson import ObjectId
 from datetime import datetime
+import sqlite3
 import json
+import uuid
 import re
 
 EMAIL_REGEX = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
@@ -10,14 +10,63 @@ EMAIL_REGEX = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
 app = Flask(__name__)
 app.secret_key = "17012005245166"
 
-client = MongoClient("mongodb+srv://admin:FV08jMOzSNBz1eVf@cluster0.vrpea8c.mongodb.net/?retryWrites=true&w=majority")  
+conn = sqlite3.connect("examhub.db", check_same_thread=False)
+cursor = conn.cursor()
 
-db = client["examhub"]
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS students (
+    id TEXT PRIMARY KEY,
+    name TEXT,
+    email TEXT,
+    password TEXT,
+    roll_no TEXT,
+    year TEXT,
+    dob TEXT,
+    branch TEXT
+)
+''')
 
-students = db["students"]
-courses = db["courses"]
-tests = db["tests"]
-results = db["results"]
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS courses (
+    id TEXT PRIMARY KEY,
+    course_name TEXT,
+    course_code TEXT,
+    course_branch TEXT,
+    course_semester TEXT
+)
+''')
+
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS tests (
+    id TEXT PRIMARY KEY,
+    course_name TEXT,
+    course_code TEXT,
+    course_semester TEXT,
+    course_branch TEXT,
+    test_name TEXT,
+    test_description TEXT,
+    questions TEXT,  -- Storing questions as JSON string
+    created_at TEXT
+)
+''')
+
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS results (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    course_name TEXT,
+    course_code TEXT,
+    course_semester TEXT,
+    course_branch TEXT,
+    test_name TEXT,
+    roll_no TEXT,
+    score INTEGER,
+    total_questions INTEGER,
+    result TEXT,
+    user_answers TEXT  -- Storing user answers as JSON string
+)
+''')
+
+conn.commit()
 
 def ceaser_cipher(input, key, type):
     characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "/", "+", " "]
@@ -30,14 +79,12 @@ def ceaser_cipher(input, key, type):
     
     return base64
 
-
 @app.route('/')
 def home():
     return render_template('home.html')
 
 @app.route('/auth/sign-up', methods=["GET", "POST"])
 def sign_up():
-
     session.clear()
 
     if request.method == "POST":
@@ -57,7 +104,8 @@ def sign_up():
             flash("Invalid email format!", "error")
             return redirect(url_for("sign_up"))
 
-        if students.find_one({"email": email}):
+        cursor.execute("SELECT * FROM students WHERE email = ?", (email,))
+        if cursor.fetchone():
             flash("Email already exists!", "error")
             return redirect(url_for("sign_up"))
 
@@ -65,19 +113,11 @@ def sign_up():
             dob_date = datetime.strptime(dob, "%Y-%m-%d")  
         except ValueError:
             flash("Invalid date format for DOB! Use YYYY-MM-DD.", "error")
-            return redirect(url_for("/sign_up"))
+            return redirect(url_for("sign_up"))
 
-        student_data = {
-            "name": name,
-            "email": email,
-            "password": ceaser_cipher(password, 16, True),  
-            "roll_no": roll_no,
-            "year": year,
-            "dob": dob,  
-            "branch": branch,  
-        }
-
-        students.insert_one(student_data)
+        student_data = (str(uuid.uuid4().hex), name, email, ceaser_cipher(password, 16, True), roll_no, year, dob, branch)
+        cursor.execute("INSERT INTO students VALUES (?, ?, ?, ?, ?, ?, ?, ?)", student_data)
+        conn.commit()
 
         return redirect(url_for("log_in"))
 
@@ -85,7 +125,6 @@ def sign_up():
 
 @app.route('/auth/log-in', methods=["GET", "POST"])
 def log_in():
-
     session.clear()
 
     if request.method == "POST":
@@ -97,17 +136,17 @@ def log_in():
             flash("All fields are required!", "error")
             return redirect(url_for("log_in"))
 
-        student = students.find_one({"password": password, "roll_no": roll_no})
+        cursor.execute("SELECT * FROM students WHERE password = ? AND roll_no = ?", (password, roll_no))
+        student = cursor.fetchone()
 
         if student:
-            session["student_id"] = str(student["_id"])  
-            session["roll_no"] = student.get("roll_no")
-            session["name"] = student.get("name")
-            session["year"] = student.get("year")
-            session["dob"] = student.get("dob")
-            session["branch"] = student.get("branch")
-            session["phone"] = student.get("phone")
-            session["email"] = student.get("email")
+            session["student_id"] = student[0]  
+            session["roll_no"] = student[4]
+            session["name"] = student[1]
+            session["year"] = student[5]
+            session["dob"] = student[6]
+            session["branch"] = student[7]
+            session["email"] = student[2]
             session["logged_in"] = True
 
             return redirect(url_for("home"))
@@ -120,7 +159,6 @@ def log_in():
 
 @app.route('/admin/auth/confirm', methods=["GET", "POST"])
 def admin_confirm():
-
     session.clear()
 
     if request.method == "POST":
@@ -153,25 +191,27 @@ def admin_log_in():
             flash("All fields are required!", "error")
             return redirect(url_for("admin_log_in"))
         
-        course = courses.find_one({"course_code": course_code, "course_semester": course_semester, "course_branch": course_branch})
-        
+        cursor.execute("SELECT * FROM courses WHERE course_code = ? AND course_branch = ? AND course_semester = ?", (course_code, course_branch, course_semester))
+        course = cursor.fetchone()
+
         if course:
-            session["course_code"] = course_code
-            session["course_name"] = course.get("course_name")
-            session["course_branch"] = course.get("course_branch")
-            session["course_semester"] = course.get("course_semester")
-            session["course_id"] = str(course["_id"])
+            session["course_code"] = course[2]
+            session["course_name"] = course[1]
+            session["course_branch"] = course[3]
+            session["course_semester"] = course[4]
+            session["course_id"] = course[0]
             return redirect(url_for("create_test"))
         
         else:
             flash("Incorrect combination!", "error")
             return redirect(url_for("admin_log_in"))
     
-    all_courses = list(courses.find({}))
-
-    unique_codes = set(course["course_code"] for course in all_courses)
-    unique_branches = set(course["course_branch"] for course in all_courses)
-    unique_semesters = set(course["course_semester"] for course in all_courses)
+    cursor.execute("SELECT DISTINCT course_code FROM courses")
+    unique_codes = [row[0] for row in cursor.fetchall()]
+    cursor.execute("SELECT DISTINCT course_branch FROM courses")
+    unique_branches = [row[0] for row in cursor.fetchall()]
+    cursor.execute("SELECT DISTINCT course_semester FROM courses")
+    unique_semesters = [row[0] for row in cursor.fetchall()]
 
     return render_template(
         '/admin/auth/log-in.html',
@@ -182,7 +222,6 @@ def admin_log_in():
 
 @app.route('/admin/auth/sign-up', methods=["GET", "POST"])
 def admin_sign_up():
-    
     session.clear()
 
     if request.method == "POST":
@@ -195,14 +234,10 @@ def admin_sign_up():
             flash("All fields are required!", "error")
             return redirect(url_for("admin_sign_up"))
     
-        course_data = {
-            "course_name": course_name,
-            "course_code": course_code,
-            "course_branch": course_branch,
-            "course_semester": course_semester,
-        }
+        course_data = (str(uuid.uuid4().hex), course_name, course_code, course_branch, course_semester)
+        cursor.execute("INSERT INTO courses VALUES (?, ?, ?, ?, ?)", course_data)
+        conn.commit()
 
-        courses.insert_one(course_data)
         return redirect(url_for("admin_log_in"))
 
     return render_template('/admin/auth/sign-up.html')
@@ -211,31 +246,51 @@ def admin_sign_up():
 def profile():
     return render_template('profile.html')
 
+@app.route('/leaderboards')
+def leaderboards():
+    return render_template('leaderboards.html')
+
 @app.route('/tests/lectures')
 def lectures():
-    lectures = list(tests.find())  
+    if 'branch' not in session and 'course_branch' not in session:
+        flash("You need to login first!", "error")
+        return redirect(url_for("log_in"))
+
+    if "course_branch" in session:
+        cursor.execute("SELECT * FROM tests WHERE course_branch = ?", (session["course_branch"],))
+    elif "branch" in session:
+        cursor.execute("SELECT * FROM tests WHERE course_branch = ?", (session["branch"],))
+    else:
+        return None  # Or return an empty list/appropriate response
+
+    lectures = cursor.fetchall()
 
     for lecture in lectures:
-        lecture['_id'] = str(lecture['_id'])  
+        lecture = list(lecture)
+        lecture[0] = str(lecture[0])
 
     return render_template('/tests/lectures.html', lectures=lectures)
 
 @app.route('/tests/start-test/<test_id>', methods=["GET", "POST"])
 def start_test(test_id):
-    test = tests.find_one({"_id": ObjectId(test_id)})
     
+    cursor.execute("SELECT * FROM tests WHERE id = ?", (test_id,))
+    test = cursor.fetchone()
+
     if not test:
         flash("Test not found!", "error")
         return redirect(url_for("lectures"))
+    
+    questions = json.loads(test[7])  
 
     if request.method == "POST":
         score = 0
-        total_questions = len(test['questions'])
-        user_answers = []  # To store the user's answers and question details
+        total_questions = len(questions)
+        user_answers = []  
         
-        for i, question in enumerate(test['questions'], start=1):
-            selected_answer = request.form.get(f"question_{i}")
-            correct_answer = question['correct_option'].lower()
+        for i, question in enumerate(questions, start=1):
+            selected_answer = request.form.get(f"question_{i}")  
+            correct_answer = question['correct_option'].lower()  
             is_correct = False
             
             if selected_answer and selected_answer.lower() == correct_answer:
@@ -252,30 +307,64 @@ def start_test(test_id):
                 "selected_answer": selected_answer,
                 "is_correct": is_correct
             })
+        
+        result_data = (
+            test[1],  
+            test[2],  
+            test[3],  
+            test[4],  
+            test[5],  
+            session["roll_no"],  
+            score,  
+            total_questions,  
+            f"{score}/{total_questions}",  
+            json.dumps(user_answers)  
+        )
 
-        result_data = {
-            "course_name": test['course_name'],
-            "course_code": test['course_code'],
-            "course_semester": test['course_semester'],
-            "course_branch": test['course_branch'],
-            "test_name": test['test_name'],
-            "roll_no": session["roll_no"],
-            "score": score,  
-            "total_questions": total_questions,  
-            "result": f"{score}/{total_questions}",
-            "user_answers": user_answers 
-        }
-        results.insert_one(result_data)
+        cursor.execute("""
+            INSERT INTO results (course_name, course_code, course_semester, course_branch, test_name, roll_no, score, total_questions, result, user_answers)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, result_data)
+
+        result_id = cursor.lastrowid
+        conn.commit()
 
         flash("Test submitted successfully!", "success")
-        return redirect(url_for("view_results")) 
+        return redirect(url_for("view_results",test_id=result_id))
+    
+    return render_template('/tests/start-test.html', test=test, questions=questions)
 
-    return render_template('/tests/start-test.html', test=test)
+@app.route('/tests/view-results/<test_id>', methods=["GET", "POST"])
+def view_results(test_id):
+    print(test_id)
+    cursor.execute("SELECT * FROM results WHERE roll_no = ? AND id = ?", (session["roll_no"], test_id))
+    user_results = cursor.fetchall()
 
-@app.route('/view-results')
-def view_results():
-    user_results = results.find({"roll_no": session["roll_no"]})  
-    return render_template('/tests/view-results.html', results=user_results)
+    results = []
+    for result in user_results:
+
+        try:
+            user_answers = json.loads(result[10])
+        except json.JSONDecodeError as e:
+            print("Error parsing user_answers JSON:", e)
+            user_answers = []  
+
+        result_dict = {
+            "id": result[0],
+            "course_name": result[1],
+            "course_code": result[2],
+            "course_semester": result[3],
+            "course_branch": result[4],
+            "test_name": result[5],
+            "roll_no": result[6],
+            "score": result[7],
+            "total_questions": result[8],
+            "result": result[9],
+            "user_answers": user_answers  
+        }
+        results.append(result_dict)
+
+    return render_template('/tests/view-results.html', results=results)
 
 @app.route('/admin/create/create-test', methods=["GET", "POST"])
 def create_test():
@@ -303,18 +392,20 @@ def create_test():
             flash("Invalid JSON structure: Missing 'questions' field!", "error")
             return redirect(url_for("create_test"))
 
-        test_data = {
-            "course_name": session.get("course_name"),
-            "course_code": session.get("course_code"),
-            "course_semester": session.get("course_semester"),
-            "course_branch": session.get("course_branch"),
-            "test_name": test_name,
-            "test_description": test_description,
-            "questions": questions_data["questions"], 
-            "created_at": datetime.now(),
-        }
+        test_data = (
+            str(uuid.uuid4().hex),
+            session.get("course_name"),
+            session.get("course_code"),
+            session.get("course_semester"),
+            session.get("course_branch"),
+            test_name,
+            test_description,
+            json.dumps(questions_data["questions"]),
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        )
 
-        tests.insert_one(test_data)
+        cursor.execute("INSERT INTO tests VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", test_data)
+        conn.commit()
 
         flash("Test created successfully!", "success")
         return redirect(url_for("create_test"))

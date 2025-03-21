@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "67d19302d8d2f6c66987de54"
+  },
+  "course_name": "Computer Network and Network Design",
+  "course_code": "CNND",
+  "course_branch": "Information Technology",
+  "course_semester": "Semester IV"
+},
+{
+  "_id": {
+    "$oid": "67d19320d8d2f6c66987de55"
+  },
+  "course_name": "Database Managment Systems",
+  "course_code": "DBMS",
+  "course_branch": "Information Technology",
+  "course_semester": "Semester III"
+},
+{
+  "_id": {
+    "$oid": "67d194a0c7a33c1a191fcc83"
+  },
+  "course_name": "Python",
+  "course_code": "PY",
+  "course_branch": "Information Technology",
+  "course_semester": "Semester IV"
+},
+{
+  "_id": {
+    "$oid": "67d1df344af761a78f9e005c"
+  },
+  "course_name": "Python",
+  "course_code": "PY",
+  "course_branch": "Computer Engineering",
+  "course_semester": "Semester IV"
+},
+{
+  "_id": {
+    "$oid": "67d736bc5c3ac9a2c09f59ac"
+  },
+  "course_name": "Automata Theory",
+  "course_code": "AT",
+  "course_branch": "Information Technology",
+  "course_semester": "Semester IV"
+}]

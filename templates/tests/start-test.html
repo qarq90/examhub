@@ -5,18 +5,18 @@ endblock %} {% block content %}
     <div class="w-full flex justify-center items-center py-10 flex-col gap-8">
         <div class="w-full max-w-4xl">
             <div class="mb-6 rounded-lg">
-                <h2 class="text-2xl font-bold mb-4">{{ test.course_name }}</h2>
+                <h2 class="text-2xl font-bold mb-4">{{ test[5] }}</h2>
                 <p class="text-lg mb-2">
-                    <strong>Course Code:</strong> {{ test.course_code }}
+                    <strong>Course Code:</strong> {{ test[1] }}
                 </p>
                 <p class="text-lg mb-2">
-                    <strong>Semester:</strong> {{ test.course_semester }}
+                    <strong>Semester:</strong> {{ test[2] }}
                 </p>
                 <p class="text-lg mb-2">
-                    <strong>Branch:</strong> {{ test.course_branch }}
+                    <strong>Branch:</strong> {{ test[3] }}
                 </p>
                 <p class="text-lg">
-                    <strong>Description:</strong> {{ test.test_description }}
+                    <strong>Description:</strong> {{ test[5] }}
                 </p>
             </div>
 
@@ -24,9 +24,9 @@ endblock %} {% block content %}
                 id="mcq-test"
                 class="w-full"
                 method="POST"
-                action="{{ url_for('start_test', test_id=test._id) }}"
+                action="{{ url_for('start_test', test_id=test[0]) }}"
             >
-                {% for question in test.questions %}
+                {% for question in questions %}
                 <div class="mb-6 p-6 bg-tertiary rounded-lg shadow-lg">
                     <p class="text-lg mb-4">
                         <strong>Question {{ loop.index }}:</strong> {{

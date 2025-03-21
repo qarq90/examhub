@@ -1,0 +1,182 @@
+{
+  "_id": {
+    "$oid": "67d7363e636c9c30ddf8db3d"
+  },
+  "course_name": "Automata Theory",
+  "course_code": "AT",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Regular Expressions Test (Inputs = a, b)",
+  "test_description": "Topics: Regular Expressions with inputs a and b",
+  "questions": [
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that start with 'a'?",
+      "option_a": "a(a+b)*",
+      "option_b": "b(a+b)*",
+      "option_c": "(a+b)*a",
+      "option_d": "(a+b)*b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that end with 'b'?",
+      "option_a": "a(a+b)*",
+      "option_b": "b(a+b)*",
+      "option_c": "(a+b)*a",
+      "option_d": "(a+b)*b",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain exactly one 'a'?",
+      "option_a": "b*ab*",
+      "option_b": "a*b*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain at least one 'a'?",
+      "option_a": "b*ab*",
+      "option_b": "(a+b)*a(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain at least two 'a's?",
+      "option_a": "b*ab*ab*",
+      "option_b": "(a+b)*a(a+b)*a(a+b)*",
+      "option_c": "a*b*a*",
+      "option_d": "a+b",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain no 'a's?",
+      "option_a": "b*",
+      "option_b": "a*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain no 'b's?",
+      "option_a": "b*",
+      "option_b": "a*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain an even number of 'a's?",
+      "option_a": "(b*ab*ab*)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain an odd number of 'a's?",
+      "option_a": "b*ab*(ab*ab*)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that start and end with the same symbol?",
+      "option_a": "a(a+b)*a + b(a+b)*b",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain the substring 'aba'?",
+      "option_a": "(a+b)*aba(a+b)*",
+      "option_b": "a*b*a*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that do not contain the substring 'bb'?",
+      "option_a": "(a+ba)*b?",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that have length 3?",
+      "option_a": "(a+b)(a+b)(a+b)",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that have length at least 2?",
+      "option_a": "(a+b)(a+b)(a+b)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that have length at most 2?",
+      "option_a": "(a+b)?(a+b)?",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain exactly two 'b's?",
+      "option_a": "a*ba*ba*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain at least one 'a' and one 'b'?",
+      "option_a": "(a+b)*a(a+b)*b(a+b)* + (a+b)*b(a+b)*a(a+b)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain the substring 'aa'?",
+      "option_a": "(a+b)*aa(a+b)*",
+      "option_b": "a*b*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that do not contain the substring 'aa'?",
+      "option_a": "(b+ab)*(a+ε)",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain an even number of 'b's?",
+      "option_a": "(a*ba*ba*)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    }
+  ]
+}
+
+# in the above schema in JSON give me tests for the following related to DBMS (20 questions each):
+
+1) Module Number 1 
+2) Module Number 2 
+3) Module Number 3 
+4) Module Number 4 
+5) Module Number 5 
+6) Module Number 6 

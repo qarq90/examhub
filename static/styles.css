@@ -6,8 +6,8 @@
 
 :root {
     --primary: #d94174;
-    --secondary: #202020;
-    --tertiary: #404040;
+    --secondary: #222222;
+    --tertiary: #383838;
 }
 
 .container {
@@ -16,11 +16,11 @@
 
 *::selection {
     background-color: #fff;
-    color: #202020;
+    color: #222222;
 }
 
 body {
-    background-color: #202020;
+    background-color: #222222;
 }
 
 .glass {

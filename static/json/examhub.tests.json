@@ -1,0 +1,3225 @@
+[{
+  "_id": {
+    "$oid": "67d193ebd8d2f6c66987de56"
+  },
+  "course_name": "Computer Network and Network Design",
+  "course_code": "CNND",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Networking Fundamentals Test: Basics of Networking",
+  "test_description": "Basics of Networking",
+  "questions": [
+    {
+      "question_text": "What does IP stand for in networking?",
+      "option_a": "Internet Protocol",
+      "option_b": "Internal Protocol",
+      "option_c": "Internet Port",
+      "option_d": "Internal Port",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which protocol is used for secure communication over a network?",
+      "option_a": "HTTP",
+      "option_b": "FTP",
+      "option_c": "HTTPS",
+      "option_d": "SMTP",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the default port number for HTTP?",
+      "option_a": "80",
+      "option_b": "443",
+      "option_c": "21",
+      "option_d": "25",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which device is used to connect multiple networks?",
+      "option_a": "Hub",
+      "option_b": "Switch",
+      "option_c": "Router",
+      "option_d": "Repeater",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of DNS?",
+      "option_a": "Encrypt data",
+      "option_b": "Translate domain names to IP addresses",
+      "option_c": "Manage network traffic",
+      "option_d": "Store web pages",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which protocol is used for sending emails?",
+      "option_a": "SMTP",
+      "option_b": "FTP",
+      "option_c": "HTTP",
+      "option_d": "SNMP",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of a subnet mask?",
+      "option_a": "Encrypt network data",
+      "option_b": "Divide an IP network into subnets",
+      "option_c": "Assign MAC addresses",
+      "option_d": "Block unauthorized access",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which layer of the OSI model is responsible for routing?",
+      "option_a": "Physical Layer",
+      "option_b": "Data Link Layer",
+      "option_c": "Network Layer",
+      "option_d": "Transport Layer",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What does MAC stand for in networking?",
+      "option_a": "Media Access Control",
+      "option_b": "Main Access Code",
+      "option_c": "Managed Access Channel",
+      "option_d": "Multiple Access Control",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which protocol is connectionless?",
+      "option_a": "TCP",
+      "option_b": "UDP",
+      "option_c": "FTP",
+      "option_d": "HTTP",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary purpose of ARP?",
+      "option_a": "Translate IP addresses to MAC addresses",
+      "option_b": "Encrypt network traffic",
+      "option_c": "Manage DNS queries",
+      "option_d": "Assign IP addresses",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which protocol is used for file transfer?",
+      "option_a": "HTTP",
+      "option_b": "SMTP",
+      "option_c": "FTP",
+      "option_d": "SNMP",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of a firewall?",
+      "option_a": "Increase network speed",
+      "option_b": "Block unauthorized access",
+      "option_c": "Assign IP addresses",
+      "option_d": "Manage DNS queries",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which protocol is used for dynamic IP address assignment?",
+      "option_a": "DNS",
+      "option_b": "DHCP",
+      "option_c": "ARP",
+      "option_d": "ICMP",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a switch?",
+      "option_a": "Connect multiple networks",
+      "option_b": "Forward data within a LAN",
+      "option_c": "Assign IP addresses",
+      "option_d": "Encrypt network traffic",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which protocol is used for network diagnostics?",
+      "option_a": "FTP",
+      "option_b": "ICMP",
+      "option_c": "SMTP",
+      "option_d": "HTTP",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of NAT?",
+      "option_a": "Encrypt network traffic",
+      "option_b": "Translate private IP addresses to public IP addresses",
+      "option_c": "Assign MAC addresses",
+      "option_d": "Manage DNS queries",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which protocol is used for retrieving emails?",
+      "option_a": "SMTP",
+      "option_b": "POP3",
+      "option_c": "FTP",
+      "option_d": "HTTP",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a gateway?",
+      "option_a": "Connect devices within a LAN",
+      "option_b": "Connect different networks",
+      "option_c": "Assign IP addresses",
+      "option_d": "Encrypt network traffic",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which protocol is used for real-time communication?",
+      "option_a": "HTTP",
+      "option_b": "FTP",
+      "option_c": "RTP",
+      "option_d": "SMTP",
+      "correct_option": "option_c"
+    }
+  ],
+  "created_at": {
+    "$date": "2025-03-12T19:32:19.291Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d1da032f793b8fcbd84e5b"
+  },
+  "course_name": "Python",
+  "course_code": "PY",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Data Structures in Python",
+  "test_description": "This test evaluates your understanding of Data Structures in Python, including lists, tuples, dictionaries, sets, You will be tested on their implementation, usage, and efficiency in solving problems.",
+  "questions": [
+    {
+      "question_text": "Which of the following is a mutable data structure in Python?",
+      "option_a": "List",
+      "option_b": "Tuple",
+      "option_c": "String",
+      "option_d": "None of the above",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([1, 2, 3] + [4, 5, 6])`?",
+      "option_a": "[1, 2, 3, 4, 5, 6]",
+      "option_b": "[1, 2, 3][4, 5, 6]",
+      "option_c": "[5, 7, 9]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to add an element to the end of a list?",
+      "option_a": "append()",
+      "option_b": "insert()",
+      "option_c": "add()",
+      "option_d": "push()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(len({'a': 1, 'b': 2}))`?",
+      "option_a": "2",
+      "option_b": "1",
+      "option_c": "0",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is used to remove an element from a set?",
+      "option_a": "remove()",
+      "option_b": "delete()",
+      "option_c": "pop()",
+      "option_d": "discard()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print((1, 2, 3)[1])`?",
+      "option_a": "2",
+      "option_b": "1",
+      "option_c": "3",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which data structure uses FIFO (First In First Out) principle?",
+      "option_a": "Queue",
+      "option_b": "Stack",
+      "option_c": "List",
+      "option_d": "Set",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([x**2 for x in range(3)])`?",
+      "option_a": "[0, 1, 4]",
+      "option_b": "[1, 4, 9]",
+      "option_c": "[0, 1, 2]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to sort a list in place?",
+      "option_a": "sort()",
+      "option_b": "sorted()",
+      "option_c": "order()",
+      "option_d": "arrange()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print({'a': 1, 'b': 2}.get('c', 3))`?",
+      "option_a": "3",
+      "option_b": "None",
+      "option_c": "Error",
+      "option_d": "2",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which data structure uses LIFO (Last In First Out) principle?",
+      "option_a": "Stack",
+      "option_b": "Queue",
+      "option_c": "List",
+      "option_d": "Set",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(set([1, 2, 2, 3]))`?",
+      "option_a": "{1, 2, 3}",
+      "option_b": "[1, 2, 3]",
+      "option_c": "{1, 2, 2, 3}",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to remove the last element of a list?",
+      "option_a": "pop()",
+      "option_b": "remove()",
+      "option_c": "delete()",
+      "option_d": "discard()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([1, 2, 3][-1])`?",
+      "option_a": "3",
+      "option_b": "1",
+      "option_c": "2",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is an immutable data structure?",
+      "option_a": "Tuple",
+      "option_b": "List",
+      "option_c": "Dictionary",
+      "option_d": "Set",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print({'a': 1, 'b': 2}['a'])`?",
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to reverse a list in place?",
+      "option_a": "reverse()",
+      "option_b": "reversed()",
+      "option_c": "flip()",
+      "option_d": "sort(reverse=True)",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([1, 2, 3] * 2)`?",
+      "option_a": "[1, 2, 3, 1, 2, 3]",
+      "option_b": "[2, 4, 6]",
+      "option_c": "[1, 2, 3][1, 2, 3]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to find the index of an element in a list?",
+      "option_a": "index()",
+      "option_b": "find()",
+      "option_c": "search()",
+      "option_d": "locate()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([x for x in range(5) if x % 2 == 0])`?",
+      "option_a": "[0, 2, 4]",
+      "option_b": "[1, 3]",
+      "option_c": "[0, 1, 2, 3, 4]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    }
+  ],
+  "created_at": {
+    "$date": "2025-03-13T00:31:23.943Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d1da1e2f793b8fcbd84e5c"
+  },
+  "course_name": "Python",
+  "course_code": "PY",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "OOP Concepts in Python",
+  "test_description": "This test focuses on Object-Oriented Programming (OOP) concepts in Python. Topics include classes, objects, inheritance, polymorphism, encapsulation, and abstraction. You will be assessed on designing and implementing OOP-based solutions in Python.",
+  "questions": [
+    {
+      "question_text": "Which keyword is used to define a class in Python?",
+      "option_a": "class",
+      "option_b": "def",
+      "option_c": "struct",
+      "option_d": "object",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(type(MyClass()))`?",
+      "option_a": "<class '__main__.MyClass'>",
+      "option_b": "<class 'object'>",
+      "option_c": "<class 'type'>",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is called when an object is created?",
+      "option_a": "__init__",
+      "option_b": "__new__",
+      "option_c": "__create__",
+      "option_d": "__start__",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(issubclass(int, object))`?",
+      "option_a": "True",
+      "option_b": "False",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which keyword is used to inherit a class?",
+      "option_a": "class Child(Parent)",
+      "option_b": "class Child: Parent",
+      "option_c": "class Child inherits Parent",
+      "option_d": "class Child extends Parent",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(hasattr(str, 'upper'))`?",
+      "option_a": "True",
+      "option_b": "False",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to define a string representation of an object?",
+      "option_a": "__str__",
+      "option_b": "__repr__",
+      "option_c": "__print__",
+      "option_d": "__string__",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(isinstance(5, int))`?",
+      "option_a": "True",
+      "option_b": "False",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to delete an object?",
+      "option_a": "__del__",
+      "option_b": "__delete__",
+      "option_c": "__remove__",
+      "option_d": "__destroy__",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(MyClass.__name__)`?",
+      "option_a": "MyClass",
+      "option_b": "__main__",
+      "option_c": "object",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    }
+  ],
+  "created_at": {
+    "$date": "2025-03-13T00:31:50.093Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d1dd924af761a78f9e005a"
+  },
+  "course_name": "Python",
+  "course_code": "PY",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "File Handling in Python",
+  "test_description": "This test covers file handling concepts in Python, including reading, writing, and modifying files. You will also be tested on working with different file modes, handling exceptions, and using modules like os and shutil for file operations.",
+  "questions": [
+    {
+      "question_text": "Which function is used to open a file in Python?",
+      "option_a": "open()",
+      "option_b": "read()",
+      "option_c": "write()",
+      "option_d": "close()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the default mode for opening a file?",
+      "option_a": "r",
+      "option_b": "w",
+      "option_c": "a",
+      "option_d": "x",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to read the entire content of a file?",
+      "option_a": "read()",
+      "option_b": "readline()",
+      "option_c": "readlines()",
+      "option_d": "readall()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(open('file.txt').readline())`?",
+      "option_a": "The first line of the file",
+      "option_b": "The entire file content",
+      "option_c": "The last line of the file",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to write data to a file?",
+      "option_a": "write()",
+      "option_b": "append()",
+      "option_c": "insert()",
+      "option_d": "add()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `with` statement when opening a file?",
+      "option_a": "To automatically close the file",
+      "option_b": "To read the file",
+      "option_c": "To write to the file",
+      "option_d": "To delete the file",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to close a file?",
+      "option_a": "close()",
+      "option_b": "end()",
+      "option_c": "shutdown()",
+      "option_d": "terminate()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(open('file.txt', 'w').write('Hello'))`?",
+      "option_a": "5",
+      "option_b": "Hello",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to move the file pointer to a specific position?",
+      "option_a": "seek()",
+      "option_b": "move()",
+      "option_c": "position()",
+      "option_d": "locate()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `os` module in file management?",
+      "option_a": "To perform operating system-related tasks",
+      "option_b": "To read files",
+      "option_c": "To write files",
+      "option_d": "To delete files",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to delete a file?",
+      "option_a": "os.remove()",
+      "option_b": "os.delete()",
+      "option_c": "os.unlink()",
+      "option_d": "os.rm()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(os.path.exists('file.txt'))`?",
+      "option_a": "True if the file exists",
+      "option_b": "False if the file exists",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to rename a file?",
+      "option_a": "os.rename()",
+      "option_b": "os.move()",
+      "option_c": "os.change()",
+      "option_d": "os.update()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `shutil` module?",
+      "option_a": "To perform high-level file operations",
+      "option_b": "To read files",
+      "option_c": "To write files",
+      "option_d": "To delete files",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to copy a file?",
+      "option_a": "shutil.copy()",
+      "option_b": "shutil.move()",
+      "option_c": "shutil.duplicate()",
+      "option_d": "shutil.clone()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(os.path.getsize('file.txt'))`?",
+      "option_a": "The size of the file in bytes",
+      "option_b": "The content of the file",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to create a directory?",
+      "option_a": "os.mkdir()",
+      "option_b": "os.create()",
+      "option_c": "os.makedirs()",
+      "option_d": "os.newdir()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `glob` module?",
+      "option_a": "To find files matching a pattern",
+      "option_b": "To read files",
+      "option_c": "To write files",
+      "option_d": "To delete files",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to list files in a directory?",
+      "option_a": "os.listdir()",
+      "option_b": "os.files()",
+      "option_c": "os.dir()",
+      "option_d": "os.ls()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(os.path.isfile('file.txt'))`?",
+      "option_a": "True if it is a file",
+      "option_b": "False if it is a file",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    }
+  ],
+  "created_at": {
+    "$date": "2025-03-13T00:46:34.973Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d1ddd24af761a78f9e005b"
+  },
+  "course_name": "Python",
+  "course_code": "PY",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Socket Programming in Python",
+  "test_description": "This test assesses your knowledge of socket programming in Python. Topics include creating client-server applications, handling network communication using socket module, and working with sockets for real-time data exchange.",
+  "questions": [
+    {
+      "question_text": "Which module is used for socket programming in Python?",
+      "option_a": "socket",
+      "option_b": "sockets",
+      "option_c": "networking",
+      "option_d": "http",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to create a socket object?",
+      "option_a": "socket.socket()",
+      "option_b": "socket.create()",
+      "option_c": "socket.new()",
+      "option_d": "socket.make()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the default protocol used by `socket.socket()`?",
+      "option_a": "TCP",
+      "option_b": "UDP",
+      "option_c": "HTTP",
+      "option_d": "FTP",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to bind a socket to an address?",
+      "option_a": "bind()",
+      "option_b": "connect()",
+      "option_c": "attach()",
+      "option_d": "link()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `listen()` method in socket programming?",
+      "option_a": "To listen for incoming connections",
+      "option_b": "To send data",
+      "option_c": "To close the socket",
+      "option_d": "To bind the socket",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to accept a connection from a client?",
+      "option_a": "accept()",
+      "option_b": "receive()",
+      "option_c": "connect()",
+      "option_d": "listen()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(socket.gethostname())`?",
+      "option_a": "The hostname of the machine",
+      "option_b": "The IP address of the machine",
+      "option_c": "The port number",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to send data over a socket?",
+      "option_a": "send()",
+      "option_b": "write()",
+      "option_c": "transmit()",
+      "option_d": "push()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `recv()` method in socket programming?",
+      "option_a": "To receive data from the socket",
+      "option_b": "To send data over the socket",
+      "option_c": "To close the socket",
+      "option_d": "To bind the socket",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to close a socket?",
+      "option_a": "close()",
+      "option_b": "shutdown()",
+      "option_c": "end()",
+      "option_d": "terminate()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(socket.AF_INET)`?",
+      "option_a": "2",
+      "option_b": "1",
+      "option_c": "0",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to resolve a hostname to an IP address?",
+      "option_a": "gethostbyname()",
+      "option_b": "resolve()",
+      "option_c": "gethostname()",
+      "option_d": "getip()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `setsockopt()` method?",
+      "option_a": "To set socket options",
+      "option_b": "To send data",
+      "option_c": "To close the socket",
+      "option_d": "To bind the socket",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to set a timeout on a socket?",
+      "option_a": "settimeout()",
+      "option_b": "timeout()",
+      "option_c": "settimer()",
+      "option_d": "setdelay()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(socket.SOCK_STREAM)`?",
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "0",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to connect to a remote server?",
+      "option_a": "connect()",
+      "option_b": "bind()",
+      "option_c": "attach()",
+      "option_d": "link()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the `shutdown()` method?",
+      "option_a": "To shut down one or both halves of the connection",
+      "option_b": "To close the socket",
+      "option_c": "To send data",
+      "option_d": "To bind the socket",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to get the address of the connected client?",
+      "option_a": "getpeername()",
+      "option_b": "getsockname()",
+      "option_c": "getaddress()",
+      "option_d": "getclient()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(socket.SOCK_DGRAM)`?",
+      "option_a": "2",
+      "option_b": "1",
+      "option_c": "0",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to send data over a UDP socket?",
+      "option_a": "sendto()",
+      "option_b": "send()",
+      "option_c": "write()",
+      "option_d": "transmit()",
+      "correct_option": "option_a"
+    }
+  ],
+  "created_at": {
+    "$date": "2025-03-13T00:47:38.461Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d1df5a4af761a78f9e005d"
+  },
+  "course_name": "Python",
+  "course_code": "PY",
+  "course_semester": "Semester IV",
+  "course_branch": "Computer Engineering",
+  "test_name": "Data Structures in Python",
+  "test_description": "This test evaluates your understanding of Data Structures in Python, including lists, tuples, dictionaries, sets. You will be tested on their implementation, usage, and efficiency in solving problems.",
+  "questions": [
+    {
+      "question_text": "Which of the following is a mutable data structure in Python?",
+      "option_a": "List",
+      "option_b": "Tuple",
+      "option_c": "String",
+      "option_d": "None of the above",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([1, 2, 3] + [4, 5, 6])`?",
+      "option_a": "[1, 2, 3, 4, 5, 6]",
+      "option_b": "[1, 2, 3][4, 5, 6]",
+      "option_c": "[5, 7, 9]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to add an element to the end of a list?",
+      "option_a": "append()",
+      "option_b": "insert()",
+      "option_c": "add()",
+      "option_d": "push()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(len({'a': 1, 'b': 2}))`?",
+      "option_a": "2",
+      "option_b": "1",
+      "option_c": "0",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is used to remove an element from a set?",
+      "option_a": "remove()",
+      "option_b": "delete()",
+      "option_c": "pop()",
+      "option_d": "discard()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print((1, 2, 3)[1])`?",
+      "option_a": "2",
+      "option_b": "1",
+      "option_c": "3",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which data structure uses FIFO (First In First Out) principle?",
+      "option_a": "Queue",
+      "option_b": "Stack",
+      "option_c": "List",
+      "option_d": "Set",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([x**2 for x in range(3)])`?",
+      "option_a": "[0, 1, 4]",
+      "option_b": "[1, 4, 9]",
+      "option_c": "[0, 1, 2]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to sort a list in place?",
+      "option_a": "sort()",
+      "option_b": "sorted()",
+      "option_c": "order()",
+      "option_d": "arrange()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print({'a': 1, 'b': 2}.get('c', 3))`?",
+      "option_a": "3",
+      "option_b": "None",
+      "option_c": "Error",
+      "option_d": "2",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which data structure uses LIFO (Last In First Out) principle?",
+      "option_a": "Stack",
+      "option_b": "Queue",
+      "option_c": "List",
+      "option_d": "Set",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print(set([1, 2, 2, 3]))`?",
+      "option_a": "{1, 2, 3}",
+      "option_b": "[1, 2, 3]",
+      "option_c": "{1, 2, 2, 3}",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to remove the last element of a list?",
+      "option_a": "pop()",
+      "option_b": "remove()",
+      "option_c": "delete()",
+      "option_d": "discard()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([1, 2, 3][-1])`?",
+      "option_a": "3",
+      "option_b": "1",
+      "option_c": "2",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is an immutable data structure?",
+      "option_a": "Tuple",
+      "option_b": "List",
+      "option_c": "Dictionary",
+      "option_d": "Set",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print({'a': 1, 'b': 2}['a'])`?",
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "None",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to reverse a list in place?",
+      "option_a": "reverse()",
+      "option_b": "reversed()",
+      "option_c": "flip()",
+      "option_d": "sort(reverse=True)",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([1, 2, 3] * 2)`?",
+      "option_a": "[1, 2, 3, 1, 2, 3]",
+      "option_b": "[2, 4, 6]",
+      "option_c": "[1, 2, 3][1, 2, 3]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which method is used to find the index of an element in a list?",
+      "option_a": "index()",
+      "option_b": "find()",
+      "option_c": "search()",
+      "option_d": "locate()",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the output of `print([x for x in range(5) if x % 2 == 0])`?",
+      "option_a": "[0, 2, 4]",
+      "option_b": "[1, 3]",
+      "option_c": "[0, 1, 2, 3, 4]",
+      "option_d": "Error",
+      "correct_option": "option_a"
+    }
+  ],
+  "created_at": {
+    "$date": "2025-03-13T00:54:10.934Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d72dfe636c9c30ddf8db39"
+  },
+  "course_name": "Computer Network and Network Design",
+  "course_code": "CNND",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Network Layer Test",
+  "test_description": "Topics: Network Layer Services, IPv4, IPv6, Routing Algorithms",
+  "questions": [
+    {
+      "question_text": "What is the primary function of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of IPv4?",
+      "option_a": "128-bit address",
+      "option_b": "32-bit address",
+      "option_c": "64-bit address",
+      "option_d": "256-bit address",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of NAT?",
+      "option_a": "Error Detection",
+      "option_b": "Translate private IP addresses to public IP addresses",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a distance vector routing protocol?",
+      "option_a": "OSPF",
+      "option_b": "BGP",
+      "option_c": "RIP",
+      "option_d": "EIGRP",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of DHCP?",
+      "option_a": "Error Detection",
+      "option_b": "Assign IP addresses dynamically",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of IPv6?",
+      "option_a": "32-bit address",
+      "option_b": "64-bit address",
+      "option_c": "128-bit address",
+      "option_d": "256-bit address",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of subnetting?",
+      "option_a": "Error Detection",
+      "option_b": "Divide an IP network into smaller networks",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a link-state routing protocol?",
+      "option_a": "RIP",
+      "option_b": "OSPF",
+      "option_c": "BGP",
+      "option_d": "EIGRP",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of BGP?",
+      "option_a": "Error Detection",
+      "option_b": "Inter-domain routing",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of supernetting?",
+      "option_a": "Divide an IP network into smaller networks",
+      "option_b": "Combine multiple IP networks into a larger network",
+      "option_c": "Error Detection",
+      "option_d": "Data Compression",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of the IPv4 protocol?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Network Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Routing",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d72dfe636c9c30ddf8db3a"
+  },
+  "course_name": "Computer Network and Network Design",
+  "course_code": "CNND",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Transport and Session Layer Test",
+  "test_description": "Topics: Transport Layer Services, TCP, UDP, RPC",
+  "questions": [
+    {
+      "question_text": "What is the primary function of the Transport Layer?",
+      "option_a": "Error Detection",
+      "option_b": "End-to-end communication",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a connection-oriented protocol?",
+      "option_a": "UDP",
+      "option_b": "TCP",
+      "option_c": "IP",
+      "option_d": "ICMP",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of UDP?",
+      "option_a": "Error Detection",
+      "option_b": "Connectionless communication",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of TCP?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Connectionless",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of the Session Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Manage sessions between applications",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of RPC?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Remote procedure execution",
+      "option_d": "Low overhead",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of the Transport Layer?",
+      "option_a": "Error Detection",
+      "option_b": "End-to-end communication",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of UDP?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Connection-oriented",
+      "option_d": "Low overhead",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "What is the purpose of the Session Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Manage sessions between applications",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of RPC?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Remote procedure execution",
+      "option_d": "Low overhead",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of the Transport Layer?",
+      "option_a": "Error Detection",
+      "option_b": "End-to-end communication",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of UDP?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Connection-oriented",
+      "option_d": "Low overhead",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "What is the purpose of the Session Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Manage sessions between applications",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of RPC?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Remote procedure execution",
+      "option_d": "Low overhead",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of the Transport Layer?",
+      "option_a": "Error Detection",
+      "option_b": "End-to-end communication",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of UDP?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Connection-oriented",
+      "option_d": "Low overhead",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "What is the purpose of the Session Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Manage sessions between applications",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of RPC?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Remote procedure execution",
+      "option_d": "Low overhead",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of the Transport Layer?",
+      "option_a": "Error Detection",
+      "option_b": "End-to-end communication",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of UDP?",
+      "option_a": "Low latency",
+      "option_b": "High reliability",
+      "option_c": "Connection-oriented",
+      "option_d": "Low overhead",
+      "correct_option": "option_d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d72dfe636c9c30ddf8db3b"
+  },
+  "course_name": "Computer Network and Network Design",
+  "course_code": "CNND",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Presentation and Application Layer Test",
+  "test_description": "Topics: Compression, HTTP, FTP, DNS, SNMP",
+  "questions": [
+    {
+      "question_text": "What is the primary function of the Presentation Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Data formatting and encryption",
+      "option_c": "Routing",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a lossless compression algorithm?",
+      "option_a": "JPEG",
+      "option_b": "MP3",
+      "option_c": "Huffman Coding",
+      "option_d": "MPEG",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of HTTP?",
+      "option_a": "File Transfer",
+      "option_b": "Web Communication",
+      "option_c": "Email Communication",
+      "option_d": "Network Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of FTP?",
+      "option_a": "Low latency",
+      "option_b": "File Transfer",
+      "option_c": "Email Communication",
+      "option_d": "Network Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of DNS?",
+      "option_a": "Error Detection",
+      "option_b": "Translate domain names to IP addresses",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of SNMP?",
+      "option_a": "Error Detection",
+      "option_b": "Network Management",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Presentation Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Data formatting and encryption",
+      "option_c": "Routing",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a lossless compression algorithm?",
+      "option_a": "JPEG",
+      "option_b": "MP3",
+      "option_c": "Huffman Coding",
+      "option_d": "MPEG",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of HTTP?",
+      "option_a": "File Transfer",
+      "option_b": "Web Communication",
+      "option_c": "Email Communication",
+      "option_d": "Network Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of FTP?",
+      "option_a": "Low latency",
+      "option_b": "File Transfer",
+      "option_c": "Email Communication",
+      "option_d": "Network Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of DNS?",
+      "option_a": "Error Detection",
+      "option_b": "Translate domain names to IP addresses",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of SNMP?",
+      "option_a": "Error Detection",
+      "option_b": "Network Management",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Presentation Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Data formatting and encryption",
+      "option_c": "Routing",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a lossless compression algorithm?",
+      "option_a": "JPEG",
+      "option_b": "MP3",
+      "option_c": "Huffman Coding",
+      "option_d": "MPEG",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of HTTP?",
+      "option_a": "File Transfer",
+      "option_b": "Web Communication",
+      "option_c": "Email Communication",
+      "option_d": "Network Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of FTP?",
+      "option_a": "Low latency",
+      "option_b": "File Transfer",
+      "option_c": "Email Communication",
+      "option_d": "Network Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of DNS?",
+      "option_a": "Error Detection",
+      "option_b": "Translate domain names to IP addresses",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of SNMP?",
+      "option_a": "Error Detection",
+      "option_b": "Network Management",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Presentation Layer?",
+      "option_a": "Error Detection",
+      "option_b": "Data formatting and encryption",
+      "option_c": "Routing",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a lossless compression algorithm?",
+      "option_a": "JPEG",
+      "option_b": "MP3",
+      "option_c": "Huffman Coding",
+      "option_d": "MPEG",
+      "correct_option": "option_c"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d72dfe636c9c30ddf8db3c"
+  },
+  "course_name": "Computer Network and Network Design",
+  "course_code": "CNND",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Network Design Concepts Test",
+  "test_description": "Topics: VLAN, VPN, Network Design Case Study",
+  "questions": [
+    {
+      "question_text": "What is the primary purpose of a VLAN?",
+      "option_a": "Error Detection",
+      "option_b": "Segment a network into smaller broadcast domains",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a VPN?",
+      "option_a": "Low latency",
+      "option_b": "Secure communication over a public network",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a DHCP server?",
+      "option_a": "Error Detection",
+      "option_b": "Assign IP addresses dynamically",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a TELNET server?",
+      "option_a": "Low latency",
+      "option_b": "Remote terminal access",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a DNS server?",
+      "option_a": "Error Detection",
+      "option_b": "Translate domain names to IP addresses",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a Web server?",
+      "option_a": "Low latency",
+      "option_b": "Host web pages",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a File server?",
+      "option_a": "Error Detection",
+      "option_b": "Store and manage files",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a SSH server?",
+      "option_a": "Low latency",
+      "option_b": "Secure remote access",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a VLAN?",
+      "option_a": "Error Detection",
+      "option_b": "Segment a network into smaller broadcast domains",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a VPN?",
+      "option_a": "Low latency",
+      "option_b": "Secure communication over a public network",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a DHCP server?",
+      "option_a": "Error Detection",
+      "option_b": "Assign IP addresses dynamically",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a TELNET server?",
+      "option_a": "Low latency",
+      "option_b": "Remote terminal access",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a DNS server?",
+      "option_a": "Error Detection",
+      "option_b": "Translate domain names to IP addresses",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a Web server?",
+      "option_a": "Low latency",
+      "option_b": "Host web pages",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a File server?",
+      "option_a": "Error Detection",
+      "option_b": "Store and manage files",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a SSH server?",
+      "option_a": "Low latency",
+      "option_b": "Secure remote access",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a VLAN?",
+      "option_a": "Error Detection",
+      "option_b": "Segment a network into smaller broadcast domains",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a VPN?",
+      "option_a": "Low latency",
+      "option_b": "Secure communication over a public network",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of a DHCP server?",
+      "option_a": "Error Detection",
+      "option_b": "Assign IP addresses dynamically",
+      "option_c": "Data Compression",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a TELNET server?",
+      "option_a": "Low latency",
+      "option_b": "Remote terminal access",
+      "option_c": "High bandwidth",
+      "option_d": "Low overhead",
+      "correct_option": "option_b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d72dfe636c9c30ddf8db38"
+  },
+  "course_name": "Computer Network and Network Design",
+  "course_code": "CNND",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Physical and Data Link Layer Test",
+  "test_description": "Topics: Physical Layer, DLL Design Issues, Error Detection, Elementary Protocols",
+  "questions": [
+    {
+      "question_text": "Which of the following is an example of guided media?",
+      "option_a": "Wi-Fi",
+      "option_b": "Fiber Optic Cable",
+      "option_c": "Satellite Communication",
+      "option_d": "Microwave",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the primary function of the Data Link Layer?",
+      "option_a": "Routing",
+      "option_b": "Error Detection and Correction",
+      "option_c": "Data Compression",
+      "option_d": "Session Management",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which error detection method uses polynomial division?",
+      "option_a": "Parity Check",
+      "option_b": "Checksum",
+      "option_c": "CRC",
+      "option_d": "Hamming Code",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of framing in the Data Link Layer?",
+      "option_a": "To encrypt data",
+      "option_b": "To divide data into manageable units",
+      "option_c": "To compress data",
+      "option_d": "To route data",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which protocol uses a sliding window for flow control?",
+      "option_a": "Stop and Wait",
+      "option_b": "Go Back N",
+      "option_c": "HDLC",
+      "option_d": "RIP",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the main advantage of packet switching over circuit switching?",
+      "option_a": "Lower latency",
+      "option_b": "Better error correction",
+      "option_c": "Efficient bandwidth usage",
+      "option_d": "Simpler implementation",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Stop and Wait protocol?",
+      "option_a": "High throughput",
+      "option_b": "Low latency",
+      "option_c": "Simple implementation",
+      "option_d": "Efficient bandwidth usage",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of piggybacking in data link protocols?",
+      "option_a": "To reduce overhead",
+      "option_b": "To increase bandwidth",
+      "option_c": "To encrypt data",
+      "option_d": "To compress data",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is a wireless transmission medium?",
+      "option_a": "Coaxial Cable",
+      "option_b": "Fiber Optic Cable",
+      "option_c": "Microwave",
+      "option_d": "Twisted Pair",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of HDLC?",
+      "option_a": "Routing",
+      "option_b": "Error Detection",
+      "option_c": "Flow Control",
+      "option_d": "Data Compression",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of circuit-switched networks?",
+      "option_a": "Dynamic resource allocation",
+      "option_b": "Dedicated communication path",
+      "option_c": "High latency",
+      "option_d": "Low reliability",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of the Hamming Code?",
+      "option_a": "Data Compression",
+      "option_b": "Error Correction",
+      "option_c": "Flow Control",
+      "option_d": "Routing",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a disadvantage of packet switching?",
+      "option_a": "High latency",
+      "option_b": "Inefficient bandwidth usage",
+      "option_c": "Complex implementation",
+      "option_d": "Low reliability",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the primary function of a switch in the Data Link Layer?",
+      "option_a": "Routing",
+      "option_b": "Error Detection",
+      "option_c": "Forwarding frames",
+      "option_d": "Data Compression",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Go Back N protocol?",
+      "option_a": "Low throughput",
+      "option_b": "High latency",
+      "option_c": "Efficient bandwidth usage",
+      "option_d": "Simple implementation",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of the Checksum method?",
+      "option_a": "Error Detection",
+      "option_b": "Data Compression",
+      "option_c": "Flow Control",
+      "option_d": "Routing",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of the Selective Repeat protocol?",
+      "option_a": "Low throughput",
+      "option_b": "High latency",
+      "option_c": "Efficient bandwidth usage",
+      "option_d": "Complex implementation",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary function of the Physical Layer?",
+      "option_a": "Routing",
+      "option_b": "Transmission of raw bits",
+      "option_c": "Error Detection",
+      "option_d": "Data Compression",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of unguided media?",
+      "option_a": "High reliability",
+      "option_b": "Low latency",
+      "option_c": "Susceptible to interference",
+      "option_d": "High bandwidth",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of the Parity Check method?",
+      "option_a": "Error Detection",
+      "option_b": "Data Compression",
+      "option_c": "Flow Control",
+      "option_d": "Routing",
+      "correct_option": "option_a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d7363e636c9c30ddf8db3d"
+  },
+  "course_name": "Automata Theory",
+  "course_code": "AT",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Regular Expressions Test (Inputs = a, b)",
+  "test_description": "Topics: Regular Expressions with inputs a and b",
+  "questions": [
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that start with 'a'?",
+      "option_a": "a(a+b)*",
+      "option_b": "b(a+b)*",
+      "option_c": "(a+b)*a",
+      "option_d": "(a+b)*b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that end with 'b'?",
+      "option_a": "a(a+b)*",
+      "option_b": "b(a+b)*",
+      "option_c": "(a+b)*a",
+      "option_d": "(a+b)*b",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain exactly one 'a'?",
+      "option_a": "b*ab*",
+      "option_b": "a*b*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain at least one 'a'?",
+      "option_a": "b*ab*",
+      "option_b": "(a+b)*a(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain at least two 'a's?",
+      "option_a": "b*ab*ab*",
+      "option_b": "(a+b)*a(a+b)*a(a+b)*",
+      "option_c": "a*b*a*",
+      "option_d": "a+b",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain no 'a's?",
+      "option_a": "b*",
+      "option_b": "a*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain no 'b's?",
+      "option_a": "b*",
+      "option_b": "a*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain an even number of 'a's?",
+      "option_a": "(b*ab*ab*)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain an odd number of 'a's?",
+      "option_a": "b*ab*(ab*ab*)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that start and end with the same symbol?",
+      "option_a": "a(a+b)*a + b(a+b)*b",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain the substring 'aba'?",
+      "option_a": "(a+b)*aba(a+b)*",
+      "option_b": "a*b*a*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that do not contain the substring 'bb'?",
+      "option_a": "(a+ba)*b?",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that have length 3?",
+      "option_a": "(a+b)(a+b)(a+b)",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that have length at least 2?",
+      "option_a": "(a+b)(a+b)(a+b)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that have length at most 2?",
+      "option_a": "(a+b)?(a+b)?",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain exactly two 'b's?",
+      "option_a": "a*ba*ba*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain at least one 'a' and one 'b'?",
+      "option_a": "(a+b)*a(a+b)*b(a+b)* + (a+b)*b(a+b)*a(a+b)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain the substring 'aa'?",
+      "option_a": "(a+b)*aa(a+b)*",
+      "option_b": "a*b*",
+      "option_c": "(a+b)*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that do not contain the substring 'aa'?",
+      "option_a": "(b+ab)*(a+ε)",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {a, b} that contain an even number of 'b's?",
+      "option_a": "(a*ba*ba*)*",
+      "option_b": "(a+b)*",
+      "option_c": "a*b*",
+      "option_d": "a+b",
+      "correct_option": "option_a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d7363e636c9c30ddf8db3e"
+  },
+  "course_name": "Automata Theory",
+  "course_code": "AT",
+  "course_semester": "Semester IV",
+  "course_branch": "Information Technology",
+  "test_name": "Regular Expressions Test (Inputs = 0, 1)",
+  "test_description": "Topics: Regular Expressions with inputs 0 and 1",
+  "questions": [
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that start with '0'?",
+      "option_a": "0(0+1)*",
+      "option_b": "1(0+1)*",
+      "option_c": "(0+1)*0",
+      "option_d": "(0+1)*1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that end with '1'?",
+      "option_a": "0(0+1)*",
+      "option_b": "1(0+1)*",
+      "option_c": "(0+1)*0",
+      "option_d": "(0+1)*1",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain exactly one '0'?",
+      "option_a": "1*01*",
+      "option_b": "0*1*",
+      "option_c": "(0+1)*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain at least one '0'?",
+      "option_a": "1*01*",
+      "option_b": "(0+1)*0(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain at least two '0's?",
+      "option_a": "1*01*01*",
+      "option_b": "(0+1)*0(0+1)*0(0+1)*",
+      "option_c": "0*1*0*",
+      "option_d": "0+1",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain no '0's?",
+      "option_a": "1*",
+      "option_b": "0*",
+      "option_c": "(0+1)*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain no '1's?",
+      "option_a": "1*",
+      "option_b": "0*",
+      "option_c": "(0+1)*",
+      "option_d": "0+1",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain an even number of '0's?",
+      "option_a": "(1*01*01*)*",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain an odd number of '0's?",
+      "option_a": "1*01*(01*01*)*",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that start and end with the same symbol?",
+      "option_a": "0(0+1)*0 + 1(0+1)*1",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain the substring '010'?",
+      "option_a": "(0+1)*010(0+1)*",
+      "option_b": "0*1*0*",
+      "option_c": "(0+1)*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that do not contain the substring '11'?",
+      "option_a": "(0+10)*1?",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that have length 3?",
+      "option_a": "(0+1)(0+1)(0+1)",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that have length at least 2?",
+      "option_a": "(0+1)(0+1)(0+1)*",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that have length at most 2?",
+      "option_a": "(0+1)?(0+1)?",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain exactly two '1's?",
+      "option_a": "0*10*10*",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain at least one '0' and one '1'?",
+      "option_a": "(0+1)*0(0+1)*1(0+1)* + (0+1)*1(0+1)*0(0+1)*",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain the substring '00'?",
+      "option_a": "(0+1)*00(0+1)*",
+      "option_b": "0*1*",
+      "option_c": "(0+1)*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that do not contain the substring '00'?",
+      "option_a": "(1+01)*(0+ε)",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which regular expression represents the language of all strings over {0, 1} that contain an even number of '1's?",
+      "option_a": "(0*10*10*)*",
+      "option_b": "(0+1)*",
+      "option_c": "0*1*",
+      "option_d": "0+1",
+      "correct_option": "option_a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67db4f782f227bd1565e4b5e"
+  },
+  "course_name": "Database Managment Systems",
+  "course_code": "DBMS",
+  "course_semester": "Semester III",
+  "course_branch": "Information Technology",
+  "test_name": "Introduction to DBMS: Basics, Architecture, and DBA Roles",
+  "test_description": "This test covers the basics of DBMS, including characteristics of databases, file systems vs. database systems, data abstraction, DBMS architecture, and the role of a Database Administrator (DBA).",
+  "questions": [
+    {
+      "question_text": "What is the primary difference between a file system and a database system?",
+      "option_a": "File systems store data in tables, while database systems store data in files.",
+      "option_b": "File systems lack data independence, while database systems provide data independence.",
+      "option_c": "File systems support complex queries, while database systems do not.",
+      "option_d": "File systems are faster than database systems.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is data abstraction in DBMS?",
+      "option_a": "Hiding the physical storage details from users.",
+      "option_b": "Storing data in multiple files.",
+      "option_c": "Using complex algorithms to process data.",
+      "option_d": "Encrypting data for security.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the role of a Database Administrator (DBA)?",
+      "option_a": "Designing user interfaces for applications.",
+      "option_b": "Managing and maintaining the database system.",
+      "option_c": "Writing application code for databases.",
+      "option_d": "Creating marketing strategies for database products.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a database system?",
+      "option_a": "Data redundancy.",
+      "option_b": "Data inconsistency.",
+      "option_c": "Data independence.",
+      "option_d": "Limited data sharing.",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is data independence in DBMS?",
+      "option_a": "The ability to change the schema without affecting the application programs.",
+      "option_b": "The ability to store data in multiple formats.",
+      "option_c": "The ability to process data faster.",
+      "option_d": "The ability to encrypt data for security.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is NOT a component of DBMS architecture?",
+      "option_a": "Query Processor.",
+      "option_b": "Storage Manager.",
+      "option_c": "Transaction Manager.",
+      "option_d": "Network Router.",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "What is the primary purpose of a DBMS?",
+      "option_a": "To create complex user interfaces.",
+      "option_b": "To manage and organize data efficiently.",
+      "option_c": "To develop operating systems.",
+      "option_d": "To design hardware components.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a disadvantage of file systems?",
+      "option_a": "Data redundancy.",
+      "option_b": "Data independence.",
+      "option_c": "Efficient data retrieval.",
+      "option_d": "High security.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the main function of the Storage Manager in a DBMS?",
+      "option_a": "To process user queries.",
+      "option_b": "To manage the storage of data on disk.",
+      "option_c": "To design the database schema.",
+      "option_d": "To create user interfaces.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a key responsibility of a DBA?",
+      "option_a": "Writing application code.",
+      "option_b": "Ensuring data security and integrity.",
+      "option_c": "Designing user interfaces.",
+      "option_d": "Developing hardware components.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of data abstraction in DBMS?",
+      "option_a": "To hide the complexity of data storage and retrieval.",
+      "option_b": "To increase data redundancy.",
+      "option_c": "To make data processing slower.",
+      "option_d": "To limit data sharing.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is a benefit of using a DBMS over a file system?",
+      "option_a": "Data redundancy.",
+      "option_b": "Data inconsistency.",
+      "option_c": "Data sharing and integration.",
+      "option_d": "Limited data access.",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the role of the Query Processor in a DBMS?",
+      "option_a": "To manage data storage on disk.",
+      "option_b": "To process and execute user queries.",
+      "option_c": "To design the database schema.",
+      "option_d": "To create user interfaces.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a characteristic of a good database design?",
+      "option_a": "High data redundancy.",
+      "option_b": "Data inconsistency.",
+      "option_c": "Data independence.",
+      "option_d": "Limited data sharing.",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the primary goal of data independence?",
+      "option_a": "To make the database system faster.",
+      "option_b": "To allow changes in the schema without affecting applications.",
+      "option_c": "To increase data redundancy.",
+      "option_d": "To limit data access.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a disadvantage of using a DBMS?",
+      "option_a": "High cost of implementation.",
+      "option_b": "Data independence.",
+      "option_c": "Efficient data retrieval.",
+      "option_d": "Data sharing and integration.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the role of the Transaction Manager in a DBMS?",
+      "option_a": "To manage data storage on disk.",
+      "option_b": "To ensure ACID properties of transactions.",
+      "option_c": "To design the database schema.",
+      "option_d": "To create user interfaces.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "Which of the following is a key feature of a DBMS?",
+      "option_a": "Data redundancy.",
+      "option_b": "Data inconsistency.",
+      "option_c": "Data security and integrity.",
+      "option_d": "Limited data access.",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of a database schema?",
+      "option_a": "To define the structure of the database.",
+      "option_b": "To manage user queries.",
+      "option_c": "To create user interfaces.",
+      "option_d": "To design hardware components.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "Which of the following is a key responsibility of a DBA in terms of security?",
+      "option_a": "Writing application code.",
+      "option_b": "Ensuring data confidentiality and integrity.",
+      "option_c": "Designing user interfaces.",
+      "option_d": "Developing hardware components.",
+      "correct_option": "option_b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67db4f782f227bd1565e4b5f"
+  },
+  "course_name": "Database Managment Systems",
+  "course_code": "DBMS",
+  "course_semester": "Semester III",
+  "course_branch": "Information Technology",
+  "test_name": "Conceptual Modeling and ER Model: Entities, Attributes, and Relationships",
+  "test_description": "This test covers conceptual modeling, the Entity-Relationship (ER) Model, entity types, attributes, keys, relationships, weak entities, and the Extended Entity-Relationship (EER) Model.",
+  "questions": [
+    {
+      "question_text": "What is an entity in the ER model?",
+      "option_a": "A relationship between tables.",
+      "option_b": "A real-world object or concept.",
+      "option_c": "A database query.",
+      "option_d": "A type of database constraint.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is an attribute in the ER model?",
+      "option_a": "A relationship between entities.",
+      "option_b": "A property or characteristic of an entity.",
+      "option_c": "A type of database query.",
+      "option_d": "A constraint on the database.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is a primary key in the ER model?",
+      "option_a": "A key used to encrypt data.",
+      "option_b": "A unique identifier for an entity.",
+      "option_c": "A relationship between entities.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is a weak entity in the ER model?",
+      "option_a": "An entity that does not have a primary key.",
+      "option_b": "An entity that depends on another entity for its existence.",
+      "option_c": "An entity with no attributes.",
+      "option_d": "An entity that cannot participate in relationships.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is a relationship in the ER model?",
+      "option_a": "A connection between entities.",
+      "option_b": "A type of attribute.",
+      "option_c": "A database constraint.",
+      "option_d": "A type of query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the ER model?",
+      "option_a": "To define the physical storage of data.",
+      "option_b": "To represent the logical structure of a database.",
+      "option_c": "To optimize database queries.",
+      "option_d": "To encrypt database data.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is generalization in the EER model?",
+      "option_a": "Creating a superclass from subclasses.",
+      "option_b": "Creating subclasses from a superclass.",
+      "option_c": "Defining relationships between entities.",
+      "option_d": "Adding attributes to entities.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is specialization in the EER model?",
+      "option_a": "Creating a superclass from subclasses.",
+      "option_b": "Creating subclasses from a superclass.",
+      "option_c": "Defining relationships between entities.",
+      "option_d": "Adding attributes to entities.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is aggregation in the EER model?",
+      "option_a": "Combining entities into a single entity.",
+      "option_b": "Creating a relationship between entities.",
+      "option_c": "Defining a superclass from subclasses.",
+      "option_d": "Adding attributes to entities.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a composite attribute in the ER model?",
+      "option_a": "An attribute that can be divided into smaller parts.",
+      "option_b": "An attribute that is unique for each entity.",
+      "option_c": "An attribute that is derived from other attributes.",
+      "option_d": "An attribute that is optional.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a derived attribute in the ER model?",
+      "option_a": "An attribute that can be divided into smaller parts.",
+      "option_b": "An attribute that is unique for each entity.",
+      "option_c": "An attribute that is derived from other attributes.",
+      "option_d": "An attribute that is optional.",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is a multivalued attribute in the ER model?",
+      "option_a": "An attribute that can have multiple values.",
+      "option_b": "An attribute that is unique for each entity.",
+      "option_c": "An attribute that is derived from other attributes.",
+      "option_d": "An attribute that is optional.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a key attribute in the ER model?",
+      "option_a": "An attribute that uniquely identifies an entity.",
+      "option_b": "An attribute that can have multiple values.",
+      "option_c": "An attribute that is derived from other attributes.",
+      "option_d": "An attribute that is optional.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a relationship set in the ER model?",
+      "option_a": "A collection of relationships of the same type.",
+      "option_b": "A collection of entities of the same type.",
+      "option_c": "A collection of attributes of the same type.",
+      "option_d": "A collection of constraints on the database.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a participation constraint in the ER model?",
+      "option_a": "A constraint that specifies whether an entity must participate in a relationship.",
+      "option_b": "A constraint that specifies the type of relationship.",
+      "option_c": "A constraint that specifies the attributes of an entity.",
+      "option_d": "A constraint that specifies the keys of an entity.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a cardinality constraint in the ER model?",
+      "option_a": "A constraint that specifies the number of entities that can participate in a relationship.",
+      "option_b": "A constraint that specifies the type of relationship.",
+      "option_c": "A constraint that specifies the attributes of an entity.",
+      "option_d": "A constraint that specifies the keys of an entity.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a ternary relationship in the ER model?",
+      "option_a": "A relationship involving three entities.",
+      "option_b": "A relationship involving two entities.",
+      "option_c": "A relationship involving one entity.",
+      "option_d": "A relationship involving no entities.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a recursive relationship in the ER model?",
+      "option_a": "A relationship where an entity is related to itself.",
+      "option_b": "A relationship involving two entities.",
+      "option_c": "A relationship involving three entities.",
+      "option_d": "A relationship involving no entities.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the EER model?",
+      "option_a": "To extend the ER model with additional concepts like generalization and specialization.",
+      "option_b": "To define the physical storage of data.",
+      "option_c": "To optimize database queries.",
+      "option_d": "To encrypt database data.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a superclass in the EER model?",
+      "option_a": "A general entity that is extended by subclasses.",
+      "option_b": "A specific entity that extends a superclass.",
+      "option_c": "A relationship between entities.",
+      "option_d": "A type of database constraint.",
+      "correct_option": "option_a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67db4f782f227bd1565e4b60"
+  },
+  "course_name": "Database Managment Systems",
+  "course_code": "DBMS",
+  "course_semester": "Semester III",
+  "course_branch": "Information Technology",
+  "test_name": "Relational Model and Relational Algebra: Keys, Constraints, and Queries",
+  "test_description": "This test covers the relational model, relational constraints, keys, mapping ER/EER to relational models, and relational algebra operations.",
+  "questions": [
+    {
+      "question_text": "What is a relation in the relational model?",
+      "option_a": "A table with rows and columns.",
+      "option_b": "A connection between tables.",
+      "option_c": "A type of database constraint.",
+      "option_d": "A database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a primary key in the relational model?",
+      "option_a": "A unique identifier for a row in a table.",
+      "option_b": "A key used to encrypt data.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a foreign key in the relational model?",
+      "option_a": "A key used to encrypt data.",
+      "option_b": "A key that references the primary key of another table.",
+      "option_c": "A unique identifier for a row in a table.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is a candidate key in the relational model?",
+      "option_a": "A key that can be used as a primary key.",
+      "option_b": "A key used to encrypt data.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a superkey in the relational model?",
+      "option_a": "A set of attributes that uniquely identifies a row.",
+      "option_b": "A key used to encrypt data.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of relational algebra?",
+      "option_a": "To define the physical storage of data.",
+      "option_b": "To provide a theoretical foundation for querying relational databases.",
+      "option_c": "To optimize database queries.",
+      "option_d": "To encrypt database data.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the selection operation in relational algebra?",
+      "option_a": "Selecting specific rows from a table.",
+      "option_b": "Selecting specific columns from a table.",
+      "option_c": "Combining two tables.",
+      "option_d": "Sorting a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the projection operation in relational algebra?",
+      "option_a": "Selecting specific rows from a table.",
+      "option_b": "Selecting specific columns from a table.",
+      "option_c": "Combining two tables.",
+      "option_d": "Sorting a table.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the join operation in relational algebra?",
+      "option_a": "Combining two tables based on a condition.",
+      "option_b": "Selecting specific rows from a table.",
+      "option_c": "Selecting specific columns from a table.",
+      "option_d": "Sorting a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the union operation in relational algebra?",
+      "option_a": "Combining rows from two tables.",
+      "option_b": "Selecting specific rows from a table.",
+      "option_c": "Selecting specific columns from a table.",
+      "option_d": "Sorting a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the difference operation in relational algebra?",
+      "option_a": "Finding rows that are in one table but not in another.",
+      "option_b": "Selecting specific rows from a table.",
+      "option_c": "Selecting specific columns from a table.",
+      "option_d": "Sorting a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the Cartesian product operation in relational algebra?",
+      "option_a": "Combining all rows from two tables.",
+      "option_b": "Selecting specific rows from a table.",
+      "option_c": "Selecting specific columns from a table.",
+      "option_d": "Sorting a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of mapping ER/EER models to relational models?",
+      "option_a": "To define the physical storage of data.",
+      "option_b": "To convert conceptual models into relational schemas.",
+      "option_c": "To optimize database queries.",
+      "option_d": "To encrypt database data.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is a relational schema?",
+      "option_a": "A blueprint of the database structure.",
+      "option_b": "A type of database query.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A database constraint.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a tuple in the relational model?",
+      "option_a": "A row in a table.",
+      "option_b": "A column in a table.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is an attribute in the relational model?",
+      "option_a": "A column in a table.",
+      "option_b": "A row in a table.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a domain in the relational model?",
+      "option_a": "The set of allowed values for an attribute.",
+      "option_b": "A relationship between tables.",
+      "option_c": "A type of database query.",
+      "option_d": "A database constraint.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a relational database?",
+      "option_a": "A database that stores data in tables.",
+      "option_b": "A database that stores data in files.",
+      "option_c": "A database that stores data in graphs.",
+      "option_d": "A database that stores data in trees.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of relational constraints?",
+      "option_a": "To enforce rules on the data in a database.",
+      "option_b": "To optimize database queries.",
+      "option_c": "To encrypt database data.",
+      "option_d": "To define the physical storage of data.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a referential integrity constraint?",
+      "option_a": "A constraint that ensures foreign keys reference valid primary keys.",
+      "option_b": "A constraint that ensures primary keys are unique.",
+      "option_c": "A constraint that ensures data is encrypted.",
+      "option_d": "A constraint that ensures data is sorted.",
+      "correct_option": "option_a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67db4f782f227bd1565e4b61"
+  },
+  "course_name": "Database Managment Systems",
+  "course_code": "DBMS",
+  "course_semester": "Semester III",
+  "course_branch": "Information Technology",
+  "test_name": "SQL and Database Programming: Queries, Constraints, and JDBC",
+  "test_description": "This test covers SQL commands, data manipulation, integrity constraints, JDBC, and database security.",
+  "questions": [
+    {
+      "question_text": "What is SQL?",
+      "option_a": "A programming language for managing relational databases.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query optimizer.",
+      "option_d": "A database encryption tool.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the SELECT statement in SQL?",
+      "option_a": "To retrieve data from a database.",
+      "option_b": "To insert data into a database.",
+      "option_c": "To update data in a database.",
+      "option_d": "To delete data from a database.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the INSERT statement in SQL?",
+      "option_a": "To retrieve data from a database.",
+      "option_b": "To insert data into a database.",
+      "option_c": "To update data in a database.",
+      "option_d": "To delete data from a database.",
+      "correct_option": "option_b"
+    },
+    {
+      "question_text": "What is the purpose of the UPDATE statement in SQL?",
+      "option_a": "To retrieve data from a database.",
+      "option_b": "To insert data into a database.",
+      "option_c": "To update data in a database.",
+      "option_d": "To delete data from a database.",
+      "correct_option": "option_c"
+    },
+    {
+      "question_text": "What is the purpose of the DELETE statement in SQL?",
+      "option_a": "To retrieve data from a database.",
+      "option_b": "To insert data into a database.",
+      "option_c": "To update data in a database.",
+      "option_d": "To delete data from a database.",
+      "correct_option": "option_d"
+    },
+    {
+      "question_text": "What is the purpose of the WHERE clause in SQL?",
+      "option_a": "To filter rows based on a condition.",
+      "option_b": "To sort rows in a table.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To join two tables.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the GROUP BY clause in SQL?",
+      "option_a": "To group rows based on a column.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To sort rows in a table.",
+      "option_d": "To join two tables.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the ORDER BY clause in SQL?",
+      "option_a": "To sort rows in a table.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To join two tables.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the JOIN clause in SQL?",
+      "option_a": "To combine rows from two or more tables.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To sort rows in a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the HAVING clause in SQL?",
+      "option_a": "To filter groups based on a condition.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To sort rows in a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the DISTINCT keyword in SQL?",
+      "option_a": "To remove duplicate rows from the result set.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To sort rows in a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the COUNT function in SQL?",
+      "option_a": "To count the number of rows.",
+      "option_b": "To sum the values in a column.",
+      "option_c": "To find the average value in a column.",
+      "option_d": "To find the maximum value in a column.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the SUM function in SQL?",
+      "option_a": "To sum the values in a column.",
+      "option_b": "To count the number of rows.",
+      "option_c": "To find the average value in a column.",
+      "option_d": "To find the maximum value in a column.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the AVG function in SQL?",
+      "option_a": "To find the average value in a column.",
+      "option_b": "To count the number of rows.",
+      "option_c": "To sum the values in a column.",
+      "option_d": "To find the maximum value in a column.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the MAX function in SQL?",
+      "option_a": "To find the maximum value in a column.",
+      "option_b": "To count the number of rows.",
+      "option_c": "To sum the values in a column.",
+      "option_d": "To find the average value in a column.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the MIN function in SQL?",
+      "option_a": "To find the minimum value in a column.",
+      "option_b": "To count the number of rows.",
+      "option_c": "To sum the values in a column.",
+      "option_d": "To find the average value in a column.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the LIKE operator in SQL?",
+      "option_a": "To filter rows based on a pattern.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To sort rows in a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the IN operator in SQL?",
+      "option_a": "To filter rows based on a list of values.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To sort rows in a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the BETWEEN operator in SQL?",
+      "option_a": "To filter rows based on a range of values.",
+      "option_b": "To filter rows based on a condition.",
+      "option_c": "To group rows in a table.",
+      "option_d": "To sort rows in a table.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of the NULL value in SQL?",
+      "option_a": "To represent missing or unknown data.",
+      "option_b": "To represent a zero value.",
+      "option_c": "To represent a negative value.",
+      "option_d": "To represent a positive value.",
+      "correct_option": "option_a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67db4f782f227bd1565e4b62"
+  },
+  "course_name": "Database Managment Systems",
+  "course_code": "DBMS",
+  "course_semester": "Semester III",
+  "course_branch": "Information Technology",
+  "test_name": "Normalization and Functional Dependencies: 1NF, 2NF, 3NF, and BCNF",
+  "test_description": "This test covers normalization, functional dependencies, and the process of converting a database into 1NF, 2NF, 3NF, and BCNF.",
+  "questions": [
+    {
+      "question_text": "What is normalization in DBMS?",
+      "option_a": "The process of organizing data to reduce redundancy.",
+      "option_b": "The process of encrypting data.",
+      "option_c": "The process of optimizing database queries.",
+      "option_d": "The process of creating database backups.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of normalization?",
+      "option_a": "To reduce data redundancy and improve data integrity.",
+      "option_b": "To encrypt data for security.",
+      "option_c": "To optimize database queries.",
+      "option_d": "To create database backups.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a functional dependency in DBMS?",
+      "option_a": "A relationship between attributes where one attribute determines another.",
+      "option_b": "A relationship between tables.",
+      "option_c": "A type of database constraint.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the first normal form (1NF)?",
+      "option_a": "A table with no repeating groups or arrays.",
+      "option_b": "A table with no partial dependencies.",
+      "option_c": "A table with no transitive dependencies.",
+      "option_d": "A table with no redundant data.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the second normal form (2NF)?",
+      "option_a": "A table in 1NF with no partial dependencies.",
+      "option_b": "A table with no repeating groups or arrays.",
+      "option_c": "A table with no transitive dependencies.",
+      "option_d": "A table with no redundant data.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the third normal form (3NF)?",
+      "option_a": "A table in 2NF with no transitive dependencies.",
+      "option_b": "A table with no repeating groups or arrays.",
+      "option_c": "A table with no partial dependencies.",
+      "option_d": "A table with no redundant data.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the Boyce-Codd Normal Form (BCNF)?",
+      "option_a": "A stricter version of 3NF where every determinant is a candidate key.",
+      "option_b": "A table with no repeating groups or arrays.",
+      "option_c": "A table with no partial dependencies.",
+      "option_d": "A table with no transitive dependencies.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a partial dependency in DBMS?",
+      "option_a": "A dependency where a non-prime attribute depends on part of a candidate key.",
+      "option_b": "A dependency where a non-prime attribute depends on another non-prime attribute.",
+      "option_c": "A dependency where a prime attribute depends on a candidate key.",
+      "option_d": "A dependency where a prime attribute depends on another prime attribute.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a transitive dependency in DBMS?",
+      "option_a": "A dependency where a non-prime attribute depends on another non-prime attribute.",
+      "option_b": "A dependency where a non-prime attribute depends on part of a candidate key.",
+      "option_c": "A dependency where a prime attribute depends on a candidate key.",
+      "option_d": "A dependency where a prime attribute depends on another prime attribute.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a candidate key in DBMS?",
+      "option_a": "A minimal superkey that uniquely identifies a row.",
+      "option_b": "A key used to encrypt data.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a superkey in DBMS?",
+      "option_a": "A set of attributes that uniquely identifies a row.",
+      "option_b": "A key used to encrypt data.",
+      "option_c": "A relationship between tables.",
+      "option_d": "A type of database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a prime attribute in DBMS?",
+      "option_a": "An attribute that is part of a candidate key.",
+      "option_b": "An attribute that is not part of a candidate key.",
+      "option_c": "An attribute that is derived from other attributes.",
+      "option_d": "An attribute that is optional.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a non-prime attribute in DBMS?",
+      "option_a": "An attribute that is not part of a candidate key.",
+      "option_b": "An attribute that is part of a candidate key.",
+      "option_c": "An attribute that is derived from other attributes.",
+      "option_d": "An attribute that is optional.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of decomposing a table in normalization?",
+      "option_a": "To eliminate redundancy and improve data integrity.",
+      "option_b": "To encrypt data for security.",
+      "option_c": "To optimize database queries.",
+      "option_d": "To create database backups.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the lossless-join property in normalization?",
+      "option_a": "The ability to reconstruct the original table from decomposed tables.",
+      "option_b": "The ability to encrypt data for security.",
+      "option_c": "The ability to optimize database queries.",
+      "option_d": "The ability to create database backups.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the dependency preservation property in normalization?",
+      "option_a": "The ability to preserve all functional dependencies during decomposition.",
+      "option_b": "The ability to encrypt data for security.",
+      "option_c": "The ability to optimize database queries.",
+      "option_d": "The ability to create database backups.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a multivalued dependency in DBMS?",
+      "option_a": "A dependency where an attribute depends on another attribute independently.",
+      "option_b": "A dependency where an attribute depends on part of a candidate key.",
+      "option_c": "A dependency where an attribute depends on another non-prime attribute.",
+      "option_d": "A dependency where an attribute depends on a candidate key.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the fourth normal form (4NF)?",
+      "option_a": "A table in BCNF with no multivalued dependencies.",
+      "option_b": "A table with no repeating groups or arrays.",
+      "option_c": "A table with no partial dependencies.",
+      "option_d": "A table with no transitive dependencies.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the fifth normal form (5NF)?",
+      "option_a": "A table in 4NF with no join dependencies.",
+      "option_b": "A table with no repeating groups or arrays.",
+      "option_c": "A table with no partial dependencies.",
+      "option_d": "A table with no transitive dependencies.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is the purpose of denormalization in DBMS?",
+      "option_a": "To improve query performance by introducing redundancy.",
+      "option_b": "To reduce data redundancy.",
+      "option_c": "To optimize database queries.",
+      "option_d": "To create database backups.",
+      "correct_option": "option_a"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67db4f782f227bd1565e4b63"
+  },
+  "course_name": "Database Managment Systems",
+  "course_code": "DBMS",
+  "course_semester": "Semester III",
+  "course_branch": "Information Technology",
+  "test_name": "Transactions and Concurrency Control: ACID Properties, Serializability, and Recovery",
+  "test_description": "This test covers transactions, ACID properties, concurrency control, serializability, and recovery systems.",
+  "questions": [
+    {
+      "question_text": "What is a transaction in DBMS?",
+      "option_a": "A sequence of operations performed as a single logical unit of work.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What are the ACID properties of a transaction?",
+      "option_a": "Atomicity, Consistency, Isolation, Durability.",
+      "option_b": "Accuracy, Consistency, Integrity, Durability.",
+      "option_c": "Atomicity, Consistency, Integrity, Durability.",
+      "option_d": "Accuracy, Consistency, Isolation, Durability.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is atomicity in a transaction?",
+      "option_a": "All operations in a transaction are completed successfully, or none are.",
+      "option_b": "The database remains in a consistent state before and after the transaction.",
+      "option_c": "Transactions are isolated from each other.",
+      "option_d": "The results of a transaction are permanently stored.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is consistency in a transaction?",
+      "option_a": "The database remains in a consistent state before and after the transaction.",
+      "option_b": "All operations in a transaction are completed successfully, or none are.",
+      "option_c": "Transactions are isolated from each other.",
+      "option_d": "The results of a transaction are permanently stored.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is isolation in a transaction?",
+      "option_a": "Transactions are isolated from each other.",
+      "option_b": "All operations in a transaction are completed successfully, or none are.",
+      "option_c": "The database remains in a consistent state before and after the transaction.",
+      "option_d": "The results of a transaction are permanently stored.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is durability in a transaction?",
+      "option_a": "The results of a transaction are permanently stored.",
+      "option_b": "All operations in a transaction are completed successfully, or none are.",
+      "option_c": "The database remains in a consistent state before and after the transaction.",
+      "option_d": "Transactions are isolated from each other.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a schedule in DBMS?",
+      "option_a": "A sequence of transactions and their operations.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a serial schedule in DBMS?",
+      "option_a": "A schedule where transactions are executed one after another.",
+      "option_b": "A schedule where transactions are executed concurrently.",
+      "option_c": "A type of database constraint.",
+      "option_d": "A database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a serializable schedule in DBMS?",
+      "option_a": "A schedule that is equivalent to a serial schedule.",
+      "option_b": "A schedule where transactions are executed concurrently.",
+      "option_c": "A type of database constraint.",
+      "option_d": "A database query.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is concurrency control in DBMS?",
+      "option_a": "Managing simultaneous transactions to ensure consistency.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a lock-based protocol in concurrency control?",
+      "option_a": "A protocol that uses locks to control access to data.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a deadlock in DBMS?",
+      "option_a": "A situation where two or more transactions are waiting for each other to release locks.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a timestamp-based protocol in concurrency control?",
+      "option_a": "A protocol that uses timestamps to order transactions.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a recovery system in DBMS?",
+      "option_a": "A system that restores the database to a consistent state after a failure.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a log-based recovery in DBMS?",
+      "option_a": "A recovery technique that uses logs to restore the database.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a checkpoint in DBMS?",
+      "option_a": "A point in time where the database is in a consistent state.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a rollback in DBMS?",
+      "option_a": "Undoing the changes made by a transaction.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a rollforward in DBMS?",
+      "option_a": "Redoing the changes made by a transaction.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a two-phase commit protocol in DBMS?",
+      "option_a": "A protocol to ensure atomicity in distributed transactions.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    },
+    {
+      "question_text": "What is a shadow paging technique in DBMS?",
+      "option_a": "A recovery technique that uses shadow pages to restore the database.",
+      "option_b": "A type of database constraint.",
+      "option_c": "A database query.",
+      "option_d": "A database backup.",
+      "correct_option": "option_a"
+    }
+  ]
+}]
