@@ -4,11 +4,10 @@ Test{% endblock %} {% block content %}
 <div class="container text-white">
     <div class="w-full flex justify-center items-center py-20 flex-col gap-8">
         <h1 class="text-6xl font-bold">Create Test</h1>
-
         <form
             method="POST"
             action="{{ url_for('create_test') }}"
-            class="w-8/12 p-8 rounded-lg"
+            class="w-[75%] p-8 rounded-lg"
             enctype="multipart/form-data"
         >
             <div class="flex flex-row gap-4 mb-6">
@@ -116,63 +115,121 @@ Test{% endblock %} {% block content %}
             "options_d": "define",
             "correct_answer": "option_b"
         },
-        .......
+        // Add more questions here following the same format.
+        .................
     ]
 }
                 </pre>
             </div>
 
-            <div class="mb-6">
-                <label
-                    for="questions_json"
-                    class="block font-medium text-xl mb-2"
-                >
-                    Upload JSON File
-                </label>
-                <div class="relative">
-                    <div
-                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                    >
-                        <span class="text-white"
-                            >Choose a file ( File Type: JSON )</span
-                        >
-                        <input
-                            type="file"
-                            id="questions_json"
-                            name="questions_json"
-                            class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                            accept=".json"
-                        />
+            <div class="rounded-lg py-4 px-72 text-center">
+                <h2 class="text-2xl font-bold mb-4">Upload JSON File</h2>
+                <div class="mb-6 flex flex-col gap-4 justify-between">
+                    <div>
+                        This JSON file contains a list of questions for a test.
+                        Each question has a question text, four options (A, B,
+                        C, D), and the correct answer.
                     </div>
-                    <p id="file-name" class="mt-2 text-sm text-zinc-400 hidden">
-                        No file chosen
-                    </p>
+                    <div class="relative">
+                        <div
+                            class="mx-auto shadow-lg text-xl text-center bg-primary p-4 rounded-lg hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none border-2 border-primary hover:border-secondary transition-all duration-300"
+                        >
+                            <div
+                                class="flex flex-col items-center justify-center gap-2"
+                            >
+                                <i
+                                    class="fas fa-file-upload text-4xl text-secondary"
+                                ></i>
+                                <span class="text-white"
+                                    >Choose a file (File Type: JSON)</span
+                                >
+                                <span class="text-sm text-zinc-400"
+                                    >or drag and drop here</span
+                                >
+                            </div>
+                            <input
+                                type="file"
+                                id="questions_json"
+                                name="questions_json"
+                                class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                accept=".json"
+                            />
+                        </div>
+                        <p
+                            id="file-name"
+                            class="mt-2 text-sm text-zinc-400 text-center hidden"
+                        >
+                            No file chosen
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="flex justify-end">
-                <button
-                    type="submit"
-                    class="w-1/3 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                >
-                    Create Test
-                </button>
+                <div class="flex justify-end gap-4">
+                    <button
+                        type="button"
+                        id="clear-button"
+                        class="w-1/2 shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        Clear
+                    </button>
+                    <button
+                        type="submit"
+                        class="w-1/2 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        Create Test
+                    </button>
+                </div>
             </div>
         </form>
     </div>
 </div>
 <script>
+    const fileInput = document.getElementById("questions_json");
+    const fileNameDisplay = document.getElementById("file-name");
+
+    fileInput.addEventListener("change", function (e) {
+        if (e.target.files.length > 0) {
+            fileNameDisplay.textContent = e.target.files[0].name;
+            fileNameDisplay.classList.remove("hidden");
+        } else {
+            fileNameDisplay.textContent = "No file chosen";
+            fileNameDisplay.classList.add("hidden");
+        }
+    });
+
     document
-        .getElementById("questions_json")
-        .addEventListener("change", function (e) {
-            const fileNameDisplay = document.getElementById("file-name");
-            if (e.target.files.length > 0) {
-                fileNameDisplay.textContent = e.target.files[0].name;
-                fileNameDisplay.classList.remove("hidden");
-            } else {
-                fileNameDisplay.textContent = "No file chosen";
-                fileNameDisplay.classList.add("hidden");
-            }
+        .getElementById("clear-button")
+        .addEventListener("click", function () {
+            document.getElementById("test_name").value = "";
+
+            document.getElementById("test_description").value = "";
+
+            const fileInput = document.getElementById("questions_json");
+            fileInput.value = "";
+            document.getElementById("file-name").textContent = "No file chosen";
+            document.getElementById("file-name").classList.add("hidden");
         });
+
+    const fileDropArea = fileInput.parentElement;
+
+    fileDropArea.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        fileDropArea.classList.add("border-secondary", "bg-opacity-50");
+    });
+
+    fileDropArea.addEventListener("dragleave", () => {
+        fileDropArea.classList.remove("border-secondary", "bg-opacity-50");
+    });
+
+    fileDropArea.addEventListener("drop", (e) => {
+        e.preventDefault();
+        fileDropArea.classList.remove("border-secondary", "bg-opacity-50");
+
+        if (e.dataTransfer.files.length > 0) {
+            fileInput.files = e.dataTransfer.files;
+            const event = new Event("change", { bubbles: true });
+            fileInput.dispatchEvent(event);
+        }
+    });
 </script>
 {% endblock %}

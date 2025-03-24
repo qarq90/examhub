@@ -257,11 +257,11 @@ def lectures():
         return redirect(url_for("log_in"))
 
     if "course_branch" in session:
-        cursor.execute("SELECT * FROM tests WHERE course_branch = ?", (session["course_branch"],))
+        cursor.execute("SELECT * FROM tests WHERE course_branch = ? AND course_semester = ?", (session["course_branch"], session["course_semester"]))
     elif "branch" in session:
-        cursor.execute("SELECT * FROM tests WHERE course_branch = ?", (session["branch"],))
+        cursor.execute("SELECT * FROM tests WHERE course_branch = ? AND course_semester = ?", (session["branch"], session["year"]))
     else:
-        return None  # Or return an empty list/appropriate response
+        return None  
 
     lectures = cursor.fetchall()
 
@@ -410,6 +410,13 @@ def create_test():
         return redirect(url_for("create_test"))
 
     return render_template('/admin/create/create-test.html')
+
+@app.route('/delete_test/<test_id>', methods=['DELETE'])
+def delete_test(test_id):
+    cursor.execute("DELETE FROM tests WHERE id = ?", (test_id,))
+    cursor.execute("DELETE FROM results WHERE test_name IN (SELECT test_name FROM tests WHERE id = ?)", (test_id,))
+    conn.commit()
+    return {"redirect": url_for('lectures')}, 200
 
 if __name__ == '__main__':
     app.run(debug=True)
