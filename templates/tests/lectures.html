@@ -164,7 +164,10 @@ session.get("course_branch") %}
         </div>
         {% else %}
         <div class="w-10/12 text-center">
-            <p class="text-2xl">No tests yet for {{ session["branch"] }}.</p>
+            <p class="text-2xl">
+                No tests yet for {{ session.get("branch") or
+                session.get("course_branch") }} .
+            </p>
         </div>
         {% endif %}
     </div>

@@ -6,6 +6,7 @@ import uuid
 import re
 
 EMAIL_REGEX = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+PHONE_REGEX = r"^[1-9][0-9]{9,14}$"
 
 app = Flask(__name__)
 app.secret_key = "17012005245166"
@@ -15,20 +16,22 @@ cursor = conn.cursor()
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS students (
-    id TEXT PRIMARY KEY,
-    name TEXT,
-    email TEXT,
-    password TEXT,
-    roll_no TEXT,
-    year TEXT,
-    dob TEXT,
-    branch TEXT
+    student_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    student_name TEXT,
+    student_email TEXT,
+    student_password TEXT,
+    student_roll_no TEXT,
+    student_phone TEXT,
+    student_gender TEXT,
+    student_semester TEXT,
+    student_dob TEXT,
+    student_branch TEXT
 )
 ''')
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS courses (
-    id TEXT PRIMARY KEY,
+    course_id INTEGER PRIMARY KEY AUTOINCREMENT,
     course_name TEXT,
     course_code TEXT,
     course_branch TEXT,
@@ -38,13 +41,13 @@ CREATE TABLE IF NOT EXISTS courses (
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS tests (
-    id TEXT PRIMARY KEY,
+    test_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    test_name TEXT,
+    test_description TEXT,
     course_name TEXT,
     course_code TEXT,
     course_semester TEXT,
     course_branch TEXT,
-    test_name TEXT,
-    test_description TEXT,
     questions TEXT,  -- Storing questions as JSON string
     created_at TEXT
 )
@@ -52,7 +55,7 @@ CREATE TABLE IF NOT EXISTS tests (
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS results (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    results_id INTEGER PRIMARY KEY AUTOINCREMENT,
     course_name TEXT,
     course_code TEXT,
     course_semester TEXT,
@@ -88,35 +91,46 @@ def sign_up():
     session.clear()
 
     if request.method == "POST":
-        name = request.form.get("name")
-        email = request.form.get("email")
-        password = request.form.get("password")
-        roll_no = request.form.get("roll_no")
-        year = request.form.get("year")
-        dob = request.form.get("dob")  
-        branch = request.form.get("branch")  
+        input_name = request.form.get("input_name")
+        input_email = request.form.get("input_email")
+        input_password = request.form.get("input_password")
+        input_roll_no = request.form.get("input_roll_no")
+        input_semester = request.form.get("input_semester")
+        input_dob = request.form.get("input_dob")  
+        input_branch = request.form.get("input_branch")
+        input_phone = request.form.get("input_phone")  
+        input_gender = request.form.get("input_gender")  
 
-        if not email or not password or not roll_no or not year or not dob or not branch:
+        if not input_email or not input_password or not input_gender or not input_name or not input_roll_no or not input_semester or not input_dob or not input_branch or not input_phone:
             flash("All fields are required!", "error")
             return redirect(url_for("sign_up"))
 
-        if not re.match(EMAIL_REGEX, email):
+        if not re.match(EMAIL_REGEX, input_email):
             flash("Invalid email format!", "error")
             return redirect(url_for("sign_up"))
+        
+        if not re.match(PHONE_REGEX, input_phone):
+            flash("Invalid phone format!", "error")
+            return redirect(url_for("sign_up"))
 
-        cursor.execute("SELECT * FROM students WHERE email = ?", (email,))
+        cursor.execute("SELECT * FROM students WHERE student_email = ?", (input_email,))
         if cursor.fetchone():
             flash("Email already exists!", "error")
             return redirect(url_for("sign_up"))
 
         try:
-            dob_date = datetime.strptime(dob, "%Y-%m-%d")  
+            input_dob_date = datetime.strptime(input_dob, "%Y-%m-%d")  
         except ValueError:
             flash("Invalid date format for DOB! Use YYYY-MM-DD.", "error")
             return redirect(url_for("sign_up"))
 
-        student_data = (str(uuid.uuid4().hex), name, email, ceaser_cipher(password, 16, True), roll_no, year, dob, branch)
-        cursor.execute("INSERT INTO students VALUES (?, ?, ?, ?, ?, ?, ?, ?)", student_data)
+        student_data = (input_name, input_email, ceaser_cipher(input_password, 16, True), input_roll_no, input_phone,input_gender, input_semester, input_dob, input_branch)
+        cursor.execute("""
+            INSERT INTO students 
+            (student_name, student_email, student_password, student_roll_no, 
+             student_phone, student_gender, student_semester, student_dob, student_branch)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, student_data)
         conn.commit()
 
         return redirect(url_for("log_in"))
@@ -126,32 +140,39 @@ def sign_up():
 @app.route('/auth/log-in', methods=["GET", "POST"])
 def log_in():
     session.clear()
-
     if request.method == "POST":
-        password = request.form.get("password")
-        roll_no = request.form.get("roll_no")
-        password = ceaser_cipher(password, 16, True)
+        input_roll_no = request.form.get("input_roll_no")
+        input_password = request.form.get("input_password")
+        input_password = ceaser_cipher(input_password, 16, True)
 
-        if not password or not roll_no:
+        print("error is here 1", input_password, input_roll_no)
+
+        if not input_password or not input_roll_no:
             flash("All fields are required!", "error")
+            print("error is here 2")
             return redirect(url_for("log_in"))
 
-        cursor.execute("SELECT * FROM students WHERE password = ? AND roll_no = ?", (password, roll_no))
+        cursor.execute("SELECT * FROM students WHERE student_password = ? AND student_roll_no = ?", (input_password, input_roll_no))
         student = cursor.fetchone()
 
         if student:
             session["student_id"] = student[0]  
-            session["roll_no"] = student[4]
-            session["name"] = student[1]
-            session["year"] = student[5]
-            session["dob"] = student[6]
-            session["branch"] = student[7]
-            session["email"] = student[2]
+            session["student_name"] = student[1]
+            session["student_email"] = student[2]
+            session["student_password"] = student[3]
+            session["student_roll_no"] = student[4]
+            session["student_phone"] = student[5]
+            session["student_gender"] = student[6]
+            session["student_semester"] = student[7]
+            session["student_dob"] = student[8]
+            session["student_branch"] = student[9]
             session["logged_in"] = True
+            print("error is here 3")
 
             return redirect(url_for("home"))
         
         else:
+            print("error is here 4")
             flash("Incorrect roll number or password!", "error")
             return redirect(url_for("log_in"))
 
@@ -234,16 +255,66 @@ def admin_sign_up():
             flash("All fields are required!", "error")
             return redirect(url_for("admin_sign_up"))
     
-        course_data = (str(uuid.uuid4().hex), course_name, course_code, course_branch, course_semester)
-        cursor.execute("INSERT INTO courses VALUES (?, ?, ?, ?, ?)", course_data)
+        course_data = (course_name, course_code, course_branch, course_semester)
+        cursor.execute("INSERT INTO courses (course_name, course_code, course_branch, course_semester) VALUES (?, ?, ?, ?)", course_data)
         conn.commit()
 
         return redirect(url_for("admin_log_in"))
 
     return render_template('/admin/auth/sign-up.html')
 
-@app.route('/profile')
+@app.route('/profile', methods=["GET", "POST"])
 def profile():
+    if 'student_id' not in session:
+        flash("Please log in first", "error")
+        return redirect(url_for('log_in'))
+
+    if request.method == "POST":
+        input_name = request.form.get("input_name")
+        input_phone = request.form.get("input_phone")
+        input_dob = request.form.get("input_dob")  
+        input_semester = request.form.get("input_semester")
+        input_gender = request.form.get("input_gender")
+
+        if not all([input_name, input_phone, input_dob, input_semester, input_gender]):
+            flash("All fields are required!", "error")
+            return redirect(url_for("profile"))
+
+        if not re.match(PHONE_REGEX, input_phone):
+            flash("Invalid phone number! Must be 10-15 digits without country code.", "error")
+            return redirect(url_for("profile"))
+
+        try:
+            datetime.strptime(input_dob, "%Y-%m-%d")
+        except ValueError:
+            flash("Invalid date format! Use YYYY-MM-DD.", "error")
+            return redirect(url_for("profile"))
+
+        try:
+            cursor.execute("""
+                UPDATE students SET 
+                student_name = ?,
+                student_phone = ?,
+                student_dob = ?,
+                student_gender = ?,
+                student_semester = ?
+                WHERE student_id = ?
+            """, (input_name, input_phone, input_dob, input_gender, input_semester, session['student_id']))
+            
+            conn.commit()
+            
+            session['student_name'] = input_name
+            session['student_phone'] = input_phone
+            session['student_dob'] = input_dob
+            session['student_gender'] = input_gender
+            session['student_semester'] = input_semester
+            
+            flash("Profile updated successfully!", "success")
+        except Exception as e:
+            flash(f"Error updating profile: {str(e)}", "error")
+
+        return redirect(url_for("profile"))
+    
     return render_template('profile.html')
 
 @app.route('/leaderboards')
