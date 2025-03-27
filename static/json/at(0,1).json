@@ -1,0 +1,166 @@
+{
+    "test_name": "Automata Theory: Regular Expressions on {0, 1}",
+    "test_description": "This test evaluates understanding of regular expressions over the binary alphabet {0, 1}. Questions cover pattern matching, language properties, and regular expression construction for binary strings.",
+    "questions": [
+        {
+            "question": "Which regular expression matches all binary strings ending with '01'?",
+            "options_a": "(0+1)*01",
+            "options_b": "01(0+1)*",
+            "options_c": "(01)*",
+            "options_d": "0*1*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression describes all binary strings with exactly two '1's?",
+            "options_a": "0*10*10*",
+            "options_b": "(0+1)*1(0+1)*1",
+            "options_c": "110*",
+            "options_d": "0*1010*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression (0+1)*1(0+1)*1(0+1)* represent?",
+            "options_a": "Strings with at least two '1's",
+            "options_b": "Strings with exactly two '1's",
+            "options_c": "Strings beginning and ending with '1'",
+            "options_d": "Strings with alternating '0's and '1's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression matches all binary strings containing '101' as a substring?",
+            "options_a": "(0+1)*101(0+1)*",
+            "options_b": "101*",
+            "options_c": "(101)*",
+            "options_d": "0*1*0*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression (01)* represent?",
+            "options_a": "All strings with alternating '0's and '1's",
+            "options_b": "The empty string plus all strings of the form 0101...01",
+            "options_c": "All binary strings with equal numbers of '0's and '1's",
+            "options_d": "All binary strings that start with '0' and end with '1'",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which regular expression describes binary strings where every '1' is immediately followed by a '0'?",
+            "options_a": "(0+10)*",
+            "options_b": "(01)*",
+            "options_c": "0*1*",
+            "options_d": "(0+1)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression 0*1*0* describe?",
+            "options_a": "All binary strings with at most one '1'",
+            "options_b": "All binary strings with at least one '0'",
+            "options_c": "All binary strings with '0's followed by '1's followed by '0's",
+            "options_d": "All binary strings over {0, 1}",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "Which regular expression matches binary strings that start and end with the same symbol?",
+            "options_a": "0(0+1)*0 + 1(0+1)*1",
+            "options_b": "(0+1)*",
+            "options_c": "0* + 1*",
+            "options_d": "(0+1)(0+1)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression 1*01*01* describe?",
+            "options_a": "Binary strings with exactly two '0's",
+            "options_b": "Binary strings with at least two '0's",
+            "options_c": "Binary strings beginning with '1' and ending with '1'",
+            "options_d": "Binary strings with no consecutive '0's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression represents all binary strings with length divisible by 3?",
+            "options_a": "((0+1)(0+1)(0+1))*",
+            "options_b": "(0+1){3}",
+            "options_c": "(000+111)*",
+            "options_d": "(0+1)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression (00)* describe?",
+            "options_a": "Binary strings with even number of '0's",
+            "options_b": "Binary strings with '0's in pairs",
+            "options_c": "Binary strings with length divisible by 2",
+            "options_d": "All of the above",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which regular expression matches binary strings that don't contain '11' as a substring?",
+            "options_a": "(0+10)*(1+ε)",
+            "options_b": "(0+1)*11(0+1)*",
+            "options_c": "0*1*",
+            "options_d": "(01)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression (0+ε)(1+ε) represent?",
+            "options_a": "{ε, 0, 1, 01}",
+            "options_b": "{01}",
+            "options_c": "All binary strings of length 2",
+            "options_d": "{0, 1}",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression describes binary strings where the number of '1's is even?",
+            "options_a": "(0*10*10*)*",
+            "options_b": "(0+1)*",
+            "options_c": "(11)*",
+            "options_d": "0*(10*10*)*",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What does the regular expression 0(00)*1(11)* describe?",
+            "options_a": "Binary strings with odd number of '0's followed by odd number of '1's",
+            "options_b": "Binary strings with '0's followed by '1's",
+            "options_c": "Binary strings with length divisible by 2",
+            "options_d": "Binary strings with equal numbers of '0's and '1's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression matches all binary strings that contain at least one '0' and at least one '1'?",
+            "options_a": "(0+1)*0(0+1)*1(0+1)* + (0+1)*1(0+1)*0(0+1)*",
+            "options_b": "0*1* + 1*0*",
+            "options_c": "(01)*",
+            "options_d": "(0+1)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression 0*10*10* describe?",
+            "options_a": "Binary strings with exactly two '1's",
+            "options_b": "Binary strings with at least two '1's",
+            "options_c": "Binary strings beginning and ending with '0'",
+            "options_d": "Binary strings with '1's separated by '0's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression represents binary strings where every '1' is immediately followed by a '0'?",
+            "options_a": "(0+10)*",
+            "options_b": "(01)*",
+            "options_c": "0*1*",
+            "options_d": "(1+0)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression (01+10)* describe?",
+            "options_a": "Binary strings with alternating '0's and '1's",
+            "options_b": "Binary strings with equal numbers of '0's and '1's",
+            "options_c": "Binary strings of even length",
+            "options_d": "Binary strings that are palindromes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression matches all binary strings that don't contain '00' as a substring?",
+            "options_a": "(1+01)*(0+ε)",
+            "options_b": "(0+10)*(1+ε)",
+            "options_c": "0*1*",
+            "options_d": "(10)*",
+            "correct_answer": "option_b"
+        }
+    ]
+}

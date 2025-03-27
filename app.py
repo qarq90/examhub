@@ -16,7 +16,7 @@ cursor = conn.cursor()
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS students (
-    student_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    student_id TEXT,
     student_name TEXT,
     student_email TEXT,
     student_password TEXT,
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS students (
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS courses (
-    course_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    course_id TEXT,
     course_name TEXT,
     course_code TEXT,
     course_branch TEXT,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS courses (
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS tests (
-    test_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    test_id TEXT,
     test_name TEXT,
     test_description TEXT,
     course_name TEXT,
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS tests (
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS results (
-    results_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    results_id TEXT,
     course_name TEXT,
     course_code TEXT,
     course_semester TEXT,
@@ -124,12 +124,10 @@ def sign_up():
             flash("Invalid date format for DOB! Use YYYY-MM-DD.", "error")
             return redirect(url_for("sign_up"))
 
-        student_data = (input_name, input_email, ceaser_cipher(input_password, 16, True), input_roll_no, input_phone,input_gender, input_semester, input_dob, input_branch)
+        student_data = (str(uuid.uuid4().hex), input_name, input_email, ceaser_cipher(input_password, 16, True), input_roll_no, input_phone,input_gender, input_semester, input_dob, input_branch)
         cursor.execute("""
             INSERT INTO students 
-            (student_name, student_email, student_password, student_roll_no, 
-             student_phone, student_gender, student_semester, student_dob, student_branch)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, student_data)
         conn.commit()
 
@@ -145,11 +143,8 @@ def log_in():
         input_password = request.form.get("input_password")
         input_password = ceaser_cipher(input_password, 16, True)
 
-        print("error is here 1", input_password, input_roll_no)
-
         if not input_password or not input_roll_no:
             flash("All fields are required!", "error")
-            print("error is here 2")
             return redirect(url_for("log_in"))
 
         cursor.execute("SELECT * FROM students WHERE student_password = ? AND student_roll_no = ?", (input_password, input_roll_no))
@@ -167,12 +162,10 @@ def log_in():
             session["student_dob"] = student[8]
             session["student_branch"] = student[9]
             session["logged_in"] = True
-            print("error is here 3")
 
             return redirect(url_for("home"))
         
         else:
-            print("error is here 4")
             flash("Incorrect roll number or password!", "error")
             return redirect(url_for("log_in"))
 
@@ -323,29 +316,19 @@ def leaderboards():
 
 @app.route('/tests/lectures')
 def lectures():
-    if 'branch' not in session and 'course_branch' not in session:
-        flash("You need to login first!", "error")
-        return redirect(url_for("log_in"))
-
     if "course_branch" in session:
         cursor.execute("SELECT * FROM tests WHERE course_branch = ? AND course_semester = ?", (session["course_branch"], session["course_semester"]))
-    elif "branch" in session:
-        cursor.execute("SELECT * FROM tests WHERE course_branch = ? AND course_semester = ?", (session["branch"], session["year"]))
-    else:
-        return None  
+    elif "student_branch" in session:
+        cursor.execute("SELECT * FROM tests WHERE course_branch = ? AND course_semester = ?", (session["student_branch"], session["student_semester"]))
 
     lectures = cursor.fetchall()
-
-    for lecture in lectures:
-        lecture = list(lecture)
-        lecture[0] = str(lecture[0])
 
     return render_template('/tests/lectures.html', lectures=lectures)
 
 @app.route('/tests/start-test/<test_id>', methods=["GET", "POST"])
 def start_test(test_id):
     
-    cursor.execute("SELECT * FROM tests WHERE id = ?", (test_id,))
+    cursor.execute("SELECT * FROM tests WHERE test_id = ?", (test_id,))
     test = cursor.fetchone()
 
     if not test:
@@ -464,12 +447,12 @@ def create_test():
 
         test_data = (
             str(uuid.uuid4().hex),
+            test_name,
+            test_description,
             session.get("course_name"),
             session.get("course_code"),
             session.get("course_semester"),
             session.get("course_branch"),
-            test_name,
-            test_description,
             json.dumps(questions_data["questions"]),
             datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         )

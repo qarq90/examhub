@@ -1,0 +1,164 @@
+{
+    "questions": [
+        {
+            "question": "Which regular expression matches all strings over {a, b} that end with 'ab'?",
+            "options_a": "(a+b)*ab",
+            "options_b": "ab(a+b)*",
+            "options_c": "(ab)*",
+            "options_d": "a*b*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression describes the language of all strings with exactly two 'a's?",
+            "options_a": "b*ab*ab*",
+            "options_b": "(a+b)*a(a+b)*a",
+            "options_c": "aab*",
+            "options_d": "b*abab*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression (a+b)*a(a+b)*a(a+b)* represent?",
+            "options_a": "Strings with at least two 'a's",
+            "options_b": "Strings with exactly two 'a's",
+            "options_c": "Strings beginning and ending with 'a'",
+            "options_d": "Strings with alternating 'a's and 'b's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression matches all strings that contain 'aba' as a substring?",
+            "options_a": "(a+b)*aba(a+b)*",
+            "options_b": "aba*",
+            "options_c": "(aba)*",
+            "options_d": "a*b*a*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression (ab)* represent?",
+            "options_a": "All strings with alternating 'a's and 'b's",
+            "options_b": "The empty string plus all strings of the form abab...ab",
+            "options_c": "All strings with equal numbers of 'a's and 'b's",
+            "options_d": "All strings that start with 'a' and end with 'b'",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which regular expression describes strings where every 'a' is immediately followed by a 'b'?",
+            "options_a": "(b+ab)*",
+            "options_b": "(ab)*",
+            "options_c": "a*b*",
+            "options_d": "(a+b)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression a*b*a* describe?",
+            "options_a": "All strings with at most one 'b'",
+            "options_b": "All strings with at least one 'a'",
+            "options_c": "All strings with 'a's followed by 'b's followed by 'a's",
+            "options_d": "All strings over {a, b}",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "Which regular expression matches strings that start and end with the same symbol?",
+            "options_a": "a(a+b)*a + b(a+b)*b",
+            "options_b": "(a+b)*",
+            "options_c": "a* + b*",
+            "options_d": "(a+b)(a+b)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression b*ab*ab* describe?",
+            "options_a": "Strings with exactly two 'a's",
+            "options_b": "Strings with at least two 'a's",
+            "options_c": "Strings beginning with 'b' and ending with 'b'",
+            "options_d": "Strings with no consecutive 'a's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression represents all strings with length divisible by 3?",
+            "options_a": "((a+b)(a+b)(a+b))*",
+            "options_b": "(a+b){3}",
+            "options_c": "(aaa+bbb)*",
+            "options_d": "(a+b)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression (aa)* describe?",
+            "options_a": "Strings with even number of 'a's",
+            "options_b": "Strings with 'a's in pairs",
+            "options_c": "Strings with length divisible by 2",
+            "options_d": "All of the above",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which regular expression matches strings that don't contain 'aa' as a substring?",
+            "options_a": "(b+ab)*(a+ε)",
+            "options_b": "(a+b)*aa(a+b)*",
+            "options_c": "a*b*",
+            "options_d": "(ab)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression (a+ε)(b+ε) represent?",
+            "options_a": "{ε, a, b, ab}",
+            "options_b": "{ab}",
+            "options_c": "All strings of length 2",
+            "options_d": "{a, b}",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression describes strings where the number of 'a's is even?",
+            "options_a": "(b*ab*ab*)*",
+            "options_b": "(a+b)*",
+            "options_c": "(aa)*",
+            "options_d": "b*(ab*ab*)*",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What does the regular expression a(aa)*b(bb)* describe?",
+            "options_a": "Strings with odd number of 'a's followed by odd number of 'b's",
+            "options_b": "Strings with 'a's followed by 'b's",
+            "options_c": "Strings with length divisible by 2",
+            "options_d": "Strings with equal numbers of 'a's and 'b's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression matches all strings that contain at least one 'a' and at least one 'b'?",
+            "options_a": "(a+b)*a(a+b)*b(a+b)* + (a+b)*b(a+b)*a(a+b)*",
+            "options_b": "a*b* + b*a*",
+            "options_c": "(ab)*",
+            "options_d": "(a+b)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What language does the regular expression a*ba*ba* describe?",
+            "options_a": "Strings with exactly two 'b's",
+            "options_b": "Strings with at least two 'b's",
+            "options_c": "Strings beginning and ending with 'a'",
+            "options_d": "Strings with 'b's separated by 'a's",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression represents strings where every 'b' is immediately followed by an 'a'?",
+            "options_a": "(a+ba)*",
+            "options_b": "(ab)*",
+            "options_c": "a*b*",
+            "options_d": "(b+a)*",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the regular expression (ab+ba)* describe?",
+            "options_a": "Strings with alternating 'a's and 'b's",
+            "options_b": "Strings with equal numbers of 'a's and 'b's",
+            "options_c": "Strings of even length",
+            "options_d": "Strings that are palindromes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which regular expression matches all strings that don't contain 'bb' as a substring?",
+            "options_a": "(a+ba)*(b+ε)",
+            "options_b": "(b+ab)*(a+ε)",
+            "options_c": "a*b*",
+            "options_d": "(ab)*",
+            "correct_answer": "option_a"
+        }
+    ]
+}

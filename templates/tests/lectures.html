@@ -5,225 +5,205 @@ session.get("course_branch") %}
 <div class="container text-white">
     <div class="w-full flex justify-center items-center py-10 flex-col gap-8">
         <span class="text-6xl title uppercase font-bold text-center">
-            {{ session.get("branch") or session.get("course_branch") }}
+            {{ session.get("student_branch") or session.get("course_branch") }}
         </span>
-        {% set branches = {} %} {% for test in lectures %} {% if
-        session["branch"] == test[4] or session["course_branch"] == test[4] %}
-        {% if test[4] and test[3] and test[1] %} {% if test[4] not in branches
-        %} {% set _ = branches.update({test[4]: {}}) %} {% endif %} {% if
-        test[3] not in branches[test[4]] %} {% set _ =
-        branches[test[4]].update({test[3]: {}}) %} {% endif %} {% if test[1] not
-        in branches[test[4]][test[3]] %} {% set _ =
-        branches[test[4]][test[3]].update({test[1]: []}) %} {% endif %} {% set _
-        = branches[test[4]][test[3]][test[1]].append(test) %} {% endif %} {%
-        endif %} {% endfor %} {% if branches %}
+
+        {% if lectures %}
         <div class="w-10/12">
-            {% for branch_name, semesters in branches.items() %} {% for
-            semester, courses in semesters.items() %}
+            <h3
+                class="text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
+            >
+                {{ session.get("course_semester") or
+                session.get("student_semester") }}
+            </h3>
+
+            {% set courses = {} %} {% for test in lectures %} {% if test[3] not
+            in courses %} {% set _ = courses.update({test[3]: []}) %} {% endif
+            %} {% set _ = courses[test[3]].append(test) %} {% endfor %} {# Then
+            display each course with its tests #} {% for course_name,
+            course_tests in courses.items() %}
             <div class="mb-8">
-                <h3
-                    class="text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
-                >
-                    {{ semester }}
-                </h3>
-                {% for course_name, tests in courses.items() %}
-                <div class="my-6">
-                    <h4 class="text-2xl font-bold mb-4">
-                        ⚪ {{ course_name }}
-                    </h4>
-                    <div class="grid grid-cols-4 gap-4">
-                        <div class="flex flex-col gap-4">
-                            {% for test in tests %} {% if loop.index0 % 4 == 0
-                            %}
+                <h4 class="text-2xl font-bold my-4">⚪ {{ course_name }}</h4>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="flex flex-col gap-4">
+                        {% for test in course_tests %} {% if loop.index0 % 4 ==
+                        0 %}
+                        <div
+                            data-test-id="{{test[0]}}"
+                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                        >
+                            <p class="text-lg font-bold text-center">
+                                {{ test[1] }}
+                            </p>
                             <div
-                                data-test-id="{{test[0]}}"
-                                class="w-full hover:scale-105 transition-transform p-6 flex h-fit flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
-                                <p class="text-lg font-bold text-center">
-                                    {{ test[5] }}
-                                </p>
-                                <div
-                                    class="mt-4 flex {% if not session.get('course_branch') %}flex-col{% else %} justify-around gap-5 flex-row{% endif %}"
+                                <a
+                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <a
-                                        href="{{ url_for('start_test', test_id=test[0]) }}"
-                                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        Start Test
-                                    </a>
-                                    {% if session.get("course_branch") %}
-                                    <button
-                                        onclick="deleteTest('{{test[0]}}')"
-                                        class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                    {% endif %}
-                                </div>
+                                    Start Test
+                                </a>
+                                {% if session.get("course_branch") %}
+                                <button
+                                    onclick="deleteTest('{{test[0]}}')"
+                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                >
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                {% endif %}
                             </div>
-                            {% endif %} {% endfor %}
                         </div>
-                        <div class="flex flex-col gap-4">
-                            {% for test in tests %} {% if loop.index0 % 4 == 1
-                            %}
+                        {% endif %} {% endfor %}
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        {% for test in course_tests %} {% if loop.index0 % 4 ==
+                        1 %}
+                        <div
+                            data-test-id="{{test[0]}}"
+                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                        >
+                            <p class="text-lg font-bold text-center">
+                                {{ test[1] }}
+                            </p>
                             <div
-                                data-test-id="{{test[0]}}"
-                                class="w-full hover:scale-105 transition-transform p-6 flex h-fit flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
-                                <p class="text-lg font-bold text-center">
-                                    {{ test[5] }}
-                                </p>
-                                <div
-                                    class="mt-4 flex {% if not session.get('course_branch') %}flex-col{% else %} justify-around gap-5 flex-row{% endif %}"
+                                <a
+                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <a
-                                        href="{{ url_for('start_test', test_id=test[0]) }}"
-                                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        Start Test
-                                    </a>
-                                    {% if session.get("course_branch") %}
-                                    <button
-                                        onclick="deleteTest('{{test[0]}}')"
-                                        class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                    {% endif %}
-                                </div>
+                                    Start Test
+                                </a>
+                                {% if session.get("course_branch") %}
+                                <button
+                                    onclick="deleteTest('{{test[0]}}')"
+                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                >
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                {% endif %}
                             </div>
-                            {% endif %} {% endfor %}
                         </div>
-                        <div class="flex flex-col gap-4">
-                            {% for test in tests %} {% if loop.index0 % 4 == 2
-                            %}
+                        {% endif %} {% endfor %}
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        {% for test in course_tests %} {% if loop.index0 % 4 ==
+                        2 %}
+                        <div
+                            data-test-id="{{test[0]}}"
+                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                        >
+                            <p class="text-lg font-bold text-center">
+                                {{ test[1] }}
+                            </p>
                             <div
-                                data-test-id="{{test[0]}}"
-                                class="w-full hover:scale-105 transition-transform p-6 flex h-fit flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
-                                <p class="text-lg font-bold text-center">
-                                    {{ test[5] }}
-                                </p>
-                                <div
-                                    class="mt-4 flex {% if not session.get('course_branch') %}flex-col{% else %} justify-around gap-5 flex-row{% endif %}"
+                                <a
+                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <a
-                                        href="{{ url_for('start_test', test_id=test[0]) }}"
-                                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        Start Test
-                                    </a>
-                                    {% if session.get("course_branch") %}
-                                    <button
-                                        onclick="deleteTest('{{test[0]}}')"
-                                        class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                    {% endif %}
-                                </div>
+                                    Start Test
+                                </a>
+                                {% if session.get("course_branch") %}
+                                <button
+                                    onclick="deleteTest('{{test[0]}}')"
+                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                >
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                {% endif %}
                             </div>
-                            {% endif %} {% endfor %}
                         </div>
-                        <div class="flex flex-col gap-4">
-                            {% for test in tests %} {% if loop.index0 % 4 == 3
-                            %}
+                        {% endif %} {% endfor %}
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        {% for test in course_tests %} {% if loop.index0 % 4 ==
+                        3 %}
+                        <div
+                            data-test-id="{{test[0]}}"
+                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                        >
+                            <p class="text-lg font-bold text-center">
+                                {{ test[1] }}
+                            </p>
                             <div
-                                data-test-id="{{test[0]}}"
-                                class="w-full hover:scale-105 transition-transform p-6 flex h-fit flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
-                                <p class="text-lg font-bold text-center">
-                                    {{ test[5] }}
-                                </p>
-                                <div
-                                    class="mt-4 flex {% if not session.get('course_branch') %}flex-col{% else %} justify-around gap-5 flex-row{% endif %}"
+                                <a
+                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <a
-                                        href="{{ url_for('start_test', test_id=test[0]) }}"
-                                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        Start Test
-                                    </a>
-                                    {% if session.get("course_branch") %}
-                                    <button
-                                        onclick="deleteTest('{{test[0]}}')"
-                                        class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                                    >
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                    {% endif %}
-                                </div>
+                                    Start Test
+                                </a>
+                                {% if session.get("course_branch") %}
+                                <button
+                                    onclick="deleteTest('{{test[0]}}')"
+                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                >
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                {% endif %}
                             </div>
-                            {% endif %} {% endfor %}
                         </div>
+                        {% endif %} {% endfor %}
                     </div>
                 </div>
-                {% endfor %}
             </div>
-            {% endfor %} {% endfor %}
+            {% endfor %}
         </div>
         {% else %}
         <div class="w-10/12 text-center">
             <p class="text-2xl">
-                No tests yet for {{ session.get("branch") or
-                session.get("course_branch") }} .
+                No tests available for {{ session.get("student_branch") or
+                session.get("course_branch") }}
             </p>
         </div>
         {% endif %}
     </div>
 </div>
+
 <script>
     async function deleteTest(testId) {
-        if (
-            !confirm(
-                "Are you sure you want to delete this test? This action cannot be undone."
-            )
-        ) {
-            return;
+        if (!confirm("Are you sure you want to delete this test?")) return;
+
+        try {
+            const response = await fetch(`/delete_test/${testId}`, {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+            });
+
+            if (response.ok) {
+                document
+                    .querySelector(`[data-test-id="${testId}"]`)
+                    .classList.add("removing");
+                setTimeout(() => {
+                    window.location.reload();
+                }, 300);
+            } else {
+                alert("Failed to delete test");
+            }
+        } catch (error) {
+            console.error("Error:", error);
         }
-
-        const response = await fetch(`/delete_test/${testId}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-
-        const data = await response.json();
-        const testCard = document.querySelector(
-            `.test-card[data-test-id="${testId}"]`
-        );
-        if (testCard) {
-            testCard.remove();
-        }
-
-        showNotification("Test deleted successfully!", "success");
-        window.location.reload();
-    }
-
-    function showNotification(message, type) {
-        const notification = document.createElement("div");
-        notification.className = `fixed top-4 right-4 px-6 py-3 rounded-md shadow-lg text-white ${
-            type === "success" ? "bg-green-500" : "bg-red-500"
-        }`;
-        notification.textContent = message;
-        document.body.appendChild(notification);
-
-        setTimeout(() => {
-            notification.remove();
-        }, 3000);
     }
 </script>
+
 <style>
     .test-card {
         transition: all 0.3s ease;
     }
-
     .test-card.removing {
         transform: scale(0.9);
         opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
     }
 </style>
+
 {% else %}
 <div
     class="container flex flex-col justify-center gap-8 text-white text-center py-20"
@@ -256,21 +236,21 @@ session.get("course_branch") %}
             <path
                 d="M258.35026,265.31823c-75.06741-3.30525-133.27133-19.49788-132.50668-36.86436.45844-10.41178,21.70324-18.7842,58.28677-22.96955a1,1,0,1,1,.22727,1.987c-34.46168,3.943-56.11733,12.01678-56.516,21.07051-.69148,15.70451,59.11433,31.63093,130.59659,34.77832s132.4564-7.461,133.14787-23.16554c.40032-9.09178-20.59681-19.06558-54.79775-26.0284a1.00008,1.00008,0,1,1,.3991-1.95993c36.3011,7.39058,56.85694,17.624,56.39672,28.0763C392.81953,257.60908,333.41767,268.62348,258.35026,265.31823Z"
                 transform="translate(-108.75634 -68.49293)"
-                fill="#d94174"
+                fill="#6A319C"
             />
             <path
                 d="M191.67927,268.22672a76.98277,76.98277,0,0,0,133.03578,5.52178A1211.97551,1211.97551,0,0,1,191.67927,268.22672Z"
                 transform="translate(-108.75634 -68.49293)"
-                fill="#d94174"
+                fill="#6A319C"
             />
             <path
                 d="M333.019,252.71347a76.997,76.997,0,1,0-147.74945-5.70562A572.23325,572.23325,0,0,0,333.019,252.71347Z"
                 transform="translate(-108.75634 -68.49293)"
-                fill="#d94174"
+                fill="#6A319C"
             />
             <circle cx="168.83353" cy="123.60073" r="9" fill="#fff" />
             <circle cx="122.51347" cy="152.59128" r="15" fill="#fff" />
-            <circle cx="348.90479" cy="142.89813" r="9.99975" fill="#d94174" />
+            <circle cx="348.90479" cy="142.89813" r="9.99975" fill="#6A319C" />
             <circle cx="122.90479" cy="452.89813" r="6.00007" fill="#e6e6e6" />
             <circle cx="542.90479" cy="658.89813" r="6.00007" fill="#e6e6e6" />
             <circle cx="151.90479" cy="339.89813" r="3.00007" fill="#e6e6e6" />
@@ -289,7 +269,7 @@ session.get("course_branch") %}
                 transform="translate(-108.75634 -68.49293)"
                 fill="#fff"
             />
-            <circle cx="294.90486" cy="358.8982" r="29" fill="#d94174" />
+            <circle cx="294.90486" cy="358.8982" r="29" fill="#6A319C" />
             <ellipse
                 cx="294.40486"
                 cy="496.3982"
@@ -305,7 +285,7 @@ session.get("course_branch") %}
             <path
                 d="M875.50191,401.996l-17.9352,13.95958a4.5,4.5,0,0,1-6.68163-1.33719L839.73843,394.891a12.49741,12.49741,0,0,1,19.76923-15.29426l16.33819,15.59379a4.5,4.5,0,0,1-.34394,6.80543Z"
                 transform="translate(-108.75634 -68.49293)"
-                fill="#d94174"
+                fill="#6A319C"
             />
             <path
                 d="M930.19158,379.80967l18.18807,8.1829a3.14913,3.14913,0,0,1,1.57976,4.16384l-2.15339,4.78633a1.05293,1.05293,0,0,1,.52659,1.38795l-.86136,1.91453a1.05292,1.05292,0,0,1-1.388.52659l-.86136,1.91453a1.05292,1.05292,0,0,1,.52659,1.388l-.86136,1.91453a1.0529,1.0529,0,0,1-1.38794.52659L931.8709,432.36162a3.14914,3.14914,0,0,1-4.16384,1.57977l-18.18807-8.1829a3.14915,3.14915,0,0,1-1.57977-4.16384l18.08852-40.20522A3.14913,3.14913,0,0,1,930.19158,379.80967Z"
@@ -348,7 +328,7 @@ session.get("course_branch") %}
             <path
                 d="M838.7735,458.32082l-.35766-.043-8.29517-40.78515c-.071-.354-6.85229-35.5332,13.93677-53.92432l.36182-2.51709a4.50032,4.50032,0,0,1,5.78711-3.65771l19.58471,6.0747a4.49086,4.49086,0,0,1,3.019,5.4419l-1.90381,7.2417c2.63989,3.1001,33.7146,40.51221,22.89038,69.33545L888.9488,464.439Z"
                 transform="translate(-108.75634 -68.49293)"
-                fill="#d94174"
+                fill="#6A319C"
             />
             <path
                 d="M920.09389,426.48986a10.52591,10.52591,0,0,0-1.32908.99037l-47.89739-12.858-3.13136-11.634-18.17538,2.43095,3.54192,21.13437a8,8,0,0,0,6.95146,6.62248l56.032,6.619a10.4971,10.4971,0,1,0,4.00785-13.30516Z"
@@ -358,7 +338,7 @@ session.get("course_branch") %}
             <path
                 d="M869.022,414.43646,846.48068,417.34a4.5,4.5,0,0,1-5.07405-4.54822l.42987-22.65461a12.49741,12.49741,0,0,1,24.79917-3.12052l6.14215,21.73423a4.5,4.5,0,0,1-3.75583,5.68559Z"
                 transform="translate(-108.75634 -68.49293)"
-                fill="#d94174"
+                fill="#6A319C"
             />
             <circle cx="753.92061" cy="258.80372" r="24.56103" fill="#ffb8b8" />
             <path
