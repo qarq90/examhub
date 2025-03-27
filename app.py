@@ -125,10 +125,13 @@ def sign_up():
             return redirect(url_for("sign_up"))
 
         student_data = (str(uuid.uuid4().hex), input_name, input_email, ceaser_cipher(input_password, 16, True), input_roll_no, input_phone,input_gender, input_semester, input_dob, input_branch)
-        cursor.execute("""
-            INSERT INTO students 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, student_data)
+        cursor.execute(
+                """
+                    INSERT INTO students 
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                student_data
+            )
         conn.commit()
 
         return redirect(url_for("log_in"))
@@ -248,8 +251,14 @@ def admin_sign_up():
             flash("All fields are required!", "error")
             return redirect(url_for("admin_sign_up"))
     
-        course_data = (course_name, course_code, course_branch, course_semester)
-        cursor.execute("INSERT INTO courses (course_name, course_code, course_branch, course_semester) VALUES (?, ?, ?, ?)", course_data)
+        course_data = (str(uuid.uuid4().hex), course_name, course_code, course_branch, course_semester)
+        cursor.execute(
+                """
+                    INSERT INTO courses
+                    VALUES (?, ?, ?, ?, ?)
+                """, 
+                course_data
+            )
         conn.commit()
 
         return redirect(url_for("admin_log_in"))
@@ -375,10 +384,12 @@ def start_test(test_id):
             json.dumps(user_answers)  
         )
 
-        cursor.execute("""
-            INSERT INTO results (course_name, course_code, course_semester, course_branch, test_name, roll_no, score, total_questions, result, user_answers)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, result_data)
+        cursor.execute(
+                """
+                    INSERT INTO results VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, 
+                result_data
+            )
 
         result_id = cursor.lastrowid
         conn.commit()
@@ -467,8 +478,8 @@ def create_test():
 
 @app.route('/delete_test/<test_id>', methods=['DELETE'])
 def delete_test(test_id):
-    cursor.execute("DELETE FROM tests WHERE id = ?", (test_id,))
-    cursor.execute("DELETE FROM results WHERE test_name IN (SELECT test_name FROM tests WHERE id = ?)", (test_id,))
+    cursor.execute("DELETE FROM tests WHERE test_id = ?", (test_id,))
+    cursor.execute("DELETE FROM results WHERE test_name IN (SELECT test_name FROM tests WHERE test_id = ?)", (test_id,))
     conn.commit()
     return {"redirect": url_for('lectures')}, 200
 
