@@ -1,0 +1,166 @@
+{
+    "test_name": "Relational Model and Algebra",
+    "test_description": "This test covers relational model concepts, constraints, mapping from ER to relational model, and relational algebra operations.",
+    "questions": [
+        {
+            "question": "What is a relation in the relational model?",
+            "options_a": "A table with rows and columns",
+            "options_b": "A connection between databases",
+            "options_c": "A SQL query",
+            "options_d": "A constraint",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a property of relations?",
+            "options_a": "No duplicate tuples",
+            "options_b": "Order of tuples is significant",
+            "options_c": "Each attribute has a unique name",
+            "options_d": "All attribute values are atomic",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is a superkey?",
+            "options_a": "A set of attributes that uniquely identifies a tuple",
+            "options_b": "A foreign key",
+            "options_c": "An indexed attribute",
+            "options_d": "A derived attribute",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which constraint ensures that a foreign key matches a primary key in another relation?",
+            "options_a": "Entity integrity",
+            "options_b": "Referential integrity",
+            "options_c": "Domain integrity",
+            "options_d": "Key integrity",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "How is a many-to-many relationship in ER model represented in relational model?",
+            "options_a": "By creating a separate relation with foreign keys to both entities",
+            "options_b": "By adding foreign key to one of the relations",
+            "options_c": "By combining both relations",
+            "options_d": "By using a special column",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which relational algebra operation selects tuples that satisfy a condition?",
+            "options_a": "σ (sigma)",
+            "options_b": "π (pi)",
+            "options_c": "⋈ (bowtie)",
+            "options_d": "∪ (union)",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the projection operation (π) do in relational algebra?",
+            "options_a": "Selects certain columns from a relation",
+            "options_b": "Selects certain rows from a relation",
+            "options_c": "Combines two relations",
+            "options_d": "Performs arithmetic operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which operation combines two relations by pairing tuples that satisfy a condition?",
+            "options_a": "Cartesian product",
+            "options_b": "Natural join",
+            "options_c": "Theta join",
+            "options_d": "Division",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the rename operation (ρ) in relational algebra?",
+            "options_a": "To give a new name to a relation or attribute",
+            "options_b": "To select rows",
+            "options_c": "To combine relations",
+            "options_d": "To perform calculations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a set operation in relational algebra?",
+            "options_a": "Union",
+            "options_b": "Intersection",
+            "options_c": "Difference",
+            "options_d": "Concatenation",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the difference between natural join and equijoin?",
+            "options_a": "Natural join eliminates duplicate attributes automatically",
+            "options_b": "Equijoin is always faster",
+            "options_c": "Natural join requires a condition",
+            "options_d": "Equijoin works only on numeric fields",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "How is a weak entity type represented in the relational model?",
+            "options_a": "As a relation with both its own partial key and owner's primary key",
+            "options_b": "As a separate database",
+            "options_c": "As an attribute in another relation",
+            "options_d": "As a view",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which operation returns tuples that are in the first relation but not in the second?",
+            "options_a": "Difference",
+            "options_b": "Intersection",
+            "options_c": "Union",
+            "options_d": "Join",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the division operation in relational algebra?",
+            "options_a": "To find tuples that match all values in another relation",
+            "options_b": "To perform arithmetic division",
+            "options_c": "To split relations",
+            "options_d": "To create views",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which constraint ensures that primary key attributes cannot be null?",
+            "options_a": "Entity integrity",
+            "options_b": "Referential integrity",
+            "options_c": "Domain integrity",
+            "options_d": "Key integrity",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "How is specialization/generalization represented in the relational model?",
+            "options_a": "Multiple options including separate relations or attributes",
+            "options_b": "Only as separate relations",
+            "options_c": "Only as attributes in superclass relation",
+            "options_d": "It cannot be represented",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which relational algebra operation is used to combine two relations vertically?",
+            "options_a": "Union",
+            "options_b": "Join",
+            "options_c": "Product",
+            "options_d": "Division",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a foreign key?",
+            "options_a": "An attribute that references the primary key of another relation",
+            "options_b": "A secondary key",
+            "options_c": "A key that is not unique",
+            "options_d": "A derived key",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which operation is used to combine two relations horizontally?",
+            "options_a": "Join",
+            "options_b": "Union",
+            "options_c": "Intersection",
+            "options_d": "Difference",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the assignment operation (←) in relational algebra?",
+            "options_a": "To store the result of an expression in a temporary relation",
+            "options_b": "To update values in a relation",
+            "options_c": "To create permanent relations",
+            "options_d": "To delete relations",
+            "correct_answer": "option_a"
+        }
+    ]
+}

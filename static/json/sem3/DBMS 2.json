@@ -1,0 +1,166 @@
+{
+    "test_name": "Entity-Relationship Model",
+    "test_description": "This test covers conceptual modeling using ER and EER models, including entities, relationships, attributes, keys, and advanced concepts like generalization/specialization.",
+    "questions": [
+        {
+            "question": "What is an entity in the ER model?",
+            "options_a": "A distinct object or concept about which data is stored",
+            "options_b": "A relationship between tables",
+            "options_c": "A database table",
+            "options_d": "A SQL query",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a type of attribute in ER modeling?",
+            "options_a": "Simple attribute",
+            "options_b": "Composite attribute",
+            "options_c": "Derived attribute",
+            "options_d": "Virtual attribute",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is a weak entity type?",
+            "options_a": "An entity that depends on another entity for its existence",
+            "options_b": "An entity with no attributes",
+            "options_c": "An entity with only one instance",
+            "options_d": "An entity that cannot participate in relationships",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does a diamond represent in an ER diagram?",
+            "options_a": "Entity",
+            "options_b": "Relationship",
+            "options_c": "Attribute",
+            "options_d": "Key",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is NOT a type of relationship cardinality?",
+            "options_a": "One-to-one",
+            "options_b": "One-to-many",
+            "options_c": "Many-to-many",
+            "options_d": "Many-to-all",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of a partial key in a weak entity?",
+            "options_a": "To uniquely identify weak entity instances when combined with owner key",
+            "options_b": "To provide a secondary index",
+            "options_c": "To establish relationships",
+            "options_d": "To enforce constraints",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does generalization represent in EER modeling?",
+            "options_a": "Bottom-up process of defining superclasses from subclasses",
+            "options_b": "Top-down process of defining subclasses from superclasses",
+            "options_c": "Creating relationships between entities",
+            "options_d": "Defining primary keys",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which symbol is used to represent specialization in EER diagrams?",
+            "options_a": "Circle",
+            "options_b": "Triangle",
+            "options_c": "Double rectangle",
+            "options_d": "Dashed line",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of aggregation in EER modeling?",
+            "options_a": "To treat relationships as higher-level entities",
+            "options_b": "To combine attributes",
+            "options_c": "To create derived attributes",
+            "options_d": "To define primary keys",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a constraint that can be applied to specialization?",
+            "options_a": "Disjointness constraint",
+            "options_b": "Referential constraint",
+            "options_c": "Domain constraint",
+            "options_d": "Key constraint",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a composite attribute?",
+            "options_a": "An attribute that can be divided into smaller parts",
+            "options_b": "An attribute derived from other attributes",
+            "options_c": "An attribute that is a key",
+            "options_d": "An attribute with multiple values",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is true about a derived attribute?",
+            "options_a": "Its value can be calculated from other attributes",
+            "options_b": "It must be part of a key",
+            "options_c": "It cannot participate in relationships",
+            "options_d": "It must be multivalued",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the degree of a relationship?",
+            "options_a": "Number of participating entity types",
+            "options_b": "Number of instances in a relationship",
+            "options_c": "Strength of a relationship",
+            "options_d": "Priority of a relationship",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which constraint specifies that an entity must participate in a relationship?",
+            "options_a": "Participation constraint",
+            "options_b": "Key constraint",
+            "options_c": "Referential constraint",
+            "options_d": "Domain constraint",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of a discriminator in specialization?",
+            "options_a": "To determine which subclass an entity belongs to",
+            "options_b": "To create relationships",
+            "options_c": "To define keys",
+            "options_d": "To enforce constraints",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a valid completeness constraint for specialization?",
+            "options_a": "Total",
+            "options_b": "Partial",
+            "options_c": "Disjoint",
+            "options_d": "Overlapping",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What does a double rectangle represent in EER diagrams?",
+            "options_a": "Weak entity",
+            "options_b": "Strong entity",
+            "options_c": "Relationship",
+            "options_d": "Attribute",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is true about a multivalued attribute?",
+            "options_a": "It can have multiple values for a single entity",
+            "options_b": "It must be part of a key",
+            "options_c": "It cannot participate in relationships",
+            "options_d": "It must be derived",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the difference between specialization and generalization?",
+            "options_a": "Specialization is top-down, generalization is bottom-up",
+            "options_b": "Specialization is bottom-up, generalization is top-down",
+            "options_c": "They are the same concept",
+            "options_d": "Specialization applies to attributes, generalization to entities",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT represented in an ER diagram?",
+            "options_a": "Entities",
+            "options_b": "Relationships",
+            "options_c": "Attributes",
+            "options_d": "SQL queries",
+            "correct_answer": "option_d"
+        }
+    ]
+}

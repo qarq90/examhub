@@ -1,0 +1,166 @@
+{
+    "test_name": "SQL and Database Programming",
+    "test_description": "This test covers SQL concepts including DDL, DML, complex queries, integrity constraints, JDBC, security, and indexing.",
+    "questions": [
+        {
+            "question": "Which SQL command is used to create a new table?",
+            "options_a": "CREATE TABLE",
+            "options_b": "DEFINE TABLE",
+            "options_c": "NEW TABLE",
+            "options_d": "MAKE TABLE",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the GROUP BY clause in SQL?",
+            "options_a": "To group rows that have the same values in specified columns",
+            "options_b": "To sort the result set",
+            "options_c": "To filter groups",
+            "options_d": "To join tables",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which SQL function returns the number of rows that match a criteria?",
+            "options_a": "COUNT()",
+            "options_b": "SUM()",
+            "options_c": "AVG()",
+            "options_d": "MAX()",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the HAVING clause do in SQL?",
+            "options_a": "Filters groups after aggregation",
+            "options_b": "Filters rows before grouping",
+            "options_c": "Sorts the result set",
+            "options_d": "Joins tables",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which type of SQL query contains another query within it?",
+            "options_a": "Nested query",
+            "options_b": "Simple query",
+            "options_c": "Join query",
+            "options_d": "Projection query",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the PRIMARY KEY constraint?",
+            "options_a": "To uniquely identify each record in a table",
+            "options_b": "To create relationships between tables",
+            "options_c": "To enforce business rules",
+            "options_d": "To improve query performance",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which SQL command is used to remove rows from a table?",
+            "options_a": "DELETE",
+            "options_b": "REMOVE",
+            "options_c": "DROP",
+            "options_d": "ERASE",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of JDBC in database programming?",
+            "options_a": "To provide a Java API for database connectivity",
+            "options_b": "To create database schemas",
+            "options_c": "To optimize queries",
+            "options_d": "To design ER diagrams",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which SQL command is used to grant privileges to users?",
+            "options_a": "GRANT",
+            "options_b": "ALLOW",
+            "options_c": "PERMIT",
+            "options_d": "AUTHORIZE",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is an index in a database?",
+            "options_a": "A data structure that improves retrieval speed",
+            "options_b": "A table that lists all other tables",
+            "options_c": "A special type of constraint",
+            "options_d": "A backup of the database",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which SQL keyword is used to eliminate duplicate rows in the result?",
+            "options_a": "DISTINCT",
+            "options_b": "UNIQUE",
+            "options_c": "DIFFERENT",
+            "options_d": "ONLY",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of a stored procedure?",
+            "options_a": "To store a set of SQL statements for reuse",
+            "options_b": "To create temporary tables",
+            "options_c": "To define database schema",
+            "options_d": "To optimize queries automatically",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which SQL command is used to change data in existing rows?",
+            "options_a": "UPDATE",
+            "options_b": "ALTER",
+            "options_c": "MODIFY",
+            "options_d": "CHANGE",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a view in SQL?",
+            "options_a": "A virtual table based on the result of a query",
+            "options_b": "A graphical representation of data",
+            "options_c": "A stored procedure",
+            "options_d": "An index",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which SQL operator is used to combine the result of two SELECT statements?",
+            "options_a": "UNION",
+            "options_b": "JOIN",
+            "options_c": "MERGE",
+            "options_d": "COMBINE",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of a cursor in database programming?",
+            "options_a": "To retrieve and process rows one at a time",
+            "options_b": "To define relationships",
+            "options_c": "To create indexes",
+            "options_d": "To optimize queries",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which SQL constraint ensures that a column cannot have NULL values?",
+            "options_a": "NOT NULL",
+            "options_b": "UNIQUE",
+            "options_c": "PRIMARY KEY",
+            "options_d": "CHECK",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the COMMIT command in SQL?",
+            "options_a": "To permanently save changes made in a transaction",
+            "options_b": "To create a new table",
+            "options_c": "To grant permissions",
+            "options_d": "To define constraints",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which type of join returns all rows from both tables with NULLs where matches don't exist?",
+            "options_a": "FULL OUTER JOIN",
+            "options_b": "INNER JOIN",
+            "options_c": "LEFT JOIN",
+            "options_d": "RIGHT JOIN",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the WITH clause in SQL?",
+            "options_a": "To define a temporary result set for use in a query",
+            "options_b": "To specify conditions",
+            "options_c": "To create tables",
+            "options_d": "To grant permissions",
+            "correct_answer": "option_a"
+        }
+    ]
+}

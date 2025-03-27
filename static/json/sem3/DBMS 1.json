@@ -1,0 +1,166 @@
+{
+    "test_name": "Database Fundamentals",
+    "test_description": "This test covers basic database concepts including characteristics, file systems vs DBMS, data abstraction, architecture, and DBA roles.",
+    "questions": [
+        {
+            "question": "Which of the following is NOT a characteristic of database systems?",
+            "options_a": "Data redundancy",
+            "options_b": "Data independence",
+            "options_c": "Data integrity",
+            "options_d": "Data sharing",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main disadvantage of file systems compared to database systems?",
+            "options_a": "Data redundancy and inconsistency",
+            "options_b": "Faster access speed",
+            "options_c": "Simpler implementation",
+            "options_d": "Less storage required",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which level of data abstraction describes how data is actually stored?",
+            "options_a": "Physical level",
+            "options_b": "Logical level",
+            "options_c": "View level",
+            "options_d": "Conceptual level",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does data independence refer to?",
+            "options_a": "Ability to change schema without affecting applications",
+            "options_b": "Storing data in different locations",
+            "options_c": "Using different data types",
+            "options_d": "Processing data without dependencies",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which component of DBMS architecture is responsible for query processing?",
+            "options_a": "Storage manager",
+            "options_b": "Query processor",
+            "options_c": "Transaction manager",
+            "options_d": "Buffer manager",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the primary role of a Database Administrator (DBA)?",
+            "options_a": "Designing and maintaining the database system",
+            "options_b": "Writing application code",
+            "options_c": "Creating user interfaces",
+            "options_d": "Managing network infrastructure",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which type of data independence allows changes to conceptual schema without affecting applications?",
+            "options_a": "Physical data independence",
+            "options_b": "Logical data independence",
+            "options_c": "View data independence",
+            "options_d": "Structural data independence",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of the three-schema architecture?",
+            "options_a": "To separate user applications from the physical database",
+            "options_b": "To increase data redundancy",
+            "options_c": "To limit database access",
+            "options_d": "To reduce storage requirements",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT typically a responsibility of a DBA?",
+            "options_a": "Schema definition",
+            "options_b": "Application programming",
+            "options_c": "Security and authorization",
+            "options_d": "Performance tuning",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main advantage of using a DBMS over file systems?",
+            "options_a": "Reduced data redundancy",
+            "options_b": "Faster processing speed",
+            "options_c": "Simpler implementation",
+            "options_d": "Less storage space",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which level of abstraction describes the entire database for a community of users?",
+            "options_a": "Physical level",
+            "options_b": "Logical level",
+            "options_c": "View level",
+            "options_d": "External level",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of data dictionary in a DBMS?",
+            "options_a": "To store metadata about the database",
+            "options_b": "To store actual user data",
+            "options_c": "To manage user interfaces",
+            "options_d": "To handle network connections",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which component of DBMS is responsible for concurrency control?",
+            "options_a": "Query processor",
+            "options_b": "Transaction manager",
+            "options_c": "Storage manager",
+            "options_d": "Buffer manager",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main purpose of view level abstraction?",
+            "options_a": "To provide customized views of data for different users",
+            "options_b": "To describe physical storage details",
+            "options_c": "To optimize query processing",
+            "options_d": "To manage transaction logs",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a function of a DBMS?",
+            "options_a": "Data redundancy",
+            "options_b": "Data integrity",
+            "options_c": "Data security",
+            "options_d": "Data sharing",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of logical data independence?",
+            "options_a": "To change logical schema without affecting external schema",
+            "options_b": "To change physical schema without affecting logical schema",
+            "options_c": "To change storage devices without affecting applications",
+            "options_d": "To change user interfaces without affecting data",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which DBMS component is responsible for managing disk storage?",
+            "options_a": "Query processor",
+            "options_b": "Transaction manager",
+            "options_c": "Storage manager",
+            "options_d": "Buffer manager",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the primary advantage of database approach over file processing?",
+            "options_a": "Reduced data redundancy and inconsistency",
+            "options_b": "Faster processing speed",
+            "options_c": "Lower hardware requirements",
+            "options_d": "Simpler programming model",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a typical database user?",
+            "options_a": "Naive users",
+            "options_b": "Application programmers",
+            "options_c": "Database Administrator",
+            "options_d": "Network engineers",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of physical data independence?",
+            "options_a": "To change physical schema without affecting logical schema",
+            "options_b": "To change logical schema without affecting views",
+            "options_c": "To change user interfaces without affecting data",
+            "options_d": "To change application programs without affecting data",
+            "correct_answer": "option_a"
+        }
+    ]
+}

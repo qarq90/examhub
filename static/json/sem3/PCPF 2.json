@@ -1,0 +1,166 @@
+{
+    "test_name": "Object-Oriented Concepts",
+    "test_description": "This test covers object-oriented programming concepts including encapsulation, polymorphism, inheritance, and dynamic binding.",
+    "questions": [
+        {
+            "question": "What is the primary purpose of encapsulation in OOP?",
+            "options_a": "To hide implementation details",
+            "options_b": "To improve performance",
+            "options_c": "To reduce code size",
+            "options_d": "To enable parallel processing",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which OOP concept allows multiple methods with the same name but different parameters?",
+            "options_a": "Inheritance",
+            "options_b": "Polymorphism",
+            "options_c": "Overloading",
+            "options_d": "Encapsulation",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the 'finalize' method in Java?",
+            "options_a": "To perform cleanup before garbage collection",
+            "options_b": "To initialize objects",
+            "options_c": "To terminate program execution",
+            "options_d": "To lock objects",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which type of polymorphism is resolved at runtime?",
+            "options_a": "Ad-hoc polymorphism",
+            "options_b": "Parametric polymorphism",
+            "options_c": "Subtype polymorphism",
+            "options_d": "Compile-time polymorphism",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the main advantage of inheritance?",
+            "options_a": "Code reuse",
+            "options_b": "Improved performance",
+            "options_c": "Reduced memory usage",
+            "options_d": "Simpler syntax",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which OOP concept is implemented using interfaces in Java?",
+            "options_a": "Multiple inheritance",
+            "options_b": "Encapsulation",
+            "options_c": "Method overloading",
+            "options_d": "Operator overloading",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is dynamic binding?",
+            "options_a": "Resolving method calls at runtime",
+            "options_b": "Linking libraries at load time",
+            "options_c": "Memory allocation during execution",
+            "options_d": "Variable type determination",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a pillar of OOP?",
+            "options_a": "Encapsulation",
+            "options_b": "Inheritance",
+            "options_c": "Polymorphism",
+            "options_d": "Iteration",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of a constructor?",
+            "options_a": "To initialize objects",
+            "options_b": "To destroy objects",
+            "options_c": "To format output",
+            "options_d": "To handle exceptions",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which access modifier provides the most restrictive access?",
+            "options_a": "public",
+            "options_b": "protected",
+            "options_c": "private",
+            "options_d": "package-private",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is method overriding?",
+            "options_a": "Providing a new implementation for an inherited method",
+            "options_b": "Creating multiple methods with the same name",
+            "options_c": "Hiding method implementation",
+            "options_d": "Making a method final",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which design pattern ensures only one instance of a class exists?",
+            "options_a": "Factory",
+            "options_b": "Singleton",
+            "options_c": "Observer",
+            "options_d": "Decorator",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the 'is-a' relationship in OOP?",
+            "options_a": "Inheritance",
+            "options_b": "Composition",
+            "options_c": "Association",
+            "options_d": "Aggregation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which keyword is used to prevent method overriding in Java?",
+            "options_a": "static",
+            "options_b": "final",
+            "options_c": "abstract",
+            "options_d": "private",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of the 'super' keyword in Java?",
+            "options_a": "To refer to parent class members",
+            "options_b": "To create objects",
+            "options_c": "To handle exceptions",
+            "options_d": "To allocate memory",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which OOP concept is demonstrated when a Dog class extends an Animal class?",
+            "options_a": "Encapsulation",
+            "options_b": "Inheritance",
+            "options_c": "Polymorphism",
+            "options_d": "Abstraction",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the difference between overloading and overriding?",
+            "options_a": "Overloading is compile-time polymorphism, overriding is runtime polymorphism",
+            "options_b": "Overloading is runtime polymorphism, overriding is compile-time polymorphism",
+            "options_c": "They are the same concept",
+            "options_d": "Overloading applies to variables, overriding to methods",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is an example of abstraction?",
+            "options_a": "Using private variables",
+            "options_b": "Creating interfaces",
+            "options_c": "Implementing final methods",
+            "options_d": "Overloading operators",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the 'has-a' relationship in OOP?",
+            "options_a": "Inheritance",
+            "options_b": "Composition",
+            "options_c": "Polymorphism",
+            "options_d": "Encapsulation",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which design principle suggests that classes should be open for extension but closed for modification?",
+            "options_a": "SOLID",
+            "options_b": "DRY",
+            "options_c": "KISS",
+            "options_d": "YAGNI",
+            "correct_answer": "option_a"
+        }
+    ]
+}

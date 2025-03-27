@@ -1,0 +1,166 @@
+{
+    "test_name": "Logic Programming with PROLOG",
+    "test_description": "This test covers logic programming concepts, PROLOG fundamentals, resolution and unification, lists, and database manipulation in PROLOG.",
+    "questions": [
+        {
+            "question": "What is the basic building block of a PROLOG program?",
+            "options_a": "Predicates",
+            "options_b": "Functions",
+            "options_c": "Objects",
+            "options_d": "Modules",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a PROLOG term?",
+            "options_a": "Atom",
+            "options_b": "Variable",
+            "options_c": "Number",
+            "options_d": "Loop",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is unification in PROLOG?",
+            "options_a": "Matching two terms by finding a variable substitution",
+            "options_b": "Combining multiple predicates",
+            "options_c": "Optimizing queries",
+            "options_d": "Formatting output",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "How is the list [a,b,c] represented in PROLOG?",
+            "options_a": "(a, b, c)",
+            "options_b": "[a | [b | [c | []]]",
+            "options_c": "{a, b, c}",
+            "options_d": "<a b c>",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of the cut operator (!) in PROLOG?",
+            "options_a": "To prevent backtracking",
+            "options_b": "To concatenate lists",
+            "options_c": "To format output",
+            "options_d": "To declare variables",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which PROLOG predicate is used for arithmetic evaluation?",
+            "options_a": "eval/1",
+            "options_b": "is/2",
+            "options_c": "calc/1",
+            "options_d": "math/2",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is resolution in logic programming?",
+            "options_a": "The process of deriving new clauses from existing ones",
+            "options_b": "Displaying query results",
+            "options_c": "Optimizing memory usage",
+            "options_d": "Formatting source code",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which operator is used for unification in PROLOG?",
+            "options_a": "=",
+            "options_b": "==",
+            "options_c": ":=",
+            "options_d": "=>",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the Horn clause in logic programming?",
+            "options_a": "A clause with at most one positive literal",
+            "options_b": "A clause with multiple conclusions",
+            "options_c": "A recursive clause",
+            "options_d": "A mathematical function",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "How do you represent 'not' in standard PROLOG?",
+            "options_a": "not/1",
+            "options_b": "!/0",
+            "options_c": "\\+/1",
+            "options_d": "~",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is backtracking in PROLOG?",
+            "options_a": "Exploring alternative solutions when one fails",
+            "options_b": "Going back to previous queries",
+            "options_c": "Reversing list elements",
+            "options_d": "Undoing database changes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which predicate is used to assert new clauses into the database?",
+            "options_a": "add/1",
+            "options_b": "assert/1",
+            "options_c": "new/1",
+            "options_d": "insert/1",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the execution order of PROLOG goals?",
+            "options_a": "Left-to-right, depth-first",
+            "options_b": "Right-to-left, breadth-first",
+            "options_c": "Random order",
+            "options_d": "Parallel execution",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which PROLOG predicate checks for term equality without unification?",
+            "options_a": "=:=",
+            "options_b": "==",
+            "options_c": "=",
+            "options_d": "equals/2",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What does the fail/0 predicate do in PROLOG?",
+            "options_a": "Forces backtracking",
+            "options_b": "Terminates the program",
+            "options_c": "Skips the current goal",
+            "options_d": "Displays an error message",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "How do you write a rule in PROLOG?",
+            "options_a": "head :- body",
+            "options_b": "head -> body",
+            "options_c": "head = body",
+            "options_d": "head { body }",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the anonymous variable in PROLOG?",
+            "options_a": "_",
+            "options_b": "?",
+            "options_c": "*",
+            "options_d": "Any lowercase word",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which predicate concatenates two lists in PROLOG?",
+            "options_a": "concat/3",
+            "options_b": "append/3",
+            "options_c": "join/3",
+            "options_d": "combine/3",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is a major deficiency of PROLOG compared to imperative languages?",
+            "options_a": "Poor handling of I/O",
+            "options_b": "Difficulty with procedural algorithms",
+            "options_c": "Lack of recursion support",
+            "options_d": "No support for variables",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which PROLOG predicate removes all clauses matching its argument?",
+            "options_a": "remove/1",
+            "options_b": "delete/1",
+            "options_c": "retract/1",
+            "options_d": "erase/1",
+            "correct_answer": "option_c"
+        }
+    ]
+}

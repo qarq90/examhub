@@ -1,4 +1,6 @@
 {
+    "test_name": "Automata Theory: Regular Expressions on {a, b}",
+    "test_description": "This test evaluates understanding of regular expressions over the alphabet {a, b}. Questions cover pattern matching, language properties, and regular expression construction for strings containing 'a's and 'b's.",
     "questions": [
         {
             "question": "Which regular expression matches all strings over {a, b} that end with 'ab'?",

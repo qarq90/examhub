@@ -1,0 +1,166 @@
+{
+    "test_name": "Network Layer",
+    "test_description": "This test covers topics related to the Network layer, including IP addressing, subnetting, routing algorithms, IPv6, and network layer protocols.",
+    "questions": [
+        {
+            "question": "What is the primary function of the Network layer?",
+            "options_a": "To provide reliable end-to-end communication",
+            "options_b": "To route packets from source to destination across multiple networks",
+            "options_c": "To handle electrical signal transmission",
+            "options_d": "To manage application-level services",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is a class B IP address?",
+            "options_a": "10.0.0.1",
+            "options_b": "172.16.0.1",
+            "options_c": "192.168.0.1",
+            "options_d": "224.0.0.1",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of subnetting?",
+            "options_a": "To combine multiple networks into one",
+            "options_b": "To divide a large network into smaller, more manageable networks",
+            "options_c": "To convert private IP addresses to public ones",
+            "options_d": "To increase the speed of network transmission",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which routing algorithm uses the shortest path first approach?",
+            "options_a": "Distance vector routing",
+            "options_b": "Link state routing",
+            "options_c": "Path vector routing",
+            "options_d": "Flooding",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main advantage of IPv6 over IPv4?",
+            "options_a": "Smaller packet headers",
+            "options_b": "Larger address space",
+            "options_c": "Lower security",
+            "options_d": "Simpler routing",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which protocol is used to automatically assign IP addresses to devices on a network?",
+            "options_a": "DNS",
+            "options_b": "DHCP",
+            "options_c": "NAT",
+            "options_d": "ARP",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of NAT (Network Address Translation)?",
+            "options_a": "To translate between private and public IP addresses",
+            "options_b": "To assign IP addresses automatically",
+            "options_c": "To resolve domain names to IP addresses",
+            "options_d": "To encrypt network traffic",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which field in an IPv4 header is used to prevent packets from looping forever?",
+            "options_a": "Version",
+            "options_b": "Time to Live (TTL)",
+            "options_c": "Header checksum",
+            "options_d": "Protocol",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main disadvantage of distance vector routing?",
+            "options_a": "It requires too much memory",
+            "options_b": "It converges slowly and can cause count-to-infinity problems",
+            "options_c": "It is too complex to implement",
+            "options_d": "It doesn't work with IPv6",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which IPv6 address type is equivalent to IPv4's 127.0.0.1?",
+            "options_a": "Global unicast",
+            "options_b": "Link-local",
+            "options_c": "Unique local",
+            "options_d": "Loopback (::1)",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of supernetting (CIDR)?",
+            "options_a": "To divide networks into smaller subnets",
+            "options_b": "To combine multiple networks into a larger network",
+            "options_c": "To convert IPv4 addresses to IPv6",
+            "options_d": "To assign IP addresses automatically",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which protocol is used to map IP addresses to MAC addresses?",
+            "options_a": "DNS",
+            "options_b": "DHCP",
+            "options_c": "ARP",
+            "options_d": "RARP",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the main purpose of the IPv6 Neighbor Discovery protocol?",
+            "options_a": "To replace ARP in IPv6 networks",
+            "options_b": "To assign IP addresses automatically",
+            "options_c": "To encrypt network traffic",
+            "options_d": "To compress data for transmission",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a transition mechanism from IPv4 to IPv6?",
+            "options_a": "Dual stack",
+            "options_b": "Tunneling",
+            "options_c": "Header translation",
+            "options_d": "Packet fragmentation",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of the Type of Service field in an IPv4 header?",
+            "options_a": "To indicate the packet priority and type of service requested",
+            "options_b": "To identify the source address",
+            "options_c": "To detect errors in the header",
+            "options_d": "To specify the protocol used in the data portion",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which routing protocol uses the Bellman-Ford algorithm?",
+            "options_a": "OSPF",
+            "options_b": "RIP",
+            "options_c": "BGP",
+            "options_d": "IS-IS",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main purpose of BGP (Border Gateway Protocol)?",
+            "options_a": "For routing within an autonomous system",
+            "options_b": "For routing between autonomous systems on the internet",
+            "options_c": "For local area network routing",
+            "options_d": "For wireless network routing",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which IPv6 address type is used for a single interface, but packets are delivered to multiple interfaces?",
+            "options_a": "Unicast",
+            "options_b": "Anycast",
+            "options_c": "Multicast",
+            "options_d": "Broadcast",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of the IPv6 Flow Label field?",
+            "options_a": "To identify packets that belong to the same flow",
+            "options_b": "To indicate the version of IP being used",
+            "options_c": "To specify the hop limit",
+            "options_d": "To identify the next header",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a characteristic of classless addressing?",
+            "options_a": "Fixed network/host boundaries",
+            "options_b": "Use of subnet masks",
+            "options_c": "Limited to three address classes",
+            "options_d": "No support for VLSM",
+            "correct_answer": "option_b"
+        }
+    ]
+}

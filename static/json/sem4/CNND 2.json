@@ -1,0 +1,166 @@
+{
+    "test_name": "Physical Layer and Data Link Layer",
+    "test_description": "This test covers topics related to the Physical and Data Link layers, including transmission media, switching techniques, error detection and correction, data link protocols, and medium access control.",
+    "questions": [
+        {
+            "question": "Which of the following is NOT a guided transmission medium?",
+            "options_a": "Twisted pair cable",
+            "options_b": "Coaxial cable",
+            "options_c": "Fiber optic cable",
+            "options_d": "Radio waves",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the main advantage of fiber optic cables over copper wires?",
+            "options_a": "Lower cost",
+            "options_b": "Higher bandwidth and immunity to electromagnetic interference",
+            "options_c": "Easier to install",
+            "options_d": "Better compatibility with older devices",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which switching technique establishes a dedicated path between sender and receiver?",
+            "options_a": "Circuit switching",
+            "options_b": "Packet switching",
+            "options_c": "Message switching",
+            "options_d": "Cell switching",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the cyclic redundancy check (CRC) in the Data Link layer?",
+            "options_a": "To establish connections between devices",
+            "options_b": "To detect errors in transmitted frames",
+            "options_c": "To compress data",
+            "options_d": "To encrypt data",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which error detection method uses parity bits?",
+            "options_a": "Checksum",
+            "options_b": "CRC",
+            "options_c": "Hamming code",
+            "options_d": "Simple parity check",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of framing in the Data Link layer?",
+            "options_a": "To determine which device can transmit at a given time",
+            "options_b": "To identify the start and end of a frame",
+            "options_c": "To compress data for transmission",
+            "options_d": "To encrypt data for security",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which sliding window protocol allows for selective retransmission of frames?",
+            "options_a": "Stop-and-Wait",
+            "options_b": "Go-Back-N",
+            "options_c": "Selective Repeat",
+            "options_d": "Piggybacking",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the main purpose of flow control in the Data Link layer?",
+            "options_a": "To prevent a fast sender from overwhelming a slow receiver",
+            "options_b": "To detect errors in transmission",
+            "options_c": "To establish connections between devices",
+            "options_d": "To compress data for transmission",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which medium access control protocol uses collision detection?",
+            "options_a": "ALOHA",
+            "options_b": "CSMA/CD",
+            "options_c": "Token passing",
+            "options_d": "Polling",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the data rate of standard Ethernet?",
+            "options_a": "10 Mbps",
+            "options_b": "100 Mbps",
+            "options_c": "1 Gbps",
+            "options_d": "10 Gbps",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a controlled access method?",
+            "options_a": "ALOHA",
+            "options_b": "CSMA/CD",
+            "options_c": "Token passing",
+            "options_d": "CSMA/CA",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the preamble in an Ethernet frame?",
+            "options_a": "To identify the source and destination addresses",
+            "options_b": "To synchronize the receiver's clock",
+            "options_c": "To carry error detection information",
+            "options_d": "To indicate the frame type",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which field in an Ethernet frame is used for error detection?",
+            "options_a": "Preamble",
+            "options_b": "Destination address",
+            "options_c": "Source address",
+            "options_d": "Frame check sequence",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the main advantage of Fast Ethernet over standard Ethernet?",
+            "options_a": "Lower cost",
+            "options_b": "Higher data rate (100 Mbps)",
+            "options_c": "Longer maximum cable length",
+            "options_d": "Better compatibility with wireless networks",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which wireless transmission method uses frequency hopping?",
+            "options_a": "Infrared",
+            "options_b": "Spread spectrum",
+            "options_c": "Microwave",
+            "options_d": "Satellite",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of piggybacking in data link protocols?",
+            "options_a": "To combine acknowledgment with data frames",
+            "options_b": "To increase frame size",
+            "options_c": "To encrypt data",
+            "options_d": "To detect errors",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a characteristic of Gigabit Ethernet?",
+            "options_a": "1 Gbps data rate",
+            "options_b": "Uses only copper cables",
+            "options_c": "Maximum segment length of 1000 meters",
+            "options_d": "Uses only wireless transmission",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the token in token passing protocols?",
+            "options_a": "To encrypt data",
+            "options_b": "To determine which station can transmit",
+            "options_c": "To detect errors",
+            "options_d": "To compress data",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is NOT a function of the Data Link layer?",
+            "options_a": "Framing",
+            "options_b": "Error control",
+            "options_c": "Logical addressing",
+            "options_d": "Flow control",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the maximum data rate of 10-Gigabit Ethernet?",
+            "options_a": "1 Gbps",
+            "options_b": "10 Gbps",
+            "options_c": "100 Gbps",
+            "options_d": "1 Tbps",
+            "correct_answer": "option_b"
+        }
+    ]
+}

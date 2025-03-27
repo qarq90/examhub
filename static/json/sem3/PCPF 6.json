@@ -1,0 +1,166 @@
+{
+    "test_name": "Scripting Languages",
+    "test_description": "This test covers scripting language characteristics, web scripting, string manipulation, and innovative features of scripting languages.",
+    "questions": [
+        {
+            "question": "Which of the following is NOT a typical characteristic of scripting languages?",
+            "options_a": "Strong static typing",
+            "options_b": "Dynamic typing",
+            "options_c": "Interpreted execution",
+            "options_d": "High-level operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary use of client-side scripting in web development?",
+            "options_a": "To enhance user interface and interactivity",
+            "options_b": "To process database queries",
+            "options_c": "To handle server configuration",
+            "options_d": "To manage file systems",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which scripting language is commonly used for server-side web development?",
+            "options_a": "JavaScript",
+            "options_b": "Python",
+            "options_c": "PHP",
+            "options_d": "All of the above",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of regular expressions in scripting languages?",
+            "options_a": "Pattern matching in strings",
+            "options_b": "Mathematical calculations",
+            "options_c": "Memory management",
+            "options_d": "Thread synchronization",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common application domain for scripting languages?",
+            "options_a": "System administration",
+            "options_b": "Web development",
+            "options_c": "Game engine development",
+            "options_d": "Text processing",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the main advantage of using scripting languages for rapid prototyping?",
+            "options_a": "Fast development cycle",
+            "options_b": "High performance",
+            "options_c": "Strong type safety",
+            "options_d": "Low memory usage",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which JavaScript feature enables asynchronous programming?",
+            "options_a": "Callbacks and promises",
+            "options_b": "Classes",
+            "options_c": "Strict mode",
+            "options_d": "Arrow functions",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a common use of Python in scripting?",
+            "options_a": "Data processing and analysis",
+            "options_b": "Operating system kernels",
+            "options_c": "Device drivers",
+            "options_d": "Real-time systems",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which PHP feature is specifically designed for web development?",
+            "options_a": "Embedding directly in HTML",
+            "options_b": "Strong typing",
+            "options_c": "Thread support",
+            "options_d": "Pointer arithmetic",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the 'eval' function in scripting languages?",
+            "options_a": "To execute strings as code",
+            "options_b": "To evaluate mathematical expressions",
+            "options_c": "To check variable types",
+            "options_d": "To format strings",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which scripting language feature allows code to inspect and modify its own structure?",
+            "options_a": "Reflection",
+            "options_b": "Inheritance",
+            "options_c": "Encapsulation",
+            "options_d": "Polymorphism",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary benefit of using scripting languages for text processing?",
+            "options_a": "Powerful string manipulation features",
+            "options_b": "Low memory footprint",
+            "options_c": "Fast execution speed",
+            "options_d": "Strong type checking",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which JavaScript technology enables dynamic web page content updates without reloading?",
+            "options_a": "AJAX",
+            "options_b": "CSS",
+            "options_c": "HTML5",
+            "options_d": "WebSockets",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a common use of Ruby scripting?",
+            "options_a": "Web application development",
+            "options_b": "Operating system kernels",
+            "options_c": "Real-time systems",
+            "options_d": "Device drivers",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which Perl feature is particularly useful for text processing?",
+            "options_a": "Powerful regular expressions",
+            "options_b": "Strong static typing",
+            "options_c": "Manual memory management",
+            "options_d": "Low-level pointer operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of namespaces in scripting languages?",
+            "options_a": "To prevent naming conflicts",
+            "options_b": "To improve performance",
+            "options_c": "To reduce memory usage",
+            "options_d": "To enable multithreading",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which Python feature allows for elegant list transformations?",
+            "options_a": "List comprehensions",
+            "options_b": "Generators",
+            "options_c": "Decorators",
+            "options_d": "Metaclasses",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary benefit of using scripting languages for system administration?",
+            "options_a": "Automation of repetitive tasks",
+            "options_b": "High-performance computing",
+            "options_c": "Real-time processing",
+            "options_d": "Memory efficiency",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which JavaScript framework is commonly used for building user interfaces?",
+            "options_a": "React",
+            "options_b": "Django",
+            "options_c": "Flask",
+            "options_d": "Express",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a common characteristic of scripting language scoping rules?",
+            "options_a": "Dynamic scoping or flexible lexical scoping",
+            "options_b": "Strict block scoping only",
+            "options_c": "No support for scoping",
+            "options_d": "File-level scoping only",
+            "correct_answer": "option_a"
+        }
+    ]
+}

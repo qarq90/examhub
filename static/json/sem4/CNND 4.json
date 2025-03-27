@@ -1,0 +1,166 @@
+{
+    "test_name": "Transport and Session Layers",
+    "test_description": "This test covers topics related to the Transport and Session layers, including TCP, UDP, flow control, error control, congestion control, and session layer protocols.",
+    "questions": [
+        {
+            "question": "What is the primary function of the Transport layer?",
+            "options_a": "To route packets across networks",
+            "options_b": "To provide reliable end-to-end communication between processes",
+            "options_c": "To handle electrical signal transmission",
+            "options_d": "To manage application-level services",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which Transport layer protocol is connection-oriented?",
+            "options_a": "UDP",
+            "options_b": "TCP",
+            "options_c": "IP",
+            "options_d": "ICMP",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main advantage of UDP over TCP?",
+            "options_a": "More reliable delivery",
+            "options_b": "Lower overhead and faster transmission",
+            "options_c": "Flow control",
+            "options_d": "Congestion control",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which field in a TCP header is used for flow control?",
+            "options_a": "Sequence number",
+            "options_b": "Acknowledgment number",
+            "options_c": "Window size",
+            "options_d": "Checksum",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the three-way handshake in TCP?",
+            "options_a": "To establish a connection",
+            "options_b": "To terminate a connection",
+            "options_c": "To recover from errors",
+            "options_d": "To compress data",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a feature of TCP?",
+            "options_a": "Flow control",
+            "options_b": "Error detection",
+            "options_c": "Connectionless communication",
+            "options_d": "Congestion control",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the Session layer?",
+            "options_a": "To establish, manage, and terminate sessions between applications",
+            "options_b": "To route packets across networks",
+            "options_c": "To handle electrical signal transmission",
+            "options_d": "To compress and encrypt data",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol is an example of a Session layer protocol?",
+            "options_a": "TCP",
+            "options_b": "UDP",
+            "options_c": "RPC (Remote Procedure Call)",
+            "options_d": "IP",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of TCP's sliding window protocol?",
+            "options_a": "To establish connections",
+            "options_b": "To provide flow control and reliable delivery",
+            "options_c": "To encrypt data",
+            "options_d": "To compress data",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following applications would most likely use UDP?",
+            "options_a": "File transfer",
+            "options_b": "Email",
+            "options_c": "Online banking",
+            "options_d": "Video streaming",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of TCP timers?",
+            "options_a": "To measure connection duration",
+            "options_b": "To handle various aspects of connection management and reliability",
+            "options_c": "To synchronize clocks between computers",
+            "options_d": "To limit the time an application can use the network",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which TCP congestion control algorithm gradually increases the window size?",
+            "options_a": "Slow start",
+            "options_b": "Fast retransmit",
+            "options_c": "Fast recovery",
+            "options_d": "AIMD (Additive Increase Multiplicative Decrease)",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the SYN flag in a TCP segment?",
+            "options_a": "To synchronize sequence numbers during connection establishment",
+            "options_b": "To acknowledge received data",
+            "options_c": "To terminate a connection",
+            "options_d": "To indicate urgent data",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a characteristic of UDP?",
+            "options_a": "Connection-oriented",
+            "options_b": "Reliable delivery",
+            "options_c": "No flow control",
+            "options_d": "Congestion control",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the RPC (Remote Procedure Call) protocol?",
+            "options_a": "To allow a program to execute procedures on another computer",
+            "options_b": "To route packets across networks",
+            "options_c": "To compress data for transmission",
+            "options_d": "To encrypt network communications",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which TCP timer ensures that a connection is not kept open indefinitely?",
+            "options_a": "Retransmission timer",
+            "options_b": "Persistence timer",
+            "options_c": "Keepalive timer",
+            "options_d": "Time-waited timer",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of TCP's fast retransmit mechanism?",
+            "options_a": "To establish connections quickly",
+            "options_b": "To retransmit lost segments without waiting for a timeout",
+            "options_c": "To compress data faster",
+            "options_d": "To encrypt data more efficiently",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is NOT a TCP timer?",
+            "options_a": "Retransmission timer",
+            "options_b": "Persistence timer",
+            "options_c": "Compression timer",
+            "options_d": "Keepalive timer",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the Session layer's dialog control?",
+            "options_a": "To determine which device can transmit at a given time",
+            "options_b": "To establish, manage, and terminate sessions between applications",
+            "options_c": "To route packets across networks",
+            "options_d": "To compress and encrypt data",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following best describes TCP's error control mechanism?",
+            "options_a": "Uses checksums and acknowledgments to detect and recover from errors",
+            "options_b": "Ignores all transmission errors",
+            "options_c": "Detects errors but doesn't recover from them",
+            "options_d": "Uses only parity checks for error detection",
+            "correct_answer": "option_a"
+        }
+    ]
+}

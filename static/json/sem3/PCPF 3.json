@@ -1,0 +1,166 @@
+{
+    "test_name": "Functional Programming",
+    "test_description": "This test covers lambda calculus, functional programming concepts, evaluation orders, higher-order functions, and I/O in functional programming.",
+    "questions": [
+        {
+            "question": "Which of the following is a pure functional language?",
+            "options_a": "Haskell",
+            "options_b": "Java",
+            "options_c": "Python",
+            "options_d": "C++",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main characteristic of a pure function?",
+            "options_a": "No side effects and same output for same input",
+            "options_b": "Fast execution",
+            "options_c": "Large code size",
+            "options_d": "Many parameters",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which evaluation strategy evaluates arguments before applying a function?",
+            "options_a": "Normal order",
+            "options_b": "Applicative order",
+            "options_c": "Lazy evaluation",
+            "options_d": "Partial evaluation",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is a higher-order function?",
+            "options_a": "A function that takes other functions as arguments or returns them",
+            "options_b": "A function with many parameters",
+            "options_c": "A function that executes quickly",
+            "options_d": "A function that modifies global state",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which lambda calculus term represents the identity function?",
+            "options_a": "λx.x",
+            "options_b": "λx.y",
+            "options_c": "λx.xy",
+            "options_d": "λx.λy.x",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is currying in functional programming?",
+            "options_a": "Transforming a function with multiple arguments into a sequence of functions",
+            "options_b": "Optimizing recursive functions",
+            "options_c": "Combining multiple functions into one",
+            "options_d": "Handling I/O operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a functional programming feature?",
+            "options_a": "Immutable data",
+            "options_b": "First-class functions",
+            "options_c": "Side effects",
+            "options_d": "Recursion",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of monads in functional programming?",
+            "options_a": "To handle side effects in a pure way",
+            "options_b": "To optimize performance",
+            "options_c": "To reduce code size",
+            "options_d": "To enable object-oriented features",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which evaluation strategy delays evaluation until the value is needed?",
+            "options_a": "Eager evaluation",
+            "options_b": "Strict evaluation",
+            "options_c": "Lazy evaluation",
+            "options_d": "Partial evaluation",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What does referential transparency mean in functional programming?",
+            "options_a": "An expression can be replaced with its value without changing program behavior",
+            "options_b": "Functions must be transparent",
+            "options_c": "Variables can be referenced anywhere",
+            "options_d": "Code must be well-documented",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a common use of closures?",
+            "options_a": "Creating private variables",
+            "options_b": "Improving performance",
+            "options_c": "Reducing memory usage",
+            "options_d": "Formatting output",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is tail recursion?",
+            "options_a": "A recursive call that's the last operation in a function",
+            "options_b": "Recursion with multiple base cases",
+            "options_c": "Recursion with side effects",
+            "options_d": "Mutual recursion",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which lambda calculus combinator represents logical AND?",
+            "options_a": "λx.λy.x y x",
+            "options_b": "λx.λy.x y y",
+            "options_c": "λx.λy.x x y",
+            "options_d": "λx.λy.x y",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is function composition?",
+            "options_a": "Applying one function to the result of another",
+            "options_b": "Combining functions into a class",
+            "options_c": "Making functions more complex",
+            "options_d": "Splitting a function into parts",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of these is NOT a benefit of immutable data?",
+            "options_a": "Easier debugging",
+            "options_b": "Thread safety",
+            "options_c": "Better performance in all cases",
+            "options_d": "Predictable code",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the Y combinator used for in lambda calculus?",
+            "options_a": "Implementing recursion",
+            "options_b": "Function composition",
+            "options_c": "Currying",
+            "options_d": "I/O operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which evaluation order may lead to non-termination when strict evaluation would terminate?",
+            "options_a": "Normal order",
+            "options_b": "Applicative order",
+            "options_c": "Strict evaluation",
+            "options_d": "Eager evaluation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a functor in functional programming?",
+            "options_a": "A type that can be mapped over",
+            "options_b": "A recursive function",
+            "options_c": "A higher-order function",
+            "options_d": "A monadic value",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which Haskell feature is used for I/O operations while maintaining purity?",
+            "options_a": "Monads",
+            "options_b": "Type classes",
+            "options_c": "Lazy evaluation",
+            "options_d": "Pattern matching",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the Church numeral for the number 2 in lambda calculus?",
+            "options_a": "λf.λx.f (f x)",
+            "options_b": "λf.λx.f x",
+            "options_c": "λf.λx.x",
+            "options_d": "λf.λx.f",
+            "correct_answer": "option_a"
+        }
+    ]
+}

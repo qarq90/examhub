@@ -1,0 +1,166 @@
+{
+    "test_name": "Programming Paradigms and Fundamentals",
+    "test_description": "This test covers programming paradigms, names/scopes/bindings, type systems, subroutines, and control abstraction concepts.",
+    "questions": [
+        {
+            "question": "Which programming paradigm emphasizes immutable data and pure functions?",
+            "options_a": "Imperative",
+            "options_b": "Object-oriented",
+            "options_c": "Functional",
+            "options_d": "Logic",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the scope of a variable declared inside a function in most languages?",
+            "options_a": "Global scope",
+            "options_b": "File scope",
+            "options_c": "Local/block scope",
+            "options_d": "Module scope",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "Which memory allocation method assigns memory at compile time?",
+            "options_a": "Static allocation",
+            "options_b": "Stack allocation",
+            "options_c": "Heap allocation",
+            "options_d": "Automatic allocation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of type checking in programming languages?",
+            "options_a": "To verify that operations are performed on compatible types",
+            "options_b": "To optimize code execution",
+            "options_c": "To allocate memory efficiently",
+            "options_d": "To format source code",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which parameter passing method copies the actual parameter's value?",
+            "options_a": "Call by value",
+            "options_b": "Call by reference",
+            "options_c": "Call by name",
+            "options_d": "Call by result",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is stored in the stack frame during subroutine execution?",
+            "options_a": "Local variables and return address",
+            "options_b": "Global variables",
+            "options_c": "Heap-allocated objects",
+            "options_d": "Static variables",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common programming paradigm?",
+            "options_a": "Declarative",
+            "options_b": "Imperative",
+            "options_c": "Object-oriented",
+            "options_d": "Circular",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the binding time of a variable's type in statically typed languages?",
+            "options_a": "Compile time",
+            "options_b": "Runtime",
+            "options_c": "Link time",
+            "options_d": "Load time",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which storage class retains its value between function calls?",
+            "options_a": "auto",
+            "options_b": "static",
+            "options_c": "register",
+            "options_d": "volatile",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of exception handling?",
+            "options_a": "To manage runtime errors gracefully",
+            "options_b": "To optimize code performance",
+            "options_c": "To allocate memory dynamically",
+            "options_d": "To format source code",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which concept allows a function to call itself?",
+            "options_a": "Iteration",
+            "options_b": "Recursion",
+            "options_c": "Polymorphism",
+            "options_d": "Inheritance",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main characteristic of a coroutine?",
+            "options_a": "Multiple entry points",
+            "options_b": "Single entry point",
+            "options_c": "No return value",
+            "options_d": "No parameters",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which type of equality compares object references?",
+            "options_a": "Shallow equality",
+            "options_b": "Deep equality",
+            "options_c": "Structural equality",
+            "options_d": "Logical equality",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of generic programming?",
+            "options_a": "To write code that works with multiple types",
+            "options_b": "To optimize memory usage",
+            "options_c": "To handle exceptions",
+            "options_d": "To format strings",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which memory area is used for dynamic memory allocation?",
+            "options_a": "Stack",
+            "options_b": "Heap",
+            "options_c": "Code segment",
+            "options_d": "Data segment",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is lexical scoping?",
+            "options_a": "Scope determined by physical structure of code",
+            "options_b": "Scope determined at runtime",
+            "options_c": "Scope that changes dynamically",
+            "options_d": "Global scope only",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common parameter passing mechanism?",
+            "options_a": "Call by value",
+            "options_b": "Call by reference",
+            "options_c": "Call by name",
+            "options_d": "Call by format",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of a calling sequence?",
+            "options_a": "To manage the transfer of control between subroutines",
+            "options_b": "To allocate memory on the heap",
+            "options_c": "To handle exceptions",
+            "options_d": "To optimize loops",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which programming paradigm is PROLOG based on?",
+            "options_a": "Functional",
+            "options_b": "Logic",
+            "options_c": "Object-oriented",
+            "options_d": "Imperative",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main purpose of control abstraction?",
+            "options_a": "To hide implementation details of control structures",
+            "options_b": "To allocate memory efficiently",
+            "options_c": "To format source code",
+            "options_d": "To optimize arithmetic operations",
+            "correct_answer": "option_a"
+        }
+    ]
+}

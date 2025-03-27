@@ -30,7 +30,7 @@ Sign Up{% endblock %} {% block content %}
                         required="true"
                     />
                 </div>
-                <div class="bg-tertiary col-span-2 p-2 rounded-md shadow-lg">
+                <div class="bg-tertiary col-span-1 p-2 rounded-md shadow-lg">
                     <input
                         placeholder="Course Code"
                         type="text"
@@ -40,7 +40,49 @@ Sign Up{% endblock %} {% block content %}
                     />
                 </div>
                 <div
-                    class="bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
+                    class="bg-tertiary shadow-lg flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
+                >
+                    <select
+                        required
+                        name="course_semester"
+                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                    >
+                        <option
+                            class="cursor-pointer"
+                            value=""
+                            disabled
+                            selected
+                        >
+                            Select Semester
+                        </option>
+                        <option class="cursor-pointer" value="Semester I">
+                            Semester I
+                        </option>
+                        <option class="cursor-pointer" value="Semester II">
+                            Semester II
+                        </option>
+                        <option class="cursor-pointer" value="Semester III">
+                            Semester III
+                        </option>
+                        <option class="cursor-pointer" value="Semester IV">
+                            Semester IV
+                        </option>
+                        <option class="cursor-pointer" value="Semester V">
+                            Semester V
+                        </option>
+                        <option class="cursor-pointer" value="Semester VI">
+                            Semester VI
+                        </option>
+                        <option class="cursor-pointer" value="Semester VII">
+                            Semester VII
+                        </option>
+                        <option class="cursor-pointer" value="Semester VIII">
+                            Semester VIII
+                        </option>
+                    </select>
+                </div>
+                <div
+                    class="bg-tertiary flex cursor-pointer col-span-2 shadow-lg flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <select
                         required
@@ -72,138 +114,6 @@ Sign Up{% endblock %} {% block content %}
                         </option>
                         <option class="cursor-pointer" value="AI/ML">
                             AI/ML (Artificial Intelligence and Machine Learning)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Mechanical Engineering"
-                        >
-                            ME (Mechanical Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Civil Engineering"
-                        >
-                            CE (Civil Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Electrical Engineering"
-                        >
-                            EE (Electrical Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Electronics and Communication Engineering"
-                        >
-                            ECE (Electronics and Communication Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Aerospace Engineering"
-                        >
-                            AE (Aerospace Engineering)
-                        </option>
-                        <option class="cursor-pointer" value="Biotechnology">
-                            BT (Biotechnology)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Chemical Engineering"
-                        >
-                            CHE (Chemical Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Industrial Engineering"
-                        >
-                            IE (Industrial Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Environmental Engineering"
-                        >
-                            ENV (Environmental Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Robotics Engineering"
-                        >
-                            RE (Robotics Engineering)
-                        </option>
-                        <option class="cursor-pointer" value="Data Science">
-                            DS (Data Science)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Software Engineering"
-                        >
-                            SE (Software Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Telecommunication Engineering"
-                        >
-                            TE (Telecommunication Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Automobile Engineering"
-                        >
-                            Auto (Automobile Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Petroleum Engineering"
-                        >
-                            PE (Petroleum Engineering)
-                        </option>
-                        <option
-                            class="cursor-pointer"
-                            value="Mechatronics Engineering"
-                        >
-                            MT (Mechatronics Engineering)
-                        </option>
-                    </select>
-                </div>
-                <div
-                    class="bg-tertiary shadow-lg flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
-                >
-                    <select
-                        required
-                        name="course_semester"
-                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
-                    >
-                        <option
-                            class="cursor-pointer"
-                            value=""
-                            disabled
-                            selected
-                        >
-                            Select Semester
-                        </option>
-                        <option class="cursor-pointer" value="Semester I">
-                            Semester I (First Year)
-                        </option>
-                        <option class="cursor-pointer" value="Semester II">
-                            Semester II (First Year)
-                        </option>
-                        <option class="cursor-pointer" value="Semester III">
-                            Semester III (Second Year)
-                        </option>
-                        <option class="cursor-pointer" value="Semester IV">
-                            Semester IV (Second Year)
-                        </option>
-                        <option class="cursor-pointer" value="Semester V">
-                            Semester V (Third Year)
-                        </option>
-                        <option class="cursor-pointer" value="Semester VI">
-                            Semester VI (Third Year)
-                        </option>
-                        <option class="cursor-pointer" value="Semester VII">
-                            Semester VII (Final Year)
-                        </option>
-                        <option class="cursor-pointer" value="Semester VIII">
-                            Semester VIII (Final Year)
                         </option>
                     </select>
                 </div>

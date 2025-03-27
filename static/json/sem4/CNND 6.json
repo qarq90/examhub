@@ -1,0 +1,166 @@
+{
+    "test_name": "Advanced Networking Concepts",
+    "test_description": "This test covers advanced networking topics including VLANs, VPNs, and network design case studies for organizations.",
+    "questions": [
+        {
+            "question": "What is the primary purpose of a VLAN (Virtual Local Area Network)?",
+            "options_a": "To connect different buildings",
+            "options_b": "To logically segment a physical network into multiple broadcast domains",
+            "options_c": "To increase internet speed",
+            "options_d": "To replace routers in a network",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is NOT a benefit of using VLANs?",
+            "options_a": "Improved security",
+            "options_b": "Reduced broadcast traffic",
+            "options_c": "Simplified network management",
+            "options_d": "Increased internet bandwidth",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the main purpose of a VPN (Virtual Private Network)?",
+            "options_a": "To create a secure connection over a public network",
+            "options_b": "To increase local network speed",
+            "options_c": "To replace all routers in a network",
+            "options_d": "To provide wireless access",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol is commonly used for site-to-site VPNs?",
+            "options_a": "HTTP",
+            "options_b": "IPsec",
+            "options_c": "FTP",
+            "options_d": "SMTP",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "When designing a network for an organization, which factor is LEAST important?",
+            "options_a": "Security requirements",
+            "options_b": "Number of employees",
+            "options_c": "Color of the walls in the office",
+            "options_d": "Types of services needed",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "Which device is typically used to implement VLANs?",
+            "options_a": "Hub",
+            "options_b": "Switch",
+            "options_c": "Repeater",
+            "options_d": "Modem",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of a trunk port in VLAN configuration?",
+            "options_a": "To carry traffic for multiple VLANs between switches",
+            "options_b": "To connect end devices to the network",
+            "options_c": "To provide internet access",
+            "options_d": "To replace routers in a network",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a type of VPN?",
+            "options_a": "Remote access VPN",
+            "options_b": "Site-to-site VPN",
+            "options_c": "Extranet VPN",
+            "options_d": "All of the above",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "When designing a network, why is subnetting important?",
+            "options_a": "To improve network performance and security",
+            "options_b": "To make IP addresses easier to remember",
+            "options_c": "To reduce the need for switches",
+            "options_d": "To eliminate the need for routers",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol would you use for secure remote access to network devices?",
+            "options_a": "TELNET",
+            "options_b": "SSH",
+            "options_c": "FTP",
+            "options_d": "HTTP",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of a DHCP server in a network?",
+            "options_a": "To automatically assign IP addresses to devices",
+            "options_b": "To translate domain names to IP addresses",
+            "options_c": "To provide secure remote access",
+            "options_d": "To manage VLAN configurations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which service would you use to host websites within an organization?",
+            "options_a": "FTP server",
+            "options_b": "Web server",
+            "options_c": "DNS server",
+            "options_d": "DHCP server",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main advantage of using SSH over TELNET?",
+            "options_a": "SSH provides encrypted communication",
+            "options_b": "SSH is faster",
+            "options_c": "SSH doesn't require authentication",
+            "options_d": "SSH uses less bandwidth",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which routing protocol would be most appropriate for a large organization with multiple locations?",
+            "options_a": "RIP",
+            "options_b": "OSPF",
+            "options_c": "Static routing",
+            "options_d": "BGP",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of a file server in a network?",
+            "options_a": "To centrally store and manage files for network users",
+            "options_b": "To provide internet access",
+            "options_c": "To assign IP addresses",
+            "options_d": "To translate domain names",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a typical consideration when designing a network?",
+            "options_a": "Current and future bandwidth requirements",
+            "options_b": "Security requirements",
+            "options_c": "Number of employees",
+            "options_d": "Favorite color of the CEO",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of a DNS server in a network?",
+            "options_a": "To translate domain names to IP addresses",
+            "options_b": "To assign IP addresses automatically",
+            "options_c": "To provide secure remote access",
+            "options_d": "To manage VLAN configurations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a benefit of using a VPN?",
+            "options_a": "Secure remote access to company resources",
+            "options_b": "Faster internet speeds",
+            "options_c": "Eliminates the need for firewalls",
+            "options_d": "Reduces the need for IP addresses",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "When implementing VLANs, what is the purpose of the native VLAN?",
+            "options_a": "To carry untagged traffic on a trunk port",
+            "options_b": "To provide internet access",
+            "options_c": "To replace the default gateway",
+            "options_d": "To increase network speed",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which service would you use to allow employees to securely access company files from remote locations?",
+            "options_a": "VPN",
+            "options_b": "DNS",
+            "options_c": "DHCP",
+            "options_d": "TELNET",
+            "correct_answer": "option_a"
+        }
+    ]
+}

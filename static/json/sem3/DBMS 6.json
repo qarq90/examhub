@@ -1,0 +1,166 @@
+{
+    "test_name": "Transactions and Concurrency Control",
+    "test_description": "This test covers transaction concepts, ACID properties, concurrency control protocols, serializability, and recovery systems.",
+    "questions": [
+        {
+            "question": "What is a transaction in database systems?",
+            "options_a": "A sequence of operations performed as a single logical unit",
+            "options_b": "A SQL query",
+            "options_c": "A database backup",
+            "options_d": "A table operation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What does the 'A' in ACID properties stand for?",
+            "options_a": "Atomicity",
+            "options_b": "Availability",
+            "options_c": "Authorization",
+            "options_d": "Accuracy",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which ACID property ensures that transactions are isolated from each other?",
+            "options_a": "Isolation",
+            "options_b": "Consistency",
+            "options_c": "Durability",
+            "options_d": "Atomicity",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a schedule in transaction processing?",
+            "options_a": "An ordering of operations from multiple transactions",
+            "options_b": "A time-based backup plan",
+            "options_c": "A query execution plan",
+            "options_d": "A database maintenance routine",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which type of serializability checks for conflicting operations?",
+            "options_a": "Conflict serializability",
+            "options_b": "View serializability",
+            "options_c": "Temporal serializability",
+            "options_d": "Logical serializability",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a conflict equivalent schedule?",
+            "options_a": "A schedule that can be transformed into a serial schedule by swapping non-conflicting operations",
+            "options_b": "A schedule that produces the same result as any serial schedule",
+            "options_c": "A schedule with no conflicting operations",
+            "options_d": "A schedule that conflicts with all other schedules",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which concurrency control protocol uses locks?",
+            "options_a": "Lock-based protocol",
+            "options_b": "Timestamp-based protocol",
+            "options_c": "Validation-based protocol",
+            "options_d": "Snapshot isolation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is two-phase locking (2PL)?",
+            "options_a": "A locking protocol with growing and shrinking phases",
+            "options_b": "A protocol that uses two types of locks",
+            "options_c": "A protocol that locks two resources at once",
+            "options_d": "A protocol with two levels of locking",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is deadlock in database systems?",
+            "options_a": "When two or more transactions wait indefinitely for locks held by each other",
+            "options_b": "When a transaction takes too long to complete",
+            "options_c": "When the database crashes",
+            "options_d": "When a lock cannot be acquired",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which deadlock handling technique aborts one or more transactions?",
+            "options_a": "Deadlock detection and recovery",
+            "options_b": "Deadlock prevention",
+            "options_c": "Deadlock avoidance",
+            "options_d": "Deadlock ignoring",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of timestamps in concurrency control?",
+            "options_a": "To order transactions and ensure serializability",
+            "options_b": "To measure transaction duration",
+            "options_c": "To schedule backups",
+            "options_d": "To track database changes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which recovery technique uses a log to record changes?",
+            "options_a": "Log-based recovery",
+            "options_b": "Checkpoint recovery",
+            "options_c": "Shadow paging",
+            "options_d": "Mirror recovery",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a checkpoint in database recovery?",
+            "options_a": "A point where all modified buffers are written to disk",
+            "options_b": "A backup copy of the database",
+            "options_c": "A validation point for transactions",
+            "options_d": "A type of lock",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which ACID property ensures that committed transactions persist despite failures?",
+            "options_a": "Durability",
+            "options_b": "Atomicity",
+            "options_c": "Consistency",
+            "options_d": "Isolation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the undo operation in recovery?",
+            "options_a": "To reverse the changes of failed transactions",
+            "options_b": "To redo committed transactions",
+            "options_c": "To remove old log entries",
+            "options_d": "To cancel running transactions",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which isolation level allows dirty reads?",
+            "options_a": "Read uncommitted",
+            "options_b": "Read committed",
+            "options_c": "Repeatable read",
+            "options_d": "Serializable",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a dirty read in transaction processing?",
+            "options_a": "Reading uncommitted data that may be rolled back",
+            "options_b": "Reading data from disk",
+            "options_c": "Reading corrupted data",
+            "options_d": "Reading data without locks",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol uses read and write timestamps for concurrency control?",
+            "options_a": "Timestamp-based protocol",
+            "options_b": "Two-phase locking",
+            "options_c": "Validation-based protocol",
+            "options_d": "Multiple granularity locking",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the redo operation in recovery?",
+            "options_a": "To reapply changes of committed transactions",
+            "options_b": "To reverse changes of failed transactions",
+            "options_c": "To remove old log entries",
+            "options_d": "To cancel running transactions",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a state in the transaction state diagram?",
+            "options_a": "Waiting",
+            "options_b": "Active",
+            "options_c": "Partially committed",
+            "options_d": "Committed",
+            "correct_answer": "option_a"
+        }
+    ]
+}

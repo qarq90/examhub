@@ -1,0 +1,166 @@
+{
+    "test_name": "Database Design and Normalization",
+    "test_description": "This test covers database design guidelines, functional dependencies, normalization process, and normal forms (1NF through BCNF).",
+    "questions": [
+        {
+            "question": "What is the primary goal of normalization?",
+            "options_a": "To minimize redundancy and dependency",
+            "options_b": "To maximize storage efficiency",
+            "options_c": "To improve query performance",
+            "options_d": "To simplify database design",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a database design guideline?",
+            "options_a": "Use as many tables as possible",
+            "options_b": "Avoid attributes with complex data types",
+            "options_c": "Design to avoid update anomalies",
+            "options_d": "Identify functional dependencies",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a functional dependency?",
+            "options_a": "A constraint between two sets of attributes",
+            "options_b": "A relationship between tables",
+            "options_c": "A type of database function",
+            "options_d": "A SQL query dependency",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which normal form requires that all attributes are atomic?",
+            "options_a": "1NF",
+            "options_b": "2NF",
+            "options_c": "3NF",
+            "options_d": "BCNF",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main characteristic of 2NF?",
+            "options_a": "No partial dependency on any candidate key",
+            "options_b": "All attributes are atomic",
+            "options_c": "No transitive dependencies",
+            "options_d": "All determinants are candidate keys",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which normal form eliminates transitive dependencies?",
+            "options_a": "3NF",
+            "options_b": "2NF",
+            "options_c": "1NF",
+            "options_d": "BCNF",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a superkey?",
+            "options_a": "A set of attributes that uniquely identifies a tuple",
+            "options_b": "A foreign key",
+            "options_c": "An indexed attribute",
+            "options_d": "A derived attribute",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is an update anomaly?",
+            "options_a": "Inconsistent data due to redundant information",
+            "options_b": "Slow query performance",
+            "options_c": "Database crashes",
+            "options_d": "Network latency",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the difference between 3NF and BCNF?",
+            "options_a": "BCNF is stricter, requiring all determinants to be candidate keys",
+            "options_b": "3NF is stricter than BCNF",
+            "options_c": "They are identical",
+            "options_d": "BCNF allows transitive dependencies",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is partial dependency?",
+            "options_a": "When a non-key attribute depends on part of a composite key",
+            "options_b": "When an attribute depends on another non-key attribute",
+            "options_c": "When two tables are partially related",
+            "options_d": "When a foreign key references only part of a primary key",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a type of anomaly that normalization addresses?",
+            "options_a": "Network anomaly",
+            "options_b": "Insertion anomaly",
+            "options_c": "Deletion anomaly",
+            "options_d": "Update anomaly",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a candidate key?",
+            "options_a": "A minimal superkey",
+            "options_b": "A foreign key",
+            "options_c": "An indexed attribute",
+            "options_d": "A derived attribute",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which normal form is considered the most desirable for most business applications?",
+            "options_a": "3NF",
+            "options_b": "1NF",
+            "options_c": "2NF",
+            "options_d": "BCNF",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is denormalization?",
+            "options_a": "Intentional introduction of redundancy to improve performance",
+            "options_b": "Removing all constraints from a database",
+            "options_c": "Converting a database to 1NF",
+            "options_d": "Eliminating all foreign keys",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is true about normalization?",
+            "options_a": "It typically results in more tables with fewer columns",
+            "options_b": "It typically results in fewer tables with more columns",
+            "options_c": "It has no effect on the number of tables",
+            "options_d": "It always improves performance",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a transitive dependency?",
+            "options_a": "When A→B and B→C implies A→C",
+            "options_b": "When a foreign key references a primary key",
+            "options_c": "When two tables are related through a third table",
+            "options_d": "When an attribute depends on part of a composite key",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a step in the normalization process?",
+            "options_a": "Create as many tables as possible",
+            "options_b": "Identify all functional dependencies",
+            "options_c": "Determine candidate keys",
+            "options_d": "Test for normal forms",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary key?",
+            "options_a": "The candidate key chosen to uniquely identify tuples",
+            "options_b": "Any attribute that can be a key",
+            "options_c": "A foreign key that references itself",
+            "options_d": "An automatically generated key",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a benefit of normalization?",
+            "options_a": "Reduced data redundancy",
+            "options_b": "Faster write operations",
+            "options_c": "Simpler queries",
+            "options_d": "Less storage space required",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main drawback of over-normalization?",
+            "options_a": "Increased join operations in queries",
+            "options_b": "Increased data redundancy",
+            "options_c": "Slower insert operations",
+            "options_d": "More complex constraints",
+            "correct_answer": "option_a"
+        }
+    ]
+}

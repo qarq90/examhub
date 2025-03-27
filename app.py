@@ -348,12 +348,12 @@ def start_test(test_id):
 
     if request.method == "POST":
         score = 0
-        total_questions = len(questions)
+        total_questions = len(questions['questions'])
         user_answers = []  
         
         for i, question in enumerate(questions, start=1):
             selected_answer = request.form.get(f"question_{i}")  
-            correct_answer = question['correct_option'].lower()  
+            correct_answer = question['correct_answer'].lower() 
             is_correct = False
             
             if selected_answer and selected_answer.lower() == correct_answer:
@@ -372,6 +372,7 @@ def start_test(test_id):
             })
         
         result_data = (
+          str(uuid.uuid4().hex),
             test[1],  
             test[2],  
             test[3],  
@@ -386,7 +387,7 @@ def start_test(test_id):
 
         cursor.execute(
                 """
-                    INSERT INTO results VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    INSERT INTO results VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, 
                 result_data
             )
@@ -401,7 +402,7 @@ def start_test(test_id):
 
 @app.route('/tests/view-results/<test_id>', methods=["GET", "POST"])
 def view_results(test_id):
-    cursor.execute("SELECT * FROM results WHERE roll_no = ? AND id = ?", (session["roll_no"], test_id))
+    cursor.execute("SELECT * FROM results WHERE roll_no = ? AND results_id = ?", (session["roll_no"], test_id))
     user_results = cursor.fetchall()
 
     results = []

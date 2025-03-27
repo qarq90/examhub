@@ -1,0 +1,166 @@
+{
+    "test_name": "Concurrent Programming",
+    "test_description": "This test covers concurrent programming fundamentals, synchronization, message passing, multithreading, and thread communication.",
+    "questions": [
+        {
+            "question": "What is the main advantage of concurrent programming?",
+            "options_a": "Improved resource utilization",
+            "options_b": "Simpler code",
+            "options_c": "Faster single-thread performance",
+            "options_d": "Reduced memory usage",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common concurrency problem?",
+            "options_a": "Race condition",
+            "options_b": "Deadlock",
+            "options_c": "Memory leak",
+            "options_d": "Starvation",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is a race condition?",
+            "options_a": "When multiple threads access shared data with unpredictable results",
+            "options_b": "When threads compete for CPU time",
+            "options_c": "When a thread runs too fast",
+            "options_d": "When threads terminate unexpectedly",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which synchronization primitive provides mutual exclusion?",
+            "options_a": "Semaphore",
+            "options_b": "Mutex",
+            "options_c": "Condition variable",
+            "options_d": "Monitor",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is deadlock?",
+            "options_a": "When threads wait indefinitely for resources held by each other",
+            "options_b": "When a thread terminates abnormally",
+            "options_c": "When synchronization is too strict",
+            "options_d": "When too many threads are created",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a necessary condition for deadlock?",
+            "options_a": "Mutual exclusion",
+            "options_b": "Hold and wait",
+            "options_c": "No preemption",
+            "options_d": "Thread priority",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of a semaphore?",
+            "options_a": "To control access to a shared resource",
+            "options_b": "To measure execution time",
+            "options_c": "To allocate memory",
+            "options_d": "To format output",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which message passing model uses mailboxes?",
+            "options_a": "Direct communication",
+            "options_b": "Indirect communication",
+            "options_c": "Synchronous communication",
+            "options_d": "Asynchronous communication",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is thread starvation?",
+            "options_a": "When a thread is denied access to resources indefinitely",
+            "options_b": "When a thread consumes too many resources",
+            "options_c": "When a thread terminates early",
+            "options_d": "When thread creation fails",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which Java keyword is used to create synchronized blocks?",
+            "options_a": "sync",
+            "options_b": "synchronized",
+            "options_c": "lock",
+            "options_d": "mutex",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the difference between processes and threads?",
+            "options_a": "Threads share memory space, processes don't",
+            "options_b": "Processes are lighter weight than threads",
+            "options_c": "Threads can't run concurrently",
+            "options_d": "Processes don't have their own address space",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which concurrency model uses channels for communication?",
+            "options_a": "Shared memory",
+            "options_b": "Message passing",
+            "options_c": "Data parallelism",
+            "options_d": "Task parallelism",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is a monitor in concurrent programming?",
+            "options_a": "A synchronization construct that combines mutual exclusion with condition variables",
+            "options_b": "A tool for measuring performance",
+            "options_c": "A type of thread",
+            "options_d": "A memory management technique",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following prevents race conditions?",
+            "options_a": "Proper synchronization",
+            "options_b": "Increasing thread priority",
+            "options_c": "Reducing number of threads",
+            "options_d": "Using global variables",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the volatile keyword in Java?",
+            "options_a": "To ensure variable visibility across threads",
+            "options_b": "To make variables constant",
+            "options_c": "To improve performance",
+            "options_d": "To allocate memory dynamically",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which thread state occurs when a thread is waiting for a lock?",
+            "options_a": "Running",
+            "options_b": "Blocked",
+            "options_c": "Waiting",
+            "options_d": "Terminated",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is thread pooling?",
+            "options_a": "Reusing existing threads instead of creating new ones",
+            "options_b": "Sharing memory between threads",
+            "options_c": "Grouping threads by priority",
+            "options_d": "Synchronizing thread execution",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common thread scheduling policy?",
+            "options_a": "FIFO",
+            "options_b": "Round Robin",
+            "options_c": "Priority-based",
+            "options_d": "Random selection",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is a future in concurrent programming?",
+            "options_a": "A placeholder for a result that may not be available yet",
+            "options_b": "A prediction about thread behavior",
+            "options_c": "A type of lock",
+            "options_d": "A memory allocation strategy",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which Java class implements the thread pool pattern?",
+            "options_a": "ThreadGroup",
+            "options_b": "ExecutorService",
+            "options_c": "ThreadLocal",
+            "options_d": "Synchronized",
+            "correct_answer": "option_b"
+        }
+    ]
+}

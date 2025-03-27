@@ -1,0 +1,166 @@
+{
+    "test_name": "Introduction to Computer Networks",
+    "test_description": "This test covers the basics of computer networks, including network hardware, software, protocol layering, reference models (OSI and TCP/IP), and network devices.",
+    "questions": [
+        {
+            "question": "Which of the following is NOT a use of computer networks?",
+            "options_a": "Resource sharing",
+            "options_b": "High reliability",
+            "options_c": "Decreased communication speed",
+            "options_d": "Scalability",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the primary function of a router in a network?",
+            "options_a": "To connect devices within a LAN",
+            "options_b": "To forward packets between different networks",
+            "options_c": "To amplify signals in a network",
+            "options_d": "To convert digital signals to analog",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which layer of the OSI model is responsible for logical addressing and routing?",
+            "options_a": "Physical layer",
+            "options_b": "Data Link layer",
+            "options_c": "Network layer",
+            "options_d": "Transport layer",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "How many layers are there in the TCP/IP reference model?",
+            "options_a": "4",
+            "options_b": "5",
+            "options_c": "7",
+            "options_d": "8",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which device operates at the Data Link layer of the OSI model?",
+            "options_a": "Router",
+            "options_b": "Switch",
+            "options_c": "Hub",
+            "options_d": "Repeater",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main purpose of protocol layering in network communication?",
+            "options_a": "To increase network speed",
+            "options_b": "To simplify network design and implementation",
+            "options_c": "To reduce the number of network devices needed",
+            "options_d": "To make networks wireless",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which layer of the OSI model is responsible for establishing, managing, and terminating sessions?",
+            "options_a": "Session layer",
+            "options_b": "Presentation layer",
+            "options_c": "Application layer",
+            "options_d": "Transport layer",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary difference between a hub and a switch?",
+            "options_a": "A hub operates at Layer 2 while a switch operates at Layer 1",
+            "options_b": "A hub broadcasts data to all ports while a switch sends data only to the intended recipient",
+            "options_c": "A switch is slower than a hub",
+            "options_d": "A hub can connect to the internet while a switch cannot",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is NOT a network topology?",
+            "options_a": "Bus",
+            "options_b": "Star",
+            "options_c": "Mesh",
+            "options_d": "Binary",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of the Application layer in the OSI model?",
+            "options_a": "To provide network services directly to user applications",
+            "options_b": "To handle electrical signal transmission",
+            "options_c": "To manage packet routing",
+            "options_d": "To control error detection and correction",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol suite is commonly used for internet communication?",
+            "options_a": "OSI",
+            "options_b": "TCP/IP",
+            "options_c": "IEEE 802.11",
+            "options_d": "ATM",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main advantage of the TCP/IP model over the OSI model?",
+            "options_a": "It has more layers",
+            "options_b": "It is more theoretical",
+            "options_c": "It is more widely implemented in practice",
+            "options_d": "It is more complex",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "Which device operates at the Physical layer of the OSI model?",
+            "options_a": "Router",
+            "options_b": "Switch",
+            "options_c": "Hub",
+            "options_d": "Bridge",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of a network interface card (NIC)?",
+            "options_a": "To connect a computer to a network",
+            "options_b": "To route packets between networks",
+            "options_c": "To amplify network signals",
+            "options_d": "To convert analog signals to digital",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which layer of the OSI model is responsible for data compression and encryption?",
+            "options_a": "Application layer",
+            "options_b": "Presentation layer",
+            "options_c": "Session layer",
+            "options_d": "Transport layer",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main function of the Transport layer in the OSI model?",
+            "options_a": "To provide reliable end-to-end communication",
+            "options_b": "To handle electrical signal transmission",
+            "options_c": "To manage packet routing",
+            "options_d": "To control network access",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a connection-oriented protocol?",
+            "options_a": "UDP",
+            "options_b": "IP",
+            "options_c": "TCP",
+            "options_d": "ICMP",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of a gateway in networking?",
+            "options_a": "To connect two similar networks",
+            "options_b": "To connect dissimilar networks using different protocols",
+            "options_c": "To amplify network signals",
+            "options_d": "To filter network traffic",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which layer of the OSI model handles flow control and error recovery?",
+            "options_a": "Physical layer",
+            "options_b": "Data Link layer",
+            "options_c": "Network layer",
+            "options_d": "Transport layer",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the primary function of a bridge in a network?",
+            "options_a": "To connect two different networks",
+            "options_b": "To connect two similar networks and filter traffic based on MAC addresses",
+            "options_c": "To route packets based on IP addresses",
+            "options_d": "To amplify signals in a network",
+            "correct_answer": "option_b"
+        }
+    ]
+}

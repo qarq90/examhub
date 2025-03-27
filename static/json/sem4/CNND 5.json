@@ -1,0 +1,166 @@
+{
+    "test_name": "Presentation and Application Layers",
+    "test_description": "This test covers topics related to the Presentation and Application layers, including data compression, encryption, and standard application protocols like HTTP, FTP, and DNS.",
+    "questions": [
+        {
+            "question": "What is the primary function of the Presentation layer?",
+            "options_a": "To route packets across networks",
+            "options_b": "To translate, compress, and encrypt data",
+            "options_c": "To establish connections between applications",
+            "options_d": "To handle electrical signal transmission",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is a lossless compression technique?",
+            "options_a": "JPEG",
+            "options_b": "MPEG",
+            "options_c": "Huffman coding",
+            "options_d": "MP3",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the main purpose of the Application layer?",
+            "options_a": "To provide network services directly to user applications",
+            "options_b": "To route packets across networks",
+            "options_c": "To handle electrical signal transmission",
+            "options_d": "To manage session establishment",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol is used to transfer files between computers?",
+            "options_a": "HTTP",
+            "options_b": "FTP",
+            "options_c": "SMTP",
+            "options_d": "DNS",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of DNS (Domain Name System)?",
+            "options_a": "To translate domain names to IP addresses",
+            "options_b": "To transfer files between computers",
+            "options_c": "To send email messages",
+            "options_d": "To compress data for transmission",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a characteristic of HTTP?",
+            "options_a": "Connection-oriented",
+            "options_b": "Stateless",
+            "options_c": "Uses port 25",
+            "options_d": "Primarily used for email",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the main difference between lossy and lossless compression?",
+            "options_a": "Lossy compression allows perfect reconstruction of the original data",
+            "options_b": "Lossless compression allows perfect reconstruction of the original data",
+            "options_c": "Lossy compression is only used for text",
+            "options_d": "Lossless compression always results in smaller files than lossy compression",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which protocol is used to send email messages?",
+            "options_a": "HTTP",
+            "options_b": "FTP",
+            "options_c": "SMTP",
+            "options_d": "DNS",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of the JPEG image compression standard?",
+            "options_a": "To provide lossless compression for images",
+            "options_b": "To provide lossy compression for images",
+            "options_c": "To compress text documents",
+            "options_d": "To encrypt image files",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is NOT an application layer protocol?",
+            "options_a": "HTTP",
+            "options_b": "FTP",
+            "options_c": "TCP",
+            "options_d": "SMTP",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is the purpose of SNMP (Simple Network Management Protocol)?",
+            "options_a": "To manage network devices",
+            "options_b": "To transfer files between computers",
+            "options_c": "To send email messages",
+            "options_d": "To translate domain names to IP addresses",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which compression technique replaces frequently occurring strings with references to a dictionary?",
+            "options_a": "Huffman coding",
+            "options_b": "LZW (Lempel-Ziv-Welch)",
+            "options_c": "Run-length encoding",
+            "options_d": "Arithmetic coding",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the default port number for HTTP?",
+            "options_a": "21",
+            "options_b": "25",
+            "options_c": "80",
+            "options_d": "443",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "Which protocol is used for secure HTTP communication?",
+            "options_a": "FTP",
+            "options_b": "HTTPS",
+            "options_c": "SMTP",
+            "options_d": "DNS",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of run-length encoding (RLE)?",
+            "options_a": "To replace sequences of the same data values with a count and a single value",
+            "options_b": "To create a frequency-based code for each symbol",
+            "options_c": "To build a dictionary of frequently occurring strings",
+            "options_d": "To encrypt data for secure transmission",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol is used to retrieve email messages from a server?",
+            "options_a": "SMTP",
+            "options_b": "POP3/IMAP",
+            "options_c": "FTP",
+            "options_d": "HTTP",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of the GIF image format?",
+            "options_a": "For high-quality photographic images",
+            "options_b": "For simple graphics with limited colors",
+            "options_c": "For encrypted image transmission",
+            "options_d": "For 3D graphics rendering",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which of the following is a characteristic of the Presentation layer?",
+            "options_a": "Routes packets across networks",
+            "options_b": "Handles data translation, compression, and encryption",
+            "options_c": "Manages physical connections",
+            "options_d": "Provides reliable end-to-end communication",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What is the purpose of Huffman coding?",
+            "options_a": "To create an optimal prefix code based on character frequencies",
+            "options_b": "To replace repeated strings with references",
+            "options_c": "To count runs of identical data",
+            "options_d": "To encrypt data for secure transmission",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which protocol is used to synchronize clocks on network devices?",
+            "options_a": "HTTP",
+            "options_b": "NTP (Network Time Protocol)",
+            "options_c": "FTP",
+            "options_d": "DNS",
+            "correct_answer": "option_b"
+        }
+    ]
+}

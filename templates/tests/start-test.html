@@ -1,22 +1,24 @@
-<!-- templates/tests/view_test.html -->
 {% extends 'layouts/main_layout.html' %} {% block title %}EXAMHUB | View Test{%
 endblock %} {% block content %}
 <div class="container text-white">
     <div class="w-full flex justify-center items-center py-10 flex-col gap-8">
         <div class="w-full max-w-4xl">
             <div class="mb-6 rounded-lg">
-                <h2 class="text-2xl font-bold mb-4">{{ test[5] }}</h2>
+                <h2 class="text-3xl font-bold mb-4">{{ test[3] }}</h2>
                 <p class="text-lg mb-2">
-                    <strong>Course Code:</strong> {{ test[1] }}
+                    <strong>Course Code:</strong> {{ test[4] }}
                 </p>
                 <p class="text-lg mb-2">
-                    <strong>Semester:</strong> {{ test[2] }}
+                    <strong>Semester:</strong> {{ test[5] }}
                 </p>
                 <p class="text-lg mb-2">
-                    <strong>Branch:</strong> {{ test[3] }}
+                    <strong>Branch:</strong> {{ test[6] }}
+                </p>
+                <p class="text-lg mb-2">
+                    <strong>Test Name:</strong> {{ test[1] }}
                 </p>
                 <p class="text-lg">
-                    <strong>Description:</strong> {{ test[5] }}
+                    <strong>Description:</strong> {{ test[2] }}
                 </p>
             </div>
 
@@ -30,7 +32,7 @@ endblock %} {% block content %}
                 <div class="mb-6 p-6 bg-tertiary rounded-lg shadow-lg">
                     <p class="text-lg mb-4">
                         <strong>Question {{ loop.index }}:</strong> {{
-                        question.question_text }}
+                        question['question'] }}
                     </p>
                     <div class="flex flex-col gap-2">
                         <label
@@ -49,7 +51,7 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.option_a }}</span>
+                            <span>{{ question['options_a'] }}</span>
                         </label>
                         <label
                             class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--secondary)] hover:bg-opacity-25 transition-colors cursor-pointer"
@@ -67,7 +69,7 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.option_b }}</span>
+                            <span>{{ question['options_b'] }}</span>
                         </label>
                         <label
                             class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--secondary)] hover:bg-opacity-25 transition-colors cursor-pointer"
@@ -85,7 +87,7 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.option_c }}</span>
+                            <span>{{ question['options_c'] }}</span>
                         </label>
                         <label
                             class="flex items-center gap-2 p-3 rounded-lg hover:bg-[var(--secondary)] hover:bg-opacity-25 transition-colors cursor-pointer"
@@ -103,13 +105,13 @@ endblock %} {% block content %}
                                     class="w-3 h-3 bg-[var(--primary)] rounded-full hidden peer-checked:block"
                                 ></span>
                             </span>
-                            <span>{{ question.option_d }}</span>
+                            <span>{{ question['options_d'] }}</span>
                         </label>
                     </div>
                     <input
                         type="hidden"
                         id="correct_answer_{{ loop.index }}"
-                        value="{{ question.correct_option }}"
+                        value="{{ question['correct_answer'] }}"
                     />
                 </div>
                 {% endfor %}
@@ -124,41 +126,7 @@ endblock %} {% block content %}
                     </button>
                 </div>
             </form>
-
-            <div
-                id="results"
-                class="hidden mt-8 p-6 bg-tertiary rounded-lg shadow-lg"
-            >
-                <h2 class="text-2xl font-bold mb-4">Test Results</h2>
-                <p class="text-lg">
-                    <strong>Your Score:</strong> <span id="score"></span>
-                </p>
-            </div>
         </div>
     </div>
 </div>
-
-<script>
-    document.getElementById('submit-test').addEventListener('click', function () {
-        let score = 0;
-        const totalQuestions = {{ test.questions|length }};
-
-        for (let i = 1; i <= totalQuestions; i++) {
-            const selectedAnswer = document.querySelector(`input[name="question_${i}"]:checked`);
-            const correctAnswer = document.getElementById(`correct_answer_${i}`).value.toLowerCase();
-
-            if (selectedAnswer) {
-                const selectedValue = selectedAnswer.value.toLowerCase();
-                if (selectedValue === correctAnswer) {
-                    score++;
-                }
-            }
-        }
-
-        const resultsDiv = document.getElementById('results');
-        const scoreSpan = document.getElementById('score');
-        scoreSpan.textContent = `${score} out of ${totalQuestions}`;
-        resultsDiv.classList.remove('hidden');
-    });
-</script>
 {% endblock %}
