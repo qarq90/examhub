@@ -1,12 +1,12 @@
 {% extends 'layouts/main_layout.html' %} {% block title %}EXAMHUB | Profile{%
 endblock %} {% block content %}
-<div class="w-full px-48 text-white">
+<div class="intersecting_invisible w-full px-48 text-white">
     {% if session.get("student_id") %}
-    <div class="w-full flex items-center py-20 gap-4">
-        <div class="w-1/2 flex justify-center">
+    <div class="intersecting_invisible w-full flex items-center py-20 gap-4">
+        <div class="intersecting_invisible w-1/2 flex justify-center">
             {% if session["student_gender"] == "Female" %}
             <div
-                class="h-72 w-72 bg-tertiary shadow-lg flex justify-center items-center rounded-full"
+                class="intersecting_invisible h-72 w-72 bg-tertiary shadow-lg flex justify-center items-center rounded-full"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ endblock %} {% block content %}
             </div>
             {% endif %} {% if session["student_gender"] == "Male" %}
             <div
-                class="h-72 w-72 bg-tertiary shadow-lg flex justify-center items-center rounded-full"
+                class="intersecting_invisible h-72 w-72 bg-tertiary shadow-lg flex justify-center items-center rounded-full"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ endblock %} {% block content %}
             </div>
             {% endif %} {% if session["student_gender"] == "Tow Truck" %}
             <div
-                class="h-72 w-72 bg-tertiary p-8 shadow-lg flex justify-center items-center rounded-full"
+                class="intersecting_invisible h-72 w-72 bg-tertiary p-8 shadow-lg flex justify-center items-center rounded-full"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -448,56 +448,60 @@ endblock %} {% block content %}
             </div>
             {% endif %}
         </div>
-        <div class="flex w-1/2 gap-4 flex-col">
-            <h1 class="text-5xl font-bold">
+        <div class="intersecting_invisible flex w-1/2 gap-4 flex-col">
+            <h1 class="intersecting_invisible text-5xl font-bold">
                 {{ session.get("student_name", "Guest") }}
             </h1>
-            <p class="text-2xl">
+            <p class="intersecting_invisible text-2xl">
                 Student ID: {{ session.get("student_roll_no", "N/A") }}
             </p>
         </div>
     </div>
 </div>
 
-<div class="w-full grid grid-cols-3 px-36 gap-4 text-white">
-    <h1 class="col-span-3 text-3xl">Student Information</h1>
+<div
+    class="intersecting_invisible w-full grid grid-cols-3 px-36 gap-4 text-white"
+>
+    <h1 class="intersecting_invisible col-span-3 text-3xl">
+        Student Information
+    </h1>
 
     <div
-        class="bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
+        class="intersecting_invisible bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
     >
-        <i class="fas fa-id-card text-4xl"></i>
+        <i class="intersecting_invisible fas fa-id-card text-4xl"></i>
         <div>
-            <h1 class="text-bold text-xl">Roll No</h1>
+            <h1 class="intersecting_invisible text-bold text-xl">Roll No</h1>
             <h1>{{ session.get("student_roll_no", "N/A") }}</h1>
         </div>
     </div>
 
     <div
-        class="bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
+        class="intersecting_invisible bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
     >
-        <i class="fas fa-code-branch text-4xl"></i>
+        <i class="intersecting_invisible fas fa-code-branch text-4xl"></i>
         <div>
-            <h1 class="text-bold text-xl">Branch</h1>
+            <h1 class="intersecting_invisible text-bold text-xl">Branch</h1>
             <h1>{{ session.get("student_branch", "N/A") }}</h1>
         </div>
     </div>
 
     <div
-        class="bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
+        class="intersecting_invisible bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
     >
-        <i class="fas fa-phone text-4xl"></i>
+        <i class="intersecting_invisible fas fa-phone text-4xl"></i>
         <div>
-            <h1 class="text-bold text-xl">Phone</h1>
+            <h1 class="intersecting_invisible text-bold text-xl">Phone</h1>
             <h1>{{ session.get("student_phone", "N/A") }}</h1>
         </div>
     </div>
 
     <div
-        class="bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
+        class="intersecting_invisible bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
     >
-        <i class="fas fa-envelope text-4xl"></i>
+        <i class="intersecting_invisible fas fa-envelope text-4xl"></i>
         <div>
-            <h1 class="text-bold text-xl">Email</h1>
+            <h1 class="intersecting_invisible text-bold text-xl">Email</h1>
             <h1>
                 {% set email = session.get("student_email", "N/A") %} {% if "@"
                 in email %} {{ email.split('@')[0][:8] }}*****@{{
@@ -507,28 +511,34 @@ endblock %} {% block content %}
     </div>
 
     <div
-        class="bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
+        class="intersecting_invisible bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
     >
-        <i class="fas fa-calendar-alt text-4xl"></i>
+        <i class="intersecting_invisible fas fa-calendar-alt text-4xl"></i>
         <div>
-            <h1 class="text-bold text-xl">Academic Semester</h1>
+            <h1 class="intersecting_invisible text-bold text-xl">
+                Academic Semester
+            </h1>
             <h1>{{ session.get("student_semester", "N/A") }}</h1>
         </div>
     </div>
 
     <div
-        class="bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
+        class="intersecting_invisible bg-tertiary shadow-lg py-4 px-8 rounded-md flex items-center gap-6"
     >
-        <i class="fas fa-birthday-cake text-4xl"></i>
+        <i class="intersecting_invisible fas fa-birthday-cake text-4xl"></i>
         <div>
-            <h1 class="text-bold text-xl">Date of Birth</h1>
+            <h1 class="intersecting_invisible text-bold text-xl">
+                Date of Birth
+            </h1>
             <h1>{{ session.get("student_dob", "N/A") }}</h1>
         </div>
     </div>
 </div>
 
-<div class="w-full flex flex-row gap-8 justify-evenly px-36 py-40">
-    <div class="bg-secondary flex items-center justify-center">
+<div
+    class="intersecting_invisible w-full flex flex-row gap-8 justify-evenly px-36 py-40"
+>
+    <div class="intersecting_invisible flex items-center justify-center">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="450"
@@ -667,21 +677,22 @@ endblock %} {% block content %}
         </svg>
     </div>
     <div
-        class="bg-secondary flex flex-col justify-center items-center gap-8 text-center"
+        class="intersecting_invisible bg-secondary flex flex-col justify-center items-center gap-8 text-center"
     >
         <h1
-            class="text-4xl text-white w-full flex gap-4 items-center justify-center"
+            class="intersecting_invisible text-4xl text-white w-full flex gap-4 items-center justify-center"
         >
-            <i class="fas fa-user-plus"></i>Update Profile
+            <i class="intersecting_invisible fas fa-user-plus"></i>Update
+            Profile
         </h1>
         <form
             method="POST"
             action="{{ url_for('profile') }}"
-            class="w-full flex flex-col gap-8"
+            class="intersecting_invisible w-full flex flex-col gap-8"
         >
-            <div class="grid grid-cols-2 gap-4">
+            <div class="intersecting_invisible grid grid-cols-2 gap-4">
                 <div
-                    class="bg-tertiary opacity-50 hover:cursor-default shadow-lg flex col-span-2 flex-row w-full gap-2 p-2 rounded-md"
+                    class="intersecting_invisible bg-tertiary opacity-50 hover:cursor-default shadow-lg flex col-span-2 flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <input
                         readonly
@@ -691,36 +702,36 @@ endblock %} {% block content %}
                         placeholder="Email"
                         type="text"
                         name="input_email"
-                        class="bg-tertiary text-center w-full text-xl hover:cursor-default text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl hover:cursor-default text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
                 <div
-                    class="bg-tertiary flex flex-row col-span-2 w-full gap-2 p-2 rounded-md shadow-lg"
+                    class="intersecting_invisible bg-tertiary flex flex-row col-span-2 w-full gap-2 p-2 rounded-md shadow-lg"
                 >
                     <input
                         value="{{ session.get('student_name', 'N/A' ) }}"
                         placeholder="Name"
                         type="text"
                         name="input_name"
-                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
                 <div
-                    class="bg-tertiary shadow-lg flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
+                    class="intersecting_invisible bg-tertiary shadow-lg flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <input
                         value="{{ session.get('student_phone', 'N/A' ) }}"
                         placeholder="Phone Number"
                         type="text"
                         name="input_phone"
-                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
                 <div
-                    class="bg-tertiary opacity-50 hover:cursor-default flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
+                    class="intersecting_invisible bg-tertiary opacity-50 hover:cursor-default flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
                 >
                     <input
                         readonly
@@ -728,12 +739,12 @@ endblock %} {% block content %}
                         placeholder="Password"
                         type="password"
                         name="input_password"
-                        class="bg-tertiary text-center w-full text-xl hover:cursor-default text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl hover:cursor-default text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
                 <div
-                    class="bg-tertiary opacity-50 hover:cursor-default flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
+                    class="intersecting_invisible bg-tertiary opacity-50 hover:cursor-default flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
                 >
                     <input
                         readonly
@@ -741,41 +752,41 @@ endblock %} {% block content %}
                         placeholder="Roll No"
                         type="text"
                         name="input_roll_no"
-                        class="bg-tertiary text-center w-full text-xl hover:cursor-default text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl hover:cursor-default text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
                 <div
-                    class="bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
+                    class="intersecting_invisible bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
                 >
                     <input
                         value="{{ session.get('student_dob', 'N/A' ) }}"
                         placeholder="Date of Birth"
                         type="date"
                         name="input_dob"
-                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
                 <div
-                    class="bg-tertiary opacity-50 hover:cursor-default shadow-lg flex col-span-2 cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
+                    class="intersecting_invisible bg-tertiary opacity-50 hover:cursor-default shadow-lg flex col-span-2 cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <input
                         readonly
                         value="{{ session.get('student_branch', 'N/A' ) }}"
                         required
                         name="input_branch"
-                        class="bg-tertiary cursor-pointer hover:cursor-default text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary cursor-pointer hover:cursor-default text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                     />
                 </div>
                 <div
-                    class="bg-tertiary shadow-lg flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
+                    class="intersecting_invisible bg-tertiary shadow-lg flex cursor-pointer flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <select
                         required
                         name="input_semester"
                         id="semesterSelect"
-                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         <option
                             value="{{ session.get('student_semester', '') }}"
@@ -795,16 +806,16 @@ endblock %} {% block content %}
                     </select>
                 </div>
                 <div
-                    class="bg-tertiary shadow-lg flex flex-row w-full gap-2 p-2 rounded-md items-center"
+                    class="intersecting_invisible bg-tertiary shadow-lg flex flex-row w-full gap-2 p-2 rounded-md items-center"
                 >
                     <select
                         required
                         id="genderSelect"
                         name="input_gender"
-                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         <option
-                            class="cursor-pointer"
+                            class="intersecting_invisible cursor-pointer"
                             value=""
                             disabled
                             selected
@@ -812,30 +823,39 @@ endblock %} {% block content %}
                             {{ session.get('student_gender', 'Select Semester')
                             }}
                         </option>
-                        <option class="cursor-pointer" value="Male">
+                        <option
+                            class="intersecting_invisible cursor-pointer"
+                            value="Male"
+                        >
                             Male
                         </option>
-                        <option class="cursor-pointer" value="Female">
+                        <option
+                            class="intersecting_invisible cursor-pointer"
+                            value="Female"
+                        >
                             Female
                         </option>
-                        <option class="cursor-pointer" value="Tow Truck">
+                        <option
+                            class="intersecting_invisible cursor-pointer"
+                            value="Tow Truck"
+                        >
                             Tow Truck
                         </option>
                     </select>
                 </div>
             </div>
-            <div class="flex flex-col w-full gap-6">
-                <div class="flex gap-4">
+            <div class="intersecting_invisible flex flex-col w-full gap-6">
+                <div class="intersecting_invisible flex gap-4">
                     <button
                         type="reset"
                         onclick="resetForm()"
-                        class="w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         Reset
                     </button>
                     <button
                         type="submit"
-                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         Update
                     </button>
@@ -861,11 +881,13 @@ endblock %} {% block content %}
 </script>
 {% else %}
 <div
-    class="container flex flex-col justify-center gap-8 text-white text-center py-20"
+    class="intersecting_invisible container flex flex-col justify-center gap-8 text-white text-center py-20"
 >
-    <div class="w-full text-center flex justify-center items-center">
+    <div
+        class="intersecting_invisible w-full text-center flex justify-center items-center"
+    >
         <svg
-            class="h-96"
+            class="intersecting_invisible h-96"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 982.48732 763.01413"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1012,18 +1034,24 @@ endblock %} {% block content %}
             />
         </svg>
     </div>
-    <div class="w-full flex gap-8 justify-center flex-col">
-        <p class="text-2xl">No account found. Log in or sign up first.</p>
-        <div class="flex items-center gap-8 justify-center">
+    <div
+        class="intersecting_invisible w-full flex gap-8 justify-center flex-col"
+    >
+        <p class="intersecting_invisible text-2xl">
+            No account found. Log in or sign up first.
+        </p>
+        <div
+            class="intersecting_invisible flex items-center gap-8 justify-center"
+        >
             <a
                 href="/auth/sign-up"
-                class="w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                class="intersecting_invisible w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
             >
                 Sign Up
             </a>
             <a
                 href="/auth/log-in"
-                class="w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                class="intersecting_invisible w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
             >
                 Log In
             </a>

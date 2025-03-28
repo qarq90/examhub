@@ -1,13 +1,85 @@
-<!-- templates/leaderboards.html -->
-{% extends 'layouts/main_layout.html' %} {% block title %}EXAMHUB | Home{%
-endblock %} {% block content %}
-<div class="container text-white">
-    <div class="w-full flex justify-center items-center py-20 flex-col gap-8">
-        <h1 class="text-6xl font-bold">
-            Welcome to <span class="title">EXAMHUB</span>
-        </h1>
-        <p class="text-2xl">Made for Students and Lecturers</p>
+{% extends 'layouts/main_layout.html' %} {% block title %} EXAMHUB | Leaderboard
+{% endblock %} {% block content %}
+<div class="container mx-auto px-4 py-6 text-white">
+    {% if top_students %}
+    <h2 class="text-6xl font-bold text-center mb-6">
+        🏆 Leaderboard - Top 3 Students 🏆
+    </h2>
+    <div class="max-w-2xl mx-auto bg-gray-900 p-6 rounded-lg shadow-lg">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-gray-800">
+                    <th class="p-3">Rank 🏅</th>
+                    <th class="p-3">Roll Number</th>
+                    <th class="p-3">Name</th>
+                    <th class="p-3">Total Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in top_students %}
+                <tr
+                    class="border-b border-gray-700 text-lg {% if loop.index == 1 %} text-yellow-400 {% elif loop.index == 2 %} text-gray-300 {% elif loop.index == 3 %} text-orange-400 {% endif %}"
+                >
+                    <td class="p-3 font-bold">
+                        {% if loop.index == 1 %}🥇{% elif loop.index == 2 %}🥈{%
+                        elif loop.index == 3 %}🥉{% else %}{{ loop.index }}{%
+                        endif %}
+                    </td>
+                    <td class="p-3">{{ student[1] }}</td>
+                    <td class="p-3">{{ student[0] }}</td>
+                    <td class="p-3 font-semibold">{{ student[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
-</div>
+    {% else %}
+    <div
+        class="intersecting_invisible w-full text-center flex justify-center items-center flex-col gap-16 py-0.5 px-4"
+    >
+        {% include 'components/empty-svg.html' %}
 
+        <div class="intersecting_invisible space-y-1 max-w-4xl">
+            <h3 class="intersecting_invisible text-2xl font-medium">
+                Leaderboard is currently empty for
+                <span
+                    class="intersecting_invisible text-primary-600 uppercase title"
+                    >{{ session.get("student_branch") or
+                    session.get("course_branch") }}</span
+                >
+            </h3>
+
+            <p class="intersecting_invisible text-xl font-medium">
+                {% set messages = [ "Be the first to make your mark on the
+                leaderboard!", "Scores will appear here once challenges begin!",
+                "The competition is about to heat up - check back soon!", "Your
+                name could be at the top - start practicing now!", "First place
+                is waiting to be claimed - will it be you?", "Leaderboard is
+                brewing with potential - stay tuned!" ] %} {{ messages|random }}
+            </p>
+
+            <div class="intersecting_invisible pt-2">
+                <a
+                    href="/tests/lectures"
+                    class="intersecting_invisible inline-flex items-center px-6 rounded-lg bg-primary-500 text-white hover:bg-primary-600 transition-colors"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="intersecting_invisible h-5 mt-1 w-5 mr-2"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                        />
+                    </svg>
+                    View Available Tests
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
 {% endblock %}

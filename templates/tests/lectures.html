@@ -2,16 +2,20 @@
 {% extends 'layouts/main_layout.html' %} {% block title %}EXAMHUB | Lectures{%
 endblock %} {% block content %} {% if session.get("student_id") or
 session.get("course_branch") %}
-<div class="container text-white">
-    <div class="w-full flex justify-center items-center py-10 flex-col gap-8">
+<div class="intersecting_invisible container text-white">
+    <div
+        class="intersecting_invisible w-full flex justify-center items-center py-10 flex-col gap-8"
+    >
         {% if lectures %}
-        <span class="text-6xl title uppercase font-bold text-center">
+        <span
+            class="intersecting_invisible text-6xl title uppercase font-bold text-center"
+        >
             {{ session.get("student_branch") or session.get("course_branch") }}
         </span>
         {% endif %} {% if lectures %}
-        <div class="w-10/12">
+        <div class="intersecting_invisible w-10/12">
             <h3
-                class="text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
+                class="intersecting_invisible text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
             >
                 {{ session.get("course_semester") or
                 session.get("student_semester") }}
@@ -22,127 +26,145 @@ session.get("course_branch") %}
             %} {% set _ = courses[test[3]].append(test) %} {% endfor %} {# Then
             display each course with its tests #} {% for course_name,
             course_tests in courses.items() %}
-            <div class="mb-8">
-                <h4 class="text-2xl font-bold my-4">⚪ {{ course_name }}</h4>
-                <div class="grid grid-cols-4 gap-4">
-                    <div class="flex flex-col gap-4">
+            <div class="intersecting_invisible mb-8">
+                <h4 class="intersecting_invisible text-2xl font-bold my-4">
+                    ⚪ {{ course_name }}
+                </h4>
+                <div class="intersecting_invisible grid grid-cols-4 gap-4">
+                    <div class="intersecting_invisible flex flex-col gap-4">
                         {% for test in course_tests %} {% if loop.index0 % 4 ==
                         0 %}
                         <div
                             data-test-id="{{test[0]}}"
-                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                            class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
-                            <p class="text-lg font-bold text-center">
+                            <p
+                                class="intersecting_invisible text-lg font-bold text-center"
+                            >
                                 {{ test[1] }}
                             </p>
                             <div
-                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
+                                class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
                                     href="{{ url_for('start_test', test_id=test[0]) }}"
-                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
                                 <button
                                     onclick="deleteTest('{{test[0]}}')"
-                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <i class="fas fa-trash"></i>
+                                    <i
+                                        class="intersecting_invisible fas fa-trash"
+                                    ></i>
                                 </button>
                                 {% endif %}
                             </div>
                         </div>
                         {% endif %} {% endfor %}
                     </div>
-                    <div class="flex flex-col gap-4">
+                    <div class="intersecting_invisible flex flex-col gap-4">
                         {% for test in course_tests %} {% if loop.index0 % 4 ==
                         1 %}
                         <div
                             data-test-id="{{test[0]}}"
-                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                            class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
-                            <p class="text-lg font-bold text-center">
+                            <p
+                                class="intersecting_invisible text-lg font-bold text-center"
+                            >
                                 {{ test[1] }}
                             </p>
                             <div
-                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
+                                class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
                                     href="{{ url_for('start_test', test_id=test[0]) }}"
-                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
                                 <button
                                     onclick="deleteTest('{{test[0]}}')"
-                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <i class="fas fa-trash"></i>
+                                    <i
+                                        class="intersecting_invisible fas fa-trash"
+                                    ></i>
                                 </button>
                                 {% endif %}
                             </div>
                         </div>
                         {% endif %} {% endfor %}
                     </div>
-                    <div class="flex flex-col gap-4">
+                    <div class="intersecting_invisible flex flex-col gap-4">
                         {% for test in course_tests %} {% if loop.index0 % 4 ==
                         2 %}
                         <div
                             data-test-id="{{test[0]}}"
-                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                            class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
-                            <p class="text-lg font-bold text-center">
+                            <p
+                                class="intersecting_invisible text-lg font-bold text-center"
+                            >
                                 {{ test[1] }}
                             </p>
                             <div
-                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
+                                class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
                                     href="{{ url_for('start_test', test_id=test[0]) }}"
-                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
                                 <button
                                     onclick="deleteTest('{{test[0]}}')"
-                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <i class="fas fa-trash"></i>
+                                    <i
+                                        class="intersecting_invisible fas fa-trash"
+                                    ></i>
                                 </button>
                                 {% endif %}
                             </div>
                         </div>
                         {% endif %} {% endfor %}
                     </div>
-                    <div class="flex flex-col gap-4">
+                    <div class="intersecting_invisible flex flex-col gap-4">
                         {% for test in course_tests %} {% if loop.index0 % 4 ==
                         3 %}
                         <div
                             data-test-id="{{test[0]}}"
-                            class="test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
+                            class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
-                            <p class="text-lg font-bold text-center">
+                            <p
+                                class="intersecting_invisible text-lg font-bold text-center"
+                            >
                                 {{ test[1] }}
                             </p>
                             <div
-                                class="mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
+                                class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
                                     href="{{ url_for('start_test', test_id=test[0]) }}"
-                                    class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
                                 <button
                                     onclick="deleteTest('{{test[0]}}')"
-                                    class="shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
+                                    class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
-                                    <i class="fas fa-trash"></i>
+                                    <i
+                                        class="intersecting_invisible fas fa-trash"
+                                    ></i>
                                 </button>
                                 {% endif %}
                             </div>
@@ -155,20 +177,21 @@ session.get("course_branch") %}
         </div>
         {% else %}
         <div
-            class="w-full text-center flex justify-center items-center flex-col gap-8 px-4"
+            class="intersecting_invisible w-full text-center flex justify-center items-center flex-col gap-8 px-4"
         >
-            {% include 'components/empty_svg.html' %}
+            {% include 'components/empty-svg.html' %}
 
-            <div class="space-y-1 max-w-4xl">
-                <h3 class="text-2xl font-medium">
+            <div class="intersecting_invisible space-y-1 max-w-4xl">
+                <h3 class="intersecting_invisible text-2xl font-medium">
                     No tests available for
-                    <span class="text-primary-600 uppercase title"
+                    <span
+                        class="intersecting_invisible text-primary-600 uppercase title"
                         >{{ session.get("student_branch") or
                         session.get("course_branch") }}</span
                     >
                 </h3>
 
-                <p class="text-xl font-medium">
+                <p class="intersecting_invisible text-xl font-medium">
                     {% set messages = [ "Knowledge is waiting to be discovered -
                     check back soon!", "New challenges are coming your way
                     shortly!", "The test library is brewing something special
@@ -178,14 +201,14 @@ session.get("course_branch") %}
                     journey!" ] %} {{ messages|random }}
                 </p>
 
-                <div class="pt-2">
+                <div class="intersecting_invisible pt-2">
                     <a
                         href="/"
-                        class="inline-flex items-center px-6 rounded-lg bg-primary-500 text-white hover:bg-primary-600 transition-colors"
+                        class="intersecting_invisible inline-flex items-center px-6 rounded-lg bg-primary-500 text-white hover:bg-primary-600 transition-colors"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 mt-1 w-5 mr-2"
+                            class="intersecting_invisible h-5 mt-1 w-5 mr-2"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -246,11 +269,13 @@ session.get("course_branch") %}
 
 {% else %}
 <div
-    class="container flex flex-col justify-center gap-8 text-white text-center py-20"
+    class="intersecting_invisible container flex flex-col justify-center gap-8 text-white text-center py-20"
 >
-    <div class="w-full text-center flex justify-center items-center">
+    <div
+        class="intersecting_invisible w-full text-center flex justify-center items-center"
+    >
         <svg
-            class="h-96"
+            class="intersecting_invisible h-96"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 982.48732 763.01413"
             role="img"
@@ -396,18 +421,24 @@ session.get("course_branch") %}
             />
         </svg>
     </div>
-    <div class="w-full flex gap-8 justify-center flex-col">
-        <p class="text-2xl">No account found. Log in or sign up first.</p>
-        <div class="flex items-center px-52 gap-8 justify-center">
+    <div
+        class="intersecting_invisible w-full flex gap-8 justify-center flex-col"
+    >
+        <p class="intersecting_invisible text-2xl">
+            No account found. Log in or sign up first.
+        </p>
+        <div
+            class="intersecting_invisible flex items-center px-52 gap-8 justify-center"
+        >
             <a
                 href="/auth/sign-up"
-                class="w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                class="intersecting_invisible w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
             >
                 Sign Up
             </a>
             <a
                 href="/auth/log-in"
-                class="w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                class="intersecting_invisible w-1/5 shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
             >
                 Log In
             </a>

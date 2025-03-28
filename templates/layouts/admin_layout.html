@@ -21,16 +21,15 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <!-- Conditionally include navbar -->
         {% if session["course_branch"] %} {% include
         'components/admin/navbar.html' %} {% endif %} {% if session["branch"] %}
         {% include 'components/navbar.html' %} {% endif %}
 
-        <!-- Main content block -->
-        <div class="content m-1">{% block content %}{% endblock %}</div>
-
-        <!-- Conditionally include footer -->
-        {% if not hide_nav_footer %} {% include 'components/footer.html' %} {%
-        endif %}
+        <div class="intersecting_invisible content m-1">
+            {% block content %}{% endblock %}
+        </div>
+        {% include 'components/bg-cover.html' %} {% if not hide_nav_footer %} {%
+        include 'components/footer.html' %} {% endif %}
+        <script src="{{ url_for('static', filename='scripts/animateDynamically.js') }}"></script>
     </body>
 </html>

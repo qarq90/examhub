@@ -56,3 +56,16 @@ body {
     font-weight: 800;
     font-style: bolder;
 }
+
+.intersecting_invisible {
+    z-index: 2;
+    opacity: 0;
+    scale: 0.9;
+    transition: 0.35s all ease;
+}
+
+.intersecting_visible {
+    z-index: 2;
+    scale: 1;
+    opacity: 1;
+}

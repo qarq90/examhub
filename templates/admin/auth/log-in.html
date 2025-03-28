@@ -1,30 +1,35 @@
 <!-- templates/admin/auth/login-in.html -->
 {% extends 'layouts/minimal_layout.html' %} {% block title %}EXAMHUB | Admin
 Login{% endblock %} {% block content %}
-<div class="flex flex-row h-screen justify-center items-center">
-    <div class="w-1/2 bg-secondary flex items-center justify-center">
-        {% include 'components/auth_svg.html' %}
+<div
+    class="intersecting_invisible flex flex-row h-screen justify-center items-center"
+>
+    <div
+        class="intersecting_invisible w-1/2 pl-36 flex items-center justify-center"
+    >
+        {% include 'components/auth-svg.html' %}
     </div>
     <div
-        class="w-1/2 h-full flex flex-col justify-center items-center gap-8 text-center px-36"
+        class="intersecting_invisible w-1/2 h-full flex flex-col justify-center items-center gap-8 text-center px-36"
     >
         <h1
-            class="text-4xl text-white w-full flex gap-4 items-center justify-center"
+            class="intersecting_invisible text-4xl text-white w-full flex gap-4 items-center justify-center"
         >
-            <i class="fas fa-shield-alt mt-2"></i>Admin Login
+            <i class="intersecting_invisible fas fa-shield-alt mt-2"></i>Admin
+            Login
         </h1>
         <form
             method="POST"
             action="{{ url_for('admin_log_in') }}"
-            class="w-full flex flex-col gap-8"
+            class="intersecting_invisible w-full flex flex-col gap-8"
         >
-            <div class="flex flex-col gap-4">
+            <div class="intersecting_invisible flex flex-col gap-4">
                 <div
-                    class="bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
+                    class="intersecting_invisible bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <select
                         name="course_code"
-                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required
                     >
                         <option value="" disabled selected>
@@ -37,11 +42,11 @@ Login{% endblock %} {% block content %}
                 </div>
 
                 <div
-                    class="bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
+                    class="intersecting_invisible bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <select
                         name="course_branch"
-                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required
                     >
                         <option value="" disabled selected>
@@ -54,11 +59,11 @@ Login{% endblock %} {% block content %}
                 </div>
 
                 <div
-                    class="bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
+                    class="intersecting_invisible bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <select
                         name="course_semester"
-                        class="bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required
                     >
                         <option value="" disabled selected>
@@ -70,23 +75,27 @@ Login{% endblock %} {% block content %}
                     </select>
                 </div>
             </div>
-            <div class="flex flex-col w-full gap-6">
-                <div class="flex gap-4">
+            <div class="intersecting_invisible flex flex-col w-full gap-6">
+                <div class="intersecting_invisible flex gap-4">
                     <a
                         href="/auth/log-in"
-                        class="w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         Student Login
                     </a>
                     <button
                         type="submit"
-                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         Login
                     </button>
                 </div>
-                <div class="w-full bg-tertiary h-1 rounded-md"></div>
-                <a href="/admin/auth/sign-up" class="text-sm text-zinc-300"
+                <div
+                    class="intersecting_invisible w-full bg-tertiary h-1 rounded-md"
+                ></div>
+                <a
+                    href="/admin/auth/sign-up"
+                    class="intersecting_invisible text-sm text-zinc-300"
                     >Create an Administrator account</a
                 >
             </div>
@@ -96,9 +105,11 @@ Login{% endblock %} {% block content %}
 <!-- Display flash messages -->
 {% with messages = get_flashed_messages(with_categories=true) %} {% if messages
 %}
-<div class="flash-messages">
+<div class="intersecting_invisible flash-messages">
     {% for category, message in messages %}
-    <div class="flash flash-{{ category }}">{{ message }}</div>
+    <div class="intersecting_invisible  flash flash-{{ category }}">
+        {{ message }}
+    </div>
     {% endfor %}
 </div>
 {% endif %} {% endwith %} {% endblock %}

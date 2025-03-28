@@ -1,60 +1,65 @@
 <!-- templates/admin/auth/confirm.html -->
 {% extends 'layouts/minimal_layout.html' %} {% block title %}EXAMHUB | Admin
 Confirm{% endblock %} {% block content %}
-<div class="flex flex-row-reverse h-screen justify-center items-center">
-    <div class="w-1/2 bg-secondary flex items-center justify-center">
-        {% include 'components/auth_svg.html' %}
+<div
+    class="intersecting_invisible flex flex-row-reverse h-screen justify-center items-center"
+>
+    <div
+        class="intersecting_invisible w-1/2 pr-36 flex items-center justify-center"
+    >
+        {% include 'components/auth-svg.html' %}
     </div>
     <div
-        class="w-1/2 bg-secondary flex flex-col justify-center items-center gap-8 text-center px-36"
+        class="intersecting_invisible w-1/2 flex flex-col justify-center items-center gap-8 text-center px-36"
     >
         <h1
-            class="text-4xl text-white w-full flex gap-4 items-center justify-center"
+            class="intersecting_invisible text-4xl text-white w-full flex gap-4 items-center justify-center"
         >
-            <i class="fas fa-shield-alt mt-2"></i>Verify Administrator
+            <i class="intersecting_invisible fas fa-shield-alt mt-2"></i>Verify
+            Administrator
         </h1>
         <form
             method="POST"
             action="{{ url_for('admin_confirm') }}"
-            class="w-full flex flex-col gap-8"
+            class="intersecting_invisible w-full flex flex-col gap-8"
         >
-            <div class="flex flex-col gap-4">
+            <div class="intersecting_invisible flex flex-col gap-4">
                 <div
-                    class="bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
+                    class="intersecting_invisible bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
                 >
                     <input
                         placeholder="Institute Administrator"
                         type="text"
                         name="admin"
-                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
                 <div
-                    class="bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
+                    class="intersecting_invisible bg-tertiary flex flex-row w-full gap-2 p-2 rounded-md shadow-lg"
                 >
                     <input
                         placeholder="Admin Password"
                         type="password"
                         name="password"
-                        class="bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible bg-tertiary text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required="true"
                     />
                 </div>
             </div>
-            <div class="flex flex-col w-full gap-6">
-                <div class="flex gap-4">
+            <div class="intersecting_invisible flex flex-col w-full gap-6">
+                <div class="intersecting_invisible flex gap-4">
                     <a
                         href="/auth/log-in"
                         value="Admin Login"
-                        class="w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible w-full shadow-lg text-xl text-center border-primary text-[var(--primary)] bg-white border-2 p-2 rounded-md hover:opacity-75 hover:cursor-pointer focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         Student Login
                     </a>
                     <button
                         type="submit"
                         value="Login"
-                        class="w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
+                        class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                     >
                         Verify
                     </button>
@@ -66,9 +71,11 @@ Confirm{% endblock %} {% block content %}
 <!-- Display flash messages -->
 {% with messages = get_flashed_messages(with_categories=true) %} {% if messages
 %}
-<div class="flash-messages">
+<div class="intersecting_invisible flash-messages">
     {% for category, message in messages %}
-    <div class="flash {{ category }}">{{ message }}</div>
+    <div class="intersecting_invisible  flash {{ category }}">
+        {{ message }}
+    </div>
     {% endfor %}
 </div>
 {% endif %} {% endwith %} {% endblock %}

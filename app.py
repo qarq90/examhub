@@ -320,8 +320,32 @@ def profile():
     return render_template('profile.html')
 
 @app.route('/leaderboards')
-def leaderboards():
-    return render_template('leaderboards.html')
+def leaderboard():
+    print(session)
+    if 'student_branch' not in session or 'student_semester' not in session: 
+        flash("You need to log in first!", "error")
+        return redirect(url_for("log_in"))
+
+    branch = session.get("branch")
+    year = session.get("year") 
+
+    cursor.execute("""
+        SELECT students.student_name, results.roll_no, SUM(results.score) as total_score
+        FROM results
+        JOIN students ON results.roll_no = students.student_roll_no
+        WHERE results.course_branch = ? AND results.course_semester = ?
+        GROUP BY students.student_name, results.roll_no
+        HAVING total_score > 0
+        ORDER BY total_score DESC
+        LIMIT 3
+    """, (branch, year))
+
+    top_students = cursor.fetchall()
+
+    if not top_students:
+        flash("No leaderboard data available yet.", "info")
+
+    return render_template('leaderboards.html', top_students=top_students)
 
 @app.route('/tests/lectures')
 def lectures():
