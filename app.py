@@ -321,7 +321,6 @@ def profile():
 
 @app.route('/leaderboards')
 def leaderboard():
-    print(session)
     if 'student_branch' not in session or 'student_semester' not in session: 
         flash("You need to log in first!", "error")
         return redirect(url_for("log_in"))
@@ -397,7 +396,7 @@ def start_test(test_id):
         
         result_data = (
           str(uuid.uuid4().hex),
-            test[1],  
+            test[1],    
             test[2],  
             test[3],  
             test[4],  

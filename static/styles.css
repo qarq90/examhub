@@ -60,7 +60,7 @@ body {
 .intersecting_invisible {
     z-index: 2;
     opacity: 0;
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.35s all ease;
 }
 
