@@ -8,9 +8,26 @@ Results{% endblock %} {% block content %}
 
         {% if results %} {% for result in results %}
         <div class="intersecting_invisible w-full max-w-4xl">
-            <h3 class="intersecting_invisible text-3xl font-bold mb-4">
-                Test Name: {{ result.test_name }}
-            </h3>
+            <div class="intersecting_invisible mb-6 rounded-lg">
+                <h2 class="intersecting_invisible text-3xl font-bold mb-4">
+                    {{ test[3] }}
+                </h2>
+                <p class="intersecting_invisible text-lg mb-2">
+                    <strong>Course Code:</strong> {{ test[4] }}
+                </p>
+                <p class="intersecting_invisible text-lg mb-2">
+                    <strong>Semester:</strong> {{ test[5] }}
+                </p>
+                <p class="intersecting_invisible text-lg mb-2">
+                    <strong>Branch:</strong> {{ test[6] }}
+                </p>
+                <p class="intersecting_invisible text-lg mb-2">
+                    <strong>Test Name:</strong> {{ test[1] }}
+                </p>
+                <p class="intersecting_invisible text-lg">
+                    <strong>Description:</strong> {{ test[2] }}
+                </p>
+            </div>
             <h3 class="intersecting_invisible text-3xl font-bold mb-4">
                 Result: {{ result.result }}
             </h3>

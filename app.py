@@ -371,7 +371,7 @@ def start_test(test_id):
 
     if request.method == "POST":
         score = 0
-        total_questions = len(questions['questions'])
+        total_questions = len(questions)
         user_answers = []  
         
         for i, question in enumerate(questions, start=1):
@@ -384,24 +384,24 @@ def start_test(test_id):
                 is_correct = True
             
             user_answers.append({
-                "question_text": question['question_text'],
-                "option_a": question['option_a'],
-                "option_b": question['option_b'],
-                "option_c": question['option_c'],
-                "option_d": question['option_d'],
+                "question_text": question['question'],
+                "option_a": question['options_a'],
+                "option_b": question['options_b'],
+                "option_c": question['options_c'],
+                "option_d": question['options_d'],
                 "correct_option": correct_answer,
                 "selected_answer": selected_answer,
                 "is_correct": is_correct
             })
         
         result_data = (
-          str(uuid.uuid4().hex),
+            str(uuid.uuid4().hex),
             test[1],    
             test[2],  
             test[3],  
             test[4],  
             test[5],  
-            session["roll_no"],  
+            session["student_roll_no"],  
             score,  
             total_questions,  
             f"{score}/{total_questions}",  
@@ -415,19 +415,20 @@ def start_test(test_id):
                 result_data
             )
 
-        result_id = cursor.lastrowid
+        result_id = result_data[0]
         conn.commit()
 
         flash("Test submitted successfully!", "success")
-        return redirect(url_for("view_results",test_id=result_id))
+        return redirect(url_for("view_results",test_id=test_id, result_id=result_id))
     
     return render_template('/tests/start-test.html', test=test, questions=questions)
 
-@app.route('/tests/view-results/<test_id>', methods=["GET", "POST"])
-def view_results(test_id):
-    cursor.execute("SELECT * FROM results WHERE roll_no = ? AND results_id = ?", (session["roll_no"], test_id))
+@app.route('/tests/view-results/<test_id>/<result_id>', methods=["GET", "POST"])
+def view_results(test_id, result_id):
+    cursor.execute("SELECT * FROM results WHERE roll_no = ? AND results_id = ?", (session["student_roll_no"], result_id))
     user_results = cursor.fetchall()
-
+    cursor.execute("SELECT * FROM tests WHERE test_id = ?", (test_id,))
+    test = cursor.fetchone()
     results = []
     for result in user_results:
 
@@ -452,7 +453,7 @@ def view_results(test_id):
         }
         results.append(result_dict)
 
-    return render_template('/tests/view-results.html', results=results)
+    return render_template('/tests/view-results.html', results=results, test=test)
 
 @app.route('/admin/create/create-test', methods=["GET", "POST"])
 def create_test():
