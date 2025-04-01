@@ -65,19 +65,36 @@ Test{% endblock %} {% block content %}
                 </div>
             </div>
 
-            <div class="intersecting_invisible mb-6">
-                <label
-                    for="test_name"
-                    class="intersecting_invisible block font-medium text-xl mb-2"
-                    >Test Name</label
-                >
-                <input
-                    type="text"
-                    id="test_name"
-                    name="test_name"
-                    class="intersecting_invisible w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
-                    required
-                />
+            <div class="flex flex-row gap-4">
+                <div class="intersecting_invisible mb-6 flex-1">
+                    <label
+                        for="test_name"
+                        class="intersecting_invisible block font-medium text-xl mb-2"
+                        >Test Name</label
+                    >
+                    <input
+                        type="text"
+                        id="test_name"
+                        name="test_name"
+                        class="intersecting_invisible w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
+                        required
+                    />
+                </div>
+                <div class="intersecting_invisible mb-6">
+                    <label
+                        for="test_name"
+                        class="intersecting_invisible block font-medium text-xl mb-2"
+                        >Test Duration</label
+                    >
+                    <input
+                        type="text"
+                        placeholder="In minutes"
+                        id="test_duration"
+                        name="test_duration"
+                        class="intersecting_invisible w-full px-4 py-2 bg-tertiary rounded-lg focus:outline-none"
+                        required
+                    />
+                </div>
             </div>
 
             <div class="intersecting_invisible mb-6">

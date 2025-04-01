@@ -49,7 +49,8 @@ CREATE TABLE IF NOT EXISTS tests (
     course_semester TEXT,
     course_branch TEXT,
     questions TEXT,  -- Storing questions as JSON string
-    created_at TEXT
+    created_at TEXT,
+    test_duration TEXT
 )
 ''')
 
@@ -66,6 +67,7 @@ CREATE TABLE IF NOT EXISTS results (
     total_questions INTEGER,
     result TEXT,
     user_answers TEXT  -- Storing user answers as JSON string
+    submission_date TEXT
 )
 ''')
 
@@ -328,16 +330,19 @@ def leaderboard():
     branch = session.get("branch")
     year = session.get("year") 
 
-    cursor.execute("""
-        SELECT students.student_name, results.roll_no, SUM(results.score) as total_score
-        FROM results
-        JOIN students ON results.roll_no = students.student_roll_no
-        WHERE results.course_branch = ? AND results.course_semester = ?
-        GROUP BY students.student_name, results.roll_no
-        HAVING total_score > 0
-        ORDER BY total_score DESC
-        LIMIT 3
-    """, (branch, year))
+    cursor.execute(
+        """
+            SELECT students.student_name, results.roll_no, SUM(results.score) as total_score
+            FROM results
+            JOIN students ON results.roll_no = students.student_roll_no
+            WHERE results.course_branch = ? AND results.course_semester = ?
+            GROUP BY students.student_name, results.roll_no
+            HAVING total_score > 0
+            ORDER BY total_score DESC
+            LIMIT 3
+        """
+        ,(branch, year)
+    )
 
     top_students = cursor.fetchall()
 
@@ -393,6 +398,8 @@ def start_test(test_id):
                 "selected_answer": selected_answer,
                 "is_correct": is_correct
             })
+
+        current_date = datetime.now().strftime("%d/%m/%Y")
         
         result_data = (
             str(uuid.uuid4().hex),
@@ -405,12 +412,13 @@ def start_test(test_id):
             score,  
             total_questions,  
             f"{score}/{total_questions}",  
-            json.dumps(user_answers)  
+            json.dumps(user_answers),
+            current_date
         )
 
         cursor.execute(
                 """
-                    INSERT INTO results VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    INSERT INTO results VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, 
                 result_data
             )
@@ -460,6 +468,7 @@ def create_test():
     if request.method == "POST":
         test_name = request.form.get("test_name")
         test_description = request.form.get("test_description")
+        test_duration = request.form.get("test_duration")
 
         if 'questions_json' not in request.files:
             flash("No JSON file uploaded!", "error")
@@ -490,10 +499,11 @@ def create_test():
             session.get("course_semester"),
             session.get("course_branch"),
             json.dumps(questions_data["questions"]),
-            datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            test_duration
         )
 
-        cursor.execute("INSERT INTO tests VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", test_data)
+        cursor.execute("INSERT INTO tests VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", test_data)
         conn.commit()
 
         flash("Test created successfully!", "success")

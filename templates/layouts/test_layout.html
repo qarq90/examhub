@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}My Flask App{% endblock %}</title>
+        <link href="/static/styles.css" rel="stylesheet" />
+        <link
+            href="{{ url_for('static', filename='output.css') }}"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        {% if session["course_branch"] %} {% include
+        'components/admin/navbar.html' %} {% endif %}
+
+        <div class="intersecting_invisible relative content m-1">
+            {% block content %}{% endblock %}
+        </div>
+        {% include 'components/bg-cover.html' %}
+        <script src="{{ url_for('static', filename='scripts/animateDynamically.js') }}"></script>
+
+        <script>
+            history.pushState(null, null, location.href);
+            window.onpopstate = function (event) {
+                history.go(1);
+            };
+
+            setInterval(function () {
+                history.pushState(null, null, location.href);
+            }, 100);
+
+            window.history.forward();
+            function noBack() {
+                window.history.forward();
+            }
+
+            document.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+            });
+
+            setInterval(function () {
+                if (window.location.href !== originalUrl) {
+                    window.location.href = originalUrl;
+                }
+                history.pushState(null, null, location.href);
+            }, 100);
+        </script>
+    </body>
+</html>
