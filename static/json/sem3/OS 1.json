@@ -1,0 +1,166 @@
+{
+    "test_name": "Introduction to Operating Systems",
+    "test_description": "This test covers fundamental concepts of operating systems including structure, operations, services, system calls, and boot processes.",
+    "questions": [
+        {
+            "question": "What is the primary function of an operating system?",
+            "options_a": "To manage hardware and software resources",
+            "options_b": "To provide internet connectivity",
+            "options_c": "To create documents and spreadsheets",
+            "options_d": "To design user interfaces",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT an operating system service?",
+            "options_a": "Program execution",
+            "options_b": "I/O operations",
+            "options_c": "Web browsing",
+            "options_d": "File system manipulation",
+            "correct_answer": "option_c"
+        },
+        {
+            "question": "What is a system call in an operating system?",
+            "options_a": "A program that manages hardware resources",
+            "options_b": "A request from a program to the OS for a service",
+            "options_c": "A type of compiler directive",
+            "options_d": "A hardware interrupt signal",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "Which type of system call is used to create a new process?",
+            "options_a": "fork()",
+            "options_b": "open()",
+            "options_c": "read()",
+            "options_d": "exit()",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of system programs?",
+            "options_a": "To provide a convenient environment for program development and execution",
+            "options_b": "To directly control hardware components",
+            "options_c": "To replace the need for an operating system",
+            "options_d": "To serve as device drivers",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which operating system structure is known as the 'onion model'?",
+            "options_a": "Monolithic",
+            "options_b": "Layered",
+            "options_c": "Microkernel",
+            "options_d": "Modular",
+            "correct_answer": "option_b"
+        },
+        {
+            "question": "What happens during system boot?",
+            "options_a": "The OS is loaded into memory and initialized",
+            "options_b": "All programs are compiled",
+            "options_c": "The computer is physically assembled",
+            "options_d": "User data is permanently erased",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which component is responsible for loading the operating system into memory during boot?",
+            "options_a": "BIOS",
+            "options_b": "CPU",
+            "options_c": "RAM",
+            "options_d": "Hard drive",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of a microkernel architecture?",
+            "options_a": "Better security and stability",
+            "options_b": "Faster performance",
+            "options_c": "Smaller memory footprint",
+            "options_d": "Easier to program",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a type of user interface provided by operating systems?",
+            "options_a": "Command-Line Interface (CLI)",
+            "options_b": "Graphical User Interface (GUI)",
+            "options_c": "Touch User Interface (TUI)",
+            "options_d": "Binary User Interface (BUI)",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of device drivers in an operating system?",
+            "options_a": "To provide interfaces to specific hardware devices",
+            "options_b": "To manage user accounts",
+            "options_c": "To create virtual machines",
+            "options_d": "To optimize network speed",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a characteristic of monolithic operating system architecture?",
+            "options_a": "All OS functionality is in kernel space",
+            "options_b": "Minimal functionality in kernel space",
+            "options_c": "Layered approach to functionality",
+            "options_d": "Modular design with loadable components",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the role of the shell in an operating system?",
+            "options_a": "It provides the user interface to the OS",
+            "options_b": "It manages memory allocation",
+            "options_c": "It handles process scheduling",
+            "options_d": "It controls hardware interrupts",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common operating system function?",
+            "options_a": "Memory management",
+            "options_b": "Process management",
+            "options_c": "File management",
+            "options_d": "Website hosting",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the purpose of system utilities?",
+            "options_a": "To perform maintenance and administrative tasks",
+            "options_b": "To replace the kernel functions",
+            "options_c": "To create new system calls",
+            "options_d": "To design hardware components",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following best describes an operating system?",
+            "options_a": "A program that acts as an intermediary between users and hardware",
+            "options_b": "A collection of hardware components",
+            "options_c": "A type of application software",
+            "options_d": "A programming language",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the first program that runs when a computer boots up?",
+            "options_a": "Bootstrap loader",
+            "options_b": "Operating system",
+            "options_c": "Application software",
+            "options_d": "Device driver",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common type of system call?",
+            "options_a": "Process control",
+            "options_b": "File manipulation",
+            "options_c": "Device manipulation",
+            "options_d": "Web page rendering",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the main purpose of the kernel in an operating system?",
+            "options_a": "To manage system resources and provide core services",
+            "options_b": "To provide graphical user interfaces",
+            "options_c": "To run application programs",
+            "options_d": "To store user data",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following best describes the role of an operating system in memory management?",
+            "options_a": "Allocating and deallocating memory space as needed",
+            "options_b": "Designing new memory hardware",
+            "options_c": "Creating memory chips",
+            "options_d": "Programming application memory usage",
+            "correct_answer": "option_a"
+        }
+    ]
+}

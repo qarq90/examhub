@@ -1,45 +1,129 @@
 <nav
-    class="intersecting_invisible py-4 px-8 m-4 rounded-md shadow-lg flex bg-primary flex-row border-primary justify-between"
+    class="py-4 px-8 m-4 rounded-md shadow-lg flex bg-primary flex-row border-primary justify-between items-center"
 >
-    <ul class="intersecting_invisible flex gap-8 items-center">
+    <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+            <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+            </svg>
+        </button>
+    </div>
+
+    <ul class="hidden md:flex gap-8 items-center">
         <li>
-            <a href="/tests/lectures" class="intersecting_invisible text-white"
+            <a
+                href="/tests/lectures"
+                class="text-white hover:text-gray-200 transition"
                 >Lectures</a
             >
         </li>
         <li>
-            <a href="/leaderboards" class="intersecting_invisible text-white"
+            <a
+                href="/leaderboards"
+                class="text-white hover:text-gray-200 transition"
                 >Leaderboard</a
             >
         </li>
-        <li>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </li>
     </ul>
-    <ul class="intersecting_invisible flex gap-8 items-center">
+
+    <ul class="flex md:mr-0 mr-12 items-center">
         <li>
-            <a href="/" class="intersecting_invisible text-white text-2xl title"
+            <a
+                href="/"
+                class="text-white text-2xl font-bold title hover:text-gray-200 transition"
                 >EXAMHUB</a
             >
         </li>
     </ul>
-    <ul class="intersecting_invisible flex gap-8 items-center">
+
+    <ul class="hidden md:flex gap-8 items-center">
         <li>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </li>
-        <li>
-            <a
-                href="/admin/create/create-test"
-                class="intersecting_invisible text-white"
-                >Create Test</a
+            <a href="/profile" class="text-white hover:text-gray-200 transition"
+                >Profile</a
             >
         </li>
         <li>
-            <a href="/auth/log-in" class="intersecting_invisible text-white"
+            <a
+                href="/auth/log-in"
+                class="text-white hover:text-gray-200 transition"
                 >Logout</a
             >
         </li>
     </ul>
+
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-24 left-0 right-0 bg-primary z-50 py-4 px-8 m-4 rounded-md shadow-lg"
+    >
+        <ul class="flex flex-col gap-4">
+            <li>
+                <a
+                    href="/"
+                    class="block text-white hover:text-gray-200 transition"
+                    >Home</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/tests/lectures"
+                    class="block text-white hover:text-gray-200 transition"
+                    >Lectures</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/leaderboards"
+                    class="block text-white hover:text-gray-200 transition"
+                    >Leaderboard</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/admin/create/create-test"
+                    class="block text-white hover:text-gray-200 transition"
+                    >Create Test</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/auth/log-in"
+                    class="block text-white hover:text-gray-200 transition"
+                    >Logout</a
+                >
+            </li>
+        </ul>
+    </div>
 </nav>
+
+<script>
+    document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        });
+
+    document.addEventListener("click", function (event) {
+        const menu = document.getElementById("mobile-menu");
+        const button = document.getElementById("mobile-menu-button");
+
+        if (
+            !menu.contains(event.target) &&
+            event.target !== button &&
+            !button.contains(event.target)
+        ) {
+            menu.classList.add("hidden");
+        }
+    });
+</script>

@@ -1,0 +1,166 @@
+{
+    "test_name": "Process Synchronization and Deadlocks",
+    "test_description": "This test covers inter-process communication, synchronization techniques, deadlock concepts, and solutions in operating systems.",
+    "questions": [
+        {
+            "question": "What is the main purpose of process synchronization?",
+            "options_a": "To ensure orderly execution of cooperating processes",
+            "options_b": "To make all processes run at the same speed",
+            "options_c": "To allocate equal CPU time to all processes",
+            "options_d": "To reduce the number of processes in the system",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a race condition?",
+            "options_a": "When multiple processes access shared data concurrently and the outcome depends on timing",
+            "options_b": "A competition between processes to finish first",
+            "options_c": "A condition where processes run faster than the CPU can handle",
+            "options_d": "A hardware malfunction in multi-core processors",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a critical section in process synchronization?",
+            "options_a": "A code segment that accesses shared resources",
+            "options_b": "The most important part of a program",
+            "options_c": "A section of code that must be compiled first",
+            "options_d": "The part of memory where system calls are stored",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What are the three requirements for a solution to the critical section problem?",
+            "options_a": "Mutual exclusion, progress, and bounded waiting",
+            "options_b": "Speed, efficiency, and simplicity",
+            "options_c": "Security, reliability, and scalability",
+            "options_d": "Concurrency, parallelism, and synchronization",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is Peterson's solution used for?",
+            "options_a": "Achieving mutual exclusion for two processes",
+            "options_b": "Memory allocation",
+            "options_c": "Process scheduling",
+            "options_d": "Deadlock recovery",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a semaphore in operating systems?",
+            "options_a": "A synchronization tool that uses wait and signal operations",
+            "options_b": "A hardware component for process management",
+            "options_c": "A type of system call",
+            "options_d": "A memory management technique",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which classical synchronization problem involves producers and consumers?",
+            "options_a": "The Producer-Consumer problem",
+            "options_b": "The Dining Philosophers problem",
+            "options_c": "The Readers-Writers problem",
+            "options_d": "The Sleeping Barber problem",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is message passing in inter-process communication?",
+            "options_a": "A method where processes communicate by sending and receiving messages",
+            "options_b": "A technique for sharing memory between processes",
+            "options_c": "A way to transfer files between systems",
+            "options_d": "A method for scheduling processes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What are the four necessary conditions for deadlock?",
+            "options_a": "Mutual exclusion, hold and wait, no preemption, circular wait",
+            "options_b": "Race condition, starvation, livelock, synchronization",
+            "options_c": "Memory shortage, CPU overload, I/O bottleneck, network delay",
+            "options_d": "Priority inversion, context switching, thrashing, paging",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is deadlock avoidance?",
+            "options_a": "A technique that ensures the system will never enter a deadlock state",
+            "options_b": "Recovering from a deadlock after it occurs",
+            "options_c": "Preventing all resource sharing between processes",
+            "options_d": "Ignoring deadlocks when they happen",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the Banker's algorithm used for?",
+            "options_a": "Deadlock avoidance",
+            "options_b": "Memory allocation",
+            "options_c": "Process scheduling",
+            "options_d": "File system management",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is deadlock prevention?",
+            "options_a": "Designing a system to eliminate one of the four necessary conditions for deadlock",
+            "options_b": "Allowing deadlocks to occur and then recovering",
+            "options_c": "Ignoring the possibility of deadlocks",
+            "options_d": "Using faster hardware to avoid deadlocks",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is resource allocation graph used for?",
+            "options_a": "Deadlock detection",
+            "options_b": "Process scheduling",
+            "options_c": "Memory management",
+            "options_d": "File system organization",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the difference between deadlock prevention and avoidance?",
+            "options_a": "Prevention eliminates one of the necessary conditions, avoidance ensures the system never enters unsafe state",
+            "options_b": "Prevention is for hardware, avoidance is for software",
+            "options_c": "Prevention is more expensive than avoidance",
+            "options_d": "There is no significant difference",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is livelock?",
+            "options_a": "When processes keep changing state but make no progress",
+            "options_b": "A permanent deadlock situation",
+            "options_c": "When the system runs out of memory",
+            "options_d": "A hardware failure in multi-core systems",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a deadlock recovery technique?",
+            "options_a": "Process acceleration",
+            "options_b": "Process termination",
+            "options_c": "Resource preemption",
+            "options_d": "System rollback",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the Dining Philosophers problem an example of?",
+            "options_a": "A synchronization problem involving shared resources",
+            "options_b": "A memory management issue",
+            "options_c": "A process scheduling algorithm",
+            "options_d": "A file system organization method",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a monitor in synchronization?",
+            "options_a": "A high-level synchronization construct",
+            "options_b": "A hardware device for process management",
+            "options_c": "A type of system call",
+            "options_d": "A memory allocation technique",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the Readers-Writers problem concerned with?",
+            "options_a": "Synchronizing access to a shared database",
+            "options_b": "Memory allocation strategies",
+            "options_c": "CPU scheduling algorithms",
+            "options_d": "File system organization",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of using monitors over semaphores?",
+            "options_a": "Monitors are easier to use correctly",
+            "options_b": "Monitors are faster",
+            "options_c": "Monitors require less memory",
+            "options_d": "Monitors are implemented in hardware",
+            "correct_answer": "option_a"
+        }
+    ]
+}

@@ -2,24 +2,24 @@
 {% extends 'layouts/main_layout.html' %} {% block title %}EXAMHUB | Lectures{%
 endblock %} {% block content %} {% if session.get("student_id") or
 session.get("course_branch") %}
-<div class="intersecting_invisible container text-white">
+<div class="intersecting_invisible text-white">
     <div
         class="intersecting_invisible w-full flex justify-center items-center py-10 flex-col gap-8"
     >
         {% if lectures %}
         <span
-            class="intersecting_invisible text-6xl title uppercase font-bold text-center"
+            class="intersecting_invisible text-4xl md:text-6xl title uppercase font-bold text-center"
         >
             {{ session.get("student_branch") or session.get("course_branch") }}
         </span>
         {% endif %} {% if lectures %}
         <div class="intersecting_invisible w-10/12">
-            <h3
-                class="intersecting_invisible text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
+            <!-- <h3
+                class="intersecting_invisible text-center md:text-left text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
             >
                 {{ session.get("course_semester") or
                 session.get("student_semester") }}
-            </h3>
+            </h3> -->
 
             {% set courses = {} %} {% for test in lectures %} {% if test[3] not
             in courses %} {% set _ = courses.update({test[3]: []}) %} {% endif
@@ -27,10 +27,14 @@ session.get("course_branch") %}
             display each course with its tests #} {% for course_name,
             course_tests in courses.items() %}
             <div class="intersecting_invisible mb-8">
-                <h4 class="intersecting_invisible text-2xl font-bold my-4">
+                <h4
+                    class="intersecting_invisible text-center md:text-left text-3xl mb-8 font-semibold py-6 border-b-[var(--primary)] border-b-2"
+                >
                     ⚪ {{ course_name }}
                 </h4>
-                <div class="intersecting_invisible grid grid-cols-4 gap-4">
+                <div
+                    class="intersecting_invisible grid grid-cols-1 md:grid-cols-4 gap-4"
+                >
                     <div class="intersecting_invisible flex flex-col gap-4">
                         {% for test in course_tests %} {% if loop.index0 % 4 ==
                         0 %}

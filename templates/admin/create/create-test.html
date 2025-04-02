@@ -5,14 +5,18 @@ Test{% endblock %} {% block content %}
     <div
         class="intersecting_invisible w-full flex justify-center items-center py-20 flex-col gap-8"
     >
-        <h1 class="intersecting_invisible text-6xl font-bold">Create Test</h1>
+        <h1 class="intersecting_invisible text-6xl md:mt-0 -mt-16 font-bold">
+            Create Test
+        </h1>
         <form
             method="POST"
             action="{{ url_for('create_test') }}"
-            class="intersecting_invisible w-[75%] p-8 rounded-lg"
+            class="intersecting_invisible w-full md:w-[75%] md:p-8 rounded-lg"
             enctype="multipart/form-data"
         >
-            <div class="intersecting_invisible flex flex-row gap-4 mb-6">
+            <div
+                class="intersecting_invisible flex flex-col md:flex-row gap-4 mb-6"
+            >
                 <div class="intersecting_invisible flex-1">
                     <label
                         for="course_name"
@@ -65,7 +69,7 @@ Test{% endblock %} {% block content %}
                 </div>
             </div>
 
-            <div class="flex flex-row gap-4">
+            <div class="flex flex-col md:flex-row gap-4">
                 <div class="intersecting_invisible mb-6 flex-1">
                     <label
                         for="test_name"
@@ -121,7 +125,9 @@ Test{% endblock %} {% block content %}
                 <p class="intersecting_invisible mb-4">
                     The JSON file should follow the structure below:
                 </p>
-                <pre class="intersecting_invisible bg-tertiary p-4 rounded-lg">
+                <pre
+                    class="intersecting_invisible hidden md:block bg-tertiary p-4 rounded-lg"
+                >
 {
     "questions": [
         {
@@ -145,10 +151,39 @@ Test{% endblock %} {% block content %}
     ]
 }
                 </pre>
+                <pre
+                    class="intersecting_invisible md:hidden text-xs bg-tertiary p-4 rounded-lg"
+                >
+{
+ "questions": [
+  {
+   "question": "What is the output of
+                `print(2 + 2)`?",
+   "options_a": "3",
+   "options_b": "4",
+   "options_c": "5",
+   "options_d": "6",
+   "correct_answer": "option_b"
+  },
+  {
+   "question": "Keyword to define a function
+                in Python?",
+   "options_a": "func",
+   "options_b": "def",
+   "options_c": "function",
+   "options_d": "define",
+   "correct_answer": "option_b"
+  },
+  // Add more questions here following the 
+     same format.
+        .................
+    ]
+}
+                </pre>
             </div>
 
             <div
-                class="intersecting_invisible rounded-lg py-4 px-72 text-center"
+                class="intersecting_invisible rounded-lg py-4 md:px-72 text-center"
             >
                 <h2 class="intersecting_invisible text-2xl font-bold mb-4">
                     Upload JSON File

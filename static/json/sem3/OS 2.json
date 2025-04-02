@@ -1,0 +1,166 @@
+{
+    "test_name": "Process Management and Scheduling",
+    "test_description": "This test evaluates understanding of processes, threads, scheduling concepts, and algorithms in operating systems.",
+    "questions": [
+        {
+            "question": "What is a process in operating system terms?",
+            "options_a": "A program in execution",
+            "options_b": "A hardware component",
+            "options_c": "A type of system call",
+            "options_d": "A memory allocation technique",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a process state in the standard process state model?",
+            "options_a": "New",
+            "options_b": "Ready",
+            "options_c": "Running",
+            "options_d": "Compiling",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What information is typically stored in a Process Control Block (PCB)?",
+            "options_a": "Process state, program counter, and CPU registers",
+            "options_b": "User login credentials",
+            "options_c": "Application source code",
+            "options_d": "Hardware specifications",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is context switching?",
+            "options_a": "The process of saving and restoring a process's state",
+            "options_b": "Changing the operating system's user interface",
+            "options_c": "Switching between different programming languages",
+            "options_d": "Altering hardware configurations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of using threads?",
+            "options_a": "They allow concurrent execution within a process",
+            "options_b": "They reduce the need for memory",
+            "options_c": "They eliminate the need for process scheduling",
+            "options_d": "They make programming simpler",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a type of thread?",
+            "options_a": "User-level thread",
+            "options_b": "Kernel-level thread",
+            "options_c": "Hybrid thread",
+            "options_d": "Binary thread",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the primary goal of CPU scheduling?",
+            "options_a": "To maximize CPU utilization and throughput",
+            "options_b": "To minimize hardware costs",
+            "options_c": "To eliminate the need for processes",
+            "options_d": "To reduce the size of the operating system",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which scheduling algorithm allocates the CPU to the process that requests it first?",
+            "options_a": "First-Come, First-Served (FCFS)",
+            "options_b": "Shortest Job First (SJF)",
+            "options_c": "Round Robin (RR)",
+            "options_d": "Priority Scheduling",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main characteristic of Round Robin scheduling?",
+            "options_a": "Each process gets a small unit of CPU time (time quantum)",
+            "options_b": "Processes are executed in order of arrival",
+            "options_c": "The shortest process is executed next",
+            "options_d": "Processes with highest priority are executed first",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which scheduling algorithm is optimal for minimizing average waiting time?",
+            "options_a": "Shortest Job First (SJF)",
+            "options_b": "First-Come, First-Served (FCFS)",
+            "options_c": "Round Robin (RR)",
+            "options_d": "Priority Scheduling",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the difference between preemptive and non-preemptive scheduling?",
+            "options_a": "Preemptive allows interruption of running processes, non-preemptive doesn't",
+            "options_b": "Preemptive is for real-time systems only",
+            "options_c": "Non-preemptive is always more efficient",
+            "options_d": "There is no significant difference",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a thread in operating system terms?",
+            "options_a": "A lightweight process within a process",
+            "options_b": "A type of system call",
+            "options_c": "A hardware component",
+            "options_d": "A memory management technique",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common scheduling criterion?",
+            "options_a": "CPU utilization",
+            "options_b": "Throughput",
+            "options_c": "Turnaround time",
+            "options_d": "Programmer productivity",
+            "correct_answer": "option_d"
+        },
+        {
+            "question": "What is the main disadvantage of the First-Come, First-Served (FCFS) scheduling algorithm?",
+            "options_a": "It can lead to long waiting times for short processes",
+            "options_b": "It's too complex to implement",
+            "options_c": "It requires special hardware",
+            "options_d": "It cannot be used in modern systems",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the long-term scheduler?",
+            "options_a": "To select which processes should be brought into the ready queue",
+            "options_b": "To manage CPU allocation between processes",
+            "options_c": "To handle I/O operations",
+            "options_d": "To control thread execution",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which scheduling algorithm is most suitable for time-sharing systems?",
+            "options_a": "Round Robin",
+            "options_b": "First-Come, First-Served",
+            "options_c": "Shortest Job First",
+            "options_d": "Priority Scheduling",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of multilevel queue scheduling?",
+            "options_a": "It can classify processes into different groups",
+            "options_b": "It's the simplest to implement",
+            "options_c": "It doesn't require any scheduling criteria",
+            "options_d": "It eliminates the need for context switching",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is process synchronization?",
+            "options_a": "Coordinating the execution of processes to maintain consistency",
+            "options_b": "Making all processes run at the same speed",
+            "options_c": "Ensuring all processes start at the same time",
+            "options_d": "Synchronizing system clocks across processes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a common problem in process synchronization?",
+            "options_a": "Race condition",
+            "options_b": "Memory overflow",
+            "options_c": "Hardware failure",
+            "options_d": "Power shortage",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main purpose of the short-term scheduler?",
+            "options_a": "To select which process should execute next and allocate CPU",
+            "options_b": "To bring processes into memory",
+            "options_c": "To manage long-term process storage",
+            "options_d": "To handle user interface operations",
+            "correct_answer": "option_a"
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "test_name": "File Systems and I/O",
+    "test_description": "This test covers file system concepts, implementation, disk management, and I/O systems in operating systems.",
+    "questions": [
+        {
+            "question": "What is a file system in operating systems?",
+            "options_a": "The method and data structure for storing and organizing files",
+            "options_b": "The physical storage devices",
+            "options_c": "The network protocol for file transfer",
+            "options_d": "The user interface for file management",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common file access method?",
+            "options_a": "Random Access",
+            "options_b": "Sequential Access",
+            "options_c": "Direct Access",
+            "options_d": "Indexed Access",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of a directory structure in a file system?",
+            "options_a": "To organize files in a hierarchical manner",
+            "options_b": "To increase file access speed",
+            "options_c": "To compress files",
+            "options_d": "To encrypt file contents",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common file allocation method?",
+            "options_a": "Stack Allocation",
+            "options_b": "Contiguous Allocation",
+            "options_c": "Linked Allocation",
+            "options_d": "Indexed Allocation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of contiguous file allocation?",
+            "options_a": "Fast sequential access",
+            "options_b": "No external fragmentation",
+            "options_c": "Easy file growth",
+            "options_d": "Simple implementation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main disadvantage of linked file allocation?",
+            "options_a": "Inefficient for random access",
+            "options_b": "External fragmentation",
+            "options_c": "Fixed file size",
+            "options_d": "Complex directory structure",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of free space management in file systems?",
+            "options_a": "To track which disk blocks are available for allocation",
+            "options_b": "To compress unused disk space",
+            "options_c": "To defragment the disk",
+            "options_d": "To clean up temporary files",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common free space management technique?",
+            "options_a": "Stack Management",
+            "options_b": "Bit Vector",
+            "options_c": "Linked List",
+            "options_d": "Grouping",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the basic structure of a disk?",
+            "options_a": "Platters divided into tracks and sectors",
+            "options_b": "Linear array of memory cells",
+            "options_c": "Hierarchical tree structure",
+            "options_d": "Network of interconnected nodes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is disk scheduling?",
+            "options_a": "Determining the order of disk I/O requests to minimize head movement",
+            "options_b": "Allocating disk space to files",
+            "options_c": "Managing disk cache",
+            "options_d": "Formatting disks",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which disk scheduling algorithm services requests in the direction the head is moving until no more requests in that direction?",
+            "options_a": "SCAN (Elevator Algorithm)",
+            "options_b": "FCFS (First-Come First-Served)",
+            "options_c": "SSTF (Shortest Seek Time First)",
+            "options_d": "C-SCAN (Circular SCAN)",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is RAID in storage systems?",
+            "options_a": "Redundant Array of Independent Disks",
+            "options_b": "Random Access Integrated Device",
+            "options_c": "Rapid Allocation of Interleaved Data",
+            "options_d": "Reliable Architecture for Information Disks",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main purpose of I/O systems in an operating system?",
+            "options_a": "To manage communication between the computer and its peripherals",
+            "options_b": "To allocate CPU resources",
+            "options_c": "To manage memory allocation",
+            "options_d": "To schedule processes",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is DMA (Direct Memory Access)?",
+            "options_a": "A method for devices to access memory without CPU intervention",
+            "options_b": "A memory allocation technique",
+            "options_c": "A file system organization method",
+            "options_d": "A disk scheduling algorithm",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of buffering in I/O systems?",
+            "options_a": "To smooth out differences in data transfer rates",
+            "options_b": "To compress data",
+            "options_c": "To encrypt data",
+            "options_d": "To organize files",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is caching in I/O systems?",
+            "options_a": "Keeping frequently accessed data in faster storage",
+            "options_b": "Compressing data to save space",
+            "options_c": "Organizing files hierarchically",
+            "options_d": "Managing disk partitions",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of journaling file systems?",
+            "options_a": "Faster recovery after crashes",
+            "options_b": "Higher storage capacity",
+            "options_c": "Better compression",
+            "options_d": "Simpler implementation",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the open() system call in file operations?",
+            "options_a": "To establish a connection between a process and a file",
+            "options_b": "To create a new file",
+            "options_c": "To delete a file",
+            "options_d": "To format a disk",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is wear leveling in flash memory systems?",
+            "options_a": "Distributing writes evenly across memory cells",
+            "options_b": "Managing memory allocation",
+            "options_c": "Scheduling disk operations",
+            "options_d": "Organizing file directories",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main purpose of the I/O scheduler in an operating system?",
+            "options_a": "To optimize the order of I/O operations",
+            "options_b": "To allocate CPU resources",
+            "options_c": "To manage memory allocation",
+            "options_d": "To schedule processes",
+            "correct_answer": "option_a"
+        }
+    ]
+}

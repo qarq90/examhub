@@ -1,0 +1,166 @@
+{
+    "test_name": "Memory Management",
+    "test_description": "This test covers memory management techniques including swapping, paging, segmentation, virtual memory, and page replacement algorithms.",
+    "questions": [
+        {
+            "question": "What is the main purpose of memory management in an operating system?",
+            "options_a": "To keep track of which parts of memory are in use and by whom",
+            "options_b": "To design new memory hardware",
+            "options_c": "To create memory chips",
+            "options_d": "To program application memory usage",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is swapping in memory management?",
+            "options_a": "Moving processes between main memory and disk",
+            "options_b": "Exchanging memory between two running processes",
+            "options_c": "Changing memory allocation algorithms",
+            "options_d": "Replacing defective memory chips",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main problem with contiguous memory allocation?",
+            "options_a": "External fragmentation",
+            "options_b": "Internal fragmentation",
+            "options_c": "Memory leaks",
+            "options_d": "Cache misses",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is paging in memory management?",
+            "options_a": "Dividing memory into fixed-size blocks called pages",
+            "options_b": "Organizing memory by program functions",
+            "options_c": "Allocating memory in contiguous blocks",
+            "options_d": "Swapping entire processes to disk",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is stored in a page table?",
+            "options_a": "Mapping between virtual and physical addresses",
+            "options_b": "List of running processes",
+            "options_c": "Memory allocation algorithms",
+            "options_d": "System call definitions",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of the Translation Lookaside Buffer (TLB)?",
+            "options_a": "To speed up virtual-to-physical address translation",
+            "options_b": "To manage disk swapping",
+            "options_c": "To allocate memory to new processes",
+            "options_d": "To schedule CPU operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is segmentation in memory management?",
+            "options_a": "Dividing memory into logical units of varying sizes",
+            "options_b": "Allocating fixed-size memory blocks",
+            "options_c": "Organizing memory by page size",
+            "options_d": "Managing cache memory",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is virtual memory?",
+            "options_a": "A technique that gives the illusion of more memory than physically available",
+            "options_b": "A type of RAM chip",
+            "options_c": "Memory used for virtualization",
+            "options_d": "A special high-speed memory cache",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is demand paging?",
+            "options_a": "Loading pages into memory only when they are needed",
+            "options_b": "Requesting memory from the operating system",
+            "options_c": "A type of memory allocation algorithm",
+            "options_d": "A page replacement strategy",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is a page fault?",
+            "options_a": "When a program accesses a page not currently in memory",
+            "options_b": "A hardware failure in memory chips",
+            "options_c": "An error in page table construction",
+            "options_d": "A security violation in memory access",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is Copy-on-Write (COW)?",
+            "options_a": "A technique where memory is shared until a process modifies it",
+            "options_b": "A method for writing to disk",
+            "options_c": "A page replacement algorithm",
+            "options_d": "A memory allocation strategy",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which page replacement algorithm replaces the page that hasn't been used for the longest time?",
+            "options_a": "LRU (Least Recently Used)",
+            "options_b": "FIFO (First-In First-Out)",
+            "options_c": "Optimal",
+            "options_d": "Clock",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is thrashing in memory management?",
+            "options_a": "When the system spends more time paging than executing processes",
+            "options_b": "A memory allocation error",
+            "options_c": "A hardware memory failure",
+            "options_d": "A type of page replacement algorithm",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the working set model used for?",
+            "options_a": "Determining how much memory a process needs to avoid thrashing",
+            "options_b": "Allocating memory to new processes",
+            "options_c": "Designing memory hardware",
+            "options_d": "Scheduling CPU operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of segmentation over paging?",
+            "options_a": "It matches the programmer's view of memory",
+            "options_b": "It's simpler to implement",
+            "options_c": "It uses less memory",
+            "options_d": "It's faster for the CPU to process",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main disadvantage of the FIFO page replacement algorithm?",
+            "options_a": "It may replace heavily used pages",
+            "options_b": "It's complex to implement",
+            "options_c": "It requires special hardware",
+            "options_d": "It cannot be used with virtual memory",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is memory-mapped I/O?",
+            "options_a": "Mapping I/O devices to memory addresses",
+            "options_b": "A memory allocation technique",
+            "options_c": "A page replacement strategy",
+            "options_d": "A method for organizing virtual memory",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the purpose of memory protection?",
+            "options_a": "To prevent processes from accessing memory they shouldn't",
+            "options_b": "To protect memory from physical damage",
+            "options_c": "To secure memory chips from theft",
+            "options_d": "To prevent memory from being swapped to disk",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of paged segmentation?",
+            "options_a": "It combines the benefits of paging and segmentation",
+            "options_b": "It's simpler than either paging or segmentation",
+            "options_c": "It uses less memory than other techniques",
+            "options_d": "It's faster for all memory operations",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the optimal page replacement algorithm?",
+            "options_a": "Replace the page that won't be used for the longest time",
+            "options_b": "Replace the oldest page",
+            "options_c": "Replace a random page",
+            "options_d": "Replace the most recently used page",
+            "correct_answer": "option_a"
+        }
+    ]
+}

@@ -2,15 +2,15 @@
 {% extends 'layouts/minimal_layout.html' %} {% block title %}EXAMHUB | Login{%
 endblock %} {% block content %}
 <div
-    class="intersecting_invisible flex flex-row h-screen justify-center items-center"
+    class="intersecting_invisible h-screen w-screen flex gap-12 flex-col justify-center items-center md:flex-row md:h-screen md:justify-center md:items-center"
 >
     <div
-        class="intersecting_invisible w-1/2 pl-36 flex items-center justify-center"
+        class="hidden intersecting_invisible md:w-1/2 md:pl-36 md:flex md:items-center md:justify-center"
     >
         {% include 'components/auth-svg.html' %}
     </div>
     <div
-        class="intersecting_invisible w-1/2 flex flex-col justify-center items-center gap-8 text-center px-36"
+        class="intersecting_invisible w-screen flex flex-col gap-8 px-4 md:w-1/2 md:justify-center md:items-center md:gap-8 md:text-center md:px-36"
     >
         <h1
             class="intersecting_invisible text-4xl text-white w-full flex gap-4 items-center justify-center"
@@ -67,7 +67,7 @@ endblock %} {% block content %}
                 <div
                     class="intersecting_invisible w-full bg-tertiary h-1 rounded-md"
                 />
-                <div class="intersecting_invisible mt-4">
+                <div class="intersecting_invisible mt-4 text-center">
                     <a
                         href="/auth/sign-up"
                         class="intersecting_invisible text-sm text-zinc-300"

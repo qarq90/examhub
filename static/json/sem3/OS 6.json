@@ -1,0 +1,166 @@
+{
+    "test_name": "Special-purpose Operating Systems",
+    "test_description": "This test covers various specialized operating systems including distributed, real-time, embedded, and mobile operating systems.",
+    "questions": [
+        {
+            "question": "What is the main characteristic of an open-source operating system?",
+            "options_a": "Its source code is publicly available and can be modified",
+            "options_b": "It's free of charge",
+            "options_c": "It only runs on specific hardware",
+            "options_d": "It doesn't require an operating system",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main difference between a distributed OS and a network OS?",
+            "options_a": "Distributed OS presents a single-system image, network OS doesn't",
+            "options_b": "Network OS is more secure",
+            "options_c": "Distributed OS only runs on supercomputers",
+            "options_d": "Network OS is always open-source",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary characteristic of an embedded operating system?",
+            "options_a": "Designed to perform specific tasks on dedicated hardware",
+            "options_b": "Capable of running multiple applications simultaneously",
+            "options_c": "Requires large amounts of memory",
+            "options_d": "Only used in desktop computers",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main requirement for a real-time operating system (RTOS)?",
+            "options_a": "Guaranteed response times",
+            "options_b": "High processing power",
+            "options_c": "Large memory capacity",
+            "options_d": "Graphical user interface",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common feature of mobile operating systems?",
+            "options_a": "Support for legacy desktop applications",
+            "options_b": "Touchscreen interface",
+            "options_c": "Power management",
+            "options_d": "App ecosystems",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of cloud operating systems?",
+            "options_a": "Accessibility from anywhere with internet connection",
+            "options_b": "Higher processing power than desktop OS",
+            "options_c": "No need for internet connection",
+            "options_d": "Better graphics performance",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary concern for IoT operating systems?",
+            "options_a": "Low power consumption and small footprint",
+            "options_b": "High-end graphics processing",
+            "options_c": "Running complex desktop applications",
+            "options_d": "Large memory requirements",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a characteristic of multimedia operating systems?",
+            "options_a": "Support for real-time processing of audio and video",
+            "options_b": "Exclusive use in scientific computing",
+            "options_c": "No support for user interfaces",
+            "options_d": "Inability to handle multiple media streams",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main difference between hard and soft real-time systems?",
+            "options_a": "Hard real-time cannot miss deadlines, soft real-time can tolerate some misses",
+            "options_b": "Hard real-time is faster",
+            "options_c": "Soft real-time is more secure",
+            "options_d": "Hard real-time only runs on supercomputers",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT a common challenge in distributed operating systems?",
+            "options_a": "Single point of failure",
+            "options_b": "Consistency maintenance",
+            "options_c": "Communication latency",
+            "options_d": "Concurrency control",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of a microkernel architecture for embedded systems?",
+            "options_a": "Modularity and reliability",
+            "options_b": "Higher performance",
+            "options_c": "Larger memory footprint",
+            "options_d": "Simpler programming model",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a common requirement for IoT operating systems?",
+            "options_a": "Support for diverse hardware platforms",
+            "options_b": "Large memory requirements",
+            "options_c": "High power consumption",
+            "options_d": "Complex user interfaces",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main characteristic of a proprietary operating system?",
+            "options_a": "Owned by a company that controls its use and modification",
+            "options_b": "Always free to use",
+            "options_c": "No support available",
+            "options_d": "Only runs on custom hardware",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a common feature of real-time operating systems?",
+            "options_a": "Deterministic scheduling",
+            "options_b": "Large memory footprint",
+            "options_c": "Complex graphical interfaces",
+            "options_d": "No support for multitasking",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main advantage of using a distributed operating system?",
+            "options_a": "Resource sharing and improved reliability",
+            "options_b": "Higher single-system performance",
+            "options_c": "Simpler programming model",
+            "options_d": "No need for networking",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is NOT typically a characteristic of embedded operating systems?",
+            "options_a": "Large memory requirements",
+            "options_b": "Real-time capabilities",
+            "options_c": "Small footprint",
+            "options_d": "Low power consumption",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the main challenge in mobile operating systems?",
+            "options_a": "Balancing performance with battery life",
+            "options_b": "Supporting legacy desktop applications",
+            "options_c": "Requiring large amounts of storage",
+            "options_d": "Lack of networking capabilities",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a common feature of cloud operating systems?",
+            "options_a": "Virtualization support",
+            "options_b": "No internet requirement",
+            "options_c": "Limited scalability",
+            "options_d": "Single-user access",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "What is the primary focus of multimedia operating systems?",
+            "options_a": "Handling time-sensitive media processing",
+            "options_b": "Scientific computations",
+            "options_c": "Database management",
+            "options_d": "Network routing",
+            "correct_answer": "option_a"
+        },
+        {
+            "question": "Which of the following is a key requirement for real-time operating systems in critical systems?",
+            "options_a": "Deterministic response times",
+            "options_b": "High graphical performance",
+            "options_c": "Large memory capacity",
+            "options_d": "Compatibility with desktop applications",
+            "correct_answer": "option_a"
+        }
+    ]
+}

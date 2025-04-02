@@ -168,14 +168,53 @@
     ]
 }
 
-Module 1: Uses Of Computer Networks, Network Hardware, Network Software, Protocol Layering, Reference Models: OSI, TCP/IP, Comparison of OSI & TCP/IP, Network Devices.
+Module 1: Introduction to Operating Systems; Operating
+System Structure and Operations; Functions of
+Operating Systems; Operating System
+Services and Interface; System Calls and its
+Types; System Programs; Operating System
+Structure; System Boot.
 
-Module 2: Physical layer: Guided Media, Unguided Media, Wireless Transmission: Electromagnetic Spectrum. Switching: Circuit-Switched Networks, Packet Switching, Structure Of A Switch DLL Design Issues (Services, Framing, Error Control, Flow Control), Error Detection and Correction(Hamming Code,Parity, CRC, Checksum) , Elementary Data Link protocols : Stop and Wait, Sliding Window(Go Back N, Selective Repeat), Piggybacking, HDLC Medium Access Protocols: Random Access, Controlled Access, Channelization. Ethernet Protocol: Standard Ethernet, Fast Ethernet (100 Mbps), Gigabit Ethernet, 10-Gigabit Ethernet. 
+Module 2: Basic Concepts of Process; Operation on
+Process; Process State Model and Transition;
+Process Control Block; Context Switching;
+Introduction to Threads; Types of Threads,
+Thread Models; Basic Concepts of
+Scheduling; Types of Schedulers; Scheduling
+Criteria; Scheduling Algorithms.
 
-Module 3: Network Layer Services, Packet Switching, Network Layer Performance, IPv4 ddressing (classful and classless), Subnetting, Supernetting ,IPv4 Protocol, DHCP, Network Address Translation (NAT). Routing algorithms: Distance Vector Routing, Link state routing,Path Vector Routing. Protocols Next Generation IP: IPv6 Addressing,IPv6 Protocol, Transition fromIPV4 to IPV6
+Module 3: Basic Concepts of Inter-process
+Communication and Synchronization; Race
+Condition; Critical Region and Problem;
+Peterson’s Solution; Synchronization
+Hardware and Semaphores; Classic Problems
+of Synchronization; Message Passing;
+Introduction to Deadlocks; System Model,
+Deadlock Characterization; Deadlock
+Detection and Recovery; Deadlock
+Prevention; Deadlock Avoidance.
 
-Module 4: Services, Transport Layer: Transport Layer Connectionless & Connection-oriented Protocols, Transport Layer protocols: User Datagram Protocol: UDP Services, UDP Applications, Transmission Control Protocol: TCP Services, TCP Features, Segment, A TCP Connection, Windows in TCP, Flow Control, Error Control, TCP Congestion Control, TCP Timers. Session Layer: Session layer design issues, Session Layer protocol - Remote Procedure Call (RPC),
+Module 4: Basic Concepts of Memory Management;
+Swapping; Contiguous Memory Allocation;
+Paging; Structure of Page Table;
+Segmentation; Basic Concepts of Virtual
+Memory; Demand Paging, Copy-on Write;
+Page Replacement Algorithms; Thrashing.
 
-Module 5: Presentation layer :Compression: Comparison between Lossy Compression and Lossless Compression, Huffman Coding, Speech Compression, LZW, RLE, Image Compression - GIF,JPEG. Application layer: Standard Client-Server Protocols: World Wide web, HTTP, FTP, Electronic Mail, Domain Name System (DNS), SNMP
+Module 5: Basic Concepts of File System; File Access
+Methods; Directory Structure; File-System
+Implementation; Allocation Methods; Free
+Space Management; Overview of Mass-
+Storage Structure; Disk Structure; Disk
+Scheduling; RAID Structure; Introduction to
+I/O Systems.
 
-Module 6: Introduction to VLAN ,VPN A case study to design a network for an organization meeting the following guidelines: Networking Devices, IP addressing: Subnetting, Supernetting, Routing Protocols to be used, Services to be used: TELNET, SSH, FTP server, Web server, File server, DHCP server and DNS server.
+Module 6: Open-source and Proprietary Operating
+System; Fundamentals of Distributed
+Operating System; Network Operating
+System;Embedded Operating Systems;Cloud
+and IoT Operating Systems; Real-Time
+Operating System;Mobile Operating System;
+Multimedia Operating System;Comparison
+between Functions of various Special-purpose
+Operating Systems.
