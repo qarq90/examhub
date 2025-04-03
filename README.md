@@ -55,16 +55,16 @@ The app will be available at [http://localhost:5000](http://127.0.0.1:5000/)
 
 ## Project Structure 📂
 
-├── node_modules/       # Node.js dependencies
-├── static/            # Static files (CSS, JS, images)
-├── templates/         # Flask HTML templates
-├── app.py             # Main application file
-├── examhub.db         # SQLite database
-├── add_courses.py     # Course management script
-├── add_tests.py       # Test management script
-├── package.json       # Node.js dependencies
-├── requirements.txt   # Python dependencies
-└── tailwind.config.js # Tailwind CSS configuration
+    ├── node_modules/       # Node.js dependencies
+    ├── static/            # Static files (CSS, JS, images)
+    ├── templates/         # Flask HTML templates
+    ├── app.py             # Main application file
+    ├── examhub.db         # SQLite database
+    ├── add_courses.py     # Course management script
+    ├── add_tests.py       # Test management script
+    ├── package.json       # Node.js dependencies
+    ├── requirements.txt   # Python dependencies
+    └── tailwind.config.js # Tailwind CSS configuration
 
 ## Contributing 🤝
 
