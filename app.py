@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash, get_flashed_messages
 from datetime import datetime
+from flask import jsonify
 import sqlite3
 import json
 import uuid
@@ -50,7 +51,7 @@ CREATE TABLE IF NOT EXISTS tests (
     course_branch TEXT,
     questions TEXT,  -- Storing questions as JSON string
     created_at TEXT,
-    test_duration TEXT
+    test_duration INTEGER
 )
 ''')
 
@@ -66,9 +67,21 @@ CREATE TABLE IF NOT EXISTS results (
     score INTEGER,
     total_questions INTEGER,
     result TEXT,
-    user_answers TEXT  -- Storing user answers as JSON string
+    user_answers TEXT, 
     submission_date TEXT
 )
+''')
+
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS course_materials (
+        material_id TEXT PRIMARY KEY,
+        course_id TEXT,
+        material_type TEXT CHECK(material_type IN ('video', 'document')),
+        title TEXT,
+        url TEXT,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (course_id) REFERENCES courses(course_id)
+    )
 ''')
 
 conn.commit()
@@ -327,27 +340,26 @@ def leaderboard():
         flash("You need to log in first!", "error")
         return redirect(url_for("log_in"))
 
-    branch = session.get("branch")
-    year = session.get("year") 
-
     cursor.execute(
         """
-            SELECT students.student_name, results.roll_no, SUM(results.score) as total_score
-            FROM results
-            JOIN students ON results.roll_no = students.student_roll_no
-            WHERE results.course_branch = ? AND results.course_semester = ?
-            GROUP BY students.student_name, results.roll_no
-            HAVING total_score > 0
-            ORDER BY total_score DESC
-            LIMIT 3
+        SELECT students.student_name, students.student_roll_no, SUM(results.score) as total_score
+        FROM results
+        JOIN students ON results.roll_no = students.student_roll_no
+        WHERE results.course_branch = ? AND results.course_semester = ?
+        GROUP BY students.student_name, students.student_roll_no
+        HAVING total_score > 0
+        ORDER BY total_score DESC
+        LIMIT 3
         """
-        ,(branch, year)
+    , (session["student_branch"] or session["course_branch"], session["student_semester"] or session["course_semester"])
     )
 
     top_students = cursor.fetchall()
 
     if not top_students:
         flash("No leaderboard data available yet.", "info")
+
+    print(top_students)
 
     return render_template('leaderboards.html', top_students=top_students)
 
@@ -403,11 +415,11 @@ def start_test(test_id):
         
         result_data = (
             str(uuid.uuid4().hex),
-            test[1],    
-            test[2],  
             test[3],  
             test[4],  
             test[5],  
+            session["student_branch"],    
+            test[1],  
             session["student_roll_no"],  
             score,  
             total_questions,  
@@ -517,6 +529,140 @@ def delete_test(test_id):
     cursor.execute("DELETE FROM results WHERE test_name IN (SELECT test_name FROM tests WHERE test_id = ?)", (test_id,))
     conn.commit()
     return {"redirect": url_for('lectures')}, 200
+
+@app.route('/materials')
+def view_materials():
+    if 'student_branch' not in session or 'student_semester' not in session:
+        flash("Please log in first", "error")
+        return redirect(url_for('log_in'))
+    
+    cursor.execute('''
+        SELECT m.*, c.course_name 
+        FROM course_materials m
+        JOIN courses c ON m.course_id = c.course_id
+        WHERE c.course_branch = ? AND c.course_semester = ?
+        ORDER BY m.created_at DESC
+    ''', (session['student_branch'], session['student_semester']))
+    
+    materials = cursor.fetchall()
+
+    return render_template('materials.html', materials=materials)
+
+@app.route('/admin/materials', methods=['GET', 'POST'])
+def manage_materials():
+    # Verify admin session
+    if 'course_id' not in session:
+        flash("Admin login required", "error")
+        return redirect(url_for('admin_log_in'))
+
+    # Handle form submission
+    if request.method == 'POST':
+        try:
+            # Get form data
+            course_id = request.form.get('course_id')
+            material_type = request.form.get('material_type')
+            title = request.form.get('title')
+            url = request.form.get('url')
+
+            # Validate required fields
+            if not all([course_id, material_type, title, url]):
+                flash("All fields are required", "error")
+                return redirect(url_for('manage_materials'))
+
+            # Validate URL format
+            if not url.startswith(('http://', 'https://')):
+                flash("Invalid URL format - must start with http:// or https://", "error")
+                return redirect(url_for('manage_materials'))
+
+            # Verify course exists
+            cursor.execute("SELECT course_id FROM courses WHERE course_id = ?", (course_id,))
+            if not cursor.fetchone():
+                flash("Invalid course selection", "error")
+                return redirect(url_for('manage_materials'))
+
+            # Generate unique material ID
+            material_id = str(uuid.uuid4())
+
+            # Insert into database
+            cursor.execute('''
+                INSERT INTO course_materials 
+                (material_id, course_id, material_type, title, url)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (material_id, course_id, material_type, title, url))
+            conn.commit()
+
+            flash("Material added successfully!", "success")
+            return redirect(url_for('manage_materials'))
+
+        except sqlite3.Error as e:
+            conn.rollback()
+            flash(f"Database error: {str(e)}", "error")
+            return redirect(url_for('manage_materials'))
+        except Exception as e:
+            flash(f"Unexpected error: {str(e)}", "error")
+            return redirect(url_for('manage_materials'))
+
+    # Handle GET request
+    try:
+        # Get courses for dropdown
+        cursor.execute("SELECT course_id, course_name FROM courses")
+        courses = cursor.fetchall()
+
+        # Get all materials with course names
+        cursor.execute('''
+            SELECT 
+                m.material_id,
+                m.course_id,
+                m.material_type,
+                m.title,
+                m.url,
+                m.created_at,
+                c.course_name
+            FROM course_materials m
+            JOIN courses c ON m.course_id = c.course_id
+            ORDER BY m.created_at DESC
+        ''')
+        
+        # Convert rows to dictionaries
+        materials = []
+        for row in cursor.fetchall():
+            materials.append({
+                'material_id': row[0],
+                'course_id': row[1],
+                'material_type': row[2],
+                'title': row[3],
+                'url': row[4],
+                'created_at': row[5],
+                'course_name': row[6]
+            })
+
+        return render_template('admin/materials.html',
+                             courses=courses,
+                             materials=materials)
+
+    except sqlite3.Error as e:
+        flash(f"Database error: {str(e)}", "error")
+        return redirect(url_for('manage_materials'))
+    except Exception as e:
+        flash(f"Error loading materials: {str(e)}", "error")
+        return redirect(url_for('manage_materials'))
+
+@app.route('/admin/materials/<material_id>', methods=['DELETE'])
+def delete_material(material_id):
+    try:
+        if 'course_id' not in session:
+            return jsonify({"error": "Unauthorized"}), 401
+
+        cursor.execute("DELETE FROM course_materials WHERE material_id = ?", (material_id,))
+        conn.commit()
+        return jsonify({"message": "Material deleted successfully"}), 200
+
+    except sqlite3.Error as e:
+        conn.rollback()
+        return jsonify({"error": str(e)}), 500
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True)
