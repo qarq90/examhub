@@ -447,6 +447,7 @@ def start_test(test_id):
 def view_results(test_id, result_id):
     cursor.execute("SELECT * FROM results WHERE roll_no = ? AND results_id = ?", (session["student_roll_no"], result_id))
     user_results = cursor.fetchall()
+    
     cursor.execute("SELECT * FROM tests WHERE test_id = ?", (test_id,))
     test = cursor.fetchone()
     results = []
@@ -528,6 +529,7 @@ def delete_test(test_id):
     cursor.execute("DELETE FROM tests WHERE test_id = ?", (test_id,))
     cursor.execute("DELETE FROM results WHERE test_name IN (SELECT test_name FROM tests WHERE test_id = ?)", (test_id,))
     conn.commit()
+    
     return {"redirect": url_for('lectures')}, 200
 
 @app.route('/materials')
@@ -550,40 +552,32 @@ def view_materials():
 
 @app.route('/admin/materials', methods=['GET', 'POST'])
 def manage_materials():
-    # Verify admin session
     if 'course_id' not in session:
         flash("Admin login required", "error")
         return redirect(url_for('admin_log_in'))
 
-    # Handle form submission
     if request.method == 'POST':
         try:
-            # Get form data
             course_id = request.form.get('course_id')
             material_type = request.form.get('material_type')
             title = request.form.get('title')
             url = request.form.get('url')
 
-            # Validate required fields
             if not all([course_id, material_type, title, url]):
                 flash("All fields are required", "error")
                 return redirect(url_for('manage_materials'))
 
-            # Validate URL format
             if not url.startswith(('http://', 'https://')):
                 flash("Invalid URL format - must start with http:// or https://", "error")
                 return redirect(url_for('manage_materials'))
 
-            # Verify course exists
             cursor.execute("SELECT course_id FROM courses WHERE course_id = ?", (course_id,))
             if not cursor.fetchone():
                 flash("Invalid course selection", "error")
                 return redirect(url_for('manage_materials'))
 
-            # Generate unique material ID
             material_id = str(uuid.uuid4())
 
-            # Insert into database
             cursor.execute('''
                 INSERT INTO course_materials 
                 (material_id, course_id, material_type, title, url)
@@ -602,13 +596,10 @@ def manage_materials():
             flash(f"Unexpected error: {str(e)}", "error")
             return redirect(url_for('manage_materials'))
 
-    # Handle GET request
     try:
-        # Get courses for dropdown
         cursor.execute("SELECT course_id, course_name FROM courses")
         courses = cursor.fetchall()
 
-        # Get all materials with course names
         cursor.execute('''
             SELECT 
                 m.material_id,
@@ -623,7 +614,6 @@ def manage_materials():
             ORDER BY m.created_at DESC
         ''')
         
-        # Convert rows to dictionaries
         materials = []
         for row in cursor.fetchall():
             materials.append({

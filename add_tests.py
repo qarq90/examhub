@@ -8,20 +8,22 @@ def process_json_files(directory_path, db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS tests (
-        test_id TEXT,
-        test_name TEXT,
-        test_description TEXT,
-        course_name TEXT,
-        course_code TEXT,
-        course_semester TEXT,
-        course_branch TEXT,
-        questions TEXT,  -- Storing questions as JSON string
-        created_at TEXT,
-        test_duration INTEGER
+    cursor.execute(
+        '''
+            CREATE TABLE IF NOT EXISTS tests (
+                test_id TEXT,
+                test_name TEXT,
+                test_description TEXT,
+                course_name TEXT,
+                course_code TEXT,
+                course_semester TEXT,
+                course_branch TEXT,
+                questions TEXT,  -- Storing questions as JSON string
+                created_at TEXT,
+                test_duration INTEGER
+            )
+        '''
     )
-    ''')
     
     for filename in os.listdir(directory_path):
         if filename.endswith('.json'):

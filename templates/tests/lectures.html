@@ -14,13 +14,6 @@ session.get("course_branch") %}
         </span>
         {% endif %} {% if lectures %}
         <div class="intersecting_invisible w-10/12">
-            <!-- <h3
-                class="intersecting_invisible text-center md:text-left text-3xl font-semibold py-6 border-b-[var(--primary)] border-b-2"
-            >
-                {{ session.get("course_semester") or
-                session.get("student_semester") }}
-            </h3> -->
-
             {% set courses = {} %} {% for test in lectures %} {% if test[3] not
             in courses %} {% set _ = courses.update({test[3]: []}) %} {% endif
             %} {% set _ = courses[test[3]].append(test) %} {% endfor %} {# Then

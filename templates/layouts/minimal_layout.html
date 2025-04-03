@@ -23,6 +23,7 @@
         <div class="intersecting_invisible content md:m-1">
             {% block content %}{% endblock %}
         </div>
+
         {% include 'components/bg-cover.html' %}
         <script src="{{ url_for('static', filename='scripts/animateDynamically.js') }}"></script>
     </body>

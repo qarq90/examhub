@@ -168,53 +168,14 @@
     ]
 }
 
-Module 1: Introduction to Operating Systems; Operating
-System Structure and Operations; Functions of
-Operating Systems; Operating System
-Services and Interface; System Calls and its
-Types; System Programs; Operating System
-Structure; System Boot.
+Module 1: 
 
-Module 2: Basic Concepts of Process; Operation on
-Process; Process State Model and Transition;
-Process Control Block; Context Switching;
-Introduction to Threads; Types of Threads,
-Thread Models; Basic Concepts of
-Scheduling; Types of Schedulers; Scheduling
-Criteria; Scheduling Algorithms.
+Module 2: 
 
-Module 3: Basic Concepts of Inter-process
-Communication and Synchronization; Race
-Condition; Critical Region and Problem;
-Peterson’s Solution; Synchronization
-Hardware and Semaphores; Classic Problems
-of Synchronization; Message Passing;
-Introduction to Deadlocks; System Model,
-Deadlock Characterization; Deadlock
-Detection and Recovery; Deadlock
-Prevention; Deadlock Avoidance.
+Module 3: 
 
-Module 4: Basic Concepts of Memory Management;
-Swapping; Contiguous Memory Allocation;
-Paging; Structure of Page Table;
-Segmentation; Basic Concepts of Virtual
-Memory; Demand Paging, Copy-on Write;
-Page Replacement Algorithms; Thrashing.
+Module 4: 
 
-Module 5: Basic Concepts of File System; File Access
-Methods; Directory Structure; File-System
-Implementation; Allocation Methods; Free
-Space Management; Overview of Mass-
-Storage Structure; Disk Structure; Disk
-Scheduling; RAID Structure; Introduction to
-I/O Systems.
+Module 5: 
 
-Module 6: Open-source and Proprietary Operating
-System; Fundamentals of Distributed
-Operating System; Network Operating
-System;Embedded Operating Systems;Cloud
-and IoT Operating Systems; Real-Time
-Operating System;Mobile Operating System;
-Multimedia Operating System;Comparison
-between Functions of various Special-purpose
-Operating Systems.
+Module 6: 

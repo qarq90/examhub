@@ -1,23 +1,27 @@
 <!-- templates/components/bg-cover.html -->
 {% set random_num = range(1, 5)|random %} {% if random_num == 1 %}
+
 <img
     src="{{ url_for('static', filename='assets/imgs/bg_cover.jpg') }}"
     class="intersecting_invisible w-screen h-screen fixed top-0 left-0 object-cover -z-10 opacity-10 selection:bg-transparent"
     alt="Background image"
 />
 {% elif random_num == 2 %}
+
 <img
     src="{{ url_for('static', filename='assets/imgs/bg_cover.jpg') }}"
     class="intersecting_invisible w-screen h-screen scale-x-[-1] fixed top-0 left-0 object-cover -z-10 opacity-10 selection:bg-transparent"
     alt="Background image"
 />
 {% elif random_num == 3 %}
+
 <img
     src="{{ url_for('static', filename='assets/imgs/bg_cover.jpg') }}"
     class="intersecting_invisible w-screen h-screen scale-y-[-1] fixed top-0 left-0 object-cover -z-10 opacity-10 selection:bg-transparent"
     alt="Background image"
 />
 {% elif random_num == 4 %}
+
 <img
     src="{{ url_for('static', filename='assets/imgs/bg_cover.jpg') }}"
     class="intersecting_invisible w-screen h-screen scale-[-1] fixed top-0 left-0 object-cover -z-10 opacity-10 selection:bg-transparent"

@@ -7,16 +7,17 @@ def initialize_database(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    # Create courses table - REMOVED TRAILING COMMA
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS courses (
-        course_id TEXT PRIMARY KEY,
-        course_name TEXT NOT NULL,
-        course_code TEXT NOT NULL,
-        course_branch TEXT,
-        course_semester TEXT
+    cursor.execute(
+        '''
+            CREATE TABLE IF NOT EXISTS courses (
+                course_id TEXT PRIMARY KEY,
+                course_name TEXT NOT NULL,
+                course_code TEXT NOT NULL,
+                course_branch TEXT,
+                course_semester TEXT
+            )
+        '''
     )
-    ''')
     conn.commit()
     conn.close()
     print("Database initialized with courses table")
