@@ -1,0 +1,86 @@
+{
+  "test_name": "Database Management System: SQL",
+  "test_description": "This test evaluates understanding of SQL commands and queries.",
+  "questions": [
+    {
+      "question": "What does SQL stand for?",
+      "options_a": "Structured Query Language",
+      "options_b": "Simple Query Language",
+      "options_c": "Standard Query Language",
+      "options_d": "Sequential Query Language",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which SQL command is used to create a table?",
+      "options_a": "CREATE TABLE",
+      "options_b": "INSERT INTO",
+      "options_c": "SELECT",
+      "options_d": "UPDATE",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which SQL command is used to insert data into a table?",
+      "options_a": "CREATE TABLE",
+      "options_b": "INSERT INTO",
+      "options_c": "SELECT",
+      "options_d": "UPDATE",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "Which SQL command is used to retrieve data from a table?",
+      "options_a": "CREATE TABLE",
+      "options_b": "INSERT INTO",
+      "options_c": "SELECT",
+      "options_d": "UPDATE",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "Which SQL command is used to update data in a table?",
+      "options_a": "CREATE TABLE",
+      "options_b": "INSERT INTO",
+      "options_c": "SELECT",
+      "options_d": "UPDATE",
+      "correct_answer": "option_d"
+    },
+    {
+      "question": "Which SQL command is used to delete data from a table?",
+      "options_a": "DELETE FROM",
+      "options_b": "INSERT INTO",
+      "options_c": "SELECT",
+      "options_d": "UPDATE",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which SQL command is used to delete a table?",
+      "options_a": "DROP TABLE",
+      "options_b": "DELETE FROM",
+      "options_c": "TRUNCATE TABLE",
+      "options_d": "REMOVE TABLE",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which SQL command is used to add a new column to a table?",
+      "options_a": "ALTER TABLE ADD",
+      "options_b": "ALTER TABLE MODIFY",
+      "options_c": "ALTER TABLE DROP",
+      "options_d": "ALTER TABLE RENAME",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which SQL command is used to remove a column from a table?",
+      "options_a": "ALTER TABLE ADD",
+      "options_b": "ALTER TABLE MODIFY",
+      "options_c": "ALTER TABLE DROP",
+      "options_d": "ALTER TABLE RENAME",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "Which SQL command is used to grant privileges to a user?",
+      "options_a": "GRANT",
+      "options_b": "REVOKE",
+      "options_c": "COMMIT",
+      "options_d": "ROLLBACK",
+      "correct_answer": "option_a"
+    }
+  ]
+}

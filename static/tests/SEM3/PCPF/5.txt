@@ -1,0 +1,86 @@
+{
+  "test_name": "Paradigms and Computer Programming Fundamentals: Scripting Languages",
+  "test_description": "This test evaluates understanding of scripting languages and their applications.",
+  "questions": [
+    {
+      "question": "What is a scripting language?",
+      "options_a": "A programming language used for scripting",
+      "options_b": "A programming language used for compiling",
+      "options_c": "A programming language used for debugging",
+      "options_d": "A programming language used for testing",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which of the following is a scripting language?",
+      "options_a": "Python",
+      "options_b": "C++",
+      "options_c": "Java",
+      "options_d": "Haskell",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a client-server application?",
+      "options_a": "An application where a client requests services from a server",
+      "options_b": "An application where a server requests services from a client",
+      "options_c": "An application where both client and server request services from each other",
+      "options_d": "An application where neither client nor server requests services",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a socket?",
+      "options_a": "An endpoint for communication",
+      "options_b": "A starting point for communication",
+      "options_c": "An ending point for communication",
+      "options_d": "A middle point for communication",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is HTTP?",
+      "options_a": "HyperText Transfer Protocol",
+      "options_b": "HyperText Transmission Protocol",
+      "options_c": "HyperText Transport Protocol",
+      "options_d": "HyperText Transaction Protocol",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is FTP?",
+      "options_a": "File Transfer Protocol",
+      "options_b": "File Transmission Protocol",
+      "options_c": "File Transport Protocol",
+      "options_d": "File Transaction Protocol",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is SMTP?",
+      "options_a": "Simple Mail Transfer Protocol",
+      "options_b": "Simple Mail Transmission Protocol",
+      "options_c": "Simple Mail Transport Protocol",
+      "options_d": "Simple Mail Transaction Protocol",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a web server?",
+      "options_a": "A server that serves web pages",
+      "options_b": "A server that serves emails",
+      "options_c": "A server that serves files",
+      "options_d": "A server that serves databases",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a database server?",
+      "options_a": "A server that serves databases",
+      "options_b": "A server that serves web pages",
+      "options_c": "A server that serves emails",
+      "options_d": "A server that serves files",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a file server?",
+      "options_a": "A server that serves files",
+      "options_b": "A server that serves databases",
+      "options_c": "A server that serves web pages",
+      "options_d": "A server that serves emails",
+      "correct_answer": "option_a"
+    }
+  ]
+}

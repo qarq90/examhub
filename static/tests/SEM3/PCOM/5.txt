@@ -1,0 +1,86 @@
+{
+  "test_name": "Principle of Communication: Multiplexing and Digital Band Pass Modulation Techniques",
+  "test_description": "This test evaluates understanding of multiplexing and digital band pass modulation techniques.",
+  "questions": [
+    {
+      "question": "What is Time Division Multiplexing (TDM)?",
+      "options_a": "Multiplexing where different signals share the same frequency at different times",
+      "options_b": "Multiplexing where different signals share the same time at different frequencies",
+      "options_c": "Multiplexing where different signals share the same time and frequency",
+      "options_d": "Multiplexing where different signals share the same time and amplitude",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Frequency Division Multiplexing (FDM)?",
+      "options_a": "Multiplexing where different signals share the same frequency at different times",
+      "options_b": "Multiplexing where different signals share the same time at different frequencies",
+      "options_c": "Multiplexing where different signals share the same time and frequency",
+      "options_d": "Multiplexing where different signals share the same time and amplitude",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is Orthogonal Frequency Division Multiplexing (OFDM)?",
+      "options_a": "A type of FDM where subcarriers are orthogonal",
+      "options_b": "A type of TDM where subcarriers are orthogonal",
+      "options_c": "A type of FDM where subcarriers are parallel",
+      "options_d": "A type of TDM where subcarriers are parallel",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Amplitude Shift Keying (ASK)?",
+      "options_a": "Modulation where the amplitude of the carrier is varied",
+      "options_b": "Modulation where the frequency of the carrier is varied",
+      "options_c": "Modulation where the phase of the carrier is varied",
+      "options_d": "Modulation where the wavelength of the carrier is varied",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Frequency Shift Keying (FSK)?",
+      "options_a": "Modulation where the amplitude of the carrier is varied",
+      "options_b": "Modulation where the frequency of the carrier is varied",
+      "options_c": "Modulation where the phase of the carrier is varied",
+      "options_d": "Modulation where the wavelength of the carrier is varied",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is Phase Shift Keying (PSK)?",
+      "options_a": "Modulation where the amplitude of the carrier is varied",
+      "options_b": "Modulation where the frequency of the carrier is varied",
+      "options_c": "Modulation where the phase of the carrier is varied",
+      "options_d": "Modulation where the wavelength of the carrier is varied",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is Quadrature Phase Shift Keying (QPSK)?",
+      "options_a": "PSK with four phase levels",
+      "options_b": "PSK with two phase levels",
+      "options_c": "PSK with eight phase levels",
+      "options_d": "PSK with sixteen phase levels",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the advantage of QPSK over BPSK?",
+      "options_a": "Higher data rate for the same bandwidth",
+      "options_b": "Lower data rate for the same bandwidth",
+      "options_c": "Higher bandwidth for the same data rate",
+      "options_d": "Lower bandwidth for the same data rate",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the purpose of a matched filter in digital communication?",
+      "options_a": "To maximize the signal-to-noise ratio",
+      "options_b": "To minimize the signal-to-noise ratio",
+      "options_c": "To maximize the bandwidth",
+      "options_d": "To minimize the bandwidth",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the purpose of a correlator receiver?",
+      "options_a": "To detect the transmitted signal by correlating with a reference signal",
+      "options_b": "To detect the transmitted signal by filtering with a matched filter",
+      "options_c": "To detect the transmitted signal by sampling with a sampler",
+      "options_d": "To detect the transmitted signal by quantizing with a quantizer",
+      "correct_answer": "option_a"
+    }
+  ]
+}

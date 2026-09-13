@@ -1,0 +1,86 @@
+{
+  "test_name": "Database Management System: Relational Database Design",
+  "test_description": "This test evaluates understanding of functional dependencies and normalization.",
+  "questions": [
+    {
+      "question": "What is a functional dependency?",
+      "options_a": "A relationship between two attributes",
+      "options_b": "A relationship between two tables",
+      "options_c": "A relationship between two keys",
+      "options_d": "A relationship between two databases",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the need for normalization?",
+      "options_a": "To reduce data redundancy and inconsistency",
+      "options_b": "To increase data redundancy and inconsistency",
+      "options_c": "To delete data redundancy and inconsistency",
+      "options_d": "To add data redundancy and inconsistency",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is 1NF?",
+      "options_a": "A relation where all attributes are atomic",
+      "options_b": "A relation where all attributes are composite",
+      "options_c": "A relation where all attributes are multivalued",
+      "options_d": "A relation where all attributes are derived",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is 2NF?",
+      "options_a": "A relation in 1NF where all non-key attributes are fully functionally dependent on the primary key",
+      "options_b": "A relation in 1NF where all non-key attributes are partially functionally dependent on the primary key",
+      "options_c": "A relation in 1NF where all non-key attributes are transitively dependent on the primary key",
+      "options_d": "A relation in 1NF where all non-key attributes are independent of the primary key",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is 3NF?",
+      "options_a": "A relation in 2NF where all non-key attributes are transitively dependent on the primary key",
+      "options_b": "A relation in 2NF where all non-key attributes are not transitively dependent on the primary key",
+      "options_c": "A relation in 2NF where all non-key attributes are partially dependent on the primary key",
+      "options_d": "A relation in 2NF where all non-key attributes are fully dependent on the primary key",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is BCNF?",
+      "options_a": "A relation in 3NF where every determinant is a candidate key",
+      "options_b": "A relation in 3NF where every determinant is a primary key",
+      "options_c": "A relation in 3NF where every determinant is a foreign key",
+      "options_d": "A relation in 3NF where every determinant is a super key",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a partial dependency?",
+      "options_a": "A non-key attribute depends on part of the primary key",
+      "options_b": "A non-key attribute depends on the whole primary key",
+      "options_c": "A non-key attribute depends on another non-key attribute",
+      "options_d": "A non-key attribute depends on a foreign key",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a transitive dependency?",
+      "options_a": "A non-key attribute depends on another non-key attribute",
+      "options_b": "A non-key attribute depends on the primary key",
+      "options_c": "A non-key attribute depends on a foreign key",
+      "options_d": "A non-key attribute depends on part of the primary key",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is denormalization?",
+      "options_a": "The process of adding redundancy to a normalized database",
+      "options_b": "The process of removing redundancy from a normalized database",
+      "options_c": "The process of creating a normalized database",
+      "options_d": "The process of deleting a normalized database",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which normal form is considered adequate for most business applications?",
+      "options_a": "1NF",
+      "options_b": "2NF",
+      "options_c": "3NF",
+      "options_d": "BCNF",
+      "correct_answer": "option_c"
+    }
+  ]
+}

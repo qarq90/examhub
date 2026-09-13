@@ -1,0 +1,86 @@
+{
+  "test_name": "Data Structure and Analysis: Stacks, Queues and Linked Lists",
+  "test_description": "This test evaluates understanding of stacks, queues, and linked lists, their operations, and implementations.",
+  "questions": [
+    {
+      "question": "Which data structure follows the Last In First Out (LIFO) principle?",
+      "options_a": "Stack",
+      "options_b": "Queue",
+      "options_c": "Linked List",
+      "options_d": "Tree",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which data structure follows the First In First Out (FIFO) principle?",
+      "options_a": "Stack",
+      "options_b": "Queue",
+      "options_c": "Linked List",
+      "options_d": "Tree",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What operation adds an element to the top of a stack?",
+      "options_a": "Push",
+      "options_b": "Pop",
+      "options_c": "Enqueue",
+      "options_d": "Dequeue",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What operation removes an element from the top of a stack?",
+      "options_a": "Push",
+      "options_b": "Pop",
+      "options_c": "Enqueue",
+      "options_d": "Dequeue",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What operation adds an element to the rear of a queue?",
+      "options_a": "Push",
+      "options_b": "Pop",
+      "options_c": "Enqueue",
+      "options_d": "Dequeue",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What operation removes an element from the front of a queue?",
+      "options_a": "Push",
+      "options_b": "Pop",
+      "options_c": "Enqueue",
+      "options_d": "Dequeue",
+      "correct_answer": "option_d"
+    },
+    {
+      "question": "What is a linked list?",
+      "options_a": "A linear data structure where elements are stored in nodes with pointers",
+      "options_b": "A non-linear data structure where elements are stored in nodes with pointers",
+      "options_c": "A linear data structure where elements are stored in contiguous memory",
+      "options_d": "A non-linear data structure where elements are stored in contiguous memory",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a singly linked list?",
+      "options_a": "A linked list where each node points to the next node",
+      "options_b": "A linked list where each node points to the previous node",
+      "options_c": "A linked list where each node points to both next and previous nodes",
+      "options_d": "A linked list where each node points to itself",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a doubly linked list?",
+      "options_a": "A linked list where each node points to the next node",
+      "options_b": "A linked list where each node points to the previous node",
+      "options_c": "A linked list where each node points to both next and previous nodes",
+      "options_d": "A linked list where each node points to itself",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is a circular linked list?",
+      "options_a": "A linked list where the last node points to the first node",
+      "options_b": "A linked list where the first node points to the last node",
+      "options_c": "A linked list where each node points to itself",
+      "options_d": "A linked list where each node points to the next node",
+      "correct_answer": "option_a"
+    }
+  ]
+}

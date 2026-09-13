@@ -1,0 +1,86 @@
+{
+  "test_name": "Database Management System: Transactions Management and Concurrency and Recovery",
+  "test_description": "This test evaluates understanding of transaction management, concurrency control, and recovery.",
+  "questions": [
+    {
+      "question": "What is a transaction?",
+      "options_a": "A logical unit of work",
+      "options_b": "A physical unit of work",
+      "options_c": "A random unit of work",
+      "options_d": "A sequential unit of work",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What are the ACID properties?",
+      "options_a": "Atomicity, Consistency, Isolation, Durability",
+      "options_b": "Atomicity, Consistency, Integrity, Durability",
+      "options_c": "Atomicity, Concurrency, Isolation, Durability",
+      "options_d": "Atomicity, Consistency, Isolation, Dependency",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is atomicity?",
+      "options_a": "All operations of a transaction are executed or none",
+      "options_b": "All operations of a transaction are executed",
+      "options_c": "Some operations of a transaction are executed",
+      "options_d": "No operations of a transaction are executed",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is consistency?",
+      "options_a": "A transaction takes the database from one consistent state to another",
+      "options_b": "A transaction takes the database from one inconsistent state to another",
+      "options_c": "A transaction takes the database from a consistent state to an inconsistent state",
+      "options_d": "A transaction takes the database from an inconsistent state to a consistent state",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is isolation?",
+      "options_a": "Transactions are executed in isolation from each other",
+      "options_b": "Transactions are executed together",
+      "options_c": "Transactions are executed randomly",
+      "options_d": "Transactions are executed sequentially",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is durability?",
+      "options_a": "Changes made by a committed transaction are permanent",
+      "options_b": "Changes made by a committed transaction are temporary",
+      "options_c": "Changes made by a committed transaction are deleted",
+      "options_d": "Changes made by a committed transaction are modified",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a schedule?",
+      "options_a": "A sequence of operations from multiple transactions",
+      "options_b": "A sequence of operations from a single transaction",
+      "options_c": "A sequence of operations from a database",
+      "options_d": "A sequence of operations from a table",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a serializable schedule?",
+      "options_a": "A schedule that is equivalent to some serial schedule",
+      "options_b": "A schedule that is not equivalent to any serial schedule",
+      "options_c": "A schedule that is equivalent to a parallel schedule",
+      "options_d": "A schedule that is not equivalent to any parallel schedule",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a lock-based protocol?",
+      "options_a": "A protocol that uses locks to control concurrent access",
+      "options_b": "A protocol that uses timestamps to control concurrent access",
+      "options_c": "A protocol that uses logs to control concurrent access",
+      "options_d": "A protocol that uses queues to control concurrent access",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a deadlock?",
+      "options_a": "A situation where two or more transactions are waiting for each other",
+      "options_b": "A situation where two or more transactions are executing simultaneously",
+      "options_c": "A situation where two or more transactions are executing sequentially",
+      "options_d": "A situation where two or more transactions are executing randomly",
+      "correct_answer": "option_a"
+    }
+  ]
+}

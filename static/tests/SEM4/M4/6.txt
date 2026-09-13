@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-IV: Nonlinear Programming Problems",
+  "test_description": "This test evaluates understanding of nonlinear programming problems and optimization techniques.",
+  "questions": [
+    {
+      "question": "What is a nonlinear programming problem?",
+      "options_a": "An optimization problem with nonlinear objective function or constraints",
+      "options_b": "An optimization problem with linear objective function and constraints",
+      "options_c": "An optimization problem with linear objective function and nonlinear constraints",
+      "options_d": "An optimization problem with nonlinear objective function and linear constraints",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the method of Lagrange's multipliers used for?",
+      "options_a": "Solving nonlinear programming problems with equality constraints",
+      "options_b": "Solving nonlinear programming problems with inequality constraints",
+      "options_c": "Solving linear programming problems with equality constraints",
+      "options_d": "Solving linear programming problems with inequality constraints",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Kuhn-Tucker conditions used for?",
+      "options_a": "Solving nonlinear programming problems with inequality constraints",
+      "options_b": "Solving nonlinear programming problems with equality constraints",
+      "options_c": "Solving linear programming problems with inequality constraints",
+      "options_d": "Solving linear programming problems with equality constraints",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an equality constraint?",
+      "options_a": "A constraint of the form g(x) = 0",
+      "options_b": "A constraint of the form g(x) ≤ 0",
+      "options_c": "A constraint of the form g(x) ≥ 0",
+      "options_d": "A constraint of the form g(x) ≠ 0",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an inequality constraint?",
+      "options_a": "A constraint of the form g(x) = 0",
+      "options_b": "A constraint of the form g(x) ≤ 0",
+      "options_c": "A constraint of the form g(x) ≥ 0",
+      "options_d": "A constraint of the form g(x) ≠ 0",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is unconstrained optimization?",
+      "options_a": "Optimization without any constraints",
+      "options_b": "Optimization with equality constraints",
+      "options_c": "Optimization with inequality constraints",
+      "options_d": "Optimization with both equality and inequality constraints",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Golden Search method used for?",
+      "options_a": "One-dimensional search",
+      "options_b": "Two-dimensional search",
+      "options_c": "Three-dimensional search",
+      "options_d": "Multi-dimensional search",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Newton's method used for?",
+      "options_a": "One-dimensional search",
+      "options_b": "Two-dimensional search",
+      "options_c": "Three-dimensional search",
+      "options_d": "Multi-dimensional search",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Gradient Search method used for?",
+      "options_a": "Multi-dimensional search",
+      "options_b": "One-dimensional search",
+      "options_c": "Two-dimensional search",
+      "options_d": "Three-dimensional search",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a Lagrange multiplier?",
+      "options_a": "A scalar used to incorporate equality constraints",
+      "options_b": "A vector used to incorporate equality constraints",
+      "options_c": "A scalar used to incorporate inequality constraints",
+      "options_d": "A vector used to incorporate inequality constraints",
+      "correct_answer": "option_a"
+    }
+  ]
+}

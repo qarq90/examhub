@@ -1,0 +1,86 @@
+{
+  "test_name": "Principle of Communication: Radiation and Propagation of Waves",
+  "test_description": "This test evaluates understanding of electromagnetic radiation and propagation of waves.",
+  "questions": [
+    {
+      "question": "What is electromagnetic radiation?",
+      "options_a": "Waves of electric and magnetic fields",
+      "options_b": "Waves of sound and light",
+      "options_c": "Waves of heat and light",
+      "options_d": "Waves of sound and heat",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is ground wave propagation?",
+      "options_a": "Propagation along the surface of the earth",
+      "options_b": "Propagation through the atmosphere",
+      "options_c": "Propagation through the ionosphere",
+      "options_d": "Propagation through space",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is sky wave propagation?",
+      "options_a": "Propagation along the surface of the earth",
+      "options_b": "Propagation through the atmosphere",
+      "options_c": "Propagation through the ionosphere",
+      "options_d": "Propagation through space",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is space wave propagation?",
+      "options_a": "Propagation along the surface of the earth",
+      "options_b": "Propagation through the atmosphere",
+      "options_c": "Propagation through the ionosphere",
+      "options_d": "Propagation through space",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is tropospheric scatter propagation?",
+      "options_a": "Propagation by scattering in the troposphere",
+      "options_b": "Propagation by scattering in the ionosphere",
+      "options_c": "Propagation by scattering in the stratosphere",
+      "options_d": "Propagation by scattering in the mesosphere",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the frequency range of ground wave propagation?",
+      "options_a": "Up to 2 MHz",
+      "options_b": "Up to 30 MHz",
+      "options_c": "Up to 300 MHz",
+      "options_d": "Up to 3 GHz",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the frequency range of sky wave propagation?",
+      "options_a": "Up to 2 MHz",
+      "options_b": "2 MHz to 30 MHz",
+      "options_c": "30 MHz to 300 MHz",
+      "options_d": "300 MHz to 3 GHz",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the frequency range of space wave propagation?",
+      "options_a": "Up to 2 MHz",
+      "options_b": "2 MHz to 30 MHz",
+      "options_c": "Above 30 MHz",
+      "options_d": "Above 300 MHz",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is the ionosphere?",
+      "options_a": "A layer of the atmosphere that reflects radio waves",
+      "options_b": "A layer of the atmosphere that absorbs radio waves",
+      "options_c": "A layer of the atmosphere that refracts radio waves",
+      "options_d": "A layer of the atmosphere that diffracts radio waves",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the troposphere?",
+      "options_a": "The lowest layer of the atmosphere",
+      "options_b": "The highest layer of the atmosphere",
+      "options_c": "The middle layer of the atmosphere",
+      "options_d": "The layer of the atmosphere that reflects radio waves",
+      "correct_answer": "option_a"
+    }
+  ]
+}

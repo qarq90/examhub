@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-III: Laplace Transform",
+  "test_description": "This test evaluates understanding of the Laplace Transform, its properties, and applications to solve real integrals in engineering problems.",
+  "questions": [
+    {
+      "question": "What is the Laplace transform of a function f(t) defined for t ≥ 0?",
+      "options_a": "∫₀^∞ f(t) e^(-st) dt",
+      "options_b": "∫₀^∞ f(t) e^(st) dt",
+      "options_c": "∫₋∞^∞ f(t) e^(-st) dt",
+      "options_d": "∫₀^∞ f(t) e^(-t) dt",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Laplace transform of e^(at)?",
+      "options_a": "1/(s+a)",
+      "options_b": "1/(s-a)",
+      "options_c": "a/(s²+a²)",
+      "options_d": "s/(s²+a²)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Laplace transform of sin(at)?",
+      "options_a": "s/(s²+a²)",
+      "options_b": "a/(s²+a²)",
+      "options_c": "1/(s²+a²)",
+      "options_d": "a/(s²-a²)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Laplace transform of cos(at)?",
+      "options_a": "s/(s²+a²)",
+      "options_b": "a/(s²+a²)",
+      "options_c": "1/(s²+a²)",
+      "options_d": "s/(s²-a²)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Laplace transform of t^n for n ≥ 0?",
+      "options_a": "n!/s^(n+1)",
+      "options_b": "n!/s^n",
+      "options_c": "(n+1)!/s^(n+1)",
+      "options_d": "1/s^(n+1)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Laplace transform of sinh(at)?",
+      "options_a": "s/(s²-a²)",
+      "options_b": "a/(s²-a²)",
+      "options_c": "s/(s²+a²)",
+      "options_d": "a/(s²+a²)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Laplace transform of cosh(at)?",
+      "options_a": "s/(s²-a²)",
+      "options_b": "a/(s²-a²)",
+      "options_c": "s/(s²+a²)",
+      "options_d": "a/(s²+a²)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which property states that L{f(t-a)u(t-a)} = e^(-as)F(s)?",
+      "options_a": "First Shifting Theorem",
+      "options_b": "Second Shifting Theorem",
+      "options_c": "Change of Scale Property",
+      "options_d": "Multiplication by t",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Laplace transform of the derivative f'(t)?",
+      "options_a": "sF(s) - f(0)",
+      "options_b": "sF(s) + f(0)",
+      "options_c": "F(s)/s - f(0)",
+      "options_d": "s²F(s) - sf(0) - f'(0)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Laplace transform of the integral ∫₀^t f(u) du?",
+      "options_a": "F(s)/s",
+      "options_b": "sF(s)",
+      "options_c": "F(s) - f(0)",
+      "options_d": "F(s)/s²",
+      "correct_answer": "option_a"
+    }
+  ]
+}

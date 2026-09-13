@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-IV: Linear Programming Problems",
+  "test_description": "This test evaluates understanding of linear programming problems, the simplex method, and duality.",
+  "questions": [
+    {
+      "question": "What is a linear programming problem?",
+      "options_a": "An optimization problem with linear objective function and constraints",
+      "options_b": "An optimization problem with non-linear objective function and constraints",
+      "options_c": "An optimization problem with linear objective function and non-linear constraints",
+      "options_d": "An optimization problem with non-linear objective function and linear constraints",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a feasible solution?",
+      "options_a": "A solution that satisfies all constraints",
+      "options_b": "A solution that satisfies some constraints",
+      "options_c": "A solution that satisfies no constraints",
+      "options_d": "A solution that satisfies the objective function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an optimal solution?",
+      "options_a": "A feasible solution that maximizes or minimizes the objective function",
+      "options_b": "A feasible solution that maximizes the objective function",
+      "options_c": "A feasible solution that minimizes the objective function",
+      "options_d": "A feasible solution that neither maximizes nor minimizes the objective function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a slack variable?",
+      "options_a": "A variable added to convert an inequality to an equality",
+      "options_b": "A variable subtracted to convert an inequality to an equality",
+      "options_c": "A variable multiplied to convert an inequality to an equality",
+      "options_d": "A variable divided to convert an inequality to an equality",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a surplus variable?",
+      "options_a": "A variable added to convert an inequality to an equality",
+      "options_b": "A variable subtracted to convert an inequality to an equality",
+      "options_c": "A variable multiplied to convert an inequality to an equality",
+      "options_d": "A variable divided to convert an inequality to an equality",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Simplex method?",
+      "options_a": "A method for solving linear programming problems",
+      "options_b": "A method for solving non-linear programming problems",
+      "options_c": "A method for solving integer programming problems",
+      "options_d": "A method for solving dynamic programming problems",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Big-M method?",
+      "options_a": "A method for solving linear programming problems with artificial variables",
+      "options_b": "A method for solving linear programming problems without artificial variables",
+      "options_c": "A method for solving non-linear programming problems",
+      "options_d": "A method for solving integer programming problems",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is duality in linear programming?",
+      "options_a": "The relationship between a primal problem and its dual problem",
+      "options_b": "The relationship between a primal problem and its inverse problem",
+      "options_c": "The relationship between a primal problem and its transpose problem",
+      "options_d": "The relationship between a primal problem and its determinant problem",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the dual of a linear programming problem?",
+      "options_a": "Another linear programming problem derived from the primal",
+      "options_b": "Another non-linear programming problem derived from the primal",
+      "options_c": "Another integer programming problem derived from the primal",
+      "options_d": "Another dynamic programming problem derived from the primal",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Dual Simplex method?",
+      "options_a": "A method for solving linear programming problems using the dual",
+      "options_b": "A method for solving non-linear programming problems using the dual",
+      "options_c": "A method for solving integer programming problems using the dual",
+      "options_d": "A method for solving dynamic programming problems using the dual",
+      "correct_answer": "option_a"
+    }
+  ]
+}

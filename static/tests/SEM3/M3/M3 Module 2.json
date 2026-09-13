@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-III: Inverse Laplace Transform",
+  "test_description": "This test evaluates understanding of the Inverse Laplace Transform, methods to find it, and its applications.",
+  "questions": [
+    {
+      "question": "What is the inverse Laplace transform of 1/(s-a)?",
+      "options_a": "e^(at)",
+      "options_b": "e^(-at)",
+      "options_c": "sin(at)",
+      "options_d": "cos(at)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the inverse Laplace transform of 1/(s²+a²)?",
+      "options_a": "sin(at)/a",
+      "options_b": "cos(at)/a",
+      "options_c": "sin(at)",
+      "options_d": "cos(at)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the inverse Laplace transform of s/(s²+a²)?",
+      "options_a": "sin(at)",
+      "options_b": "cos(at)",
+      "options_c": "sinh(at)",
+      "options_d": "cosh(at)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "Which method is used to find the inverse Laplace transform by breaking a rational function into simpler fractions?",
+      "options_a": "Convolution theorem",
+      "options_b": "Partial fractions method",
+      "options_c": "Derivatives method",
+      "options_d": "Integration method",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the inverse Laplace transform of 1/(s²-a²)?",
+      "options_a": "sinh(at)/a",
+      "options_b": "cosh(at)/a",
+      "options_c": "sin(at)/a",
+      "options_d": "cos(at)/a",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the inverse Laplace transform of s/(s²-a²)?",
+      "options_a": "sinh(at)",
+      "options_b": "cosh(at)",
+      "options_c": "sin(at)",
+      "options_d": "cos(at)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "According to the Convolution theorem, if L{f(t)} = F(s) and L{g(t)} = G(s), then L⁻¹{F(s)G(s)} is:",
+      "options_a": "f(t) + g(t)",
+      "options_b": "f(t) * g(t)",
+      "options_c": "∫₀^t f(u)g(t-u) du",
+      "options_d": "f(t) / g(t)",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is the inverse Laplace transform of 1/(s(s+1))?",
+      "options_a": "1 - e^(-t)",
+      "options_b": "e^(-t) - 1",
+      "options_c": "1 + e^(-t)",
+      "options_d": "e^(-t)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the inverse Laplace transform of (s+3)/((s+1)(s+2))?",
+      "options_a": "2e^(-t) - e^(-2t)",
+      "options_b": "e^(-t) + 2e^(-2t)",
+      "options_c": "2e^(-2t) - e^(-t)",
+      "options_d": "e^(-t) - e^(-2t)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which of the following is a self-learning topic for Inverse Laplace Transform?",
+      "options_a": "Heaviside's Unit Step function",
+      "options_b": "Applications to solve initial and boundary value problems involving ODEs",
+      "options_c": "Dirac Delta Function",
+      "options_d": "Fourier Transform",
+      "correct_answer": "option_b"
+    }
+  ]
+}

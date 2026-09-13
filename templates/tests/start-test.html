@@ -8,10 +8,10 @@ endblock %} {% block content %}
             <div class="intersecting_invisible mb-6 rounded-lg">
                 <div class="flex flex-col md:flex-row justify-between">
                     <h2 class="intersecting_invisible text-3xl font-bold mb-4">
-                        {{ test[3] }}
+                        {{ test['course_name'] }}
                     </h2>
                     <h2 class="intersecting_invisible text-2xl font-bold mb-4">
-                        Time Duration: {{ test[9] }} minutes
+                        Time Duration: {{ test['test_duration'] }} minutes
                     </h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-5 justify-between">
@@ -30,20 +30,20 @@ endblock %} {% block content %}
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-5 justify-between">
                     <p class="intersecting_invisible col-span-2 text-lg mb-2">
-                        <strong>Course Code:</strong> {{ test[4] }}
+                        <strong>Course Code:</strong> {{ test['course_code'] }}
                     </p>
                     <p class="intersecting_invisible text-lg mb-2">
-                        <strong>Semester:</strong> {{ test[5][-2:] }}
+                        <strong>Semester:</strong> {{ test['course_semester'][-2:] }}
                     </p>
                     <p class="intersecting_invisible col-span-2 text-lg mb-2">
-                        <strong>Branch:</strong> {{ test[6] }}
+                        <strong>Branch:</strong> {{ test['course_branch'] }}
                     </p>
                 </div>
                 <p class="intersecting_invisible text-lg mb-2">
-                    <strong>Test Name:</strong> {{ test[1] }}
+                    <strong>Test Name:</strong> {{ test['test_name'] }}
                 </p>
                 <p class="intersecting_invisible text-lg">
-                    <strong>Description:</strong> {{ test[2] }}
+                    <strong>Description:</strong> {{ test['test_description'] }}
                 </p>
             </div>
 
@@ -51,7 +51,7 @@ endblock %} {% block content %}
                 id="mcq-test"
                 class="intersecting_invisible w-full"
                 method="POST"
-                action="{{ url_for('start_test', test_id=test[0]) }}"
+                action="{{ url_for('start_test', test_id=test['test_id']) }}"
             >
                 {% for question in questions %}
                 <div
@@ -175,7 +175,7 @@ endblock %} {% block content %}
     }
 
     function startCountdown() {
-        let minutes = parseInt("{{ test[9] }}") || 20;
+        let minutes = parseInt("{{ test_duration }}") || 20;
         let seconds = 0;
         const countdownElement = document.getElementById("countdown");
         const form = document.getElementById("mcq-test");

@@ -14,10 +14,10 @@ session.get("course_branch") %}
         </span>
         {% endif %} {% if lectures %}
         <div class="intersecting_invisible w-10/12">
-            {% set courses = {} %} {% for test in lectures %} {% if test[3] not
-            in courses %} {% set _ = courses.update({test[3]: []}) %} {% endif
-            %} {% set _ = courses[test[3]].append(test) %} {% endfor %} {# Then
-            display each course with its tests #} {% for course_name,
+            {% set courses = {} %} {% for test in lectures %} {% set cname =
+            test['course_name'] %} {% if cname not in courses %} {% set _ =
+            courses.update({cname: []}) %} {% endif %} {% set _ =
+            courses[cname].append(test) %} {% endfor %} {% for course_name,
             course_tests in courses.items() %}
             <div class="intersecting_invisible mb-8">
                 <h4
@@ -36,28 +36,33 @@ session.get("course_branch") %}
                             class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
                             <p
-                                class="intersecting_invisible text-lg font-bold text-center"
+                                class="intersecting_invisible text-lg font-bold"
                             >
-                                {{ test[1] }}
+                                {{ test['test_name'] }}
+                            </p>
+                            <p
+                                class="intersecting_invisible text-lg"
+                            >
+                                {{ test['test_description'] }}
                             </p>
                             <div
                                 class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
-                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    href="{{ url_for('start_test', test_id=test['test_id']) }}"
                                     class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
-                                <button
+                                <!-- <button
                                     onclick="deleteTest('{{test[0]}}')"
                                     class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     <i
                                         class="intersecting_invisible fas fa-trash"
                                     ></i>
-                                </button>
+                                </button> -->
                                 {% endif %}
                             </div>
                         </div>
@@ -71,28 +76,33 @@ session.get("course_branch") %}
                             class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
                             <p
-                                class="intersecting_invisible text-lg font-bold text-center"
+                                class="intersecting_invisible text-lg font-bold"
                             >
-                                {{ test[1] }}
+                                {{ test['test_name'] }}
+                            </p>
+                             <p
+                                class="intersecting_invisible text-lg"
+                            >
+                                {{ test['test_description'] }}
                             </p>
                             <div
                                 class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
-                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    href="{{ url_for('start_test', test_id=test['test_id']) }}"
                                     class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
-                                <button
+                                <!-- <button
                                     onclick="deleteTest('{{test[0]}}')"
                                     class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     <i
                                         class="intersecting_invisible fas fa-trash"
                                     ></i>
-                                </button>
+                                </button> -->
                                 {% endif %}
                             </div>
                         </div>
@@ -102,32 +112,37 @@ session.get("course_branch") %}
                         {% for test in course_tests %} {% if loop.index0 % 4 ==
                         2 %}
                         <div
-                            data-test-id="{{test[0]}}"
+                            data-test-id="{{test['test_id']}}"
                             class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
                             <p
-                                class="intersecting_invisible text-lg font-bold text-center"
+                                class="intersecting_invisible text-lg font-bold"
                             >
-                                {{ test[1] }}
+                                {{ test['test_name'] }}
+                            </p>
+                             <p
+                                class="intersecting_invisible text-lg"
+                            >
+                                {{ test['test_description'] }}
                             </p>
                             <div
                                 class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
-                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    href="{{ url_for('start_test', test_id=test['test_id']) }}"
                                     class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
-                                <button
+                                <!-- <button
                                     onclick="deleteTest('{{test[0]}}')"
                                     class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     <i
                                         class="intersecting_invisible fas fa-trash"
                                     ></i>
-                                </button>
+                                </button> -->
                                 {% endif %}
                             </div>
                         </div>
@@ -141,28 +156,33 @@ session.get("course_branch") %}
                             class="intersecting_invisible test-card w-full h-fit hover:scale-105 transition-transform p-6 flex flex-col gap-2 bg-tertiary rounded-lg shadow-lg"
                         >
                             <p
-                                class="intersecting_invisible text-lg font-bold text-center"
+                                class="intersecting_invisible text-lg font-bold"
                             >
-                                {{ test[1] }}
+                                {{ test['test_name'] }}
+                            </p>
+                             <p
+                                class="intersecting_invisible text-lg"
+                            >
+                                {{ test['test_description'] }}
                             </p>
                             <div
                                 class="intersecting_invisible mt-4 flex h-fit {% if not session.get('course_branch') %}flex-col{% else %}justify-around gap-5 flex-row{% endif %}"
                             >
                                 <a
-                                    href="{{ url_for('start_test', test_id=test[0]) }}"
+                                    href="{{ url_for('start_test', test_id=test['test_id']) }}"
                                     class="intersecting_invisible w-full shadow-lg text-xl text-center bg-primary p-2 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     Start Test
                                 </a>
                                 {% if session.get("course_branch") %}
-                                <button
-                                    onclick="deleteTest('{{test[0]}}')"
+                                <!-- <button
+                                    onclick="deleteTest('{{test['test_id']}}')"
                                     class="intersecting_invisible shadow-lg text-xl text-center bg-primary py-2 px-3 rounded-md hover:opacity-75 hover:cursor-pointer text-white"
                                 >
                                     <i
                                         class="intersecting_invisible fas fa-trash"
                                     ></i>
-                                </button>
+                                </button> -->
                                 {% endif %}
                             </div>
                         </div>

@@ -28,15 +28,15 @@ Login{% endblock %} {% block content %}
                     class="intersecting_invisible bg-tertiary flex cursor-pointer shadow-lg flex-row w-full gap-2 p-2 rounded-md"
                 >
                     <select
-                        name="course_code"
+                        name="course_name"
                         class="intersecting_invisible bg-tertiary cursor-pointer text-center w-full text-xl text-white focus:ring-transparent focus:border-transparent focus:outline-none"
                         required
                     >
                         <option value="" disabled selected>
-                            Select Course Code
+                            Select Course Name
                         </option>
-                        {% for code in unique_codes %}
-                        <option value="{{ code }}">{{ code }}</option>
+                        {% for course in unique_names %}
+                        <option value="{{ course }}">{{ course }}</option>
                         {% endfor %}
                     </select>
                 </div>

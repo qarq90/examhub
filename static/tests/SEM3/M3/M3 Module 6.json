@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-III: Probability",
+  "test_description": "This test evaluates understanding of probability, random variables, and their distributions.",
+  "questions": [
+    {
+      "question": "What is conditional probability?",
+      "options_a": "P(A|B) = P(A ∩ B) / P(B)",
+      "options_b": "P(A|B) = P(A) / P(B)",
+      "options_c": "P(A|B) = P(A ∩ B) / P(A)",
+      "options_d": "P(A|B) = P(A) * P(B)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What does the Total Probability Theorem state?",
+      "options_a": "P(A) = Σ P(A|B_i) P(B_i)",
+      "options_b": "P(A) = Σ P(A|B_i)",
+      "options_c": "P(A) = Σ P(B_i)",
+      "options_d": "P(A) = P(A|B) P(B)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What does Baye's theorem state?",
+      "options_a": "P(B_i|A) = P(A|B_i) P(B_i) / Σ P(A|B_j) P(B_j)",
+      "options_b": "P(B_i|A) = P(A|B_i) / P(A)",
+      "options_c": "P(B_i|A) = P(A|B_i) P(A)",
+      "options_d": "P(B_i|A) = P(A) / P(B_i)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a discrete random variable?",
+      "options_a": "A variable that can take only countable values",
+      "options_b": "A variable that can take any value in an interval",
+      "options_c": "A variable that is always constant",
+      "options_d": "A variable that is always zero",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a continuous random variable?",
+      "options_a": "A variable that can take only countable values",
+      "options_b": "A variable that can take any value in an interval",
+      "options_c": "A variable that is always constant",
+      "options_d": "A variable that is always zero",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the probability density function (PDF) of a continuous random variable?",
+      "options_a": "A function whose integral over an interval gives the probability",
+      "options_b": "A function whose sum over an interval gives the probability",
+      "options_c": "A function whose derivative over an interval gives the probability",
+      "options_d": "A function whose product over an interval gives the probability",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the expectation of a random variable?",
+      "options_a": "The mean value of the random variable",
+      "options_b": "The variance of the random variable",
+      "options_c": "The standard deviation of the random variable",
+      "options_d": "The mode of the random variable",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the variance of a random variable?",
+      "options_a": "E[(X - μ)²]",
+      "options_b": "E[X²]",
+      "options_c": "E[X]",
+      "options_d": "E[X]²",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the moment generating function (MGF) of a random variable?",
+      "options_a": "E[e^(tX)]",
+      "options_b": "E[e^(-tX)]",
+      "options_c": "E[X^t]",
+      "options_d": "E[t^X]",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is skewness?",
+      "options_a": "A measure of asymmetry of a distribution",
+      "options_b": "A measure of peakedness of a distribution",
+      "options_c": "A measure of spread of a distribution",
+      "options_d": "A measure of central tendency of a distribution",
+      "correct_answer": "option_a"
+    }
+  ]
+}

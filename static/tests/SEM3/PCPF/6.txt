@@ -1,0 +1,86 @@
+{
+  "test_name": "Paradigms and Computer Programming Fundamentals: Advanced Topics",
+  "test_description": "This test evaluates understanding of advanced topics in programming paradigms.",
+  "questions": [
+    {
+      "question": "What is a client-server application?",
+      "options_a": "An application where a client requests services from a server",
+      "options_b": "An application where a server requests services from a client",
+      "options_c": "An application where both client and server request services from each other",
+      "options_d": "An application where neither client nor server requests services",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a scripting language used for?",
+      "options_a": "Automating tasks",
+      "options_b": "Compiling programs",
+      "options_c": "Debugging programs",
+      "options_d": "Testing programs",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a small client-server application?",
+      "options_a": "An application with a small number of clients and servers",
+      "options_b": "An application with a large number of clients and servers",
+      "options_c": "An application with no clients and servers",
+      "options_d": "An application with only clients",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the applicability of features learned in Module?",
+      "options_a": "Real-world applications",
+      "options_b": "Theoretical applications",
+      "options_c": "Mathematical applications",
+      "options_d": "Scientific applications",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a scripting language?",
+      "options_a": "A programming language used for scripting",
+      "options_b": "A programming language used for compiling",
+      "options_c": "A programming language used for debugging",
+      "options_d": "A programming language used for testing",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a client?",
+      "options_a": "A device that requests services",
+      "options_b": "A device that provides services",
+      "options_c": "A device that stores services",
+      "options_d": "A device that deletes services",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a server?",
+      "options_a": "A device that provides services",
+      "options_b": "A device that requests services",
+      "options_c": "A device that stores services",
+      "options_d": "A device that deletes services",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a socket?",
+      "options_a": "An endpoint for communication",
+      "options_b": "A starting point for communication",
+      "options_c": "An ending point for communication",
+      "options_d": "A middle point for communication",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is HTTP?",
+      "options_a": "HyperText Transfer Protocol",
+      "options_b": "HyperText Transmission Protocol",
+      "options_c": "HyperText Transport Protocol",
+      "options_d": "HyperText Transaction Protocol",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is FTP?",
+      "options_a": "File Transfer Protocol",
+      "options_b": "File Transmission Protocol",
+      "options_c": "File Transport Protocol",
+      "options_d": "File Transaction Protocol",
+      "correct_answer": "option_a"
+    }
+  ]
+}

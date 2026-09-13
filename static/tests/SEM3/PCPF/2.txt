@@ -1,0 +1,86 @@
+{
+  "test_name": "Paradigms and Computer Programming Fundamentals: Data Abstraction and Object Orientation",
+  "test_description": "This test evaluates understanding of object-oriented concepts.",
+  "questions": [
+    {
+      "question": "What is data abstraction?",
+      "options_a": "Hiding the implementation details of data",
+      "options_b": "Showing the implementation details of data",
+      "options_c": "Hiding the data itself",
+      "options_d": "Showing the data itself",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is encapsulation?",
+      "options_a": "Bundling data and methods together",
+      "options_b": "Separating data and methods",
+      "options_c": "Bundling data and functions together",
+      "options_d": "Separating data and functions",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is inheritance?",
+      "options_a": "Acquiring properties from a parent class",
+      "options_b": "Acquiring properties from a child class",
+      "options_c": "Acquiring properties from a sibling class",
+      "options_d": "Acquiring properties from a friend class",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is polymorphism?",
+      "options_a": "The ability of an object to take many forms",
+      "options_b": "The ability of an object to take one form",
+      "options_c": "The ability of an object to take no form",
+      "options_d": "The ability of an object to take any form",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a class?",
+      "options_a": "A blueprint for creating objects",
+      "options_b": "An instance of an object",
+      "options_c": "A blueprint for creating functions",
+      "options_d": "An instance of a function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an object?",
+      "options_a": "An instance of a class",
+      "options_b": "A blueprint for creating classes",
+      "options_c": "An instance of a function",
+      "options_d": "A blueprint for creating functions",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a constructor?",
+      "options_a": "A special method that initializes an object",
+      "options_b": "A special method that destroys an object",
+      "options_c": "A special method that modifies an object",
+      "options_d": "A special method that copies an object",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a destructor?",
+      "options_a": "A special method that initializes an object",
+      "options_b": "A special method that destroys an object",
+      "options_c": "A special method that modifies an object",
+      "options_d": "A special method that copies an object",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is method overloading?",
+      "options_a": "Having multiple methods with the same name but different parameters",
+      "options_b": "Having multiple methods with the same name and same parameters",
+      "options_c": "Having multiple methods with different names but same parameters",
+      "options_d": "Having multiple methods with different names and different parameters",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is method overriding?",
+      "options_a": "Redefining a method in a subclass",
+      "options_b": "Redefining a method in a superclass",
+      "options_c": "Redefining a method in a sibling class",
+      "options_d": "Redefining a method in a friend class",
+      "correct_answer": "option_a"
+    }
+  ]
+}

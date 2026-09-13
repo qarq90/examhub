@@ -1,0 +1,86 @@
+{
+  "test_name": "Data Structure and Analysis: Applications of Data Structures",
+  "test_description": "This test evaluates understanding of applications of linked lists, stacks, queues, trees, and graphs.",
+  "questions": [
+    {
+      "question": "Which data structure is used for addition of two polynomials?",
+      "options_a": "Linked List",
+      "options_b": "Stack",
+      "options_c": "Queue",
+      "options_d": "Tree",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which data structure is used for checking validity of an expression containing nested parenthesis?",
+      "options_a": "Linked List",
+      "options_b": "Stack",
+      "options_c": "Queue",
+      "options_d": "Tree",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "Which notation is used for prefix expression?",
+      "options_a": "Polish Notation",
+      "options_b": "Reverse Polish Notation",
+      "options_c": "Infix Notation",
+      "options_d": "Postfix Notation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which notation is used for postfix expression?",
+      "options_a": "Polish Notation",
+      "options_b": "Reverse Polish Notation",
+      "options_c": "Infix Notation",
+      "options_d": "Prefix Notation",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "Which data structure is used for Round Robin Scheduling?",
+      "options_a": "Linked List",
+      "options_b": "Stack",
+      "options_c": "Queue",
+      "options_d": "Tree",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "Which data structure is used for Huffman Tree?",
+      "options_a": "Linked List",
+      "options_b": "Stack",
+      "options_c": "Queue",
+      "options_d": "Tree",
+      "correct_answer": "option_d"
+    },
+    {
+      "question": "Which algorithm is used for finding the shortest path in a graph?",
+      "options_a": "Dijkstra's Algorithm",
+      "options_b": "Prim's Algorithm",
+      "options_c": "Kruskal's Algorithm",
+      "options_d": "Huffman's Algorithm",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which algorithm is used for finding the minimum spanning tree?",
+      "options_a": "Dijkstra's Algorithm",
+      "options_b": "Prim's Algorithm",
+      "options_c": "Huffman's Algorithm",
+      "options_d": "Binary Search",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "Which algorithm is used for finding the minimum spanning tree?",
+      "options_a": "Dijkstra's Algorithm",
+      "options_b": "Kruskal's Algorithm",
+      "options_c": "Huffman's Algorithm",
+      "options_d": "Binary Search",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "Which data structure is used for Heap Sort?",
+      "options_a": "Linked List",
+      "options_b": "Stack",
+      "options_c": "Queue",
+      "options_d": "Tree",
+      "correct_answer": "option_d"
+    }
+  ]
+}

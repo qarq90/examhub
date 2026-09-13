@@ -1,0 +1,86 @@
+{
+  "test_name": "Paradigms and Computer Programming Fundamentals: Introduction to Programming Paradigms",
+  "test_description": "This test evaluates understanding of various programming paradigms and basic constructs.",
+  "questions": [
+    {
+      "question": "What is a programming paradigm?",
+      "options_a": "A style of programming",
+      "options_b": "A programming language",
+      "options_c": "A programming tool",
+      "options_d": "A programming environment",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which paradigm is based on the concept of objects?",
+      "options_a": "Object-Oriented Programming",
+      "options_b": "Functional Programming",
+      "options_c": "Logic Programming",
+      "options_d": "Procedural Programming",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which paradigm is based on the concept of functions?",
+      "options_a": "Object-Oriented Programming",
+      "options_b": "Functional Programming",
+      "options_c": "Logic Programming",
+      "options_d": "Procedural Programming",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "Which paradigm is based on the concept of logic?",
+      "options_a": "Object-Oriented Programming",
+      "options_b": "Functional Programming",
+      "options_c": "Logic Programming",
+      "options_d": "Procedural Programming",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "Which paradigm is based on the concept of procedures?",
+      "options_a": "Object-Oriented Programming",
+      "options_b": "Functional Programming",
+      "options_c": "Logic Programming",
+      "options_d": "Procedural Programming",
+      "correct_answer": "option_d"
+    },
+    {
+      "question": "What is imperative programming?",
+      "options_a": "Programming that describes how to perform a task",
+      "options_b": "Programming that describes what to perform",
+      "options_c": "Programming that describes why to perform a task",
+      "options_d": "Programming that describes when to perform a task",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is declarative programming?",
+      "options_a": "Programming that describes how to perform a task",
+      "options_b": "Programming that describes what to perform",
+      "options_c": "Programming that describes why to perform a task",
+      "options_d": "Programming that describes when to perform a task",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is a variable?",
+      "options_a": "A named storage location",
+      "options_b": "A named function",
+      "options_c": "A named object",
+      "options_d": "A named class",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a constant?",
+      "options_a": "A variable whose value cannot be changed",
+      "options_b": "A variable whose value can be changed",
+      "options_c": "A variable whose value is always zero",
+      "options_d": "A variable whose value is always one",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a data type?",
+      "options_a": "A classification of data",
+      "options_b": "A classification of functions",
+      "options_c": "A classification of objects",
+      "options_d": "A classification of classes",
+      "correct_answer": "option_a"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "test_name": "Principle of Communication: Sampling and Pulse Modulation",
+  "test_description": "This test evaluates understanding of the sampling theorem and pulse modulation techniques.",
+  "questions": [
+    {
+      "question": "What is the sampling theorem?",
+      "options_a": "A signal can be reconstructed from its samples if the sampling rate is at least twice the highest frequency",
+      "options_b": "A signal can be reconstructed from its samples if the sampling rate is at least half the highest frequency",
+      "options_c": "A signal can be reconstructed from its samples if the sampling rate is equal to the highest frequency",
+      "options_d": "A signal can be reconstructed from its samples if the sampling rate is less than the highest frequency",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Nyquist rate?",
+      "options_a": "Twice the highest frequency of the signal",
+      "options_b": "Half the highest frequency of the signal",
+      "options_c": "Equal to the highest frequency of the signal",
+      "options_d": "Four times the highest frequency of the signal",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is aliasing?",
+      "options_a": "Distortion due to undersampling",
+      "options_b": "Distortion due to oversampling",
+      "options_c": "Distortion due to perfect sampling",
+      "options_d": "Distortion due to random sampling",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Pulse Amplitude Modulation (PAM)?",
+      "options_a": "Modulation where the amplitude of the pulse is varied",
+      "options_b": "Modulation where the width of the pulse is varied",
+      "options_c": "Modulation where the position of the pulse is varied",
+      "options_d": "Modulation where the frequency of the pulse is varied",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Pulse Width Modulation (PWM)?",
+      "options_a": "Modulation where the amplitude of the pulse is varied",
+      "options_b": "Modulation where the width of the pulse is varied",
+      "options_c": "Modulation where the position of the pulse is varied",
+      "options_d": "Modulation where the frequency of the pulse is varied",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is Pulse Position Modulation (PPM)?",
+      "options_a": "Modulation where the amplitude of the pulse is varied",
+      "options_b": "Modulation where the width of the pulse is varied",
+      "options_c": "Modulation where the position of the pulse is varied",
+      "options_d": "Modulation where the frequency of the pulse is varied",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is Pulse Code Modulation (PCM)?",
+      "options_a": "Modulation where the analog signal is converted to digital code",
+      "options_b": "Modulation where the digital signal is converted to analog code",
+      "options_c": "Modulation where the analog signal is converted to analog code",
+      "options_d": "Modulation where the digital signal is converted to digital code",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is quantization in PCM?",
+      "options_a": "The process of approximating the sampled values to discrete levels",
+      "options_b": "The process of approximating the sampled values to continuous levels",
+      "options_c": "The process of approximating the sampled values to random levels",
+      "options_d": "The process of approximating the sampled values to infinite levels",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is quantization noise?",
+      "options_a": "Error introduced by quantization",
+      "options_b": "Error introduced by sampling",
+      "options_c": "Error introduced by modulation",
+      "options_d": "Error introduced by demodulation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the purpose of a reconstruction filter?",
+      "options_a": "To reconstruct the original signal from its samples",
+      "options_b": "To reconstruct the original signal from its quantized values",
+      "options_c": "To reconstruct the original signal from its modulated values",
+      "options_d": "To reconstruct the original signal from its demodulated values",
+      "correct_answer": "option_a"
+    }
+  ]
+}

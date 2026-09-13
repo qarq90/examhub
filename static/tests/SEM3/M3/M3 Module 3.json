@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-III: Fourier Series",
+  "test_description": "This test evaluates understanding of Fourier series, its properties, and applications to periodic functions.",
+  "questions": [
+    {
+      "question": "What conditions must a function satisfy for its Fourier series to converge?",
+      "options_a": "Cauchy's conditions",
+      "options_b": "Dirichlet's conditions",
+      "options_c": "Riemann's conditions",
+      "options_d": "Laplace's conditions",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Fourier series of an even function?",
+      "options_a": "Contains only sine terms",
+      "options_b": "Contains only cosine terms",
+      "options_c": "Contains both sine and cosine terms",
+      "options_d": "Contains only constant term",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Fourier series of an odd function?",
+      "options_a": "Contains only sine terms",
+      "options_b": "Contains only cosine terms",
+      "options_c": "Contains both sine and cosine terms",
+      "options_d": "Contains only constant term",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Parseval's Identity used for?",
+      "options_a": "Finding the sum of a series",
+      "options_b": "Relating the integral of a function to its Fourier coefficients",
+      "options_c": "Finding the derivative of a Fourier series",
+      "options_d": "Finding the Fourier transform",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the period of the Fourier series for a function with period 2l?",
+      "options_a": "l",
+      "options_b": "2l",
+      "options_c": "π",
+      "options_d": "2π",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is a half-range sine series?",
+      "options_a": "Fourier series of a function defined on (0, l) using only sine terms",
+      "options_b": "Fourier series of a function defined on (-l, l) using only sine terms",
+      "options_c": "Fourier series of a function defined on (0, l) using only cosine terms",
+      "options_d": "Fourier series of a function defined on (-l, l) using only cosine terms",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a half-range cosine series?",
+      "options_a": "Fourier series of a function defined on (0, l) using only sine terms",
+      "options_b": "Fourier series of a function defined on (-l, l) using only sine terms",
+      "options_c": "Fourier series of a function defined on (0, l) using only cosine terms",
+      "options_d": "Fourier series of a function defined on (-l, l) using only cosine terms",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is the complex form of Fourier series?",
+      "options_a": "A series using exponential functions",
+      "options_b": "A series using sine and cosine functions",
+      "options_c": "A series using hyperbolic functions",
+      "options_d": "A series using logarithmic functions",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an orthogonal set of functions?",
+      "options_a": "A set of functions whose inner product is zero for distinct functions",
+      "options_b": "A set of functions whose inner product is one for distinct functions",
+      "options_c": "A set of functions that are all identical",
+      "options_d": "A set of functions that are all zero",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Fourier Transform used for?",
+      "options_a": "Representing a periodic function",
+      "options_b": "Representing a non-periodic function",
+      "options_c": "Finding the derivative of a function",
+      "options_d": "Finding the integral of a function",
+      "correct_answer": "option_b"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-IV: Probability Distribution and Sampling Theory",
+  "test_description": "This test evaluates understanding of probability distributions, sampling theory, and hypothesis testing.",
+  "questions": [
+    {
+      "question": "What is the Poisson distribution used for?",
+      "options_a": "Modeling the number of events in a fixed interval",
+      "options_b": "Modeling the time between events",
+      "options_c": "Modeling the number of successes in a fixed number of trials",
+      "options_d": "Modeling the number of failures in a fixed number of trials",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Normal distribution used for?",
+      "options_a": "Modeling continuous data",
+      "options_b": "Modeling discrete data",
+      "options_c": "Modeling categorical data",
+      "options_d": "Modeling ordinal data",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a sampling distribution?",
+      "options_a": "The distribution of a statistic",
+      "options_b": "The distribution of a parameter",
+      "options_c": "The distribution of a population",
+      "options_d": "The distribution of a sample",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a null hypothesis?",
+      "options_a": "A hypothesis of no difference",
+      "options_b": "A hypothesis of some difference",
+      "options_c": "A hypothesis of no effect",
+      "options_d": "A hypothesis of some effect",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an alternative hypothesis?",
+      "options_a": "A hypothesis of no difference",
+      "options_b": "A hypothesis of some difference",
+      "options_c": "A hypothesis of no effect",
+      "options_d": "A hypothesis of some effect",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the level of significance?",
+      "options_a": "The probability of rejecting a true null hypothesis",
+      "options_b": "The probability of accepting a true null hypothesis",
+      "options_c": "The probability of rejecting a false null hypothesis",
+      "options_d": "The probability of accepting a false null hypothesis",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a one-tailed test?",
+      "options_a": "A test where the critical region is on one side of the distribution",
+      "options_b": "A test where the critical region is on both sides of the distribution",
+      "options_c": "A test where the critical region is in the middle of the distribution",
+      "options_d": "A test where there is no critical region",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a two-tailed test?",
+      "options_a": "A test where the critical region is on one side of the distribution",
+      "options_b": "A test where the critical region is on both sides of the distribution",
+      "options_c": "A test where the critical region is in the middle of the distribution",
+      "options_d": "A test where there is no critical region",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Student's t-distribution used for?",
+      "options_a": "Small sample tests",
+      "options_b": "Large sample tests",
+      "options_c": "Medium sample tests",
+      "options_d": "Any sample tests",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Chi-Square test used for?",
+      "options_a": "Test of goodness of fit",
+      "options_b": "Test of independence",
+      "options_c": "Both a and b",
+      "options_d": "Neither a nor b",
+      "correct_answer": "option_c"
+    }
+  ]
+}

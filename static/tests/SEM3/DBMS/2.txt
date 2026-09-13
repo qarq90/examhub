@@ -1,0 +1,86 @@
+{
+  "test_name": "Database Management System: Conceptual Data Model",
+  "test_description": "This test evaluates understanding of ER/EER modeling for real-world applications.",
+  "questions": [
+    {
+      "question": "What is an entity in ER modeling?",
+      "options_a": "A real-world object",
+      "options_b": "A relationship between objects",
+      "options_c": "An attribute of an object",
+      "options_d": "A key of an object",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an attribute in ER modeling?",
+      "options_a": "A property of an entity",
+      "options_b": "A relationship between entities",
+      "options_c": "A key of an entity",
+      "options_d": "A real-world object",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a relationship in ER modeling?",
+      "options_a": "An association between entities",
+      "options_b": "A property of an entity",
+      "options_c": "A key of an entity",
+      "options_d": "A real-world object",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a primary key?",
+      "options_a": "An attribute that uniquely identifies an entity",
+      "options_b": "An attribute that identifies a relationship",
+      "options_c": "An attribute that identifies a property",
+      "options_d": "An attribute that identifies a real-world object",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a foreign key?",
+      "options_a": "An attribute that refers to the primary key of another entity",
+      "options_b": "An attribute that uniquely identifies an entity",
+      "options_c": "An attribute that identifies a relationship",
+      "options_d": "An attribute that identifies a property",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a weak entity?",
+      "options_a": "An entity that cannot exist without another entity",
+      "options_b": "An entity that can exist without another entity",
+      "options_c": "An entity that has no attributes",
+      "options_d": "An entity that has no relationships",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a composite attribute?",
+      "options_a": "An attribute that can be divided into smaller attributes",
+      "options_b": "An attribute that cannot be divided into smaller attributes",
+      "options_c": "An attribute that uniquely identifies an entity",
+      "options_d": "An attribute that refers to another entity",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a multivalued attribute?",
+      "options_a": "An attribute that can have multiple values for an entity",
+      "options_b": "An attribute that can have only one value for an entity",
+      "options_c": "An attribute that can be divided into smaller attributes",
+      "options_d": "An attribute that refers to another entity",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a derived attribute?",
+      "options_a": "An attribute that is calculated from other attributes",
+      "options_b": "An attribute that is stored in the database",
+      "options_c": "An attribute that uniquely identifies an entity",
+      "options_d": "An attribute that refers to another entity",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is cardinality in ER modeling?",
+      "options_a": "The number of entities involved in a relationship",
+      "options_b": "The number of attributes in an entity",
+      "options_c": "The number of keys in an entity",
+      "options_d": "The number of relationships in an entity",
+      "correct_answer": "option_a"
+    }
+  ]
+}

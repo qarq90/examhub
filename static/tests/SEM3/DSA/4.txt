@@ -1,0 +1,86 @@
+{
+  "test_name": "Data Structure and Analysis: Recursion and Storage Management",
+  "test_description": "This test evaluates understanding of recursion and storage management techniques.",
+  "questions": [
+    {
+      "question": "What is recursion?",
+      "options_a": "A function calling itself",
+      "options_b": "A function calling another function",
+      "options_c": "A function being called by another function",
+      "options_d": "A function not calling any function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the base case in recursion?",
+      "options_a": "The condition that stops the recursion",
+      "options_b": "The condition that starts the recursion",
+      "options_c": "The condition that continues the recursion",
+      "options_d": "The condition that ignores the recursion",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is tail recursion?",
+      "options_a": "Recursion where the recursive call is the last operation",
+      "options_b": "Recursion where the recursive call is the first operation",
+      "options_c": "Recursion where there is no recursive call",
+      "options_d": "Recursion where there are multiple recursive calls",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the winding phase in recursion?",
+      "options_a": "The phase where recursive calls are made",
+      "options_b": "The phase where recursive calls return",
+      "options_c": "The phase where the base case is checked",
+      "options_d": "The phase where the function ends",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the unwinding phase in recursion?",
+      "options_a": "The phase where recursive calls are made",
+      "options_b": "The phase where recursive calls return",
+      "options_c": "The phase where the base case is checked",
+      "options_d": "The phase where the function ends",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the First Fit method in storage management?",
+      "options_a": "Allocating the first block that is large enough",
+      "options_b": "Allocating the smallest block that is large enough",
+      "options_c": "Allocating the largest block that is large enough",
+      "options_d": "Allocating the last block that is large enough",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Best Fit method in storage management?",
+      "options_a": "Allocating the first block that is large enough",
+      "options_b": "Allocating the smallest block that is large enough",
+      "options_c": "Allocating the largest block that is large enough",
+      "options_d": "Allocating the last block that is large enough",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Worst Fit method in storage management?",
+      "options_a": "Allocating the first block that is large enough",
+      "options_b": "Allocating the smallest block that is large enough",
+      "options_c": "Allocating the largest block that is large enough",
+      "options_d": "Allocating the last block that is large enough",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is fragmentation?",
+      "options_a": "Wasted space in memory",
+      "options_b": "Used space in memory",
+      "options_c": "Total space in memory",
+      "options_d": "Free space in memory",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is garbage collection?",
+      "options_a": "Reclaiming memory that is no longer in use",
+      "options_b": "Allocating memory for new objects",
+      "options_c": "Freeing memory for new objects",
+      "options_d": "Defragmenting memory",
+      "correct_answer": "option_a"
+    }
+  ]
+}

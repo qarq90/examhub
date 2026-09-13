@@ -1,0 +1,86 @@
+{
+  "test_name": "Database Management System: Relational Model",
+  "test_description": "This test evaluates understanding of the relational model and relational algebra.",
+  "questions": [
+    {
+      "question": "What is a relation in the relational model?",
+      "options_a": "A table",
+      "options_b": "A row",
+      "options_c": "A column",
+      "options_d": "A key",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a tuple in the relational model?",
+      "options_a": "A row",
+      "options_b": "A column",
+      "options_c": "A table",
+      "options_d": "A key",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an attribute in the relational model?",
+      "options_a": "A column",
+      "options_b": "A row",
+      "options_c": "A table",
+      "options_d": "A key",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the degree of a relation?",
+      "options_a": "The number of attributes in the relation",
+      "options_b": "The number of tuples in the relation",
+      "options_c": "The number of tables in the relation",
+      "options_d": "The number of keys in the relation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the cardinality of a relation?",
+      "options_a": "The number of tuples in the relation",
+      "options_b": "The number of attributes in the relation",
+      "options_c": "The number of tables in the relation",
+      "options_d": "The number of keys in the relation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is relational algebra?",
+      "options_a": "A procedural query language",
+      "options_b": "A non-procedural query language",
+      "options_c": "A procedural programming language",
+      "options_d": "A non-procedural programming language",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the selection operation in relational algebra?",
+      "options_a": "Selecting rows that satisfy a condition",
+      "options_b": "Selecting columns that satisfy a condition",
+      "options_c": "Selecting tables that satisfy a condition",
+      "options_d": "Selecting keys that satisfy a condition",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the projection operation in relational algebra?",
+      "options_a": "Selecting columns that satisfy a condition",
+      "options_b": "Selecting rows that satisfy a condition",
+      "options_c": "Selecting tables that satisfy a condition",
+      "options_d": "Selecting keys that satisfy a condition",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the join operation in relational algebra?",
+      "options_a": "Combining rows from two tables based on a condition",
+      "options_b": "Combining columns from two tables based on a condition",
+      "options_c": "Combining tables from two databases based on a condition",
+      "options_d": "Combining keys from two tables based on a condition",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the union operation in relational algebra?",
+      "options_a": "Combining rows from two tables",
+      "options_b": "Combining columns from two tables",
+      "options_c": "Combining tables from two databases",
+      "options_d": "Combining keys from two tables",
+      "correct_answer": "option_a"
+    }
+  ]
+}

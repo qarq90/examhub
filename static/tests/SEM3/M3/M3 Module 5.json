@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-III: Statistical Techniques",
+  "test_description": "This test evaluates understanding of correlation, regression, and curve fitting for data analysis.",
+  "questions": [
+    {
+      "question": "What does Karl Pearson's coefficient of correlation measure?",
+      "options_a": "Linear relationship between two variables",
+      "options_b": "Non-linear relationship between two variables",
+      "options_c": "Causal relationship between two variables",
+      "options_d": "Random relationship between two variables",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the range of Karl Pearson's coefficient of correlation?",
+      "options_a": "-1 to 1",
+      "options_b": "0 to 1",
+      "options_c": "-1 to 0",
+      "options_d": "0 to ∞",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What does Spearman's Rank correlation coefficient measure?",
+      "options_a": "Linear relationship between ranks of two variables",
+      "options_b": "Non-linear relationship between ranks of two variables",
+      "options_c": "Causal relationship between ranks of two variables",
+      "options_d": "Random relationship between ranks of two variables",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the range of Spearman's Rank correlation coefficient?",
+      "options_a": "-1 to 1",
+      "options_b": "0 to 1",
+      "options_c": "-1 to 0",
+      "options_d": "0 to ∞",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a line of regression?",
+      "options_a": "A line that best fits the data points",
+      "options_b": "A line that passes through all data points",
+      "options_c": "A line that passes through the origin",
+      "options_d": "A line that is perpendicular to the x-axis",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the purpose of fitting a first-degree curve?",
+      "options_a": "To find a linear relationship between variables",
+      "options_b": "To find a quadratic relationship between variables",
+      "options_c": "To find a cubic relationship between variables",
+      "options_d": "To find an exponential relationship between variables",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the purpose of fitting a second-degree curve?",
+      "options_a": "To find a linear relationship between variables",
+      "options_b": "To find a quadratic relationship between variables",
+      "options_c": "To find a cubic relationship between variables",
+      "options_d": "To find an exponential relationship between variables",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is covariance?",
+      "options_a": "A measure of how two variables change together",
+      "options_b": "A measure of how one variable changes",
+      "options_c": "A measure of how two variables are independent",
+      "options_d": "A measure of how two variables are identical",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the purpose of fitting an exponential curve?",
+      "options_a": "To find a linear relationship between variables",
+      "options_b": "To find a quadratic relationship between variables",
+      "options_c": "To find an exponential relationship between variables",
+      "options_d": "To find a logarithmic relationship between variables",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "Which of the following is a self-learning topic for Statistical Techniques?",
+      "options_a": "Karl Pearson's Coefficient of correlation",
+      "options_b": "Spearman's Rank correlation coefficient",
+      "options_c": "Covariance, fitting of exponential curve",
+      "options_d": "Lines of regression",
+      "correct_answer": "option_c"
+    }
+  ]
+}

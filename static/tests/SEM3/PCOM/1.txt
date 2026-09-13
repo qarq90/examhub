@@ -1,0 +1,86 @@
+{
+  "test_name": "Principle of Communication: Introduction to Communication Systems",
+  "test_description": "This test evaluates understanding of the basics of analog and digital communication systems.",
+  "questions": [
+    {
+      "question": "What is a communication system?",
+      "options_a": "A system that transmits information from source to destination",
+      "options_b": "A system that receives information from source to destination",
+      "options_c": "A system that stores information from source to destination",
+      "options_d": "A system that deletes information from source to destination",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a transmitter?",
+      "options_a": "A device that sends information",
+      "options_b": "A device that receives information",
+      "options_c": "A device that stores information",
+      "options_d": "A device that deletes information",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a receiver?",
+      "options_a": "A device that sends information",
+      "options_b": "A device that receives information",
+      "options_c": "A device that stores information",
+      "options_d": "A device that deletes information",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is a channel?",
+      "options_a": "The medium through which information is transmitted",
+      "options_b": "The device that sends information",
+      "options_c": "The device that receives information",
+      "options_d": "The device that stores information",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is analog communication?",
+      "options_a": "Communication using continuous signals",
+      "options_b": "Communication using discrete signals",
+      "options_c": "Communication using digital signals",
+      "options_d": "Communication using binary signals",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is digital communication?",
+      "options_a": "Communication using continuous signals",
+      "options_b": "Communication using discrete signals",
+      "options_c": "Communication using analog signals",
+      "options_d": "Communication using sinusoidal signals",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is modulation?",
+      "options_a": "The process of varying a carrier signal",
+      "options_b": "The process of varying a message signal",
+      "options_c": "The process of varying a noise signal",
+      "options_d": "The process of varying a channel signal",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is demodulation?",
+      "options_a": "The process of extracting the message signal from the carrier signal",
+      "options_b": "The process of extracting the carrier signal from the message signal",
+      "options_c": "The process of extracting the noise signal from the carrier signal",
+      "options_d": "The process of extracting the channel signal from the carrier signal",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is bandwidth?",
+      "options_a": "The range of frequencies in a signal",
+      "options_b": "The range of amplitudes in a signal",
+      "options_c": "The range of phases in a signal",
+      "options_d": "The range of wavelengths in a signal",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is noise?",
+      "options_a": "Unwanted signals that interfere with communication",
+      "options_b": "Wanted signals that help communication",
+      "options_c": "Wanted signals that interfere with communication",
+      "options_d": "Unwanted signals that help communication",
+      "correct_answer": "option_a"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "test_name": "Data Structure and Analysis: Trees and Graphs",
+  "test_description": "This test evaluates understanding of trees, graphs, and their traversals.",
+  "questions": [
+    {
+      "question": "What is a tree?",
+      "options_a": "A connected acyclic graph",
+      "options_b": "A connected cyclic graph",
+      "options_c": "A disconnected acyclic graph",
+      "options_d": "A disconnected cyclic graph",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the root of a tree?",
+      "options_a": "The topmost node",
+      "options_b": "The bottommost node",
+      "options_c": "Any node",
+      "options_d": "The leftmost node",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a leaf node in a tree?",
+      "options_a": "A node with no children",
+      "options_b": "A node with one child",
+      "options_c": "A node with two children",
+      "options_d": "A node with three children",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the height of a tree?",
+      "options_a": "The number of edges on the longest path from root to leaf",
+      "options_b": "The number of nodes on the longest path from root to leaf",
+      "options_c": "The number of edges on the shortest path from root to leaf",
+      "options_d": "The number of nodes on the shortest path from root to leaf",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a binary tree?",
+      "options_a": "A tree where each node has at most two children",
+      "options_b": "A tree where each node has exactly two children",
+      "options_c": "A tree where each node has at most three children",
+      "options_d": "A tree where each node has exactly three children",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a binary search tree (BST)?",
+      "options_a": "A binary tree where left child is smaller and right child is larger than the parent",
+      "options_b": "A binary tree where left child is larger and right child is smaller than the parent",
+      "options_c": "A binary tree where both children are smaller than the parent",
+      "options_d": "A binary tree where both children are larger than the parent",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Breadth First Search (BFS) used for?",
+      "options_a": "Traversing a graph level by level",
+      "options_b": "Traversing a graph depth by depth",
+      "options_c": "Sorting a graph",
+      "options_d": "Searching a graph randomly",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is Depth First Search (DFS) used for?",
+      "options_a": "Traversing a graph level by level",
+      "options_b": "Traversing a graph depth by depth",
+      "options_c": "Sorting a graph",
+      "options_d": "Searching a graph randomly",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What data structure is used in BFS?",
+      "options_a": "Queue",
+      "options_b": "Stack",
+      "options_c": "Linked List",
+      "options_d": "Tree",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What data structure is used in DFS?",
+      "options_a": "Queue",
+      "options_b": "Stack",
+      "options_c": "Linked List",
+      "options_d": "Tree",
+      "correct_answer": "option_b"
+    }
+  ]
+}

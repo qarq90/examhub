@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-IV: Complex Integration",
+  "test_description": "This test evaluates understanding of complex integration, Cauchy's theorems, and residues.",
+  "questions": [
+    {
+      "question": "What is a line integral?",
+      "options_a": "An integral along a curve",
+      "options_b": "An integral along a surface",
+      "options_c": "An integral along a volume",
+      "options_d": "An integral along a point",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What does Cauchy's Integral theorem state?",
+      "options_a": "The integral of an analytic function over a closed curve is zero",
+      "options_b": "The integral of an analytic function over a closed curve is one",
+      "options_c": "The integral of an analytic function over a closed curve is infinite",
+      "options_d": "The integral of an analytic function over a closed curve is undefined",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What does Cauchy's Integral formula state?",
+      "options_a": "f(a) = (1/2πi) ∮ f(z)/(z-a) dz",
+      "options_b": "f(a) = (1/2π) ∮ f(z)/(z-a) dz",
+      "options_c": "f(a) = (1/2πi) ∮ f(z)(z-a) dz",
+      "options_d": "f(a) = (1/2π) ∮ f(z)(z-a) dz",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a Taylor series?",
+      "options_a": "A power series expansion of a function about a point",
+      "options_b": "A power series expansion of a function about infinity",
+      "options_c": "A power series expansion of a function about zero",
+      "options_d": "A power series expansion of a function about one",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a Laurent series?",
+      "options_a": "A power series expansion that includes negative powers",
+      "options_b": "A power series expansion that includes only positive powers",
+      "options_c": "A power series expansion that includes only zero powers",
+      "options_d": "A power series expansion that includes only negative powers",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a singularity?",
+      "options_a": "A point where a function is not analytic",
+      "options_b": "A point where a function is analytic",
+      "options_c": "A point where a function is zero",
+      "options_d": "A point where a function is one",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a pole?",
+      "options_a": "A singularity where the function goes to infinity",
+      "options_b": "A singularity where the function goes to zero",
+      "options_c": "A singularity where the function goes to one",
+      "options_d": "A singularity where the function is undefined",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a residue?",
+      "options_a": "The coefficient of 1/(z-a) in the Laurent series",
+      "options_b": "The coefficient of (z-a) in the Laurent series",
+      "options_c": "The coefficient of 1/(z-a)² in the Laurent series",
+      "options_d": "The coefficient of (z-a)² in the Laurent series",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What does Cauchy's Residue theorem state?",
+      "options_a": "The integral of an analytic function over a closed curve is 2πi times the sum of residues",
+      "options_b": "The integral of an analytic function over a closed curve is πi times the sum of residues",
+      "options_c": "The integral of an analytic function over a closed curve is 2π times the sum of residues",
+      "options_d": "The integral of an analytic function over a closed curve is π times the sum of residues",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the application of the Residue theorem?",
+      "options_a": "To evaluate real integrals",
+      "options_b": "To evaluate complex integrals",
+      "options_c": "To evaluate line integrals",
+      "options_d": "To evaluate surface integrals",
+      "correct_answer": "option_a"
+    }
+  ]
+}

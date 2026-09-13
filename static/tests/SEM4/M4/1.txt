@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-IV: Linear Algebra (Theory of Matrices)",
+  "test_description": "This test evaluates understanding of matrices, eigenvalues, eigenvectors, and the Cayley-Hamilton theorem.",
+  "questions": [
+    {
+      "question": "What is the characteristic equation of a matrix?",
+      "options_a": "det(A - λI) = 0",
+      "options_b": "det(A + λI) = 0",
+      "options_c": "det(A - λ) = 0",
+      "options_d": "det(A + λ) = 0",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What are eigenvalues?",
+      "options_a": "The roots of the characteristic equation",
+      "options_b": "The roots of the inverse characteristic equation",
+      "options_c": "The roots of the matrix equation",
+      "options_d": "The roots of the vector equation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What are eigenvectors?",
+      "options_a": "Non-zero vectors that satisfy Av = λv",
+      "options_b": "Zero vectors that satisfy Av = λv",
+      "options_c": "Non-zero vectors that satisfy Av = v",
+      "options_d": "Zero vectors that satisfy Av = v",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What does the Cayley-Hamilton theorem state?",
+      "options_a": "Every matrix satisfies its own characteristic equation",
+      "options_b": "Every matrix satisfies its own inverse equation",
+      "options_c": "Every matrix satisfies its own determinant equation",
+      "options_d": "Every matrix satisfies its own trace equation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a diagonalizable matrix?",
+      "options_a": "A matrix that is similar to a diagonal matrix",
+      "options_b": "A matrix that is similar to a triangular matrix",
+      "options_c": "A matrix that is similar to an identity matrix",
+      "options_d": "A matrix that is similar to a zero matrix",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a non-diagonalizable matrix?",
+      "options_a": "A matrix that is not similar to a diagonal matrix",
+      "options_b": "A matrix that is similar to a diagonal matrix",
+      "options_c": "A matrix that is similar to a triangular matrix",
+      "options_d": "A matrix that is similar to an identity matrix",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a derogatory matrix?",
+      "options_a": "A matrix whose minimal polynomial is not equal to its characteristic polynomial",
+      "options_b": "A matrix whose minimal polynomial is equal to its characteristic polynomial",
+      "options_c": "A matrix whose minimal polynomial is zero",
+      "options_d": "A matrix whose minimal polynomial is one",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a non-derogatory matrix?",
+      "options_a": "A matrix whose minimal polynomial is equal to its characteristic polynomial",
+      "options_b": "A matrix whose minimal polynomial is not equal to its characteristic polynomial",
+      "options_c": "A matrix whose minimal polynomial is zero",
+      "options_d": "A matrix whose minimal polynomial is one",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a function of a square matrix?",
+      "options_a": "A function that can be applied to a square matrix",
+      "options_b": "A function that can be applied to a rectangular matrix",
+      "options_c": "A function that can be applied to a vector",
+      "options_d": "A function that can be applied to a scalar",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a quadratic form?",
+      "options_a": "A homogeneous polynomial of degree 2 in several variables",
+      "options_b": "A homogeneous polynomial of degree 3 in several variables",
+      "options_c": "A homogeneous polynomial of degree 1 in several variables",
+      "options_d": "A homogeneous polynomial of degree 4 in several variables",
+      "correct_answer": "option_a"
+    }
+  ]
+}

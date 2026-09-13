@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-IV: Z Transform",
+  "test_description": "This test evaluates understanding of Z-transforms, their properties, and inverse Z-transforms.",
+  "questions": [
+    {
+      "question": "What is the Z-transform of a sequence x[n]?",
+      "options_a": "X(z) = Σ x[n] z^(-n)",
+      "options_b": "X(z) = Σ x[n] z^n",
+      "options_c": "X(z) = Σ x[n] z^(-n) from n=0 to ∞",
+      "options_d": "X(z) = Σ x[n] z^n from n=0 to ∞",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Region of Convergence (ROC)?",
+      "options_a": "The set of z values for which the Z-transform converges",
+      "options_b": "The set of z values for which the Z-transform diverges",
+      "options_c": "The set of z values for which the Z-transform is zero",
+      "options_d": "The set of z values for which the Z-transform is infinite",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Z-transform of a^n?",
+      "options_a": "z/(z-a)",
+      "options_b": "z/(z+a)",
+      "options_c": "1/(z-a)",
+      "options_d": "1/(z+a)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Z-transform of n a^n?",
+      "options_a": "az/(z-a)²",
+      "options_b": "az/(z+a)²",
+      "options_c": "z/(z-a)²",
+      "options_d": "z/(z+a)²",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Z-transform of sin(an)?",
+      "options_a": "z sin(a)/(z² - 2z cos(a) + 1)",
+      "options_b": "z cos(a)/(z² - 2z cos(a) + 1)",
+      "options_c": "z sin(a)/(z² + 2z cos(a) + 1)",
+      "options_d": "z cos(a)/(z² + 2z cos(a) + 1)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Z-transform of cos(an)?",
+      "options_a": "z sin(a)/(z² - 2z cos(a) + 1)",
+      "options_b": "z cos(a)/(z² - 2z cos(a) + 1)",
+      "options_c": "z sin(a)/(z² + 2z cos(a) + 1)",
+      "options_d": "z cos(a)/(z² + 2z cos(a) + 1)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the shifting property of the Z-transform?",
+      "options_a": "Z{x[n-k]} = z^(-k) X(z)",
+      "options_b": "Z{x[n-k]} = z^k X(z)",
+      "options_c": "Z{x[n+k]} = z^(-k) X(z)",
+      "options_d": "Z{x[n+k]} = z^k X(z)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the convolution theorem for the Z-transform?",
+      "options_a": "Z{x[n] * y[n]} = X(z) Y(z)",
+      "options_b": "Z{x[n] * y[n]} = X(z) + Y(z)",
+      "options_c": "Z{x[n] * y[n]} = X(z) / Y(z)",
+      "options_d": "Z{x[n] * y[n]} = X(z) - Y(z)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the inverse Z-transform?",
+      "options_a": "The process of finding the sequence from its Z-transform",
+      "options_b": "The process of finding the Z-transform from its sequence",
+      "options_c": "The process of finding the Fourier transform from its Z-transform",
+      "options_d": "The process of finding the Laplace transform from its Z-transform",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which method is used for inverse Z-transform?",
+      "options_a": "Partial fraction method",
+      "options_b": "Convolution method",
+      "options_c": "Both a and b",
+      "options_d": "Neither a nor b",
+      "correct_answer": "option_c"
+    }
+  ]
+}

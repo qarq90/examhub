@@ -1,0 +1,86 @@
+{
+  "test_name": "Data Structure and Analysis: Searching and Sorting",
+  "test_description": "This test evaluates understanding of searching, sorting, and hashing techniques.",
+  "questions": [
+    {
+      "question": "What is sequential search?",
+      "options_a": "Searching each element one by one",
+      "options_b": "Searching by dividing the list in half",
+      "options_c": "Searching by hashing",
+      "options_d": "Searching by sorting",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is binary search?",
+      "options_a": "Searching each element one by one",
+      "options_b": "Searching by dividing the sorted list in half",
+      "options_c": "Searching by hashing",
+      "options_d": "Searching by sorting",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options_a": "O(1)",
+      "options_b": "O(n)",
+      "options_c": "O(log n)",
+      "options_d": "O(n log n)",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is a hash function?",
+      "options_a": "A function that maps data to a fixed-size value",
+      "options_b": "A function that sorts data",
+      "options_c": "A function that searches data",
+      "options_d": "A function that deletes data",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is collision in hashing?",
+      "options_a": "When two different keys hash to the same index",
+      "options_b": "When two same keys hash to different indices",
+      "options_c": "When a key hashes to an invalid index",
+      "options_d": "When a key hashes to a valid index",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is linear probing?",
+      "options_a": "Checking the next slot if the current slot is occupied",
+      "options_b": "Checking the previous slot if the current slot is occupied",
+      "options_c": "Checking a random slot if the current slot is occupied",
+      "options_d": "Checking the same slot if the current slot is occupied",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is quadratic probing?",
+      "options_a": "Checking slots at quadratic intervals if the current slot is occupied",
+      "options_b": "Checking slots at linear intervals if the current slot is occupied",
+      "options_c": "Checking slots at random intervals if the current slot is occupied",
+      "options_d": "Checking the same slot if the current slot is occupied",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is separate chaining?",
+      "options_a": "Using a linked list for each slot in the hash table",
+      "options_b": "Using an array for each slot in the hash table",
+      "options_c": "Using a tree for each slot in the hash table",
+      "options_d": "Using a graph for each slot in the hash table",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the time complexity of insertion sort in the worst case?",
+      "options_a": "O(n)",
+      "options_b": "O(n log n)",
+      "options_c": "O(n²)",
+      "options_d": "O(log n)",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is the time complexity of merge sort in the worst case?",
+      "options_a": "O(n)",
+      "options_b": "O(n log n)",
+      "options_c": "O(n²)",
+      "options_d": "O(log n)",
+      "correct_answer": "option_b"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "test_name": "Data Structure and Analysis: Introduction to Data Structures",
+  "test_description": "This test evaluates understanding of fundamental concepts of data structures.",
+  "questions": [
+    {
+      "question": "What is a data structure?",
+      "options_a": "A way to organize and store data",
+      "options_b": "A programming language",
+      "options_c": "A type of computer hardware",
+      "options_d": "A network protocol",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which of the following is a linear data structure?",
+      "options_a": "Array",
+      "options_b": "Tree",
+      "options_c": "Graph",
+      "options_d": "Heap",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which of the following is a non-linear data structure?",
+      "options_a": "Array",
+      "options_b": "Linked List",
+      "options_c": "Stack",
+      "options_d": "Tree",
+      "correct_answer": "option_d"
+    },
+    {
+      "question": "What is the time complexity of accessing an element in an array by index?",
+      "options_a": "O(1)",
+      "options_b": "O(n)",
+      "options_c": "O(log n)",
+      "options_d": "O(n log n)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the time complexity of inserting an element at the beginning of an array?",
+      "options_a": "O(1)",
+      "options_b": "O(n)",
+      "options_c": "O(log n)",
+      "options_d": "O(n log n)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the time complexity of inserting an element at the beginning of a linked list?",
+      "options_a": "O(1)",
+      "options_b": "O(n)",
+      "options_c": "O(log n)",
+      "options_d": "O(n log n)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the time complexity of searching an element in a linked list?",
+      "options_a": "O(1)",
+      "options_b": "O(n)",
+      "options_c": "O(log n)",
+      "options_d": "O(n log n)",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the time complexity of searching an element in a balanced binary search tree?",
+      "options_a": "O(1)",
+      "options_b": "O(n)",
+      "options_c": "O(log n)",
+      "options_d": "O(n log n)",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is the time complexity of searching an element in a hash table (average case)?",
+      "options_a": "O(1)",
+      "options_b": "O(n)",
+      "options_c": "O(log n)",
+      "options_d": "O(n log n)",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is an abstract data type (ADT)?",
+      "options_a": "A mathematical model of a data structure",
+      "options_b": "A programming language",
+      "options_c": "A type of computer hardware",
+      "options_d": "A network protocol",
+      "correct_answer": "option_a"
+    }
+  ]
+}

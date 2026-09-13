@@ -1,0 +1,86 @@
+{
+  "test_name": "Paradigms and Computer Programming Fundamentals: Declarative Programming Paradigms",
+  "test_description": "This test evaluates understanding of functional and logic programming.",
+  "questions": [
+    {
+      "question": "What is functional programming?",
+      "options_a": "Programming based on mathematical functions",
+      "options_b": "Programming based on objects",
+      "options_c": "Programming based on logic",
+      "options_d": "Programming based on procedures",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is logic programming?",
+      "options_a": "Programming based on mathematical functions",
+      "options_b": "Programming based on objects",
+      "options_c": "Programming based on logic",
+      "options_d": "Programming based on procedures",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "Which language is commonly used for functional programming?",
+      "options_a": "Haskell",
+      "options_b": "Java",
+      "options_c": "C++",
+      "options_d": "Python",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which language is commonly used for logic programming?",
+      "options_a": "Prolog",
+      "options_b": "Java",
+      "options_c": "C++",
+      "options_d": "Python",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a pure function?",
+      "options_a": "A function with no side effects",
+      "options_b": "A function with side effects",
+      "options_c": "A function that modifies global state",
+      "options_d": "A function that reads global state",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is recursion in functional programming?",
+      "options_a": "A function calling itself",
+      "options_b": "A function calling another function",
+      "options_c": "A function being called by another function",
+      "options_d": "A function not calling any function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a higher-order function?",
+      "options_a": "A function that takes functions as arguments or returns functions",
+      "options_b": "A function that takes only integers as arguments",
+      "options_c": "A function that returns only integers",
+      "options_d": "A function that takes no arguments",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a list comprehension?",
+      "options_a": "A concise way to create lists",
+      "options_b": "A concise way to create functions",
+      "options_c": "A concise way to create objects",
+      "options_d": "A concise way to create classes",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is pattern matching in functional programming?",
+      "options_a": "Matching data against patterns",
+      "options_b": "Matching functions against patterns",
+      "options_c": "Matching objects against patterns",
+      "options_d": "Matching classes against patterns",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a fact in logic programming?",
+      "options_a": "A statement that is true",
+      "options_b": "A statement that is false",
+      "options_c": "A statement that is unknown",
+      "options_d": "A statement that is undefined",
+      "correct_answer": "option_a"
+    }
+  ]
+}

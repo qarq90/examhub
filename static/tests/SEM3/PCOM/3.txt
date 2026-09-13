@@ -1,0 +1,86 @@
+{
+  "test_name": "Principle of Communication: Amplitude and Frequency Modulation",
+  "test_description": "This test evaluates understanding of AM, FM, and their transmitters and receivers.",
+  "questions": [
+    {
+      "question": "What is amplitude modulation (AM)?",
+      "options_a": "Varying the amplitude of the carrier signal",
+      "options_b": "Varying the frequency of the carrier signal",
+      "options_c": "Varying the phase of the carrier signal",
+      "options_d": "Varying the wavelength of the carrier signal",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is frequency modulation (FM)?",
+      "options_a": "Varying the amplitude of the carrier signal",
+      "options_b": "Varying the frequency of the carrier signal",
+      "options_c": "Varying the phase of the carrier signal",
+      "options_d": "Varying the wavelength of the carrier signal",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is DSB modulation?",
+      "options_a": "Double Sideband modulation",
+      "options_b": "Double Sideband Suppressed Carrier modulation",
+      "options_c": "Single Sideband modulation",
+      "options_d": "Single Sideband Suppressed Carrier modulation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is SSB modulation?",
+      "options_a": "Double Sideband modulation",
+      "options_b": "Double Sideband Suppressed Carrier modulation",
+      "options_c": "Single Sideband modulation",
+      "options_d": "Single Sideband Suppressed Carrier modulation",
+      "correct_answer": "option_c"
+    },
+    {
+      "question": "What is the modulation index in AM?",
+      "options_a": "The ratio of the amplitude of the message signal to the amplitude of the carrier signal",
+      "options_b": "The ratio of the amplitude of the carrier signal to the amplitude of the message signal",
+      "options_c": "The ratio of the frequency of the message signal to the frequency of the carrier signal",
+      "options_d": "The ratio of the frequency of the carrier signal to the frequency of the message signal",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the modulation index in FM?",
+      "options_a": "The ratio of the frequency deviation to the modulating frequency",
+      "options_b": "The ratio of the frequency deviation to the carrier frequency",
+      "options_c": "The ratio of the modulating frequency to the carrier frequency",
+      "options_d": "The ratio of the carrier frequency to the modulating frequency",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the bandwidth of an AM signal?",
+      "options_a": "Twice the modulating frequency",
+      "options_b": "Equal to the modulating frequency",
+      "options_c": "Half the modulating frequency",
+      "options_d": "Four times the modulating frequency",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the bandwidth of an FM signal?",
+      "options_a": "Approximately twice the sum of the frequency deviation and the modulating frequency",
+      "options_b": "Approximately equal to the frequency deviation",
+      "options_c": "Approximately equal to the modulating frequency",
+      "options_d": "Approximately half the frequency deviation",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a superheterodyne receiver?",
+      "options_a": "A receiver that converts the incoming signal to an intermediate frequency",
+      "options_b": "A receiver that converts the incoming signal to a high frequency",
+      "options_c": "A receiver that converts the incoming signal to a low frequency",
+      "options_d": "A receiver that converts the incoming signal to a zero frequency",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the purpose of a mixer in a superheterodyne receiver?",
+      "options_a": "To convert the incoming signal to an intermediate frequency",
+      "options_b": "To convert the incoming signal to a high frequency",
+      "options_c": "To convert the incoming signal to a low frequency",
+      "options_d": "To convert the incoming signal to a zero frequency",
+      "correct_answer": "option_a"
+    }
+  ]
+}

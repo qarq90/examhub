@@ -1,0 +1,86 @@
+{
+  "test_name": "Engineering Mathematics-III: Complex Variables",
+  "test_description": "This test evaluates understanding of complex variables, analytic functions, and their applications.",
+  "questions": [
+    {
+      "question": "What is the condition for a function f(z) to be analytic?",
+      "options_a": "Cauchy-Riemann equations must be satisfied",
+      "options_b": "Laplace equations must be satisfied",
+      "options_c": "Fourier equations must be satisfied",
+      "options_d": "Dirichlet conditions must be satisfied",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What are the Cauchy-Riemann equations in Cartesian coordinates?",
+      "options_a": "∂u/∂x = ∂v/∂y and ∂u/∂y = -∂v/∂x",
+      "options_b": "∂u/∂x = -∂v/∂y and ∂u/∂y = ∂v/∂x",
+      "options_c": "∂u/∂x = ∂v/∂x and ∂u/∂y = ∂v/∂y",
+      "options_d": "∂u/∂x = -∂v/∂x and ∂u/∂y = -∂v/∂y",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Milne-Thomson method used for?",
+      "options_a": "Finding the analytic function f(z) when real or imaginary part is given",
+      "options_b": "Finding the derivative of a complex function",
+      "options_c": "Finding the integral of a complex function",
+      "options_d": "Finding the limit of a complex function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a harmonic function?",
+      "options_a": "A function that satisfies Laplace's equation",
+      "options_b": "A function that satisfies Cauchy-Riemann equations",
+      "options_c": "A function that satisfies Fourier's equation",
+      "options_d": "A function that satisfies Dirichlet's conditions",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a harmonic conjugate?",
+      "options_a": "A function v such that u + iv is analytic",
+      "options_b": "A function v such that u + v is analytic",
+      "options_c": "A function v such that u - v is analytic",
+      "options_d": "A function v such that u * v is analytic",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What are orthogonal trajectories?",
+      "options_a": "Curves that intersect at right angles",
+      "options_b": "Curves that intersect at 45 degrees",
+      "options_c": "Curves that are parallel",
+      "options_d": "Curves that are identical",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is conformal mapping?",
+      "options_a": "A mapping that preserves angles",
+      "options_b": "A mapping that preserves distances",
+      "options_c": "A mapping that preserves areas",
+      "options_d": "A mapping that preserves volumes",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a bilinear mapping?",
+      "options_a": "A mapping of the form (az+b)/(cz+d)",
+      "options_b": "A mapping of the form az²+bz+c",
+      "options_c": "A mapping of the form a sin(z) + b cos(z)",
+      "options_d": "A mapping of the form a e^z + b",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the cross ratio?",
+      "options_a": "A ratio of four complex numbers",
+      "options_b": "A ratio of two complex numbers",
+      "options_c": "A ratio of three complex numbers",
+      "options_d": "A ratio of five complex numbers",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What are fixed points of a mapping?",
+      "options_a": "Points that map to themselves",
+      "options_b": "Points that map to zero",
+      "options_c": "Points that map to infinity",
+      "options_d": "Points that map to one",
+      "correct_answer": "option_a"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+INSERT INTO courses (course_id, course_name, course_code, course_branch, course_semester) VALUES
+
+-- ================= Semester III =================
+('ITC301 - EM3',   'Engineering Mathematics-III',                                  'ITC301 - EM3',   'IT', 'III'),
+('ITC302 - DSA',   'Data Structure and Analysis',                                  'ITC302 - DSA',   'IT', 'III'),
+('ITC303 - DBMS',  'Database Management System',                                   'ITC303 - DBMS',  'IT', 'III'),
+('ITC304 - PC',    'Principle of Communication',                                   'ITC304 - PC',    'IT', 'III'),
+('ITC305 - PCPF',  'Paradigms and Computer Programming Fundamentals',              'ITC305 - PCPF',  'IT', 'III'),
+('ITL301 - DSL',   'Data Structure Lab',                                           'ITL301 - DSL',   'IT', 'III'),
+('ITL302 - SQL',   'SQL Lab',                                                      'ITL302 - SQL',   'IT', 'III'),
+('ITL303 - CPPL',  'Computer programming Paradigms Lab',                           'ITL303 - CPPL',  'IT', 'III'),
+('ITL304 - JL',    'Java Lab (SBL)',                                               'ITL304 - JL',    'IT', 'III'),
+('ITM301 - MP1A',  'Mini Project – 1 A for Front end/backend Application using JAVA','ITM301 - MP1A', 'IT', 'III'),
+
+-- ================= Semester IV =================
+('ITC401 - EM4',   'Engineering Mathematics-IV',                                   'ITC401 - EM4',   'IT', 'IV'),
+('ITC402 - CNND',  'Computer Network and Network Design',                          'ITC402 - CNND',  'IT', 'IV'),
+('ITC403 - OS',    'Operating System',                                             'ITC403 - OS',    'IT', 'IV'),
+('ITC404 - AT',    'Automata Theory',                                              'ITC404 - AT',    'IT', 'IV'),
+('ITC405 - COA',   'Computer Organization and Architecture',                       'ITC405 - COA',   'IT', 'IV'),
+('ITL401 - NL',    'Network Lab',                                                  'ITL401 - NL',    'IT', 'IV'),
+('ITL402 - UL',    'Unix Lab',                                                     'ITL402 - UL',    'IT', 'IV'),
+('ITL403 - ML',    'Microprocessor Lab',                                           'ITL403 - ML',    'IT', 'IV'),
+('ITL404 - PL',    'Python Lab (SBL)',                                             'ITL404 - PL',    'IT', 'IV'),
+('ITM401 - MP1B',  'Mini Project – 1 B for Python based automation projects',      'ITM401 - MP1B',  'IT', 'IV'),
+
+-- ================= Semester V =================
+('ITC501 - IP',    'Internet Programming',                                         'ITC501 - IP',    'IT', 'V'),
+('ITC502 - CNS',   'Computer Network Security',                                    'ITC502 - CNS',   'IT', 'V'),
+('ITC503 - EEB',   'Entrepreneurship and E-business',                              'ITC503 - EEB',   'IT', 'V'),
+('ITC504 - SE',    'Software Engineering',                                         'ITC504 - SE',    'IT', 'V'),
+('ITL501 - IPL',   'IP Lab',                                                       'ITL501 - IPL',   'IT', 'V'),
+('ITL502 - SL',    'Security Lab',                                                 'ITL502 - SL',    'IT', 'V'),
+('ITL503 - DL',    'DevOPs Lab',                                                   'ITL503 - DL',    'IT', 'V'),
+('ITL504 - ADL',   'Advance DevOps Lab',                                           'ITL504 - ADL',   'IT', 'V'),
+('ITL505 - PCE2',  'Professional Communication & Ethics-II (PCE-II)',              'ITL505 - PCE2',  'IT', 'V'),
+('ITM501 - MP2A',  'Mini Project – 2 A Web Based Business Model',                  'ITM501 - MP2A',  'IT', 'V'),
+-- Department Optional Course - 1
+('ITDO5011 - MEP', 'Microcontroller Embedded Programming',                         'ITDO5011 - MEP', 'IT', 'V'),
+('ITDO5012 - ADMT','Advance Data Management Technologies',                         'ITDO5012 - ADMT','IT', 'V'),
+('ITDO5013 - CGMS','Computer Graphics & Multimedia System',                        'ITDO5013 - CGMS','IT', 'V'),
+('ITDO5014 - ADSA','Advanced Data structure and Analysis',                         'ITDO5014 - ADSA','IT', 'V'),
+
+-- ================= Semester VI =================
+('ITC601 - DMBI',  'Data Mining & Business Intelligence',                          'ITC601 - DMBI',  'IT', 'VI'),
+('ITC602 - WEBX',  'Web X.0',                                                      'ITC602 - WEBX',  'IT', 'VI'),
+('ITC603 - WT',    'Wireless Technology',                                          'ITC603 - WT',    'IT', 'VI'),
+('ITC604 - AIDS1', 'AI and DS – 1',                                                'ITC604 - AIDS1', 'IT', 'VI'),
+('ITL601 - BIL',   'BI Lab',                                                       'ITL601 - BIL',   'IT', 'VI'),
+('ITL602 - WL',    'Web Lab',                                                      'ITL602 - WL',    'IT', 'VI'),
+('ITL603 - SENL',  'Sensor Lab',                                                   'ITL603 - SENL',  'IT', 'VI'),
+('ITL604 - MADL',  'MAD & PWA Lab',                                                'ITL604 - MADL',  'IT', 'VI'),
+('ITL605 - DSPL',  'DS using Python Skill based Lab',                              'ITL605 - DSPL',  'IT', 'VI'),
+('ITM601 - MP2B',  'Mini Project – 2 B Based on ML',                               'ITM601 - MP2B',  'IT', 'VI'),
+-- Department Optional Course - 2
+('ITDO6011 - SA',  'Software Architecture',                                        'ITDO6011 - SA',  'IT', 'VI'),
+('ITDO6012 - IMP', 'Image Processing',                                             'ITDO6012 - IMP', 'IT', 'VI'),
+('ITDO6013 - GIT', 'Green IT',                                                     'ITDO6013 - GIT', 'IT', 'VI'),
+('ITDO6014 - EHF', 'Ethical Hacking and Forensic',                                 'ITDO6014 - EHF', 'IT', 'VI'),
+
+-- ================= Semester VII =================
+('ITC701 - AIDS2', 'AI and DS-II',                                                 'ITC701 - AIDS2', 'IT', 'VII'),
+('ITC702 - IOE',   'Internet of Everything',                                       'ITC702 - IOE',   'IT', 'VII'),
+('ITL701 - DSLAB', 'Data Science Lab',                                             'ITL701 - DSLAB', 'IT', 'VII'),
+('ITL702 - IOEL',  'IOE Lab',                                                      'ITL702 - IOEL',  'IT', 'VII'),
+('ITL703 - SAD',   'Secure Application Development',                               'ITL703 - SAD',   'IT', 'VII'),
+('ITL704 - ROSPL', 'Recent Open Source Project Lab',                               'ITL704 - ROSPL', 'IT', 'VII'),
+('ITP701 - MP1',   'Major Project I',                                              'ITP701 - MP1',   'IT', 'VII'),
+-- Department Optional Course - 3
+('ITDO7011 - SAN', 'Storage Area Network',                                         'ITDO7011 - SAN', 'IT', 'VII'),
+('ITDO7012 - HPC', 'High Performance computing',                                   'ITDO7012 - HPC', 'IT', 'VII'),
+('ITDO7013 - IS',  'Infrastructure Security',                                      'ITDO7013 - IS',  'IT', 'VII'),
+('ITDO7014 - STQA','Software Testing and QA',                                      'ITDO7014 - STQA','IT', 'VII'),
+-- Department Optional Course - 4
+('ITDO7021 - MANET','MANET',                                                       'ITDO7021 - MANET','IT','VII'),
+('ITDO7022 - ARVR','AR – VR',                                                      'ITDO7022 - ARVR','IT', 'VII'),
+('ITDO7023 - QC',  'Quantum Computing',                                            'ITDO7023 - QC',  'IT', 'VII'),
+('ITDO7024 - IRS', 'Information Retrieval System',                                 'ITDO7024 - IRS', 'IT', 'VII'),
+
+-- ================= Semester VIII =================
+('ITC801 - BCDLT', 'Blockchain and DLT',                                           'ITC801 - BCDLT', 'IT', 'VIII'),
+('ITL801 - BCL',   'Blockchain Lab',                                               'ITL801 - BCL',   'IT', 'VIII'),
+('ITL802 - CC',    'Cloud computing',                                              'ITL802 - CC',    'IT', 'VIII'),
+('ITP801 - MP2',   'Major Project II',                                             'ITP801 - MP2',   'IT', 'VIII'),
+-- Department Optional Course - 5
+('ITDO8011 - BDA', 'Big Data Analytics',                                           'ITDO8011 - BDA', 'IT', 'VIII'),
+('ITDO8012 - RL',  'Reinforcement learning',                                       'ITDO8012 - RL',  'IT', 'VIII'),
+('ITDO8013 - SAM', 'Simulation and Modeling',                                      'ITDO8013 - SAM', 'IT', 'VIII'),
+('ITDO8014 - KM',  'Knowledge management',                                         'ITDO8014 - KM',  'IT', 'VIII'),
+-- Department Optional Course - 6
+('ITDO8021 - UID', 'User Interface Design',                                        'ITDO8021 - UID', 'IT', 'VIII'),
+('ITDO8022 - ROB', 'Robotics',                                                     'ITDO8022 - ROB', 'IT', 'VIII'),
+('ITDO8023 - ERP', 'ERP',                                                          'ITDO8023 - ERP', 'IT', 'VIII'),
+('ITDO8024 - CCS', 'Cloud computing and Services',                                 'ITDO8024 - CCS', 'IT', 'VIII'),
+
+-- ================= Institute Optional Courses - Semester VII =================
+('ILO7011 - PLM',  'Product Lifecycle Management',                                 'ILO7011 - PLM',  'IT', 'VII'),
+('ILO7012 - RE',   'Reliability Engineering',                                      'ILO7012 - RE',   'IT', 'VII'),
+('ILO7013 - MIS',  'Management Information System',                                'ILO7013 - MIS',  'IT', 'VII'),
+('ILO7014 - DOE',  'Design of Experiments',                                        'ILO7014 - DOE',  'IT', 'VII'),
+('ILO7015 - OR',   'Operation Research',                                           'ILO7015 - OR',   'IT', 'VII'),
+('ILO7016 - CSL',  'Cyber Security and Laws',                                      'ILO7016 - CSL',  'IT', 'VII'),
+('ILO7017 - DMMM', 'Disaster Management and Mitigation Measures',                  'ILO7017 - DMMM', 'IT', 'VII'),
+('ILO7018 - EAM',  'Energy Audit and Management',                                  'ILO7018 - EAM',  'IT', 'VII'),
+('ILO7019 - DE',   'Development Engineering',                                      'ILO7019 - DE',   'IT', 'VII'),
+
+-- ================= Institute Optional Courses - Semester VIII =================
+('ILO8011 - PM',   'Project Management',                                           'ILO8011 - PM',   'IT', 'VIII'),
+('ILO8012 - FM',   'Finance Management',                                           'ILO8012 - FM',   'IT', 'VIII'),
+('ILO8013 - EDM',  'Entrepreneurship Development and Management',                  'ILO8013 - EDM',  'IT', 'VIII'),
+('ILO8014 - HRM',  'Human Resource Management',                                    'ILO8014 - HRM',  'IT', 'VIII'),
+('ILO8015 - PEC',  'Professional Ethics and CSR',                                  'ILO8015 - PEC',  'IT', 'VIII'),
+('ILO8016 - RM',   'Research Methodology',                                         'ILO8016 - RM',   'IT', 'VIII'),
+('ILO8017 - IPR',  'IPR and Patenting',                                            'ILO8017 - IPR',  'IT', 'VIII'),
+('ILO8018 - DBM',  'Digital Business Management',                                  'ILO8018 - DBM',  'IT', 'VIII'),
+('ILO8019 - ENM',  'Environmental Management',                                     'ILO8019 - ENM',  'IT', 'VIII');

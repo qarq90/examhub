@@ -1,0 +1,86 @@
+{
+  "test_name": "Paradigms and Computer Programming Fundamentals: Concurrent Programming",
+  "test_description": "This test evaluates understanding of concurrent program execution.",
+  "questions": [
+    {
+      "question": "What is concurrency?",
+      "options_a": "The execution of multiple tasks simultaneously",
+      "options_b": "The execution of a single task",
+      "options_c": "The execution of multiple tasks sequentially",
+      "options_d": "The execution of multiple tasks randomly",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a thread?",
+      "options_a": "A lightweight process",
+      "options_b": "A heavyweight process",
+      "options_c": "A lightweight function",
+      "options_d": "A heavyweight function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a process?",
+      "options_a": "A program in execution",
+      "options_b": "A program in memory",
+      "options_c": "A program on disk",
+      "options_d": "A program in cache",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a race condition?",
+      "options_a": "When multiple threads access shared data concurrently",
+      "options_b": "When multiple threads access private data concurrently",
+      "options_c": "When multiple threads access shared data sequentially",
+      "options_d": "When multiple threads access private data sequentially",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a critical section?",
+      "options_a": "A section of code that accesses shared resources",
+      "options_b": "A section of code that accesses private resources",
+      "options_c": "A section of code that does not access any resources",
+      "options_d": "A section of code that accesses only local resources",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is mutual exclusion?",
+      "options_a": "Ensuring that only one thread accesses a critical section at a time",
+      "options_b": "Ensuring that multiple threads access a critical section at a time",
+      "options_c": "Ensuring that no thread accesses a critical section",
+      "options_d": "Ensuring that all threads access a critical section",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a semaphore?",
+      "options_a": "A synchronization primitive",
+      "options_b": "A communication primitive",
+      "options_c": "A data structure",
+      "options_d": "A programming language",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a mutex?",
+      "options_a": "A mutual exclusion lock",
+      "options_b": "A mutual inclusion lock",
+      "options_c": "A mutual exclusion function",
+      "options_d": "A mutual inclusion function",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a deadlock?",
+      "options_a": "A situation where two or more threads are waiting for each other",
+      "options_b": "A situation where two or more threads are executing simultaneously",
+      "options_c": "A situation where two or more threads are executing sequentially",
+      "options_d": "A situation where two or more threads are executing randomly",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a livelock?",
+      "options_a": "A situation where two or more threads are actively waiting for each other",
+      "options_b": "A situation where two or more threads are passively waiting for each other",
+      "options_c": "A situation where two or more threads are executing simultaneously",
+      "options_d": "A situation where two or more threads are executing sequentially",
+      "correct_answer": "option_a"
+    }
+  ]
+}

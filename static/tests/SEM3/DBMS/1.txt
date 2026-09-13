@@ -1,0 +1,86 @@
+{
+  "test_name": "Database Management System: Introduction to Database Management System",
+  "test_description": "This test evaluates understanding of the basics and need of database management systems.",
+  "questions": [
+    {
+      "question": "What is a database?",
+      "options_a": "A collection of organized data",
+      "options_b": "A collection of random data",
+      "options_c": "A collection of unorganized data",
+      "options_d": "A collection of deleted data",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a DBMS?",
+      "options_a": "Database Management System",
+      "options_b": "Database Manipulation System",
+      "options_c": "Data Management System",
+      "options_d": "Data Manipulation System",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the primary goal of a DBMS?",
+      "options_a": "To store and retrieve data efficiently",
+      "options_b": "To store and retrieve data slowly",
+      "options_c": "To store and retrieve data randomly",
+      "options_d": "To store and retrieve data manually",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is data redundancy?",
+      "options_a": "Duplication of data",
+      "options_b": "Deletion of data",
+      "options_c": "Modification of data",
+      "options_d": "Addition of data",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is data inconsistency?",
+      "options_a": "When data is not consistent across the database",
+      "options_b": "When data is consistent across the database",
+      "options_c": "When data is deleted from the database",
+      "options_d": "When data is added to the database",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a database schema?",
+      "options_a": "The structure of the database",
+      "options_b": "The data in the database",
+      "options_c": "The queries in the database",
+      "options_d": "The users of the database",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a database instance?",
+      "options_a": "The data in the database at a particular moment",
+      "options_b": "The structure of the database",
+      "options_c": "The queries in the database",
+      "options_d": "The users of the database",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is a data model?",
+      "options_a": "A way to describe the structure of a database",
+      "options_b": "A way to describe the data in a database",
+      "options_c": "A way to describe the queries in a database",
+      "options_d": "A way to describe the users of a database",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "Which of the following is a type of data model?",
+      "options_a": "Relational model",
+      "options_b": "Linear model",
+      "options_c": "Circular model",
+      "options_d": "Random model",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the role of a database administrator (DBA)?",
+      "options_a": "Managing the database",
+      "options_b": "Using the database",
+      "options_c": "Designing the database",
+      "options_d": "Deleting the database",
+      "correct_answer": "option_a"
+    }
+  ]
+}

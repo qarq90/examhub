@@ -1,0 +1,86 @@
+{
+  "test_name": "Principle of Communication: Noise and Fourier Transform",
+  "test_description": "This test evaluates understanding of types of noise and Fourier analysis.",
+  "questions": [
+    {
+      "question": "What is thermal noise?",
+      "options_a": "Noise due to random motion of electrons",
+      "options_b": "Noise due to random motion of protons",
+      "options_c": "Noise due to random motion of neutrons",
+      "options_d": "Noise due to random motion of atoms",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is shot noise?",
+      "options_a": "Noise due to random arrival of carriers",
+      "options_b": "Noise due to random departure of carriers",
+      "options_c": "Noise due to random motion of carriers",
+      "options_d": "Noise due to random collision of carriers",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is flicker noise?",
+      "options_a": "Noise with a 1/f spectrum",
+      "options_b": "Noise with a f spectrum",
+      "options_c": "Noise with a 1/f² spectrum",
+      "options_d": "Noise with a f² spectrum",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is white noise?",
+      "options_a": "Noise with a constant power spectral density",
+      "options_b": "Noise with a varying power spectral density",
+      "options_c": "Noise with a zero power spectral density",
+      "options_d": "Noise with an infinite power spectral density",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Fourier transform used for?",
+      "options_a": "Converting a time-domain signal to frequency domain",
+      "options_b": "Converting a frequency-domain signal to time domain",
+      "options_c": "Converting a time-domain signal to amplitude domain",
+      "options_d": "Converting a frequency-domain signal to amplitude domain",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the inverse Fourier transform used for?",
+      "options_a": "Converting a time-domain signal to frequency domain",
+      "options_b": "Converting a frequency-domain signal to time domain",
+      "options_c": "Converting a time-domain signal to amplitude domain",
+      "options_d": "Converting a frequency-domain signal to amplitude domain",
+      "correct_answer": "option_b"
+    },
+    {
+      "question": "What is the Fourier series used for?",
+      "options_a": "Representing a periodic signal as a sum of sinusoids",
+      "options_b": "Representing a non-periodic signal as a sum of sinusoids",
+      "options_c": "Representing a periodic signal as a product of sinusoids",
+      "options_d": "Representing a non-periodic signal as a product of sinusoids",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Fourier transform of a constant signal?",
+      "options_a": "An impulse",
+      "options_b": "A constant",
+      "options_c": "A sinusoid",
+      "options_d": "A square wave",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Fourier transform of a sinusoid?",
+      "options_a": "Impulses at the frequency of the sinusoid",
+      "options_b": "A constant at the frequency of the sinusoid",
+      "options_c": "A square wave at the frequency of the sinusoid",
+      "options_d": "A triangle wave at the frequency of the sinusoid",
+      "correct_answer": "option_a"
+    },
+    {
+      "question": "What is the Fourier transform of a square wave?",
+      "options_a": "A sinc function",
+      "options_b": "A cosine function",
+      "options_c": "A sine function",
+      "options_d": "A tangent function",
+      "correct_answer": "option_a"
+    }
+  ]
+}
