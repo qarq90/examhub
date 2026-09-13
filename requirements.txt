@@ -5,3 +5,4 @@ FLask-Login==0.6.2
 Flask-Migrate==4.0.4
 Flask-CORS==3.0.10
 python-dotenv==1.0.0
+psycopg2==2.9.7
